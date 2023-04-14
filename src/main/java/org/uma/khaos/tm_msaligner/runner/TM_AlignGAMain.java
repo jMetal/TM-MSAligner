@@ -18,6 +18,7 @@ import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.jmetal.util.observer.impl.FitnessObserver;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
+import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGABuilder;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
@@ -52,11 +53,10 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] ; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
 
+        double probabilityCrossover=0.8;
+        double probabilityMutation=0.2;
 
-        CrossoverOperator<TM_MSASolution> crossover = new SPXMSACrossover(0.8);
-        MutationOperator<TM_MSASolution> mutation = new ShiftClosedGapsMSAMutation(0.2);
-        Variation<TM_MSASolution> variation = new CrossoverAndMutationVariation<>(
-                offspringPopulationSize, crossover, mutation);
+
 
         double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
         weightGapOpenTM = 8;
@@ -88,20 +88,13 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
                 preComputedFiles);
 
 
-        TM_AlignGA tm_alignga = new TM_AlignGA(
-                new PreComputedMSAsSolutionsCreation(problem, populationSize),
-                new SequentialEvaluation<>(problem),
-                new TerminationByEvaluations(maxEvaluations),
-                new NaryTournamentSelection<>(2, variation.getMatingPoolSize(),
-                        new ObjectiveComparator<>(0)),
-                variation,
-                new MuPlusLambdaReplacement<>(new ObjectiveComparator<>(0)));
-
-
-        //tm_alignga.getObservable().register(new FitnessObserver(2000));
-        /*var chartObserver = new FitnessPlotObserver("Genetic algorithm", "Evaluations", "Fitness",
-                "fitness", 100) ;
-        tm_alignga.getObservable().register(chartObserver);*/
+        TM_AlignGA tm_alignga = new TM_AlignGABuilder(problem,
+                                maxEvaluations,
+                                populationSize,
+                                offspringPopulationSize,
+                                probabilityCrossover,
+                                probabilityMutation)
+                                .build();
 
         tm_alignga.run();
 

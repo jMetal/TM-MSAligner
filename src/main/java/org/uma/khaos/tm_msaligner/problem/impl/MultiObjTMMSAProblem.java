@@ -33,7 +33,6 @@ public class MultiObjTMMSAProblem extends StandardTMMSAProblem {
                     (scoreList.get(i).isAMinimizationScore()?1.0:-1.0);
         }
 
-        decodedSequences = null;
         return solution ;
     }
 

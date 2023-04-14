@@ -29,7 +29,6 @@ public class SingleObjTMMSAProblem  extends StandardTMMSAProblem {
         solution.objectives()[0] = score.compute(solution,decodedSequences) *
                 (score.isAMinimizationScore()?1.0:-1.0);
 
-        decodedSequences = null;
         return solution ;
     }
 

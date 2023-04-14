@@ -24,6 +24,7 @@ import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.jmetal.util.ranking.Ranking;
 import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
+import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2AlignBuilder;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
@@ -63,11 +64,9 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] ; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
 
+        double probabilityCrossover=0.8;
+        double probabilityMutation=0.2;
 
-        CrossoverOperator<TM_MSASolution> crossover = new SPXMSACrossover(0.8);
-        MutationOperator<TM_MSASolution> mutation = new ShiftClosedGapsMSAMutation(0.2);
-        Variation<TM_MSASolution> variation = new CrossoverAndMutationVariation<>(
-                offspringPopulationSize, crossover, mutation);
 
         double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
         weightGapOpenTM = 8;
@@ -98,28 +97,16 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.msf.fasta");
 
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
-                preComputedFiles);
+                                    preComputedFiles);
 
 
-        DensityEstimator<TM_MSASolution> densityEstimator = new CrowdingDistanceDensityEstimator<>();
-        Ranking<TM_MSASolution> ranking = new FastNonDominatedSortRanking<>();
-        Replacement<TM_MSASolution> replacement =
-                                        new RankingAndDensityEstimatorReplacement<>(
-                                        ranking, densityEstimator, Replacement.RemovalPolicy.ONE_SHOT);
-        int tournamentSize = 2 ;
-        Selection<TM_MSASolution> selection= new NaryTournamentSelection<>(
-                        tournamentSize, variation.getMatingPoolSize(),
-                        new MultiComparator<>(
-                                Arrays.asList(
-                                        Comparator.comparing(ranking::getRank),
-                                        Comparator.comparing(densityEstimator::getValue).reversed())));
-
-        TM_M2Align tm_m2align = new TM_M2Align(
-                new PreComputedMSAsSolutionsCreation(problem, populationSize),
-                new SequentialEvaluation<>(problem),
-                new TerminationByEvaluations(maxEvaluations),
-                selection,variation,replacement);
-
+        TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
+                            maxEvaluations,
+                            populationSize,
+                            offspringPopulationSize,
+                            probabilityCrossover,
+                            probabilityMutation)
+                            .build();
         tm_m2align.run();
 
         List<TM_MSASolution> population = tm_m2align.getResult();

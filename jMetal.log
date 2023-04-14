@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-04-14T15:53:24.457828400Z</date>
-  <millis>1681487604457</millis>
-  <nanos>828400</nanos>
+  <date>2023-04-14T17:37:49.593330100Z</date>
+  <millis>1681493869593</millis>
+  <nanos>330100</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,27 +14,27 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-04-14T15:53:24.482816100Z</date>
-  <millis>1681487604482</millis>
-  <nanos>816100</nanos>
+  <date>2023-04-14T17:37:49.642545300Z</date>
+  <millis>1681493869642</millis>
+  <nanos>545300</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
   <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Total execution time : 196945ms</message>
+  <message>Total execution time : 14136ms</message>
 </record>
 <record>
-  <date>2023-04-14T15:53:24.483812700Z</date>
-  <millis>1681487604483</millis>
-  <nanos>812700</nanos>
+  <date>2023-04-14T17:37:49.643541600Z</date>
+  <millis>1681493869643</millis>
+  <nanos>541600</nanos>
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
   <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Number of evaluations: 25001</message>
+  <message>Number of evaluations: 25000</message>
 </record>
 </log>

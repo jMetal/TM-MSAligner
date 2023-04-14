@@ -1,0 +1,162 @@
+package org.uma.khaos.tm_msaligner.runner;
+
+import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
+import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
+import org.uma.jmetal.component.catalogue.ea.replacement.Replacement;
+import org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement;
+import org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityEstimatorReplacement;
+import org.uma.jmetal.component.catalogue.ea.selection.Selection;
+import org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection;
+import org.uma.jmetal.component.catalogue.ea.variation.Variation;
+import org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation;
+import org.uma.jmetal.operator.crossover.CrossoverOperator;
+import org.uma.jmetal.operator.mutation.MutationOperator;
+import org.uma.jmetal.util.AbstractAlgorithmRunner;
+import org.uma.jmetal.util.JMetalLogger;
+import org.uma.jmetal.util.comparator.MultiComparator;
+import org.uma.jmetal.util.comparator.ObjectiveComparator;
+import org.uma.jmetal.util.densityestimator.DensityEstimator;
+import org.uma.jmetal.util.densityestimator.impl.CrowdingDistanceDensityEstimator;
+import org.uma.jmetal.util.errorchecking.JMetalException;
+import org.uma.jmetal.util.fileoutput.SolutionListOutput;
+import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
+import org.uma.jmetal.util.pseudorandom.JMetalRandom;
+import org.uma.jmetal.util.ranking.Ranking;
+import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
+import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
+import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
+import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
+import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
+import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
+import org.uma.khaos.tm_msaligner.problem.impl.MultiObjTMMSAProblem;
+import org.uma.khaos.tm_msaligner.problem.impl.SingleObjTMMSAProblem;
+import org.uma.khaos.tm_msaligner.score.Score;
+import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
+import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
+import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
+import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
+import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+public class TM_M2AlignMain extends AbstractAlgorithmRunner {
+
+    public static void main(String[] args) throws JMetalException, IOException {
+
+        if (args.length != 7) {
+            throw new JMetalException("Wrong number of arguments") ;
+        }
+
+        Integer maxEvaluations = Integer.parseInt(args[0]);  //2500
+        Integer populationSize = Integer.parseInt(args[1]); //100
+        int offspringPopulationSize = populationSize;
+        Integer numberOfCores = Integer.parseInt(args[2]);   //1
+        String refname = args[3]; // "7tm";
+        String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
+        String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
+        String PathOut = args[6] ; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
+
+
+        CrossoverOperator<TM_MSASolution> crossover = new SPXMSACrossover(0.8);
+        MutationOperator<TM_MSASolution> mutation = new ShiftClosedGapsMSAMutation(0.2);
+        Variation<TM_MSASolution> variation = new CrossoverAndMutationVariation<>(
+                offspringPopulationSize, crossover, mutation);
+
+        double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
+        weightGapOpenTM = 8;
+        weightGapExtendTM = 3;
+        weightGapOpenNonTM = 3;
+        weightGapExtendNonTM = 1;
+
+        List<Score> scoreList = new ArrayList<>();
+        scoreList.add(new SumOfPairsWithTopologyPredict(
+                new Phat(8),
+                new Blosum62(),
+                weightGapOpenTM,
+                weightGapExtendTM,
+                weightGapOpenNonTM,
+                weightGapExtendNonTM));
+        scoreList.add(new AlignedSegment());
+
+
+        String dataFile = benchmarkPath + refname + "_predicted_topologies.3line";
+
+        List<String> preComputedFiles = new ArrayList<String>();
+        //preComputedFiles.add(preComputedMSAPath + refname + "clustalw.msf.fasta" );
+        preComputedFiles.add(preComputedMSAPath + refname + "kalign.msf.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "mafft.msf.fasta" );
+        preComputedFiles.add(preComputedMSAPath + refname + "kalignP.msf.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refname + "muscle.msf.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "probcons.msf.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.msf.fasta");
+
+        StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
+                preComputedFiles);
+
+
+        DensityEstimator<TM_MSASolution> densityEstimator = new CrowdingDistanceDensityEstimator<>();
+        Ranking<TM_MSASolution> ranking = new FastNonDominatedSortRanking<>();
+        Replacement<TM_MSASolution> replacement =
+                                        new RankingAndDensityEstimatorReplacement<>(
+                                        ranking, densityEstimator, Replacement.RemovalPolicy.ONE_SHOT);
+        int tournamentSize = 2 ;
+        Selection<TM_MSASolution> selection= new NaryTournamentSelection<>(
+                        tournamentSize, variation.getMatingPoolSize(),
+                        new MultiComparator<>(
+                                Arrays.asList(
+                                        Comparator.comparing(ranking::getRank),
+                                        Comparator.comparing(densityEstimator::getValue).reversed())));
+
+        TM_M2Align tm_m2align = new TM_M2Align(
+                new PreComputedMSAsSolutionsCreation(problem, populationSize),
+                new SequentialEvaluation<>(problem),
+                new TerminationByEvaluations(maxEvaluations),
+                selection,variation,replacement);
+
+        tm_m2align.run();
+
+        List<TM_MSASolution> population = tm_m2align.getResult();
+
+        for (TM_MSASolution solution : population) {
+            for (int i = 0; i < problem.numberOfObjectives(); i++) {
+                solution.objectives()[i] *= (scoreList.get(i).isAMinimizationScore()?1.0:-1.0);
+            }
+        }
+
+        JMetalLogger.logger.info("Total execution time : " + tm_m2align.getTotalComputingTime() + "ms");
+        JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.getNumberOfEvaluations());
+
+        DefaultFileOutputContext funFile = new DefaultFileOutputContext(PathOut + "FUN.tsv");
+        funFile.setSeparator("\t");
+
+        SolutionListOutput slo = new SolutionListOutput(population);
+        slo.printObjectivesToFile(funFile, population);
+
+        printMSAToFile(population, PathOut);
+
+
+    }
+    public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
+
+        new File(PathOut).mkdirs();
+        try {
+            for (int i = 0; i < solutionList.size(); i++) {
+                DefaultFileOutputContext context = new DefaultFileOutputContext(PathOut + "MSASol" + i + ".fasta");
+                context.setSeparator("\n");
+                BufferedWriter bufferedWriter = context.getFileWriter();
+                bufferedWriter.write(solutionList.get(i).toString());
+                bufferedWriter.close();
+            }
+
+        } catch (IOException e) {
+            throw new JMetalException("Error writing data ", e);
+        }
+    }
+}

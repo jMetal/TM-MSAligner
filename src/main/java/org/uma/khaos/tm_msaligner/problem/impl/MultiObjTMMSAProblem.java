@@ -12,7 +12,7 @@ import java.util.List;
 public class MultiObjTMMSAProblem extends StandardTMMSAProblem {
 
 
-    private List<Score> scoreList ;
+    private final List<Score> scoreList ;
 
     public MultiObjTMMSAProblem(String msaProblemFileName, List<Score> scoreList,
                                 List<String> preComputedFiles) throws IOException {

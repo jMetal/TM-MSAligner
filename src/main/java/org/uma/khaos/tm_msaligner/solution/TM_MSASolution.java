@@ -13,7 +13,7 @@ import java.util.List;
 public class TM_MSASolution extends AbstractSolution<List<Integer>> {
 
   private char[][] decodedSolution;
-  private StandardTMMSAProblem problem ;
+  private final StandardTMMSAProblem problem ;
 
   /** Constructor */
   public TM_MSASolution(StandardTMMSAProblem problem) {

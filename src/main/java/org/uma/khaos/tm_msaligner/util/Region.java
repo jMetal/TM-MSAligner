@@ -4,7 +4,7 @@ public class Region {
   private BaseType Type;
   private int Start;
   private int End;
-  private boolean valid;
+  private final boolean valid;
 
   public Region(String str_type, String str_start, String str_end) {
     int end, start;

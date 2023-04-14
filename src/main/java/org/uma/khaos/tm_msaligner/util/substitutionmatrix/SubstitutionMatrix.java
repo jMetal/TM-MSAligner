@@ -45,7 +45,7 @@ public abstract class SubstitutionMatrix {
 
     for (int i = 0; i < matrix.length; i++) {
       if (i > 9) {
-        result.append("").append(i).append(" | ");
+        result.append(i).append(" | ");
       } else {
         result.append(" ").append(i).append(" | ");
       }

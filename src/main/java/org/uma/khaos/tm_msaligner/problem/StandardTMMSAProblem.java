@@ -91,7 +91,7 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
 
       } catch (Exception e) {
         throw new JMetalException(
-            "Error reading data from fasta files " + dataFile + ". Message: " + e.toString());
+            "Error reading data from fasta files " + dataFile + ". Message: " + e);
       }
     }
 

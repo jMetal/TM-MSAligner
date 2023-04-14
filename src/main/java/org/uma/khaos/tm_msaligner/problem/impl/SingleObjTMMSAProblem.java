@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SingleObjTMMSAProblem  extends StandardTMMSAProblem {
 
-    private Score score ;
+    private final Score score ;
 
     public SingleObjTMMSAProblem(String msaProblemFileName, Score score,
                                  List<String> preComputedFiles) throws IOException {

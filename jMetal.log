@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-04-14T17:37:49.593330100Z</date>
-  <millis>1681493869593</millis>
-  <nanos>330100</nanos>
+  <date>2023-04-16T01:39:06.536250700Z</date>
+  <millis>1681609146536</millis>
+  <nanos>250700</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,27 +14,27 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-04-14T17:37:49.642545300Z</date>
-  <millis>1681493869642</millis>
-  <nanos>545300</nanos>
+  <date>2023-04-16T01:39:06.562235300Z</date>
+  <millis>1681609146562</millis>
+  <nanos>235300</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
+  <class>org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Total execution time : 14136ms</message>
+  <message>Total execution time : 13047ms</message>
 </record>
 <record>
-  <date>2023-04-14T17:37:49.643541600Z</date>
-  <millis>1681493869643</millis>
-  <nanos>541600</nanos>
+  <date>2023-04-16T01:39:06.565233100Z</date>
+  <millis>1681609146565</millis>
+  <nanos>233100</nanos>
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
+  <class>org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Number of evaluations: 25000</message>
+  <message>Best found solution: 18281.0</message>
 </record>
 </log>

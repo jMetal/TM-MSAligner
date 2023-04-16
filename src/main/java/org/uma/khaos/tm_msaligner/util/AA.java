@@ -16,6 +16,19 @@ public class AA {
     this.type = new BaseType(type);
   }
 
+  public AA(char letter, BaseType typeA, BaseType typeB) {
+    this.letter = letter;
+    if(typeA.isTMRegion()){
+      if(typeB.isTMRegion()){
+        this.type = new BaseType(typeA);
+      }else{
+        this.type = new BaseType(typeB);
+      }
+    }else{
+      this.type = new BaseType(typeA);
+    }
+  }
+
   public AA(char letter) {
     this.letter = letter;
     this.type = new BaseType(-1);

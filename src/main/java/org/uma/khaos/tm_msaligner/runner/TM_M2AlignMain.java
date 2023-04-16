@@ -51,7 +51,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
-        if (args.length != 7) {
+        if (args.length != 8) {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
@@ -62,7 +62,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String refname = args[3]; // "7tm";
         String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-        String PathOut = args[6] ; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
+        String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
 
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;

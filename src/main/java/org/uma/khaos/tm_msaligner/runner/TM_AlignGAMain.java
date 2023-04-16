@@ -40,7 +40,7 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
-        if (args.length != 7) {
+        if (args.length != 8) {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
@@ -51,15 +51,13 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
         String refname = args[3]; // "7tm";
         String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-        String PathOut = args[6] ; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
+        String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
 
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
 
-
-
         double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
-        weightGapOpenTM = 8;
+        weightGapOpenTM = 10;
         weightGapExtendTM = 3;
         weightGapOpenNonTM = 3;
         weightGapExtendNonTM = 1;
@@ -83,6 +81,8 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
         //preComputedFiles.add(preComputedMSAPath + refname + "muscle.msf.fasta");
         preComputedFiles.add(preComputedMSAPath + refname + "probcons.msf.fasta");
         preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.msf.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
+
 
         StandardTMMSAProblem problem = new SingleObjTMMSAProblem(dataFile, score,
                 preComputedFiles);
@@ -104,25 +104,24 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
 
 
         JMetalLogger.logger.info("Total execution time : " + tm_alignga.getTotalComputingTime()  + "ms");
-        JMetalLogger.logger.info("Number of evaluations: " + tm_alignga.getNumberOfEvaluations());
         JMetalLogger.logger.info("Best found solution: " + population.get(0).objectives()[0]) ;
 
+        File dir=new File(PathOut);
+        if(dir.exists()) {
+            DefaultFileOutputContext funFile = new DefaultFileOutputContext(PathOut + "FUN.tsv");
+            funFile.setSeparator("\t");
+            SolutionListOutput slo = new SolutionListOutput(population);
+            slo.printObjectivesToFile(funFile, population);
+            printMSAToFile(population, PathOut);
+        }else{
+            JMetalLogger.logger.info("Directory Results does not exist" ) ;
+        }
 
-        DefaultFileOutputContext funFile = new DefaultFileOutputContext(PathOut + "FUN.tsv");
-        funFile.setSeparator("\t");
-        SolutionListOutput slo = new SolutionListOutput(population);
-        slo.printObjectivesToFile(funFile, population);
-
-        printMSAToFile(population, PathOut);
-
-
-        JMetalLogger.logger.info("Random seed: " + JMetalRandom.getInstance().getSeed());
-        JMetalLogger.logger.info("Objectives values have been written to file FUN.csv");
-        JMetalLogger.logger.info("Variables values have been written to file VAR.csv");
     }
+
+
     public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
 
-        new File(PathOut).mkdirs();
         try {
             for (int i = 0; i < solutionList.size(); i++) {
                 DefaultFileOutputContext context = new DefaultFileOutputContext(PathOut + "MSASol" + i + ".fasta");

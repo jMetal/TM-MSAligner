@@ -50,43 +50,31 @@ public class SumOfPairsWithTopologyPredict implements Score {
     int i, j;
     AA aaA, aaB;
     boolean gapOpen = false;
-    int numGapsExtended =0;
-    BaseType lastTypeStarGapOpen;
+
 
     for (i = 0; i < numberOfVariables - 1; i++) {
       for (j = i+1; j < numberOfVariables; j++) {
         gapOpen=false;
-        numGapsExtended=0;
-        lastTypeStarGapOpen=decodedSequences[i][0].getType();
         for (int l = 0; l < lengthSequences; l++) {
           aaA = decodedSequences[i][l];
           aaB = decodedSequences[j][l];
-          if(aaA.isGap() || aaA.isGap()) {
+          if(aaA.isGap() || aaB.isGap()) {
               if(!gapOpen) {
                 gapOpen=true;
-                tmSOP-=  aaA.getType().isTMRegion()?weightGapOpenTM:weightGapOpenNonTM;
-                numGapsExtended=0;
-                lastTypeStarGapOpen=aaA.getType();
+                tmSOP -=  aaA.getType().isTMRegion()?weightGapOpenTM:weightGapOpenNonTM;
               }else{
-                numGapsExtended++;
+                tmSOP -= aaA.getType().isTMRegion()?weightGapExtendTM:weightGapExtendNonTM;
               }
           }else {
             if (aaA.getType().isTMRegion() && aaB.getType().isTMRegion())
-              tmSOP += phatMatrix.getDistance(aaA.getLetter(), aaB.getLetter());
-            else tmSOP += blosum62Matrix.getDistance(aaA.getLetter(), aaB.getLetter());
-            if(gapOpen) {
-              gapOpen = false;
-              tmSOP -= numGapsExtended * (lastTypeStarGapOpen.isTMRegion()?weightGapExtendTM:weightGapExtendNonTM);
-              numGapsExtended = 0;
-            }
+                  tmSOP += phatMatrix.getDistance(aaA.getLetter(), aaB.getLetter());
+            else
+                  tmSOP += blosum62Matrix.getDistance(aaA.getLetter(), aaB.getLetter());
+
+            if(gapOpen) gapOpen = false;
+
           }
         }
-
-        if(gapOpen) {
-          tmSOP -= numGapsExtended * (lastTypeStarGapOpen.isTMRegion()?weightGapExtendTM:weightGapExtendNonTM);
-        }
-
-
 
       }
 

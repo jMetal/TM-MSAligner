@@ -129,7 +129,9 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
           alignedSequence[i++] = OriginalSeq[k++];
         } else {
           for (l = gapsGroups.get(g); l <= gapsGroups.get(g + 1); l++) {
-            alignedSequence[l] = new AA('-', OriginalSeq[k > 0 ? k-1 : 0].getType());
+            alignedSequence[l] = new AA(AA.GAP_IDENTIFIER,
+                    OriginalSeq[k > 0 ? k-1 : 0].getType(),
+                    OriginalSeq[k < OriginalSeq.length ? k : k-1].getType());
           }
           i += gapsGroups.get(g + 1) - gapsGroups.get(g) + 1;
           g += 2;

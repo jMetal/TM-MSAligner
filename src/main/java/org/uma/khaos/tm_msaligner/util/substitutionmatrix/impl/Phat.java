@@ -10,8 +10,8 @@ public class Phat extends SubstitutionMatrix {
 
     matrix =
         new int[][] {
-          // A   R   N   D   C   Q   E   G   H   I   L   K   M   F   P   S   T   W   Y   V   *
-          // 0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+                // A   R   N   D   C   Q   E   G   H   I   L   K   M   F   P   S   T   W   Y   V   *
+                // 0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
           /* A */ {5, -6, -2, -5,  1, -3, -5,  1, -3,  0, -1, -7, -1, -1, -3,  2,  0, -4, -3,  1, gapPenalty},
           /* R */ {-6, 9, -3, -7, -8, -2, -6, -5, -4, -6, -6, -1, -6, -7, -7, -6, -6, -7, -6, -7, gapPenalty},
           /* N */ {-2, -3, 11, 2, -2, 2, 0, -1, 4, -3, -3, -2, -2, -1, -4, 1, -1, -5, 2, -3, gapPenalty},

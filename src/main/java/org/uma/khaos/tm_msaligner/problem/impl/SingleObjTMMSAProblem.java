@@ -2,6 +2,7 @@ package org.uma.khaos.tm_msaligner.problem.impl;
 
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
+import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AA;
 
@@ -18,6 +19,15 @@ public class SingleObjTMMSAProblem  extends StandardTMMSAProblem {
 
         setNumberOfObjectives(1);
         setName("Single Objective TM-MSA Problem");
+
+        if (score.getName()=="AlignedSegments"){
+            AlignedSegment scoreAS = (AlignedSegment)score;
+            if (scoreAS.isNormalized()){
+                scoreAS.setMaxSegmentAlignScore(MaxMinSegmentAlignScore[0]);
+                scoreAS.setMinSegmentAlignScore(MaxMinSegmentAlignScore[1]);
+            }
+        }
+
         this.score = score ;
     }
 

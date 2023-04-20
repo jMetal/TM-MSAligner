@@ -1,6 +1,7 @@
 package org.uma.khaos.tm_msaligner.algorithm.singleobjective;
 
 import org.uma.jmetal.component.catalogue.common.evaluation.Evaluation;
+import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
 import org.uma.jmetal.component.catalogue.common.termination.Termination;
 import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
@@ -44,7 +45,8 @@ public class TM_AlignGABuilder {
 
     public TM_AlignGABuilder(StandardTMMSAProblem problem, int maxEvaluations,
                              int populationSize, int offspringPopulationSize,
-                             double probabilityCrossover, double probabilityMutation) {
+                             double probabilityCrossover, double probabilityMutation,
+                             int numCores) {
 
         crossover = new SPXMSACrossover(probabilityCrossover);
         mutation = new ShiftClosedGapsMSAMutation(probabilityMutation);
@@ -56,7 +58,12 @@ public class TM_AlignGABuilder {
         replacement = new MuPlusLambdaReplacement<>(new ObjectiveComparator<>(0));
 
         createInitialPopulation = new PreComputedMSAsSolutionsCreation(problem, populationSize);
-        evaluation= new SequentialEvaluation<>(problem);
+
+        if(numCores>1){
+            evaluation = new MultiThreadedEvaluation<>(numCores, problem) ;
+        }else{
+            evaluation= new SequentialEvaluation<>(problem);
+        }
         termination = new TerminationByEvaluations(maxEvaluations);
 
 

@@ -105,7 +105,8 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             populationSize,
                             offspringPopulationSize,
                             probabilityCrossover,
-                            probabilityMutation)
+                            probabilityMutation,
+                            numberOfCores)
                             .build();
         tm_m2align.run();
 

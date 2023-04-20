@@ -3,6 +3,7 @@ package org.uma.khaos.tm_msaligner.problem.impl;
 
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
+import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AA;
 
@@ -20,6 +21,16 @@ public class MultiObjTMMSAProblem extends StandardTMMSAProblem {
 
         setNumberOfObjectives(scoreList.size());
         setName("Multi Objective TM-MSA Problem");
+
+        for(int i =0 ; i< scoreList.size(); i++){
+            if (scoreList.get(i).getName()=="AlignedSegments"){
+                AlignedSegment scoreAS = (AlignedSegment)scoreList.get(i);
+                if (scoreAS.isNormalized()){
+                    scoreAS.setMaxSegmentAlignScore(MaxMinSegmentAlignScore[0]);
+                    scoreAS.setMinSegmentAlignScore(MaxMinSegmentAlignScore[1]);
+                }
+            }
+        }
         this.scoreList = scoreList ;
     }
 

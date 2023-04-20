@@ -1,32 +1,18 @@
 package org.uma.khaos.tm_msaligner.runner;
 
-import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
-import org.uma.jmetal.component.catalogue.common.termination.Termination;
-import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
-import org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement;
-import org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection;
-import org.uma.jmetal.component.catalogue.ea.variation.Variation;
-import org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation;
-import org.uma.jmetal.operator.crossover.CrossoverOperator;
-import org.uma.jmetal.operator.mutation.MutationOperator;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
-import org.uma.jmetal.util.comparator.ObjectiveComparator;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import org.uma.jmetal.util.observer.impl.FitnessObserver;
-import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGABuilder;
-import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
-import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.SingleObjTMMSAProblem;
+import org.uma.khaos.tm_msaligner.problem.impl.TM_MSAProblemSOPwithSASingleObj;
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
@@ -36,7 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TM_AlignGAMain extends AbstractAlgorithmRunner {
+public class TM_AlignGAMain2 extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
@@ -53,23 +39,6 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
 
-        double probabilityCrossover=0.8;
-        double probabilityMutation=0.2;
-
-        double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
-        weightGapOpenTM = 10;
-        weightGapExtendTM = 3;
-        weightGapOpenNonTM = 3;
-        weightGapExtendNonTM = 1;
-
-        Score score = new SumOfPairsWithTopologyPredict(
-                new Phat(8),
-                new Blosum62(),
-                weightGapOpenTM,
-                weightGapExtendTM,
-                weightGapOpenNonTM,
-                weightGapExtendNonTM);
-
 
         String dataFile = benchmarkPath + refname + "_predicted_topologies.3line";
 
@@ -84,9 +53,22 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
         preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
 
 
-        StandardTMMSAProblem problem = new SingleObjTMMSAProblem(dataFile, score,
-                preComputedFiles);
+        double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
+        weightGapOpenTM = 10;
+        weightGapExtendTM = 3;
+        weightGapOpenNonTM = 3;
+        weightGapExtendNonTM = 1;
 
+        StandardTMMSAProblem problem = new TM_MSAProblemSOPwithSASingleObj(dataFile,
+                preComputedFiles,
+                weightGapOpenTM,
+                weightGapExtendTM,
+                weightGapOpenNonTM,
+                weightGapExtendNonTM);
+
+
+        double probabilityCrossover=0.8;
+        double probabilityMutation=0.2;
 
         TM_AlignGA tm_alignga = new TM_AlignGABuilder(problem,
                                 maxEvaluations,
@@ -101,7 +83,7 @@ public class TM_AlignGAMain extends AbstractAlgorithmRunner {
 
         List<TM_MSASolution> population = tm_alignga.getResult();
         for (TM_MSASolution solution : population)
-                solution.objectives()[0] *= (score.isAMinimizationScore()?1.0:-1.0);
+            solution.objectives()[0] *= -1.0;
 
 
         JMetalLogger.logger.info("Total execution time : " + tm_alignga.getTotalComputingTime()  + "ms");

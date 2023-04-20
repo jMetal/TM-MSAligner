@@ -1,6 +1,7 @@
 package org.uma.khaos.tm_msaligner.problem;
 
 
+import org.apache.commons.math3.analysis.function.Min;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
@@ -25,6 +26,8 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
   public List<AAArray> originalSequences;
   public List<List<AAArray>> listOfPrecomputedStringAlignments;
   public List<StringBuilder> listOfSequenceNames;
+  public long[] MaxMinSegmentAlignScore;
+
 
   /** Constructor */
   public StandardTMMSAProblem(String msaProblemFileName, List<String> preComputedFiles)
@@ -37,8 +40,8 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
     //Read SeqNames, Sequences and TopologyPrediction
     readSequenceFromFile(msaProblemFileName);
     setNumberOfVariables(originalSequences.size());
+    MaxMinSegmentAlignScore= getMaxMinScoreSegmentAlign();
     listOfPrecomputedStringAlignments = readPreComputedAlignments(preComputedFiles);
-
 
   }
 
@@ -154,6 +157,30 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
     }
 
     FastaWriterHelper.writeProteinSequence(new File(fileName), proteinSequences);
+  }
+
+
+  public long[] getMaxMinScoreSegmentAlign(){
+
+    long[] MaxMinScores = new long[2];
+    long MaxScore=0, MinScore=0;
+    AAArray seq;
+    int numSeqs=originalSequences.size();
+
+    for(int i=0; i<numSeqs-1;i++){
+      seq = originalSequences.get(i);
+      for(int l=0; l<seq.getSize() ;l++){
+          MinScore+= (-1) * (numSeqs - i - 1);
+          if(seq.AAAt(l).getType().isTMRegion()){
+            MaxScore+= 4 * (numSeqs - i - 1);
+          }else{
+            MaxScore+= 2 * (numSeqs - i - 1);
+          }
+
+      }
+    }
+    MaxMinScores[0] =MaxScore;    MaxMinScores[1] =MinScore;
+    return MaxMinScores;
   }
 
 

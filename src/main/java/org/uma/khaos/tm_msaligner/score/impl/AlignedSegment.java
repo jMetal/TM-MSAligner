@@ -7,8 +7,20 @@ import org.uma.khaos.tm_msaligner.util.AA;
 
 public class AlignedSegment implements Score {
 
+  boolean Normalized;
+  long MaxSegmentAlignScore;
+  long MinSegmentAlignScore;
+
+  public  AlignedSegment(){    this.Normalized = false;  }
+  public  AlignedSegment(boolean Normalized){    this.Normalized = Normalized;  }
+
+  public void setMaxSegmentAlignScore(long MaxSegmentAlignScore){    this.MaxSegmentAlignScore = MaxSegmentAlignScore;  }
+  public void setMinSegmentAlignScore(long MinSegmentAlignScore){    this.MinSegmentAlignScore = MinSegmentAlignScore;  }
+
+  public boolean isNormalized() {    return this.Normalized;  }
+
   public String getName() {
-    return "Segments";
+    return "AlignedSegments";
   }
 
   public String getDescription() {
@@ -50,7 +62,12 @@ public class AlignedSegment implements Score {
       }
     }
 
-    return sumAlignedSegments;
+    if (isNormalized()) {
+      return (sumAlignedSegments - MinSegmentAlignScore)/(MaxSegmentAlignScore - MinSegmentAlignScore);
+    }else{
+      return sumAlignedSegments;
+    }
+
   }
 
   public boolean isAMinimizationScore() {    return false;  }

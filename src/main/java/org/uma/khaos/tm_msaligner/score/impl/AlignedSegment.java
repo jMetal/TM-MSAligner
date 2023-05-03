@@ -28,7 +28,6 @@ public class AlignedSegment implements Score {
   }
 
   public int getMatch(AA A, AA B) {
-    if(!A.isGap() && !B.isGap()){
       if(A.getType().isTMRegion()){
         if(B.getType().isTMRegion())
           return A.getLetter()==B.getLetter()?4:2;
@@ -41,9 +40,6 @@ public class AlignedSegment implements Score {
           return 0;
 
       }
-    }else
-      return 0;
-
   }
 
   public <S extends TM_MSASolution> double compute(S solution, AA[][] decodedSequences) {
@@ -55,9 +51,13 @@ public class AlignedSegment implements Score {
     int i, j;
     for (int l = 0; l < lengthSequences; l++) {
       for (i = 0; i < numberOfVariables - 1; i++) {
-        for (j = i + 1; j < numberOfVariables; j++) {
-          sumAlignedSegments +=
-              getMatch(decodedSequences[i][l], decodedSequences[j][l]);
+        if(!decodedSequences[i][l].isGap()){
+          for (j = i + 1; j < numberOfVariables; j++) {
+            if(!decodedSequences[j][l].isGap()) {
+              sumAlignedSegments +=
+                      getMatch(decodedSequences[i][l], decodedSequences[j][l]);
+            }
+          }
         }
       }
     }

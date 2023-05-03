@@ -88,13 +88,13 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String dataFile = benchmarkPath + refname + "_predicted_topologies.3line";
 
         List<String> preComputedFiles = new ArrayList<String>();
-        //preComputedFiles.add(preComputedMSAPath + refname + "clustalw.msf.fasta" );
-        preComputedFiles.add(preComputedMSAPath + refname + "kalign.msf.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "mafft.msf.fasta" );
-        preComputedFiles.add(preComputedMSAPath + refname + "kalignP.msf.fasta");
-        //preComputedFiles.add(preComputedMSAPath + refname + "muscle.msf.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "probcons.msf.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.msf.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "kalign.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "mafft.fasta" );
+        preComputedFiles.add(preComputedMSAPath + refname + "clustalw.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "muscle.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
+        preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
 
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
                                     preComputedFiles);

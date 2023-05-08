@@ -91,13 +91,13 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         preComputedFiles.add(preComputedMSAPath + refname + "kalign.fasta");
         preComputedFiles.add(preComputedMSAPath + refname + "mafft.fasta" );
         preComputedFiles.add(preComputedMSAPath + refname + "clustalw.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "muscle.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refname + "muscle.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
 
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
-                                    preComputedFiles);
+                                    preComputedFiles,refname);
 
 
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,

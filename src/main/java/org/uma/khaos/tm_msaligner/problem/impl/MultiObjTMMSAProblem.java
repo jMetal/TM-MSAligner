@@ -16,11 +16,11 @@ public class MultiObjTMMSAProblem extends StandardTMMSAProblem {
     private final List<Score> scoreList ;
 
     public MultiObjTMMSAProblem(String msaProblemFileName, List<Score> scoreList,
-                                List<String> preComputedFiles) throws IOException {
+                                List<String> preComputedFiles, String Name) throws IOException {
         super(msaProblemFileName, preComputedFiles);
 
         setNumberOfObjectives(scoreList.size());
-        setName("Multi Objective TM-MSA Problem");
+        setName(Name); // "Multi Objective TM-MSA Problem"
 
         for(int i =0 ; i< scoreList.size(); i++){
             if (scoreList.get(i).getName()=="AlignedSegments"){

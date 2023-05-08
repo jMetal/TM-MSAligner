@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-04-16T01:39:06.536250700Z</date>
-  <millis>1681609146536</millis>
-  <nanos>250700</nanos>
+  <date>2023-05-07T23:35:21.818158800Z</date>
+  <millis>1683502521818</millis>
+  <nanos>158800</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,27 +14,1311 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-04-16T01:39:06.562235300Z</date>
-  <millis>1681609146562</millis>
-  <nanos>235300</nanos>
+  <date>2023-05-07T23:35:21.844153800Z</date>
+  <millis>1683502521844</millis>
+  <nanos>153800</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain</class>
-  <method>main</method>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
   <thread>1</thread>
-  <message>Total execution time : 13047ms</message>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/EP</message>
 </record>
 <record>
-  <date>2023-04-16T01:39:06.565233100Z</date>
-  <millis>1681609146565</millis>
-  <nanos>233100</nanos>
+  <date>2023-05-07T23:35:21.845155700Z</date>
+  <millis>1683502521845</millis>
+  <nanos>155700</nanos>
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain</class>
-  <method>main</method>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
   <thread>1</thread>
-  <message>Best found solution: 18281.0</message>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/EP</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.846153600Z</date>
+  <millis>1683502521846</millis>
+  <nanos>153600</nanos>
+  <sequence>3</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.848155200Z</date>
+  <millis>1683502521848</millis>
+  <nanos>155200</nanos>
+  <sequence>4</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/SP</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.849153600Z</date>
+  <millis>1683502521849</millis>
+  <nanos>153600</nanos>
+  <sequence>5</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/SP</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.851156600Z</date>
+  <millis>1683502521851</millis>
+  <nanos>156600</nanos>
+  <sequence>6</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.853156900Z</date>
+  <millis>1683502521853</millis>
+  <nanos>156900</nanos>
+  <sequence>7</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/GD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.854157Z</date>
+  <millis>1683502521854</millis>
+  <nanos>157000</nanos>
+  <sequence>8</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/GD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.856154800Z</date>
+  <millis>1683502521856</millis>
+  <nanos>154800</nanos>
+  <sequence>9</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.857155Z</date>
+  <millis>1683502521857</millis>
+  <nanos>155000</nanos>
+  <sequence>10</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/HV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.858153500Z</date>
+  <millis>1683502521858</millis>
+  <nanos>153500</nanos>
+  <sequence>11</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/HV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.860155500Z</date>
+  <millis>1683502521860</millis>
+  <nanos>155500</nanos>
+  <sequence>12</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.861154700Z</date>
+  <millis>1683502521861</millis>
+  <nanos>154700</nanos>
+  <sequence>13</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/NHV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.862154900Z</date>
+  <millis>1683502521862</millis>
+  <nanos>154900</nanos>
+  <sequence>14</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/NHV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.863152900Z</date>
+  <millis>1683502521863</millis>
+  <nanos>152900</nanos>
+  <sequence>15</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.864153700Z</date>
+  <millis>1683502521864</millis>
+  <nanos>153700</nanos>
+  <sequence>16</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/IGD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.866156200Z</date>
+  <millis>1683502521866</millis>
+  <nanos>156200</nanos>
+  <sequence>17</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/IGD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.868155600Z</date>
+  <millis>1683502521868</millis>
+  <nanos>155600</nanos>
+  <sequence>18</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.869155Z</date>
+  <millis>1683502521869</millis>
+  <nanos>155000</nanos>
+  <sequence>19</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/IGD+</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.871152700Z</date>
+  <millis>1683502521871</millis>
+  <nanos>152700</nanos>
+  <sequence>20</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/data/TM_M2Align/ptga/IGD+</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.873156900Z</date>
+  <millis>1683502521873</millis>
+  <nanos>156900</nanos>
+  <sequence>21</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.874154600Z</date>
+  <millis>1683502521874</millis>
+  <nanos>154600</nanos>
+  <sequence>22</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: EP</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.876157800Z</date>
+  <millis>1683502521876</millis>
+  <nanos>157800</nanos>
+  <sequence>23</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.900157400Z</date>
+  <millis>1683502521900</millis>
+  <nanos>157400</nanos>
+  <sequence>24</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.08111068514157402</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.908157800Z</date>
+  <millis>1683502521908</millis>
+  <nanos>157800</nanos>
+  <sequence>25</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.0969384960841229</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.918157200Z</date>
+  <millis>1683502521918</millis>
+  <nanos>157200</nanos>
+  <sequence>26</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.0968039167323758</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.922156400Z</date>
+  <millis>1683502521922</millis>
+  <nanos>156400</nanos>
+  <sequence>27</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.3949832959088669</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.926157900Z</date>
+  <millis>1683502521926</millis>
+  <nanos>157900</nanos>
+  <sequence>28</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.156470781532395</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.930159100Z</date>
+  <millis>1683502521930</millis>
+  <nanos>159100</nanos>
+  <sequence>29</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.152308450627088</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.934158800Z</date>
+  <millis>1683502521934</millis>
+  <nanos>158800</nanos>
+  <sequence>30</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.37482885152527523</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.939155400Z</date>
+  <millis>1683502521939</millis>
+  <nanos>155400</nanos>
+  <sequence>31</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.2852839695492634</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.942159500Z</date>
+  <millis>1683502521942</millis>
+  <nanos>159500</nanos>
+  <sequence>32</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.07667451667670733</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.945158100Z</date>
+  <millis>1683502521945</millis>
+  <nanos>158100</nanos>
+  <sequence>33</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>EP: 0.2617339394271318</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.954156700Z</date>
+  <millis>1683502521954</millis>
+  <nanos>156700</nanos>
+  <sequence>34</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: SP</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.955157300Z</date>
+  <millis>1683502521955</millis>
+  <nanos>157300</nanos>
+  <sequence>35</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.963159600Z</date>
+  <millis>1683502521963</millis>
+  <nanos>159600</nanos>
+  <sequence>36</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.7831217428941423</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.966159300Z</date>
+  <millis>1683502521966</millis>
+  <nanos>159300</nanos>
+  <sequence>37</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.9997583594957348</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.970158800Z</date>
+  <millis>1683502521970</millis>
+  <nanos>158800</nanos>
+  <sequence>38</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.7867324030483464</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.974157600Z</date>
+  <millis>1683502521974</millis>
+  <nanos>157600</nanos>
+  <sequence>39</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.9332926391936728</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.977161100Z</date>
+  <millis>1683502521977</millis>
+  <nanos>161100</nanos>
+  <sequence>40</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.9746568727996436</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.981159800Z</date>
+  <millis>1683502521981</millis>
+  <nanos>159800</nanos>
+  <sequence>41</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.8658647757087168</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.985158700Z</date>
+  <millis>1683502521985</millis>
+  <nanos>158700</nanos>
+  <sequence>42</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.9965418847554521</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.989158400Z</date>
+  <millis>1683502521989</millis>
+  <nanos>158400</nanos>
+  <sequence>43</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.9748233574086888</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.993159200Z</date>
+  <millis>1683502521993</millis>
+  <nanos>159200</nanos>
+  <sequence>44</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 0.7148495181454931</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:21.997157600Z</date>
+  <millis>1683502521997</millis>
+  <nanos>157600</nanos>
+  <sequence>45</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>SP: 1.1382047838777913</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.006160500Z</date>
+  <millis>1683502522006</millis>
+  <nanos>160500</nanos>
+  <sequence>46</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: GD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.007162700Z</date>
+  <millis>1683502522007</millis>
+  <nanos>162700</nanos>
+  <sequence>47</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.020156800Z</date>
+  <millis>1683502522020</millis>
+  <nanos>156800</nanos>
+  <sequence>48</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 6.27742868748093E-4</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.030154800Z</date>
+  <millis>1683502522030</millis>
+  <nanos>154800</nanos>
+  <sequence>49</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.003122140606653739</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.038156600Z</date>
+  <millis>1683502522038</millis>
+  <nanos>156600</nanos>
+  <sequence>50</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.008395060145816874</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.047156800Z</date>
+  <millis>1683502522047</millis>
+  <nanos>156800</nanos>
+  <sequence>51</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.010747503743121818</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.058157200Z</date>
+  <millis>1683502522058</millis>
+  <nanos>157200</nanos>
+  <sequence>52</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.006819550400463401</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.067158100Z</date>
+  <millis>1683502522067</millis>
+  <nanos>158100</nanos>
+  <sequence>53</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.0024804562084978802</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.078183500Z</date>
+  <millis>1683502522078</millis>
+  <nanos>183500</nanos>
+  <sequence>54</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.009244094259795683</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.087161200Z</date>
+  <millis>1683502522087</millis>
+  <nanos>161200</nanos>
+  <sequence>55</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.01182593601620243</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.093155100Z</date>
+  <millis>1683502522093</millis>
+  <nanos>155100</nanos>
+  <sequence>56</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.007068409279107675</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.099157900Z</date>
+  <millis>1683502522099</millis>
+  <nanos>157900</nanos>
+  <sequence>57</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>GD: 0.00794012497292004</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.109159900Z</date>
+  <millis>1683502522109</millis>
+  <nanos>159900</nanos>
+  <sequence>58</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: HV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.110162800Z</date>
+  <millis>1683502522110</millis>
+  <nanos>162800</nanos>
+  <sequence>59</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.120158700Z</date>
+  <millis>1683502522120</millis>
+  <nanos>158700</nanos>
+  <sequence>60</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.7540041563803752</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.125158500Z</date>
+  <millis>1683502522125</millis>
+  <nanos>158500</nanos>
+  <sequence>61</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.7169566739309273</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.129155200Z</date>
+  <millis>1683502522129</millis>
+  <nanos>155200</nanos>
+  <sequence>62</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.7488960907041631</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.133155500Z</date>
+  <millis>1683502522133</millis>
+  <nanos>155500</nanos>
+  <sequence>63</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.463710144550804</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.137158Z</date>
+  <millis>1683502522137</millis>
+  <nanos>158000</nanos>
+  <sequence>64</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.6522521017641533</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.142162500Z</date>
+  <millis>1683502522142</millis>
+  <nanos>162500</nanos>
+  <sequence>65</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.6734983265438805</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.146154Z</date>
+  <millis>1683502522146</millis>
+  <nanos>154000</nanos>
+  <sequence>66</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.47896737386407345</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.152158500Z</date>
+  <millis>1683502522152</millis>
+  <nanos>158500</nanos>
+  <sequence>67</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.5222648856701082</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.158155500Z</date>
+  <millis>1683502522158</millis>
+  <nanos>155500</nanos>
+  <sequence>68</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.7128298105449765</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.163160900Z</date>
+  <millis>1683502522163</millis>
+  <nanos>160900</nanos>
+  <sequence>69</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>HV: 0.5559947115217944</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.172156900Z</date>
+  <millis>1683502522172</millis>
+  <nanos>156900</nanos>
+  <sequence>70</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: NHV</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.173159Z</date>
+  <millis>1683502522173</millis>
+  <nanos>159000</nanos>
+  <sequence>71</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.181156900Z</date>
+  <millis>1683502522181</millis>
+  <nanos>156900</nanos>
+  <sequence>72</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.07086514732712301</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.185162900Z</date>
+  <millis>1683502522185</millis>
+  <nanos>162900</nanos>
+  <sequence>73</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.116517557670341</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.189158300Z</date>
+  <millis>1683502522189</millis>
+  <nanos>158300</nanos>
+  <sequence>74</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.0771596508909953</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.192158900Z</date>
+  <millis>1683502522192</millis>
+  <nanos>158900</nanos>
+  <sequence>75</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.4285850373710969</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.195159600Z</date>
+  <millis>1683502522195</millis>
+  <nanos>159600</nanos>
+  <sequence>76</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.19625090213364205</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.199156600Z</date>
+  <millis>1683502522199</millis>
+  <nanos>156600</nanos>
+  <sequence>77</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.17006986882829234</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.215155300Z</date>
+  <millis>1683502522215</millis>
+  <nanos>155300</nanos>
+  <sequence>78</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.4097840488218647</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.218158500Z</date>
+  <millis>1683502522218</millis>
+  <nanos>158500</nanos>
+  <sequence>79</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.35642993013089597</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.221158300Z</date>
+  <millis>1683502522221</millis>
+  <nanos>158300</nanos>
+  <sequence>80</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.12160295749428063</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.224157200Z</date>
+  <millis>1683502522224</millis>
+  <nanos>157200</nanos>
+  <sequence>81</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>NHV: 0.31486576034722413</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.232156300Z</date>
+  <millis>1683502522232</millis>
+  <nanos>156300</nanos>
+  <sequence>82</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: IGD</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.233158300Z</date>
+  <millis>1683502522233</millis>
+  <nanos>158300</nanos>
+  <sequence>83</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.238155300Z</date>
+  <millis>1683502522238</millis>
+  <nanos>155300</nanos>
+  <sequence>84</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.005139935525585908</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.242155700Z</date>
+  <millis>1683502522242</millis>
+  <nanos>155700</nanos>
+  <sequence>85</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.007356240499621239</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.245155200Z</date>
+  <millis>1683502522245</millis>
+  <nanos>155200</nanos>
+  <sequence>86</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.007510264057299546</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.248156700Z</date>
+  <millis>1683502522248</millis>
+  <nanos>156700</nanos>
+  <sequence>87</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.015311385971631244</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.252156700Z</date>
+  <millis>1683502522252</millis>
+  <nanos>156700</nanos>
+  <sequence>88</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.007367519474462941</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.256154400Z</date>
+  <millis>1683502522256</millis>
+  <nanos>154400</nanos>
+  <sequence>89</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.009756142572532454</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.259158200Z</date>
+  <millis>1683502522259</millis>
+  <nanos>158200</nanos>
+  <sequence>90</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.014927541578969125</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.263158100Z</date>
+  <millis>1683502522263</millis>
+  <nanos>158100</nanos>
+  <sequence>91</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.013556466634896965</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.267159600Z</date>
+  <millis>1683502522267</millis>
+  <nanos>159600</nanos>
+  <sequence>92</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.006781837566000743</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.272160800Z</date>
+  <millis>1683502522272</millis>
+  <nanos>160800</nanos>
+  <sequence>93</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD: 0.012599293209471452</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.280160Z</date>
+  <millis>1683502522280</millis>
+  <nanos>160000</nanos>
+  <sequence>94</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>Computing indicator: IGD+</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.281156900Z</date>
+  <millis>1683502522281</millis>
+  <nanos>156900</nanos>
+  <sequence>95</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>run</method>
+  <thread>1</thread>
+  <message>RF: C:\TM-MSA\pruebas\/NSGAII_2/referenceFronts/ptga.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.295159400Z</date>
+  <millis>1683502522295</millis>
+  <nanos>159400</nanos>
+  <sequence>96</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.0047809688738248025</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.300158300Z</date>
+  <millis>1683502522300</millis>
+  <nanos>158300</nanos>
+  <sequence>97</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.02781712711217117</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.306158100Z</date>
+  <millis>1683502522306</millis>
+  <nanos>158100</nanos>
+  <sequence>98</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.06134998927068432</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.313154900Z</date>
+  <millis>1683502522313</millis>
+  <nanos>154900</nanos>
+  <sequence>99</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.13170694972430858</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.319156400Z</date>
+  <millis>1683502522319</millis>
+  <nanos>156400</nanos>
+  <sequence>100</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.06211676004589747</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.326157600Z</date>
+  <millis>1683502522326</millis>
+  <nanos>157600</nanos>
+  <sequence>101</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.03813841983077142</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.334161100Z</date>
+  <millis>1683502522334</millis>
+  <nanos>161100</nanos>
+  <sequence>102</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.12765552191503057</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.341161400Z</date>
+  <millis>1683502522341</millis>
+  <nanos>161400</nanos>
+  <sequence>103</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.12433961380675579</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.345157200Z</date>
+  <millis>1683502522345</millis>
+  <nanos>157200</nanos>
+  <sequence>104</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.05723513650492748</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.349162100Z</date>
+  <millis>1683502522349</millis>
+  <nanos>162100</nanos>
+  <sequence>105</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>lambda$run$0</method>
+  <thread>1</thread>
+  <message>IGD+: 0.09786563707276735</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.635155700Z</date>
+  <millis>1683502522635</millis>
+  <nanos>155700</nanos>
+  <sequence>106</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>writeSummaryFile</method>
+  <thread>1</thread>
+  <message>Writing org.uma.jmetal.experiment summary file</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.636156200Z</date>
+  <millis>1683502522636</millis>
+  <nanos>156200</nanos>
+  <sequence>107</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Already existing file C:\TM-MSA\pruebas\/NSGAII_2/QualityIndicatorSummary.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.636156200Z</date>
+  <millis>1683502522636</millis>
+  <nanos>156200</nanos>
+  <sequence>108</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>Deleting file C:\TM-MSA\pruebas\/NSGAII_2/QualityIndicatorSummary.csv</message>
+</record>
+<record>
+  <date>2023-05-07T23:35:22.638155200Z</date>
+  <millis>1683502522638</millis>
+  <nanos>155200</nanos>
+  <sequence>109</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators</class>
+  <method>resetFile</method>
+  <thread>1</thread>
+  <message>File successfully deleted.</message>
 </record>
 </log>

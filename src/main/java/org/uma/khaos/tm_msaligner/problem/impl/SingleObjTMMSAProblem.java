@@ -9,38 +9,36 @@ import org.uma.khaos.tm_msaligner.util.AA;
 import java.io.IOException;
 import java.util.List;
 
-public class SingleObjTMMSAProblem  extends StandardTMMSAProblem {
+public class SingleObjTMMSAProblem extends StandardTMMSAProblem {
 
-    private final Score score ;
+  private final Score score;
 
-    public SingleObjTMMSAProblem(String msaProblemFileName, Score score,
-                                 List<String> preComputedFiles) throws IOException {
-        super(msaProblemFileName, preComputedFiles);
+  public SingleObjTMMSAProblem(String msaProblemFileName, Score score,
+      List<String> preComputedFiles) throws IOException {
+    super(msaProblemFileName, preComputedFiles);
 
-        setNumberOfObjectives(1);
-        setName("Single Objective TM-MSA Problem");
+    setNumberOfObjectives(1);
+    setName("Single Objective TM-MSA Problem");
 
-        if (score.getName()=="AlignedSegments"){
-            AlignedSegment scoreAS = (AlignedSegment)score;
-            if (scoreAS.isNormalized()){
-                scoreAS.setMaxSegmentAlignScore(MaxMinSegmentAlignScore[0]);
-                scoreAS.setMinSegmentAlignScore(MaxMinSegmentAlignScore[1]);
-            }
-        }
-
-        this.score = score ;
+    if (score.name() == "AlignedSegments") {
+      AlignedSegment scoreAS = (AlignedSegment) score;
+      if (scoreAS.isNormalized()) {
+        scoreAS.setMaxSegmentAlignScore(MaxMinSegmentAlignScore[0]);
+        scoreAS.setMinSegmentAlignScore(MaxMinSegmentAlignScore[1]);
+      }
     }
 
-    @Override
-    public TM_MSASolution evaluate(TM_MSASolution solution) {
-        solution.removeGapColumns();
-        AA[][] decodedSequences = solution.decodeToMatrix();
+    this.score = score;
+  }
 
-        solution.objectives()[0] = score.compute(solution,decodedSequences) *
-                (score.isAMinimizationScore()?1.0:-1.0);
+  @Override
+  public TM_MSASolution evaluate(TM_MSASolution solution) {
+    solution.removeGapColumns();
+    AA[][] decodedSequences = solution.decodeToMatrix();
 
-        return solution ;
-    }
+    solution.objectives()[0] = score.compute(solution, decodedSequences) *
+        (score.isAMinimizationScore() ? 1.0 : -1.0);
 
-
+    return solution;
+  }
 }

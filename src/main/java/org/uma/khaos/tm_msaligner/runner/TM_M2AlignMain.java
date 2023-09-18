@@ -110,7 +110,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             .build();
         tm_m2align.run();
 
-        List<TM_MSASolution> population = tm_m2align.getResult();
+        List<TM_MSASolution> population = tm_m2align.result();
 
         for (TM_MSASolution solution : population) {
             for (int i = 0; i < problem.numberOfObjectives(); i++) {
@@ -118,8 +118,8 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
             }
         }
 
-        JMetalLogger.logger.info("Total execution time : " + tm_m2align.getTotalComputingTime() + "ms");
-        JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.getNumberOfEvaluations());
+        JMetalLogger.logger.info("Total execution time : " + tm_m2align.totalComputingTime() + "ms");
+        JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.numberOfEvaluations()) ;
 
         DefaultFileOutputContext funFile = new DefaultFileOutputContext(PathOut + "FUN.tsv");
         funFile.setSeparator("\t");

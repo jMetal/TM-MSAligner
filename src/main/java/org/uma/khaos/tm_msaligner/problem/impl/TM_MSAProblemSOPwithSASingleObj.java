@@ -15,37 +15,37 @@ import java.util.List;
 
 public class TM_MSAProblemSOPwithSASingleObj extends StandardTMMSAProblem {
 
-    private final SumOfPairsWithAlignedSegment score ;
+  private final SumOfPairsWithAlignedSegment score;
 
-    public TM_MSAProblemSOPwithSASingleObj(String msaProblemFileName,
-                                           List<String> preComputedFiles,
-                                           double weightGapOpenTM,
-                                           double weightGapExtendTM,
-                                           double weightGapOpenNonTM,
-                                           double weightGapExtendNonTM) throws IOException {
-        super(msaProblemFileName, preComputedFiles);
+  public TM_MSAProblemSOPwithSASingleObj(String msaProblemFileName,
+      List<String> preComputedFiles,
+      double weightGapOpenTM,
+      double weightGapExtendTM,
+      double weightGapOpenNonTM,
+      double weightGapExtendNonTM) throws IOException {
+    super(msaProblemFileName, preComputedFiles);
 
-        setNumberOfObjectives(1);
-        setName("TM-MSA Problem SumOfPairs Wiht Segment Aligned Single Objective");
+    setNumberOfObjectives(1);
+    setName("TM-MSA Problem SumOfPairs Wiht Segment Aligned Single Objective");
 
-        score = new SumOfPairsWithAlignedSegment(MaxMinSegmentAlignScore[1],
-                            MaxMinSegmentAlignScore[0],
-                            weightGapOpenTM,
-                            weightGapExtendTM,
-                            weightGapOpenNonTM,
-                            weightGapExtendNonTM);
-    }
+    score = new SumOfPairsWithAlignedSegment(MaxMinSegmentAlignScore[1],
+        MaxMinSegmentAlignScore[0],
+        weightGapOpenTM,
+        weightGapExtendTM,
+        weightGapOpenNonTM,
+        weightGapExtendNonTM);
+  }
 
-    @Override
-    public TM_MSASolution evaluate(TM_MSASolution solution) {
-        solution.removeGapColumns();
-        AA[][] decodedSequences = solution.decodeToMatrix();
+  @Override
+  public TM_MSASolution evaluate(TM_MSASolution solution) {
+    solution.removeGapColumns();
+    AA[][] decodedSequences = solution.decodeToMatrix();
 
-        solution.objectives()[0] = score.compute(solution,decodedSequences) *
-                (score.isAMinimizationScore()?1.0:-1.0);
+    solution.objectives()[0] = score.compute(solution, decodedSequences) *
+        (score.isAMinimizationScore() ? 1.0 : -1.0);
 
-        return solution ;
-    }
+    return solution;
+  }
 
 
 }

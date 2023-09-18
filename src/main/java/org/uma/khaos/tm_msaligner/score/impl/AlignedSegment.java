@@ -1,6 +1,5 @@
 package org.uma.khaos.tm_msaligner.score.impl;
 
-
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AA;
@@ -11,13 +10,25 @@ public class AlignedSegment implements Score {
   long MaxSegmentAlignScore;
   long MinSegmentAlignScore;
 
-  public  AlignedSegment(){    this.Normalized = false;  }
-  public  AlignedSegment(boolean Normalized){    this.Normalized = Normalized;  }
+  public AlignedSegment() {
+    this.Normalized = false;
+  }
 
-  public void setMaxSegmentAlignScore(long MaxSegmentAlignScore){    this.MaxSegmentAlignScore = MaxSegmentAlignScore;  }
-  public void setMinSegmentAlignScore(long MinSegmentAlignScore){    this.MinSegmentAlignScore = MinSegmentAlignScore;  }
+  public AlignedSegment(boolean Normalized) {
+    this.Normalized = Normalized;
+  }
 
-  public boolean isNormalized() {    return this.Normalized;  }
+  public void setMaxSegmentAlignScore(long MaxSegmentAlignScore) {
+    this.MaxSegmentAlignScore = MaxSegmentAlignScore;
+  }
+
+  public void setMinSegmentAlignScore(long MinSegmentAlignScore) {
+    this.MinSegmentAlignScore = MinSegmentAlignScore;
+  }
+
+  public boolean isNormalized() {
+    return this.Normalized;
+  }
 
   public String getName() {
     return "AlignedSegments";
@@ -28,18 +39,20 @@ public class AlignedSegment implements Score {
   }
 
   public int getMatch(AA A, AA B) {
-      if(A.getType().isTMRegion()){
-        if(B.getType().isTMRegion())
-          return A.getLetter()==B.getLetter()?4:2;
-        else
-          return 0;
-      }else{
-        if(B.getType().isNonTMRegion())
-          return A.getLetter()==B.getLetter()?2:1;
-        else
-          return 0;
-
+    if (A.getType().isTMRegion()) {
+      if (B.getType().isTMRegion()) {
+        return A.getLetter() == B.getLetter() ? 4 : 2;
+      } else {
+        return 0;
       }
+    } else {
+      if (B.getType().isNonTMRegion()) {
+        return A.getLetter() == B.getLetter() ? 2 : 1;
+      } else {
+        return 0;
+      }
+
+    }
   }
 
   public <S extends TM_MSASolution> double compute(S solution, AA[][] decodedSequences) {
@@ -51,11 +64,11 @@ public class AlignedSegment implements Score {
     int i, j;
     for (int l = 0; l < lengthSequences; l++) {
       for (i = 0; i < numberOfVariables - 1; i++) {
-        if(!decodedSequences[i][l].isGap()){
+        if (!decodedSequences[i][l].isGap()) {
           for (j = i + 1; j < numberOfVariables; j++) {
-            if(!decodedSequences[j][l].isGap()) {
+            if (!decodedSequences[j][l].isGap()) {
               sumAlignedSegments +=
-                      getMatch(decodedSequences[i][l], decodedSequences[j][l]);
+                  getMatch(decodedSequences[i][l], decodedSequences[j][l]);
             }
           }
         }
@@ -63,12 +76,25 @@ public class AlignedSegment implements Score {
     }
 
     if (isNormalized()) {
-      return (sumAlignedSegments - MinSegmentAlignScore)/(MaxSegmentAlignScore - MinSegmentAlignScore);
-    }else{
+      return (sumAlignedSegments - MinSegmentAlignScore) / (MaxSegmentAlignScore
+          - MinSegmentAlignScore);
+    } else {
       return sumAlignedSegments;
     }
 
   }
 
-  public boolean isAMinimizationScore() {    return false;  }
+  public boolean isAMinimizationScore() {
+    return false;
+  }
+
+  @Override
+  public String name() {
+    return "Aligned segment score" ;
+  }
+
+  @Override
+  public String description() {
+    return "Aligned segment score" ;
+  }
 }

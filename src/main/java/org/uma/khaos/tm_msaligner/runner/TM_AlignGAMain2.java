@@ -81,12 +81,12 @@ public class TM_AlignGAMain2 extends AbstractAlgorithmRunner {
 
         tm_alignga.run();
 
-        List<TM_MSASolution> population = tm_alignga.getResult();
+        List<TM_MSASolution> population = tm_alignga.result();
         for (TM_MSASolution solution : population)
             solution.objectives()[0] *= -1.0;
 
 
-        JMetalLogger.logger.info("Total execution time : " + tm_alignga.getTotalComputingTime()  + "ms");
+        JMetalLogger.logger.info("Total execution time : " + tm_alignga.totalComputingTime()  + "ms");
         JMetalLogger.logger.info("Best found solution: " + population.get(0).objectives()[0]) ;
 
         File dir=new File(PathOut);

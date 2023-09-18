@@ -84,4 +84,14 @@ public class SumOfPairsWithTopologyPredict implements Score {
   }
 
   public boolean isAMinimizationScore() {    return false;  }
+
+  @Override
+  public String name() {
+    return "Sum of pairs with topology predict" ;
+  }
+
+  @Override
+  public String description() {
+    return "Sum of pairs with topology predicr" ;
+  }
 }

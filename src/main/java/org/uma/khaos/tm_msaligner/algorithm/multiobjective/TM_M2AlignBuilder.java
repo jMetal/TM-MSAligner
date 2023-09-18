@@ -64,7 +64,7 @@ public class TM_M2AlignBuilder{
                 new MultiComparator<>(
                         Arrays.asList(
                                 Comparator.comparing(ranking::getRank),
-                                Comparator.comparing(densityEstimator::getValue).reversed())));
+                                Comparator.comparing(densityEstimator::value).reversed())));
 
 
         createInitialPopulation = new PreComputedMSAsSolutionsCreation(problem, populationSize);

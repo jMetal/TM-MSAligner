@@ -53,4 +53,14 @@ public class SumOfPairsWithAlignedSegment implements Score {
     return (SOP * normSA) + SOP;
 
   }
+
+  @Override
+  public String name() {
+    return "Sum of pairs with alignment segment" ;
+  }
+
+  @Override
+  public String description() {
+    return "Sum of pairs with alignment segment" ;
+  }
 }

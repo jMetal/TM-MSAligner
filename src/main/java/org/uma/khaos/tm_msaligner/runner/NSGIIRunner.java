@@ -1,10 +1,7 @@
 package org.uma.khaos.tm_msaligner.runner;
 
-import static org.uma.jmetal.util.VectorUtils.readVectors;
-import static org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain2.printMSAToFile;
 
-import java.io.BufferedWriter;
-import java.io.File;
+import static org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain2.printMSAToFile;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +16,6 @@ import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.jmetal.util.observer.impl.FrontPlotObserver;
-import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
-import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2AlignBuilder;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;

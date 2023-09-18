@@ -1,43 +1,19 @@
 package org.uma.khaos.tm_msaligner.runner;
 
-import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
-import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
-import org.uma.jmetal.component.catalogue.ea.replacement.Replacement;
-import org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement;
-import org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityEstimatorReplacement;
-import org.uma.jmetal.component.catalogue.ea.selection.Selection;
-import org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection;
-import org.uma.jmetal.component.catalogue.ea.variation.Variation;
-import org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation;
-import org.uma.jmetal.operator.crossover.CrossoverOperator;
-import org.uma.jmetal.operator.mutation.MutationOperator;
-import org.uma.jmetal.solution.doublesolution.DoubleSolution;
+
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
-import org.uma.jmetal.util.comparator.MultiComparator;
-import org.uma.jmetal.util.comparator.ObjectiveComparator;
-import org.uma.jmetal.util.densityestimator.DensityEstimator;
-import org.uma.jmetal.util.densityestimator.impl.CrowdingDistanceDensityEstimator;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import org.uma.jmetal.util.observer.impl.FrontPlotObserver;
-import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import org.uma.jmetal.util.ranking.Ranking;
-import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2AlignBuilder;
-import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
-import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
-import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.MultiObjTMMSAProblem;
-import org.uma.khaos.tm_msaligner.problem.impl.SingleObjTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
 import org.uma.khaos.tm_msaligner.util.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
@@ -46,8 +22,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class TM_M2AlignMain extends AbstractAlgorithmRunner {

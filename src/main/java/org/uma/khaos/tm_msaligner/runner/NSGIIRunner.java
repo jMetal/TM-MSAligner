@@ -53,10 +53,10 @@ public class NSGIIRunner {
     int populationSize = 100 ;
     int offspringPopulationSize = populationSize ;
     int numberOfCores = 1 ;
-    String refName = "7tm" ;
-    String benchmarkPath = "ref7/" + refName + "/" ;
-    String preComputedMSAPath = benchmarkPath ;
-    String outputFolder = "output" ;
+    String refName = "dtd" ;
+    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
+    String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
+    String outputFolder = "data/pruebas/ref7/" + refName + "/" ;
 
     double probabilityCrossover = 0.8;
     double probabilityMutation = 0.2;
@@ -81,9 +81,9 @@ public class NSGIIRunner {
     List<String> preComputedFiles = new ArrayList<String>();
     preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
     preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta");
-    preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refname + "muscle.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.fasta");
+    //preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
+    //preComputedFiles.add(preComputedMSAPath + refName + "muscle.fasta");
+    preComputedFiles.add(preComputedMSAPath + refName + "t_coffee.fasta");
     //preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
     //preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
 
@@ -104,6 +104,7 @@ public class NSGIIRunner {
         .setTermination(termination)
         .setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
         .build();
+
 
     var chartObserver =
         new FrontPlotObserver<DoubleSolution>("NSGA-II", "F1", "F2", problem.name(), 500);

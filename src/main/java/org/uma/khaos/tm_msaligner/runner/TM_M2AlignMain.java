@@ -11,6 +11,7 @@ import org.uma.jmetal.component.catalogue.ea.variation.Variation;
 import org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation;
 import org.uma.jmetal.operator.crossover.CrossoverOperator;
 import org.uma.jmetal.operator.mutation.MutationOperator;
+import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.comparator.MultiComparator;
@@ -20,6 +21,7 @@ import org.uma.jmetal.util.densityestimator.impl.CrowdingDistanceDensityEstimato
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
+import org.uma.jmetal.util.observer.impl.FrontPlotObserver;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.jmetal.util.ranking.Ranking;
 import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
@@ -36,6 +38,7 @@ import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
+import org.uma.khaos.tm_msaligner.util.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
@@ -51,7 +54,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
-        if (args.length != 8) {
+        /*if (args.length != 8) {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
@@ -62,7 +65,17 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String refname = args[3]; // "7tm";
         String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-        String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
+        String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
+
+        int maxEvaluations = 25000 ;
+        int populationSize = 100 ;
+        int offspringPopulationSize = populationSize ;
+        int numberOfCores = 1 ;
+        String refName = "ptga" ;
+        String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
+        String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
+        String outputFolder = "data/pruebas/ref7/" + refName + "/" ;
+
 
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
@@ -85,19 +98,19 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         scoreList.add(new AlignedSegment());
 
 
-        String dataFile = benchmarkPath + refname + "_predicted_topologies.3line";
+        String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
 
         List<String> preComputedFiles = new ArrayList<String>();
-        preComputedFiles.add(preComputedMSAPath + refname + "kalign.fasta");
-        preComputedFiles.add(preComputedMSAPath + refname + "mafft.fasta" );
-        preComputedFiles.add(preComputedMSAPath + refname + "clustalw.fasta");
-        //preComputedFiles.add(preComputedMSAPath + refname + "muscle.fasta");
-        //preComputedFiles.add(preComputedMSAPath + refname + "t_coffee.fasta");
-        //preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
-        //preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta" );
+        preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "muscle.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "t_coffee.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "tmt_coffee2023.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refName + "praline.fasta");
 
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
-                                    preComputedFiles,refname);
+                                    preComputedFiles,refName);
 
 
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
@@ -108,6 +121,11 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             probabilityMutation,
                             numberOfCores)
                             .build();
+
+        var chartObserver =
+                new FrontPlotTM_MSAObserver<TM_MSASolution>("TM-M2Align", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+        tm_m2align.observable().register(chartObserver);
+
         tm_m2align.run();
 
         List<TM_MSASolution> population = tm_m2align.result();
@@ -121,13 +139,13 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         JMetalLogger.logger.info("Total execution time : " + tm_m2align.totalComputingTime() + "ms");
         JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.numberOfEvaluations()) ;
 
-        DefaultFileOutputContext funFile = new DefaultFileOutputContext(PathOut + "FUN.tsv");
+        DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN.tsv");
         funFile.setSeparator("\t");
 
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        printMSAToFile(population, PathOut);
+        printMSAToFile(population, outputFolder);
 
 
     }

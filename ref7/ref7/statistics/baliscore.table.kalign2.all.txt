@@ -1,0 +1,8 @@
+alnRef7/ref7_test_acr_ref7.fa.kalign.msf	0.969	 0.620
+alnRef7/ref7_test_dtd_ref7.fa.kalign.msf	0.961	 0.580
+alnRef7/ref7_test_7tm_ref7.fa.kalign.msf	0.938	 0.360
+alnRef7/ref7_test_msl_ref7.fa.kalign.msf	0.936	 0.850
+alnRef7/ref7_test_photo_ref7.fa.kalign.msf	0.928	 0.440
+alnRef7/ref7_test_ptga_ref7.fa.kalign.msf	0.826	 0.320
+alnRef7/ref7_test_ion_ref7.fa.kalign.msf	0.810	 0.130
+alnRef7/ref7_test_Nat_ref7.fa.kalign.msf	0.765	 0.190

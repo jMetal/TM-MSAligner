@@ -1,0 +1,8 @@
+alnRef7/ref7_test_acr_ref7.fa.mafft.msf	0.972	 0.630
+alnRef7/ref7_test_dtd_ref7.fa.mafft.msf	0.937	 0.290
+alnRef7/ref7_test_msl_ref7.fa.mafft.msf	0.936	 0.850
+alnRef7/ref7_test_7tm_ref7.fa.mafft.msf	0.903	 0.270
+alnRef7/ref7_test_photo_ref7.fa.mafft.msf	0.900	 0.400
+alnRef7/ref7_test_ion_ref7.fa.mafft.msf	0.791	 0.140
+alnRef7/ref7_test_ptga_ref7.fa.mafft.msf	0.767	 0.170
+alnRef7/ref7_test_Nat_ref7.fa.mafft.msf	0.753	 0.050

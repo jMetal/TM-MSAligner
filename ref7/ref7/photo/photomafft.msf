@@ -1,0 +1,421 @@
+!!AA_MULTIPLE_ALIGNMENT
+
+ Q9UW81  MSF: 483  Type: P  Jan 27, 2011  21:43  Check: 0 ..
+
+ Name: BACH_HALHP       Len:   483  Check: 5985  Weight:  1.00
+ Name: BACH_HALHS       Len:   483  Check: 7868  Weight:  1.00
+ Name: BACH_HALVA       Len:   483  Check: 5236  Weight:  1.00
+ Name: BACH_HALSS       Len:   483  Check: 1712  Weight:  1.00
+ Name: O93742           Len:   483  Check:  155  Weight:  1.00
+ Name: BACH_HALHM       Len:   483  Check: 4434  Weight:  1.00
+ Name: BACH_NATPH       Len:   483  Check: 5808  Weight:  1.00
+ Name: BACH_HALSP       Len:   483  Check: 2926  Weight:  1.00
+ Name: O93741           Len:   483  Check: 5609  Weight:  1.00
+ Name: BACT_HALVA       Len:   483  Check: 4752  Weight:  1.00
+ Name: BACT_NATPH       Len:   483  Check: 6479  Weight:  1.00
+ Name: BACT_HALSA       Len:   483  Check: 6751  Weight:  1.00
+ Name: BACS_HALHA       Len:   483  Check: 9415  Weight:  1.00
+ Name: BAC3_HALVA       Len:   483  Check: 6696  Weight:  1.00
+ Name: O93743           Len:   483  Check: 5095  Weight:  1.00
+ Name: BACS_HALSS       Len:   483  Check: 2262  Weight:  1.00
+ Name: BACR_HALHA       Len:   483  Check: 7716  Weight:  1.00
+ Name: BAC3_HALSD       Len:   483  Check: 2216  Weight:  1.00
+ Name: BAC1_HALS1       Len:   483  Check: 3294  Weight:  1.00
+ Name: BAC2_HALS2       Len:   483  Check:   23  Weight:  1.00
+ Name: BACR_HALHM       Len:   483  Check: 9886  Weight:  1.00
+ Name: BACR_HALAR       Len:   483  Check: 7749  Weight:  1.00
+ Name: BACR_HALHP       Len:   483  Check: 4057  Weight:  1.00
+ Name: BACR_HALVA       Len:   483  Check: 7428  Weight:  1.00
+ Name: BACR_HALHS       Len:   483  Check:  553  Weight:  1.00
+ Name: BACR_HALSR       Len:   483  Check: 4465  Weight:  1.00
+ Name: O93740           Len:   483  Check: 7208  Weight:  1.00
+ Name: F123_CORVE       Len:   483  Check: 4788  Weight:  1.00
+ Name: YRO2_YEAST       Len:   483  Check: 8795  Weight:  1.00
+ Name: YD33_YEAST       Len:   483  Check: 2987  Weight:  1.00
+ Name: HS30_YEAST       Len:   483  Check: 9574  Weight:  1.00
+ Name: O74870           Len:   483  Check: 2191  Weight:  1.00
+ Name: Q9UW81           Len:   483  Check: 5768  Weight:  1.00
+//
+
+     BACH_HALHP  ---------- ---------- MTAASTTATT MLQATQSDVL QEIQSNFLLN
+     BACH_HALHS  ---------- ---------- MTAVSTTATT VLQATQSDVL QEIQSNFLLN
+     BACH_HALVA  ---------- ---------- MPAASTAATT LLQASQSEVL GEIQSNFLLN
+     BACH_HALSS  ---------- -----MIETA AADILAGGMV PLEMTQTQIF EAVQSDTLLA
+         O93742  ---------- -----MMET- AADALASGTV PLEMTQTQIF EAIQGDTLLA
+     BACH_HALHM  ---------- ---------- ---------- ---------- ----------
+     BACH_NATPH  ---------- -----MTETL PPVTESAVAL QAEVTQRELF EFVLNDPLLA
+     BACH_HALSP  --------MS ITSVPGV--- -----VDAG- ---VLGAQSA AAVRENALLS
+         O93741  MRSRTYHDQS VCGPYGSQRT DCDRDTDAGS DTDVHGAQVA TQIRTDTLLH
+     BACT_HALVA  ---------- ---------- ---------- ---------- -----MATIT
+     BACT_NATPH  ---------- ---------- ---------- ---------- -----MVGLT
+     BACT_HALSA  ---------- ---------- ---------- ---------- -----MA-LT
+     BACS_HALHA  ---------- ---------- ---------- ---------- -----MDAVA
+     BAC3_HALVA  ---------- ---------- ---------- ---------- -----MDAVA
+         O93743  ---------- ---------- ---------- ---------- ----MTGAVT
+     BACS_HALSS  ---------- ---------- ---------- ---------- ----MTGAVS
+     BACR_HALHA  ---------- ---------- --MLELLPTA VEGVSQAQI- -TGRPEWIW-
+     BAC3_HALSD  ---------- ---------- -----MDPIA LQA--GYDLL GDGRPETLW-
+     BAC1_HALS1  ---------- ---------- -----MDPIA LTAAVGADLL GDGRPETLW-
+     BAC2_HALS2  ---------- ---------- -----MDPIA LQA--GFDLL NDGRPETLW-
+     BACR_HALHM  ---------- ---------- ---------- ---------- ----------
+     BACR_HALAR  ---------- ---------- ---------- ---------M PEPGSEAIW-
+     BACR_HALHP  ---------- ---------- ---------- ---------- -------IW-
+     BACR_HALVA  ---------- ---------- ---------- ---------M PAPEGEAIW-
+     BACR_HALHS  ---------- ---------- ---------- ---------- ----------
+     BACR_HALSR  ---------- ---------- ---------- --MLQSGMST YVPGGESIF-
+         O93740  ---------- ---------- --------MC CAALAPPMAA TV-GPESIW-
+     F123_CORVE  ---------- ---------- ---------- ---------- ----------
+     YRO2_YEAST  ---------- ---------- ---------- ---------- --MSDYVELL
+     YD33_YEAST  ---------- ---------- ---------- ---------- --MSTFETLI
+     HS30_YEAST  ---------- ---------- ---------- ---------- -MNDTLSSFL
+         O74870  ---------- ---------- ---------- --------MN AKLSSSGMVL
+         Q9UW81  ---------- ---------- ---------- --MIHPEQVA DMLRPTTSTT
+
+     BACH_HALHP  SS-------- ---------- --------IW VNIALAGVVI LLFVAMGRDI
+     BACH_HALHS  SS-------- ---------- --------IW VNIALAGVVI LLFVAMGRDL
+     BACH_HALVA  SS-------- ---------- --------LW VNIALAGVVI LLFVAMGREL
+     BACH_HALSS  SS-------- ---------- --------LW INIALAGLSI LLFVYMGRNV
+         O93742  SS-------- ---------- --------LW INIALAGLSI LLFVYMGRNL
+     BACH_HALHM  ---------- ---------- ---------- --IALAGLSI LLFVYMGRNV
+     BACH_NATPH  SS-------- ---------- --------LY INIALAGLSI LLFVFMTRGL
+     BACH_HALSP  SS-------- ---------- --------LW VNVALAGIAI LVFVYMGRTI
+         O93741  SS-------- ---------- --------LW VNIALAGLSI LVFLYMARTV
+     BACT_HALVA  TW-------- ---------- --------FT LGLLGELLGT AVLAYGYTLV
+     BACT_NATPH  TL-------- ---------- --------FW LGAIGMLVGT LAFAWAGRDA
+     BACT_HALSA  TW-------- ---------- --------FW VGAVGMLAG- -------TVL
+     BACS_HALHA  TA-------- ---------- --------YL GGAVALIVGV AFVWLLYRSL
+     BAC3_HALVA  VV-------- ---------- --------YG ITAAGFAVGV AIVGYLYASL
+         O93743  SA-------- ---------- --------YW LAAVAFLIGV GITAALYAKL
+     BACS_HALSS  AA-------- ---------- --------YW IAAVAFLVGL GITAALYAKL
+     BACR_HALHA  ---------- ---------- --------LA LGTALMGLGT LYFLVKGMGV
+     BAC3_HALSD  ---------- ---------- --------LG IGTLLMLIGT FYFLVRGWGV
+     BAC1_HALS1  ---------- ---------- --------LG IGTLLMLIGT FYFIVKGWGV
+     BAC2_HALS2  ---------- ---------- --------LG IGTLLMLIGT FYFIARGWGV
+     BACR_HALHM  ---------- ---------- ---------G IGTLLMLIGT FYFIARGWGV
+     BACR_HALAR  ---------- ---------- --------LW LGTAGMFLGM LYFIARGWGE
+     BACR_HALHP  ---------- ---------- --------LW LGTAGMFLGM LYFIARGWGE
+     BACR_HALVA  ---------- ---------- --------LW LGTAGMFLGM LYFIARGWGE
+     BACR_HALHS  ---------- ---------- --------LW LGTAGMFLGM LYFIARGWGE
+     BACR_HALSR  ---------- ---------- --------LW VGTAGMFLGM LYFIARGWSV
+         O93740  ---------- ---------- --------LW IGTIGMTLGT LYFVGRGRGV
+     F123_CORVE  --MGNSALDL NPPN-ATFHL STHGSDWLWA AFSV---FGV SLLTVVAWTF
+     YRO2_YEAST  KRGGNEAIKI NPPTGADFHI TSRGSDWLFT VFCVNLLFGV ILVPLM---F
+     YD33_YEAST  KRGGNEAIKI NPPTGADFHI TSRGSDWFWT CFCCYLLFGL ILTFLM---F
+     HS30_YEAST  NR--NEALGL NPPHGLDMHI TKRGSDWLWA VFAV---FGF ILLCYVVMFF
+         O74870  KELPEVALQ- ---------- -KISSNYYWA VFAVFLLCAI VFPLVSI--F
+         Q9UW81  SSHVPGPVPT VVPTPTEYQT LGETGHRTLW VTFALMVLSS GIFALLSWNV
+
+     BACH_HALHP  E------SPR AK---LIWVA TMLVPLVSI- ----SSYAGL ASGLTVG---
+     BACH_HALHS  E------SPR AK---LIWVA TMLVPLVSI- ----SSYAGL ASGLTVG---
+     BACH_HALVA  E------SSR AK---LIWVA TMLVPLVSI- ----SSYAGL ASGLTVG---
+     BACH_HALSS  E------DPR AQ---LIFVA TLMVPLVSI- ----SSYTGL VSGLTVS---
+         O93742  E------DPR AQ---LIFVA TLMVPLVSI- ----SSYTGL VSGLTVS---
+     BACH_HALHM  E------DPR AQ---LIFVA TLMVPLVSI- ----SSYTGL VSGLTVG---
+     BACH_NATPH  D------DPR AK---LIAVS TILVPVVSI- ----ASYTGL ASGLTIS---
+     BACH_HALSP  R------PGR PR---LIWGA TLMIPLVSI- ----SSYLGL LSGLTVG---
+         O93741  R------ANR AR---LIVGA TLMIPLVSL- ----SSYLGL VTGLTAG---
+     BACT_HALVA  P------EET RK---RY-LL LIAIPGIAI- ----VAYALM ALGFGSI---
+     BACT_NATPH  -------GSG ER---RYYVT LVGISGIAA- ----VAYVVM ALGVGWV---
+     BACT_HALSA  PIRDCIRHPS HR---RYDLV LAGITGLAA- ----IAYTTM GLGITAT---
+     BACS_HALHA  D------GSP HQ---SALAP LAIIPVFAG- ----LSYVGM AYDIGTV---
+     BAC3_HALVA  E------GSE ER---SILAA LALIPGFAG- ----ISYVAM AFGIGTV---
+         O93743  E------GSR AR---TRLAA LAVIPGFAG- ----LSYVGM ALGIGTV---
+     BACS_HALSS  G------ESE DR---GRLAA LAVIPGFAG- ----LAYAGM ALGIGTV---
+     BACR_HALHA  S------DPD AK---KFYAI TTLVPAIAF- ----TMYLSM LLGYGLT---
+     BAC3_HALSD  T------DKD AR---EYYAV TILVPGIAS- ----AAYLSM FFGIGLT---
+     BAC1_HALS1  T------DKE AR---EYYSI TILVPGIAS- ----AAYLSM FFGIGLT---
+     BAC2_HALS2  T------DKE AR---EYYAI TILVPGIAS- ----AAYLAM FFGIGVT---
+     BACR_HALHM  T------DKK AR---EYYAI TILVPGIAS- ----AAYLSM FFGIGLT---
+     BACR_HALAR  T------DSR RQ---KFYIA TILITAIAF- ----VNYLAM ALGFGLT---
+     BACR_HALHP  T------DSR RQ---KFYIA TILITAIAF- ----VNYLAM ALGFGLT---
+     BACR_HALVA  T------DSR RQ---KFYIA TILITAIAF- ----VNYLAM ALGFGLT---
+     BACR_HALHS  T------DGR RQ---KFYIA TILITAIAF- ----VNYLAM ALGFGLT---
+     BACR_HALSR  S------DQR RQ---KFYIA TIMIAAIAF- ----VNYLSM ALGFGVT---
+         O93740  R------DRK MQ---EFYII TIFITTIAA- ----AMYFAM ATGFGVT---
+     F123_CORVE  T------RPR GA---RLFHQ IAIVVLTTGS ----LAYFSM ASDLGAT---
+     YRO2_YEAST  R------KPV KD---RFVYY TAIAPNLFMS ----IAYFTM ASNLGWI---
+     YD33_YEAST  R------KPV ND---RFFYL TGIAPNFFMC ----IAYFTM ASNLGWI---
+     HS30_YEAST  I------AEN KG---SRLTR YALAPAFLIT FFEFFAFFTY ASDLGWT---
+         O74870  S------LPQ KQTYHRFFSI LSLVSC---- ----LAYFTM ACNYGLK---
+         Q9UW81  P-------TS KR---LFHVI TTLITVVAS- ----LSYFAM ATGHATTFNC
+
+     BACH_HALHP  ---------- -----FLQMP PGHALAG--Q ------E--- -VLSPWGRYL
+     BACH_HALHS  ---------- -----FLQMP PGHALAG--Q ------E--- -VLSPWGRYL
+     BACH_HALVA  ---------- -----FLQMP PGHALAG--Q ------E--- -VLSPWGRYL
+     BACH_HALSS  ---------- -----FLEMP AGHALAG--Q ------E--- -VLTPWGRYL
+         O93742  ---------- -----FLEMP AGHALAG--Q ------E--- -VLTPWGRYL
+     BACH_HALHM  ---------- -----FLEMP AGHALAG--M GAGPEGG--- -VFTPWGRYL
+     BACH_NATPH  ---------- -----VLEMP AGHFAEG--S SVMLGGEEVD GVVTMWGRYL
+     BACH_HALSP  ---------- -----MIEMP AGHALAG--E M--------- -VRSQWGRYL
+         O93741  ---------- -----PIEMP AAHALAG--E D--------- -VLSQWGRYL
+     BACT_HALVA  ---------- -----QSE-- ------G--- ---------- -HAVYVVRYV
+     BACT_NATPH  ---------- -----PVA-- ------E--- ---------- -RTVFAPRYI
+     BACT_HALSA  ---------- -----TVG-- ------D--- ---------- -RTVYLARYI
+     BACS_HALHA  ---------- -----IVN-- ------G--- ---------- -NQIVGLRYI
+     BAC3_HALVA  ---------- -----TIG-- ------E--- ---------- -TTLVGFRYL
+         O93743  ---------- -----TVN-- ------G--- ---------- -AELVGLRYV
+     BACS_HALSS  ---------- -----TVN-- ------G--- ---------- -AELVGLRYV
+     BACR_HALHA  ---------- -----MVP-- ----FGG--E Q--------- -NPIYWARYA
+     BAC3_HALSD  ---------- -----EVT-- ----V-G-GE M--------- -LDIYYARYA
+     BAC1_HALS1  ---------- -----EVQ-- ----V-G-SE M--------- -LDIYYARYA
+     BAC2_HALS2  ---------- -----EVE-- ----LAS-GT V--------- -LDIYYARYA
+     BACR_HALHM  ---------- -----TVE-- ----VAGMAE P--------- -LEIYYARYA
+     BACR_HALAR  ---------- -----IVE-- ----FAG--E E--------- -HPIYWARYS
+     BACR_HALHP  ---------- -----IVE-- ----FAG--E E--------- -HPIYWARYS
+     BACR_HALVA  ---------- -----IVE-- ----IAG--E Q--------- -RPIYWARYS
+     BACR_HALHS  ---------- -----FIE-- ----FGG--E Q--------- -HPIYWARYT
+     BACR_HALSR  ---------- -----TIE-- ----LGG--E E--------- -RAIYWARYT
+         O93740  ---------- -----EVM-- ----VGD--E A--------- -LTIYWARYA
+     F123_CORVE  ---------- -----PVPVE F--------- RG--EGT--- -RQIWFVRYI
+     YRO2_YEAST  ---------- -----PVRAK YNHVQTSTQK EH--PGY--- -RQIFYARYV
+     YD33_YEAST  ---------- -----PVKAK YNHVQTSTQK EH--PGY--- -RQIFYSRFV
+     HS30_YEAST  ---------- -----GVQAE FNHVKVSKSI TGEVPGI--- -RQIFYSKYI
+         O74870  ---------- -----NVFSS ASFFRE---- ----VSV--- -RMVYYVRYI
+         Q9UW81  DTAWDHHKHV PDTSHQVC-- ---------- ---------- -RQVFWGRYV
+
+     BACH_HALHP  TWTFSTPMIL LALGLLADTD ---------- -IASLFTAIT MDIGMCVTGL
+     BACH_HALHS  TWTFSTPMIL LALGLLADTD ---------- -IASLFTAIT MDIGMCVTGL
+     BACH_HALVA  TWTFSTPMIL LALGLLADTD ---------- -MASLFTAIT MDIGMCITGL
+     BACH_HALSS  TWALSTPMIL IAVGLLAGSN ---------- -TTKLFTAVV ADIGMCVTGL
+         O93742  TWALSTPMIL VALGLLAGSN ---------- -ATKLFTAVT ADIGMCVTGL
+     BACH_HALHM  TWAFSTPMIL IALGLLAGSN ---------- -MSKLFTAVV ADVGMCITGL
+     BACH_NATPH  TWALSTPMIL LALGLLAGSN ---------- -ATKLFTAIT FDIAMCVTGL
+     BACH_HALSP  TWALSTPMIL LALGLLADVD ---------- -LGSLFTVIA ADIGMCVTGL
+         O93741  TWTLSTPMIL LALGWLAEVD ---------- -TADLFVVIA ADIGMCLTGL
+     BACT_HALVA  DWLLTTPLNV WFLALLAGAS ---------- -REDTVKLVV LQALTIVFGF
+     BACT_NATPH  DWILTTPLIV YFLGLLAGLD ---------- -SREFGIVIT LNTVVMLAGF
+     BACT_HALSA  DWLVTTPLIV LYLAMLARPG ---------- -HRTSAWLLA ADVFVIAAGI
+     BACS_HALHA  DWLVTTPILV GYVGYAAGAS ---------- -RRSIIGVMV ADALMIAVGA
+     BAC3_HALVA  DWVVTTPLLV GFVGYAAGAS ---------- -RRAIFGVMV ADALMILTGV
+         O93743  DWVVTTPLLV GFIGYNAGAS ---------- -RRAIAGVMI ADALMIVFGA
+     BACS_HALSS  DWIVTTPLLV GFIGYVAGAS ---------- -RRAIAGVML ADALMIAFGA
+     BACR_HALHA  DWLFTTPLLL LDLALLVDAD ---------- -QGTILALVG ADGIMIGTGL
+     BAC3_HALSD  DWLFTTPLLL LDLALLAKVD ---------- -RVTIGTLVG VDALMIVTGL
+     BAC1_HALS1  DWLFTTPLLL LDLALLAKVD ---------- -RVSIGTLVG VDALMIVTGL
+     BAC2_HALS2  DWLFTTPLLL LDLALLAKVD ---------- -RVTIGTLIG VDALMIVTGL
+     BACR_HALHM  DWLFTTPLLL LDLALLANAD ---------- -RTTIGTLIG VDALMIVTGL
+     BACR_HALAR  DWLFTTPLLL YDLGLLAGAD ---------- -RNTITSLVS LDVLMIGTGL
+     BACR_HALHP  DWLFTTPLLL YDLGLLAGAD ---------- -RNTITSLVS LDVLMIGTGL
+     BACR_HALVA  DWLFTTPLLL YDLGLLAGAD ---------- -RNTISSLVS LDVLMIGTGL
+     BACR_HALHS  DWLFTTPLLL YDLGLLAGAD ---------- -RNTIYSLVS LDVLMIGTGV
+     BACR_HALSR  DWLFTTPLLL YDLALLAGAD ---------- -RNTIYSLVG LDVLMIGTGA
+         O93740  DWLFTTPLLL LDLSLLAGAN ---------- -RNTIATLIG LDVFMIGTGA
+     F123_CORVE  QWFITFPLLL LELLLATGLS ---------- -LSDIFTTLF MSIVLVITGL
+     YRO2_YEAST  GWFLAFPWPI IQMSLLGGTP ---------- -LWQIAFNVG MTEIFTVCWL
+     YD33_YEAST  GWFLALPWPI IQICMLAGTP ---------- -FWQMAFNVC ITEFFTVCWL
+     HS30_YEAST  AWFLSWPCLL FLIELAASTT GENDDISALD MVHSLLIQIV GTLFWVVSLL
+         O74870  QWLINFPLII VMLHWTVGVS ---------- -ILEIAYVVC YVLFAIVCLL
+         Q9UW81  DWALTTPLLL LELCLLAGVD ---------- -GAHTLMAIV ADVIMVLCGL
+
+     BACH_HALHP  AAALITSSHL L-----RWVF YGISCAFFVA --VLYVLL-- --VQWPADAE
+     BACH_HALHS  AAALITSSHL L-----RWVF YGISCAFFVA --VLYVLL-- --VQWPADAE
+     BACH_HALVA  AAALVTSSHL L-----RWVF YGISCAFFIA --VLYVLL-- --VEWPADAE
+     BACH_HALSS  AAALTTSSYL L-----RWVW YAISCAFFVV --VLYILL-- --AEWAEDAE
+         O93742  AAALTTSSYL L-----RWVW YVISCAFFVV --VLYVLL-- --AEWAEDAE
+     BACH_HALHM  AAALTTSSYL L-----RWVW YGISCAFFVV --VLYILL-- --AEWAKDAE
+     BACH_NATPH  AAALTTSSHL M-----RWFW YAISCACFLV --VLYILL-- --VEWAQDAK
+     BACH_HALSP  AAAMTTSALL F-----RWAF YAISCAFFVV --VLSALV-- --TDWAASAS
+         O93741  AAALTTSSYA F-----RWAF YLVSTAFFVV --VLYALL-- --AKWPTNAE
+     BACT_HALVA  AGAVTPSPV- ------SYAL FAVGGALFGG --VIYLLY-- --RNIAVAAK
+     BACT_NATPH  AGAMVPGIE- ------RYAL FGMGAVAFLG --LVYYLV-- --GPMTESAS
+     BACT_HALSA  AAALTTGVQ- ------RWLF FAVGAA---G --YAALLY-- --GLLGTLPR
+     BACS_HALHA  GAVVTDGTL- ------KWAL FGVSSIFHLS --LFAYLY-- -----VIFPR
+     BAC3_HALVA  GAVVADGTL- ------KWVL FGVSTVFHVS --LFAYLY-- -----LVFPR
+         O93743  AAVVSGGTL- ------KWAL FGVSALFHVS --LFAYLY-- -----VIFPG
+     BACS_HALSS  GAVVTGGTL- ------KWVL FGVSSIFHVT --LFAYLY-- -----VVFPR
+     BACR_HALHA  VGALTKVYSY ------RFVW WAISTAAMLY --ILYVLF-- --FGFTSKAE
+     BAC3_HALSD  IGALSHTAIA ------RYSW WLFSTICMIV --VLYFLA-- --TSLRSAAK
+     BAC1_HALS1  VGALSHTPLA ------RYTW WLFSTICMIV --VLYFLA-- --TSLRAAAK
+     BAC2_HALS2  IGALSKTPLA ------RYTW WLFSTIAFLF --VLYYLL-- --TSLRSAAA
+     BACR_HALHM  IGALSHTPLA ------RYTW WLFSTIAFLF --VLYYLL-- --TVLRSAAA
+     BACR_HALAR  VATLSPGSGV LSAGAERLVW WGISTAFLLV --LLYFLF-- --SSLSGRVA
+     BACR_HALHP  VATLSAGSGV LSAGAERLVW WGISTAFLLV --LLYFLF-- --SSLSGRVA
+     BACR_HALVA  VATLSAGSGV LSAGAERLVW WGISTAFLLV --LLYFLF-- --SSLSGRVA
+     BACR_HALHS  VATLSAGSGV LSAGAERLVW WGISTAFLLV --LLYFLF-- --SSLSGRVA
+     BACR_HALSR  LATLSAGSGV LPAGAERLVW WGISTGFLLV --LLYFLF-- --SNLTDRAS
+         O93740  IAALSSTPGT ------RIAW WAISTGALLA --LLYVLV-- --GTLSENAR
+     F123_CORVE  VAALVPSTY- ------KWGY YTFGVSALFY --IWYVLLWH GPHTTFAAGG
+     YRO2_YEAST  IAACVHSTY- ------KWGY YTIGIGAAIV --VCISLM-- --TTTFNL--
+     YD33_YEAST  IAACVHSTY- ------KWGY YTIGLGAAIV --VSISVM-- --TTSYNL--
+     HS30_YEAST  VGSLIKSTY- ------KWGY YTIGAVAMLV --TQGVIC-- -QRQFFNL--
+         O74870  AAALTSSPY- ------KWAY YGFSFVGYFI ALAHSVVL-- --HKKYAS--
+         Q9UW81  FAALGEGGNT AQ----KWGW YTIGCFSYLF --VIWHVA-- --LHGSRTVT
+
+     BACH_HALHP  --AAGTS--E IFGTLKILTV VLWLG-YPIL WALGSEG-VA LL-SVGVTSW
+     BACH_HALHS  --AAGTS--E IFGTLKILTV VLWLG-YPIL WALGSEG-VA LL-SVGVTSW
+     BACH_HALVA  --AAGTS--E IFGTLKLLTV VLWLG-YPIL WALGSEG-VA LL-SVGVTSW
+     BACH_HALSS  --IAGTA--D IFNTLKVLTV VLWLG-YPIF WALGAEG-LA VL-DVAITSW
+         O93742  --VAGTA--E IFNTLKLLTV VLWLG-YPIF WALGAEG-LA VL-DVAVTSW
+     BACH_HALHM  --VAGTA--D IFNTLKVLTV VLWLG-YPIF WALGAEG-LA VL-DIAITSW
+     BACH_NATPH  --AAGTA--D MFNTLKLLTV VMWLG-YPIV WALGVEG-IA VL-PVGVTSW
+     BACH_HALSP  --SAGTA--E IFDTLRVLTV VLWLG-YPIV WAVGVEG-LA LVQSVGVTSW
+         O93741  --AAGTG--D IFGTLRWLTV ILWLG-YPIL WALGVEG-FA LVDSVGLTSW
+     BACT_HALVA  STLSDIEV-S LYRTLRNFVV VLWLV-YPVV WLLGAAG-VG LM-DVETATL
+     BACT_NATPH  QRSSGIK--S LYVRLRNLTV ILWAI-YPFI WLLGPPG-VA LL-TPTVDVA
+     BACT_HALSA  ALGDDPRVRS LFVTLRNITV VLWTL-YPVV WLLSPAG-IG IL-QTEMYTI
+     BACS_HALHA  VVPDVPEQIG LFNLLKNHIG LLWLA-YPLV WLFGPAG-IG EA-TAAGVAL
+     BAC3_HALVA  SVPDDPQRIG LFSLLKNHIG LLWIA-YPLV WLAGPEG-LG LA-TYVGVSI
+         O93743  GIPDDPMQRG LFSLLKNHVG LLWLA-YPFV WLMGPAG-IG FT-GAVGAAL
+     BACS_HALSS  AVPDDPMQRG LFSLLKNHVG LLWLA-YPFV WLMGPAG-IG FT-TGVGAAL
+     BACR_HALHA  SMRPEVA--S TFKVLRNVTV VLWSA-YPVV WLIGSEG-AG IV-PLNIETL
+     BAC3_HALSD  ERGPEVA--S TFNTLTALVL VLWTA-YPIL WIIGTEG-AG VV-GLGIETL
+     BAC1_HALS1  ERGPEVA--S TFNTLTALVL VLWTA-YPIL WIIGTEG-AG VV-GLGIETL
+     BAC2_HALS2  KRSEEVR--S TFNTLTALVA VLWTA-YPIL WIVGTEG-AG VV-GLGIETL
+     BACR_HALHM  ELSEDVQ--T TFNTLTALVA VLWTA-YPIL WIIGTEG-AG VV-GLGVETL
+     BACR_HALAR  DLPSDTR--S TFKTLRNLVT VVWLV-YPVW WLIGTEG-IG LV-GIGIETA
+     BACR_HALHP  DLPSDTR--S TFKTLRNLVT VVWLV-YPVW WLIGTEG-IG LV-GIGIETA
+     BACR_HALVA  DLPSDTR--S TFKTLRNLVT VVWLV-YPVW WLVGTEG-IG LV-GIGIETA
+     BACR_HALHS  NLPSDTR--S TFKTLRNLVT VVWLV-YPVW WLVGSEG-LG LV-GIGIETA
+     BACR_HALSR  ELSGDLQ--S KFSTLRNLVL VLWLV-YPVL WLVGTEG-LG LV-GLPIETA
+         O93740  NRAPEVA--S LFGRLRNLVI ALWFL-YPVV WILGTEGTFG IL-PLYWETA
+     F123_CORVE  VLRRGYILAA GYLSFL---- ---LLLYPIA WACAEGG--N VI-SVTSEMI
+     YRO2_YEAST  VKARGKDVSN VFITFMSVIM FLWLIAYPTC FGITDGG--N VL-QPDSATI
+     YD33_YEAST  VKQRDNDIRL TFLVFFSIIM FLWIIAYPTC FGITDGG--N VL-QPDSAGI
+     HS30_YEAST  -KTRGFNA-- --LMLCTCMV IVWL--YFIC WGLSDGG--N RI-QPDGEAI
+         O74870  --RLETSARL GFLWSIVYLH VIWFL-YYAC WILSEGL--N VI-SPIGEAI
+         Q9UW81  AKGRGVS--R LFTGLAVFAL LLWTA-YPII W--GIAGGAR RT-NVDTEIL
+
+     BACH_HALHP  GYSGLDILAK YVFAFLLL-- ---------- ---RW---VA ANEGAVSGSG
+     BACH_HALHS  GYSGLDILAK YVFAFLLL-- ---------- ---RW---VA ANEGTVSGSG
+     BACH_HALVA  GYSGLDILAK YVFAFLLL-- ---------- ---RW---VA ANEDTVTQAG
+     BACH_HALSS  AYSGMDIVAK YLFAFLLL-- ---------- ---RW---VV NNERTVADVA
+         O93742  AYSGMDIVAK YLFAFLLL-- ---------- ---RW---VV DNERTVAGMA
+     BACH_HALHM  AYSGM----- ---------- ---------- ---------- ----------
+     BACH_NATPH  GYSFLDIVAK YIFAFLLL-- ---------- ---NY---LT SNESVVSGSI
+     BACH_HALSP  AYSVLDVFAK YVFAFILL-- ---------- ---RW---VA NNERTVAVAG
+         O93741  GYSLLDIGAK YLFAALLL-- ---------- ---RW---VA NNERTIAV-G
+     BACT_HALVA  VVVYLDVVTK VGFGVIAL-- ---------- --------LA ------MIDL
+     BACT_NATPH  LIVYLDLVTK VGFGFIAL-- ---------- ---DAAATLR AEHGESLAGV
+     BACT_HALSA  VVVYLDFISK VAFVAFAV-- ---------- --------LG ADAVSRLVAA
+     BACS_HALHA  TYVFLDVLAK VPYVYF---- ---------- --------FY ARRRVFMHSE
+     BAC3_HALVA  TYAFLDLLAK VPYVYF---- ---------- --------FY ARRQVF----
+         O93743  TYAFLDVLAK VPYVYF---- ---------- --------FY ARRQAFIDVT
+     BACS_HALSS  TYAFLDVLAK VPYVYF---- ---------- --------FY ARRQAFTDVV
+     BACR_HALHA  LFMVLDVSAK VGFGLILL-- ---------- ---R------ --SRAIFGEA
+     BAC3_HALSD  LFMVLDVTAK VGFGFILL-- ---------- ---R------ --SRAILGDT
+     BAC1_HALS1  LFMVLDVTAK VGFGFILL-- ---------- ---R------ --SRAILGDT
+     BAC2_HALS2  AFMVLDVTAK VGFGFVLL-- ---------- ---R------ --SRAILGET
+     BACR_HALHM  AFMVLDVTA- ---------- ---------- ---------- ----------
+     BACR_HALAR  GFMVIDLTAK VGFGIILL-- ---------- ---R------ --SHGVLDGA
+     BACR_HALHP  GFMVIDLTA- ---------- ---------- ---------- ----------
+     BACR_HALVA  GFMVIDLVAK VGFGIILL-- ---------- ---R------ --SHGVLDGA
+     BACR_HALHS  GFMVIDLVA- ---------- ---------- ---------- ----------
+     BACR_HALSR  AFMVLDLTAK IGFGIILL-- ---------- ---Q------ --SHAVLDEG
+         O93740  AFMVLDLSAK VGFGVILL-- ---------- ---Q------ --SRSVLERV
+     F123_CORVE  WYGILDIFAG PIF--LF--- ------FFLW ELRGVDYATF GLHSGKYTDK
+     YRO2_YEAST  FYGIIDLLIL SILPVLF--- ------MPLA NYLGIE--RL GLIFDEEPAE
+     YD33_YEAST  FYGIIDLILM CFIPTLL--- ------VPIA NHFGAD--KL GYHFGPSDAE
+     HS30_YEAST  FYGVLDLCVF AIYPCYLLIA VSRDGKLPRL SLTG----GF SHHHATDDVE
+         O74870  FYSILDLFEF GFFGAAF--- ------SWML DLVGIE--NF K---------
+         Q9UW81  IYTVLDLLAK PVFGFWLLLS HRAMPETNID LPGYWSHGLA TEGRIRIGEE
+
+     BACH_HALHP  MSIGS---G- ---------- ---GAAPADD ---------- ----------
+     BACH_HALHS  MGIGS---G- ---------- ---GAAPADD ---------- ----------
+     BACH_HALVA  MSLGS---G- ---------- ---GAAPADD ---------- ----------
+     BACH_HALSS  SGLGSGSRG- ---------- ---GAAPADD ---------- ----------
+         O93742  AGLGA-PLA- ---------- ---RCAPADD ---------- ----------
+     BACH_HALHM  ---------- ---------- ---------- ---------- ----------
+     BACH_NATPH  LDVPS---A- ---------- ---SGTPADD ---------- ----------
+     BACH_HALSP  QTLGT----- ---------- -----MSSDD ---------- ----------
+         O93741  QRSGR----- ---------- -----GAIGD PVED------ ----------
+     BACT_HALVA  GSAGETAEE- ---------- ---PTAVAGD ---------- ----------
+     BACT_NATPH  DTDAPAVAD- ---------- ---------- ---------- ----------
+     BACT_HALSA  DAAAPATAE- ---------- ---PTP-DGD ---------- ----------
+     BACS_HALHA  SPPAPEQAT- ---------- ---VEATAAD ---------- ----------
+     BAC3_HALVA  --ATKLLRD- ---------- SGEVTATPAD ---------- ----------
+         O93743  DSRAAAKGDG PAVGGEAPVA TGDDAPTAAD ---------- ----------
+     BACS_HALSS  SAATADRED- ------ATDA VGDGAPTAAD ---------- ----------
+     BACR_HALHA  EAPEPSAGD- ---------- ---GAAATSD ---------- ----------
+     BAC3_HALSD  EAPEPSAGA- ---------- ---DVSAAD- ---------- ----------
+     BAC1_HALS1  EAPEPSAGA- ---------- ---EASAAD- ---------- ----------
+     BAC2_HALS2  EAPEPSAGA- ---------- ---DASAAD- ---------- ----------
+     BACR_HALHM  ---------- ---------- ---------- ---------- ----------
+     BACR_HALAR  AETTGTGAT- ---------- ---PADD--- ---------- ----------
+     BACR_HALHP  ---------- ---------- ---------- ---------- ----------
+     BACR_HALVA  AETTGAGAT- ---------- ---ATAD--- ---------- ----------
+     BACR_HALHS  ---------- ---------- ---------- ---------- ----------
+     BACR_HALSR  QTASEGAAV- ---------- ---AD----- ---------- ----------
+         O93740  ATPTAAPT-- ---------- ---------- ---------- ----------
+     F123_CORVE  SAYAPNTAQA AGTVPATTST GAAGNV---- ---------- ----------
+     YRO2_YEAST  HV-GP-VAEK KMPSPASFKS SDSDSSIKEK LKLKKKHKKD KKKAKKAKKA
+     YD33_YEAST  AVMAP-KAPV ASPRPAATPN LSKDK----- ---------- KKKSKKSKKS
+     HS30_YEAST  DA-APETKEA VPESPRASGE TAIHEP---- ---------- ----------
+         O74870  ---SPQSIPL GACSPADDKF SMCPDM---- ---------- ----------
+         Q9UW81  D--------- ---------- ---------- ---------- ----------
+
+     BACH_HALHP  ---------- ---------- ---------- ---
+     BACH_HALHS  ---------- ---------- ---------- ---
+     BACH_HALVA  ---------- ---------- ---------- ---
+     BACH_HALSS  ---------- ---------- ---------- ---
+         O93742  ---------- ---------- ---------- ---
+     BACH_HALHM  ---------- ---------- ---------- ---
+     BACH_NATPH  ---------- ---------- ---------- ---
+     BACH_HALSP  ---------- ---------- ---------- ---
+         O93741  ---------- ---------- ---------- ---
+     BACT_HALVA  ---------- ---------- ---------- ---
+     BACT_NATPH  ---------- ---------- ---------- ---
+     BACT_HALSA  ---------- ---------- ---------- ---
+     BACS_HALHA  ---------- ---------- ---------- ---
+     BAC3_HALVA  ---------- ---------- ---------- ---
+         O93743  ---------- ---------- ---------- ---
+     BACS_HALSS  ---------- ---------- ---------- ---
+     BACR_HALHA  ---------- ---------- ---------- ---
+     BAC3_HALSD  ---------- ---------- ---------- ---
+     BAC1_HALS1  ---------- ---------- ---------- ---
+     BAC2_HALS2  ---------- ---------- ---------- ---
+     BACR_HALHM  ---------- ---------- ---------- ---
+     BACR_HALAR  ---------- ---------- ---------- ---
+     BACR_HALHP  ---------- ---------- ---------- ---
+     BACR_HALVA  ---------- ---------- ---------- ---
+     BACR_HALHS  ---------- ---------- ---------- ---
+     BACR_HALSR  ---------- ---------- ---------- ---
+         O93740  ---------- ---------- ---------- ---
+     F123_CORVE  ---------- ---------- ---------- ---
+     YRO2_YEAST  KKAKKAQEEE EDVATDSE-- ---------- ---
+     YD33_YEAST  KKSKKSEE-- ---------- ---------- ---
+     HS30_YEAST  --EPEAEQAV EDTA------ ---------- ---
+         O74870  ----EAQNQA DDLAVETRIQ ISNLPSSPTK NNC
+         Q9UW81  ---------- ---------- ---------- ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+alnRef7/ref7_test_acr_ref7.fa.t_coffee.msf	0.990	 0.840
+alnRef7/ref7_test_7tm_ref7.fa.t_coffee.msf	0.977	 0.530
+alnRef7/ref7_test_msl_ref7.fa.t_coffee.msf	0.965	 0.910
+alnRef7/ref7_test_dtd_ref7.fa.t_coffee.msf	0.961	 0.470
+alnRef7/ref7_test_photo_ref7.fa.t_coffee.msf	0.954	 0.550
+alnRef7/ref7_test_ptga_ref7.fa.t_coffee.msf	0.909	 0.380
+alnRef7/ref7_test_ion_ref7.fa.t_coffee.msf	0.781	 0.210
+alnRef7/ref7_test_Nat_ref7.fa.t_coffee.msf	0.729	 0.130

@@ -1,0 +1,1729 @@
+!!AA_MULTIPLE_ALIGNMENT
+
+ PTLB_LACLA  MSF: 1517  Type: P  Jan 27, 2011  21:52  Check: 0 ..
+
+ Name: Q57071           Len:  1517  Check: 6510  Weight:  1.00
+ Name: Q53922           Len:  1517  Check: 8839  Weight:  1.00
+ Name: PTGA_BACSU       Len:  1517  Check: 7590  Weight:  1.00
+ Name: YBFS_BACSU       Len:  1517  Check: 7834  Weight:  1.00
+ Name: PTGB_ECOLI       Len:  1517  Check: 3797  Weight:  1.00
+ Name: PTGB_SALTY       Len:  1517  Check: 3119  Weight:  1.00
+ Name: O32444           Len:  1517  Check:   44  Weight:  1.00
+ Name: O34521           Len:  1517  Check: 7303  Weight:  1.00
+ Name: PTAA_ECOLI       Len:  1517  Check: 6635  Weight:  1.00
+ Name: PTAA_KLEPN       Len:  1517  Check:  233  Weight:  1.00
+ Name: O51000           Len:  1517  Check: 8023  Weight:  1.00
+ Name: O51590           Len:  1517  Check:    3  Weight:  1.00
+ Name: O51143           Len:  1517  Check: 1347  Weight:  1.00
+ Name: PTOA_ECOLI       Len:  1517  Check: 8249  Weight:  1.00
+ Name: P96159           Len:  1517  Check: 9818  Weight:  1.00
+ Name: Q9RL52           Len:  1517  Check: 2538  Weight:  1.00
+ Name: O07656           Len:  1517  Check: 4571  Weight:  1.00
+ Name: PTGA_MYCGE       Len:  1517  Check: 1363  Weight:  1.00
+ Name: PTGA_MYCPN       Len:  1517  Check: 5444  Weight:  1.00
+ Name: PTIB_BACSU       Len:  1517  Check:  134  Weight:  1.00
+ Name: Q9S2H4           Len:  1517  Check: 1990  Weight:  1.00
+ Name: Q9S2H5           Len:  1517  Check: 1787  Weight:  1.00
+ Name: q46072           Len:  1517  Check: 8743  Weight:  1.00
+ Name: ptga_brela       Len:  1517  Check: 6303  Weight:  1.00
+ Name: o68468           Len:  1517  Check: 3175  Weight:  1.00
+ Name: q9x565           Len:  1517  Check: 5221  Weight:  1.00
+ Name: Q9RLU2           Len:  1517  Check: 4065  Weight:  1.00
+ Name: PTBA_ERWCH       Len:  1517  Check: 8651  Weight:  1.00
+ Name: q48408           Len:  1517  Check: 3853  Weight:  1.00
+ Name: PTBA_ECOLI       Len:  1517  Check: 8869  Weight:  1.00
+ Name: q46129           Len:  1517  Check: 4423  Weight:  1.00
+ Name: ptsa_pedpe       Len:  1517  Check: 5704  Weight:  1.00
+ Name: Q9S6S6           Len:  1517  Check: 3957  Weight:  1.00
+ Name: PTSA_STRMU       Len:  1517  Check: 2482  Weight:  1.00
+ Name: ptsb_staxy       Len:  1517  Check: 7040  Weight:  1.00
+ Name: ptsb_vibal       Len:  1517  Check:  556  Weight:  1.00
+ Name: PTTB_BACSU       Len:  1517  Check: 7197  Weight:  1.00
+ Name: PTTB_ECOLI       Len:  1517  Check: 4539  Weight:  1.00
+ Name: q9zhj9           Len:  1517  Check: 9090  Weight:  1.00
+ Name: p94470           Len:  1517  Check:  335  Weight:  1.00
+ Name: ptsb_klepn       Len:  1517  Check: 8121  Weight:  1.00
+ Name: ptsb_salty       Len:  1517  Check: 9196  Weight:  1.00
+ Name: sacx_bacsu       Len:  1517  Check: 6801  Weight:  1.00
+ Name: ptsb_bacsu       Len:  1517  Check: 7571  Weight:  1.00
+ Name: PTBA_BACSU       Len:  1517  Check: 8015  Weight:  1.00
+ Name: p77272           Len:  1517  Check: 5786  Weight:  1.00
+ Name: Q45579           Len:  1517  Check: 9304  Weight:  1.00
+ Name: PTDA_ECOLI       Len:  1517  Check: 7841  Weight:  1.00
+ Name: ptcc_ecoli       Len:  1517  Check: 6199  Weight:  1.00
+ Name: PTCC_BACST       Len:  1517  Check: 2032  Weight:  1.00
+ Name: PTLB_LACLA       Len:  1517  Check:  996  Weight:  1.00
+//
+
+         Q57071  MWK----KF- ---------- ---------- ---------- ------F---
+         Q53922  MKNLL-KKF- ---------- ---------- ---------- ------F---
+     PTGA_BACSU  MFK----AL- ---------- ---------- ---------- ------F---
+     YBFS_BACSU  MFK----KA- ---------- ---------- ---------- ------F---
+     PTGB_ECOLI  MFK----NA- ---------- ---------- ---------- ------F---
+     PTGB_SALTY  MFK----NA- ---------- ---------- ---------- ------F---
+         O32444  M--------- ---------- ---------- ---------- ----------
+         O34521  ML-------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  MNI------- ---------- ---------- ---------- ------L---
+     PTAA_KLEPN  MNI------- ---------- ---------- ---------- ------L---
+         O51000  MST----SSA -S-------- ---------- ----I----- ----SIF---
+         O51590  MLK----G-- ---------- ---------- ---------- ------F---
+         O51143  MLK----LAL -E-------- ---------- ----RLSMIN FIKIINF---
+     PTOA_ECOLI  MTA----KTA -P-------- ---------- ---KV----- ----TLW---
+         P96159  MSK----SNK ---------- ---------- ----S----- ----TIW---
+         Q9RL52  MQK----TKA ---------- ---------- ---------- ----ALW---
+         O07656  MKQ----KK- ---------- ---------- ---------- -----AW---
+     PTGA_MYCGE  MQI----SL- VK-------- ----IRNKFK QRNRG----- ----SFR---
+     PTGA_MYCPN  MQI----KAQ -DTGQQKKSC LLSNIRNKWK NRNRG----- ----SFR---
+     PTIB_BACSU  MMQ----K-- ---------- ---------- ---------- ----------
+         Q9S2H4  MST----AT- ---------- ----DTAAPA KKRGS----- ----GLF---
+         Q9S2H5  MSA----DS- AV-------- -------SPA RARWN----- ----TAF---
+         q46072  MASKL--TTT ---------- ---------- ---------- -----SQ---
+     ptga_brela  MASKL--TTT ---------- ---------- ---------- -----SQ---
+         o68468  MSKTE-MRTA ---------- ---------- ---------- -----AE---
+         q9x565  MDKY---HDF ---------- ---------- ---------- -----NK---
+         Q9RLU2  MGKY---QAL ---------- ---------- ---------- -----SK---
+     PTBA_ERWCH  MNY----ETL ---------- ---------- ---------- -----AS---
+         q48408  MEY----KAL ---------- ---------- ---------- -----AQ---
+     PTBA_ECOLI  MTE------L ---------- ---------- ---------- -----AR---
+         q46129  MKY----EQL ---------- ---------- ---------- -----AK---
+     ptsa_pedpe  MNH----QEV ---------- ---------- ---------- -----AD---
+         Q9S6S6  MNH----KQV ---------- ---------- ---------- -----AE---
+     PTSA_STRMU  MDY----SKV ---------- ---------- ---------- -----AS---
+     ptsb_staxy  MNY----KKS ---------- ---------- ---------- -----AE---
+     ptsb_vibal  MNY----PAV ---------- ---------- ---------- -----AK---
+     PTTB_BACSU  MGEL---NKS ---------- ---------- ---------- -----AR---
+     PTTB_ECOLI  MMS----KIN -Q-------- ---------- ----T----- ----DID---
+         q9zhj9  MKE----QIV ---------- ---------- ---------- -----AK---
+         p94470  MNY----ERV ---------- ---------- ---------- -----AK---
+     ptsb_klepn  MDF----EQI ---------- ---------- ---------- -----SR---
+     ptsb_salty  MDF----EQI ---------- ---------- ---------- -----SC---
+     sacx_bacsu  MHK-----EI ---------- ---------- ---------- -----AK---
+     ptsb_bacsu  MDY----KET ---------- ---------- ---------- -----AK---
+     PTBA_BACSU  MDY----DKL ---------- ---------- ---------- -----SK---
+         p77272  MAKEI-SSEL ---------- ---------- ---------- -----LN---
+         Q45579  MSKENNYHHL ---------- ---------- ---------- -----AQ---
+     PTDA_ECOLI  MAKNY--AAL ---------- ---------- ---------- -----AR---
+     ptcc_ecoli  MSN----VI- ---------- ---------- ---------- ------ASLE
+     PTCC_BACST  MDR----FI- ---------- ---------- ---------- ------RMLE
+     PTLB_LACLA  MHK----LI- ---------- ---------- ---------- ------ELI-
+
+         Q57071  ----GQ---- -----LQRIG ---------- ---------- ----------
+         Q53922  ----GQ---- -----LQRIG ---------- ---------- ----------
+     PTGA_BACSU  ----GV---- -----LQKIG ---------- ---------- ----------
+     YBFS_BACSU  ----QI---- -----LQQLG ---------- ---------- ----------
+     PTGB_ECOLI  ----AN---- -----LQKVG ---------- ---------- ----------
+     PTGB_SALTY  ----AN---- -----LQKVG ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ----SF---- -----LQKLG ---------- ---------- ----------
+     PTAA_ECOLI  ----GF---- -----FQRLG ---------- ---------- ----------
+     PTAA_KLEPN  ----GF---- -----FQRLG ---------- ---------- ----------
+         O51000  ----TI---- -----LQKIG ---------- ---------- ----------
+         O51590  ----EQ---- -----AQKFG ---------- ---------- ----------
+         O51143  ----SS---- -----LQKFS ---------- ---------- ----------
+     PTOA_ECOLI  ----EF---- -----FQQLG ---------- ---------- ----------
+         P96159  ----EF---- -----FESLG ---------- ---------- ----------
+         Q9RL52  ----EF---- -----LQGLG ---------- ---------- ----------
+         O07656  ----SF---- -----FQSLG ---------- ---------- ----------
+     PTGA_MYCGE  ----QW---- -----VGKLS ---------- ---------- ----------
+     PTGA_MYCPN  ----QW---- -----VGKLS ---------- ---------- ----------
+     PTIB_BACSU  ---------- -----IQRFG ---------- ---------- ----------
+         Q9S2H4  ----QG---- -----LQKVG ---------- ---------- ----------
+         Q9S2H5  ----QG---- -----LQKMG ---------- ---------- ----------
+         q46072  ----HI---- -----LENLG GPDNITSMTH CATRLRFQVK DQSIVDQQEI
+     ptga_brela  ----HI---- -----LENLG GPDNITSMTH CATRLRFQVK DQSIVDQQEI
+         o68468  ----EI---- -----LAGIG GADNIASFTH CATRLRFELN DAFKADKDKL
+         q9x565  ----HI---- -----IELVG GKENIEAVVH CMTRLRFTLI DKTKAQTNKL
+         Q9RLU2  ----FI---- -----LENVG GKENVLSVTH CMTRLRFTLK DDSKVNEDIL
+     PTBA_ERWCH  ----EI---- -----RDGVG GQENIISVIH CATRLRFKLR DNTNANADAL
+         q48408  ----DI---- -----LTRVG GRENIVSLVH CATRLRFKLK DSKKADAEGL
+     PTBA_ECOLI  ----KI---- -----VAGVG GADNIVSLMH CATRLRFKLK DESKAQAEVL
+         q46129  ----DI---- -----LKNVG GKENVNSLTH CITRLRFKLK DEGKANTDIL
+     ptsa_pedpe  ----RV---- -----LNAI- GKNNIQAAAH CATRLRLVIK DESKIDQQAL
+         Q9S6S6  ----RI---- -----LNAV- GRDNIQGARH CATRLRLVLK DTGVIDQEAL
+     PTSA_STRMU  ----EV---- -----ITAV- GKDNLVAAAH CATRLRLVLK DDSKVDQKAL
+     ptsb_staxy  ----NI---- -----LQALG GEDNVEAMTH CATRLRLVLK DEGLVDEKAL
+     ptsb_vibal  ----EL---- -----LTLLG GKSNITALAH CATRLRLAVA DEQKIDEQAI
+     PTTB_BACSU  ----QI---- -----VEAVG GAENIAAATH CVTRLRFALI DESKVDQEML
+     PTTB_ECOLI  ----RL---- -----IELVG GRGNIATVSH CITRLRFVLN QPANARPKEI
+         q9zhj9  ----EI---- -----LENIG GKENIKSVEH CATRLRLILN DKEKINEKAI
+         p94470  ----QL---- -----IPLLG GKENIISAVH CATRLRLVLK DDTKADTKAI
+     ptsb_klepn  ----SL---- -----LPLLG GKENIASAAH CATRLRLVLV DDALADQQAI
+     ptsb_salty  ----SL---- -----LPLLG GKENIASAAH CATRLRLVLV DDSLADQQAI
+     sacx_bacsu  ----EL---- -----LLLAG GKNNIISISH CTTRLRFDVK DETKIDIHAI
+     ptsb_bacsu  ----RL---- -----IELLG GKENIISAAH CATRLRLVMK DESKIDQAQV
+     PTBA_BACSU  ----DI---- -----LQLVG GEENVQRVIH CMTRLRFNLH DNAKADRSQL
+         p77272  ----TI---- -----LTRVG GPGNIASCGN CMTRLRLGVH DSSLVDPN-I
+         Q45579  ----KI---- -----LELCG GKSNISSYTH CMTRLRITPY DESKADAQAL
+     PTDA_ECOLI  ----SV---- -----IAALG GVDNISAVTH CMTRLRFVIK DDALIDSPTL
+     ptcc_ecoli  KVLLPFAVKI GKQPHVNAIK ---------- ---------- ----------
+     PTCC_BACST  DRVMPVAGKI AEQRHLQAIR ---------- ---------- ----------
+     PTLB_LACLA  EKGKPFFEKI SRNIYLRAIR ---------- ---------- ----------
+
+         Q57071  ---------- ---------- ---------- ---------- ----------
+         Q53922  ---------- ---------- ---------- ---------- ----------
+     PTGA_BACSU  ---------- ---------- ---------- ---------- ----------
+     YBFS_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTAA_KLEPN  ---------- ---------- ---------- ---------- ----------
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  ---------- ---------- ---------- ---------- ----------
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         P96159  ---------- ---------- ---------- ---------- ----------
+         Q9RL52  ---------- ---------- ---------- ---------- ----------
+         O07656  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCPN  ---------- ---------- ---------- ---------- ----------
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  DSDPSVLGVV PQGSTGMQVV MGGS-VANYY QEILKLDG-- --M-KHFADG
+     ptga_brela  DSDPSVLGVV PQGSTGMQVV MGGS-VANYY QEILKLDG-- --M-KHFADG
+         o68468  DAIPKVMGAV PQGGRNYQVV IGGD-VASVY NEMVQLPG-- --V-RKSDA-
+         q9x565  KNLDGVIDVV SNNV-AYQII IGTH-VNDVY KELMTQLE-- --L-SPKTTL
+         Q9RLU2  KKSSEIMTAQ FRGG-RFQVV IGTH-VSDVY NEIQGVTG-- --A-DKIAE-
+     PTBA_ERWCH  KNNPGIIMVV ESGG-QFQVV VGNQ-VADVY QALLSLDG-- --M-ARFSDS
+         q48408  KANPGVIMVV ESGG-QFQVV IGNH-VHDVW LAVRSEAG-- --L-TDDSEP
+     PTBA_ECOLI  KKTPGIIMVV ESGG-QFQVV IGNH-VADVF LAVNSVAG-- --L-DEKAQQ
+         q46129  KNMDGVVTVV KSGG-QYQVV IGNH-VPDVF AAVNAVGG-- --L-QGASEE
+     ptsa_pedpe  DDDADVKGTF ETNG-QYQII IGPGDVDKVY DALIVKTG-- --L-KEVTPD
+         Q9S6S6  DNDPDLKGTF EAAG-QYQII VGPGDVNTVY EEFIKLTG-- --I-SEASTA
+     PTSA_STRMU  DKNADVKGTF KTDG-QYQVI IGPGDVNFVY DEIIKQTG-- --L-TEVSTD
+     ptsb_staxy  GDMDVVKGTF STGG-QYQVI IGSGTVNKVF SELEKITG-- --K-EASSVS
+     ptsb_vibal  DNLEGVKGQF KVAG-QYQII FGSGIVNQVY AEMAKLTG-- --M-SEMSTN
+     PTTB_BACSU  DQIDVVKGSF STNG-QFQVV IGQGTVNKVY AELVKETG-- --I-GESTKD
+     PTTB_ECOLI  EQLPMVKGCF TNAG-QFQVV IGTN-VGDYY QALIASTG-- --Q-AQVDKE
+         q9zhj9  ENIDGVKGQF FSAA-QYQII LGTGFVNEVY DVIVGQNSDL VTG-NNKEE-
+         p94470  ENIEGVKGAF SSSG-QYQII FGTGVVNKVY DSFVQEAG-- --L-QHVSAD
+     ptsb_klepn  GKIDGVKGCF RNAG-QMQII FGTGVVNKVY AAFIQAAG-- --I-SESSKS
+     ptsb_salty  GKVEGVKGCF RNAG-QMQII FGTGVVNKVY AAFTQAAG-- --I-SESSKS
+     sacx_bacsu  ENLQGVQGTF FRYG-LFQII FGAGVVNKIY KEVVHVWE-- --T-APSEEP
+     ptsb_bacsu  EELDGVKGAF SSSG-QYQII FGTGLVNKVF DAFSKEAD-- --I-EREEHV
+     PTBA_BACSU  EQLPGVMGTN ISGE-QFQII IGND-VPKVY QAIVRHSN-- --L-SDEKSA
+         p77272  KTLEGVKGVI LTSD-QVQVV FGPGKAHRAA KAMSELLG-- --E-APVQDA
+         Q45579  RKLDGVLGVV EA-E-TLQII LGTGVVNHVT AAFSKLVS-- --A-EEGADV
+     PTDA_ECOLI  KTIPGVLGVV RSDN-QCQVI IGNT-VSQAF QEVVSLLP-- --GDMQPAQP
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  ---------- ---------- ---------- ---------- KALMLP-VAI
+         Q53922  ---------- ---------- ---------- ---------- KALMLP-VAI
+     PTGA_BACSU  ---------- ---------- ---------- ---------- RALMLP-VAI
+     YBFS_BACSU  ---------- ---------- ---------- ---------- RALMTP-VAV
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- KSLMLP-VSV
+     PTGB_SALTY  ---------- ---------- ---------- ---------- KSLMLP-VSV
+         O32444  ---------- ---------- ---------- ---------- ----LP-IAT
+         O34521  ---------- ---------- ---------- ---------- KSFMLP-IAV
+     PTAA_ECOLI  ---------- ---------- ---------- ---------- RALQLP-IAV
+     PTAA_KLEPN  ---------- ---------- ---------- ---------- RALQLP-IAV
+         O51000  ---------- ---------- ---------- ---------- KAFMLP-IAL
+         O51590  ---------- ---------- ---------- ---------- RSFMLP-IAI
+         O51143  ---------- ---------- ---------- ---------- KALRVP-ISI
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- KTFMLP-VAL
+         P96159  ---------- ---------- ---------- ---------- KTFMLP-VAL
+         Q9RL52  ---------- ---------- ---------- ---------- KTFMLP-VAL
+         O07656  ---------- ---------- ---------- ---------- KAFMYP-IAL
+     PTGA_MYCGE  ---------- ---------- ---------- ---------- NGLMIP-IAV
+     PTGA_MYCPN  ---------- ---------- ---------- ---------- NGLMIP-IAV
+     PTIB_BACSU  ---------- ---------- ---------- ---------- SAMFVP-VLL
+         Q9S2H4  ---------- ---------- ---------- ---------- RSLQLP-IAV
+         Q9S2H5  ---------- ---------- ---------- ---------- RSLQLP-IAV
+         q46072  -------EAT E--SSSKKEY GGVRGKY--- SWIDYAFEFL SDTFRPILWA
+     ptga_brela  -------EAT E--SSSKKEY GGVRGKY--- SGIDYAFEFL SDTFRPILWA
+         o68468  -------D-- ----VKAASR AKTQGKM--- PWLDTAFEYL SDSFRPILGV
+         q9x565  -------E-- ---E------ --QSGKK--- NPIKAALDVI SESMTPILEP
+         Q9RLU2  ---------- ---------- --AEVKK--- TGLNRLIEII TKVITPVLGI
+     PTBA_ERWCH  -------AAP ---E------ --EEKKN--- SLFSGFIDII SSIFTPFVGV
+         q48408  -------VAV ---------- --KGEKV--- SLIGQLIDIV SGIFTPFIGV
+     PTBA_ECOLI  -------APE ---------- --NDDKG--- NLLNRFVYVI SGIFTPLIGL
+         q46129  -------D-- ---E------ --TEEKM--- NPLNKFIDIV SGVFQPILGV
+     ptsa_pedpe  -------DIK AVAA------ --AGQNK--- NPLMDFLKVL SDIFIPIVPA
+         Q9S6S6  -------DLK E--I------ AGSQKKQ--- NPVMALVKLL SDIFVPLIPA
+     PTSA_STRMU  -------DLK K--I------ AASGKKF--- NPIMALIKLL SDIFVPIIPA
+     ptsb_staxy  -------EVK T--Q------ --GTKNM--- NPFQRFVKML SDIFVPIIPA
+     ptsb_vibal  -------DVA S--A------ --GAEKQ--- NIVQPAVKGL SDIFVPIIPA
+     PTTB_BACSU  -------EVK K--A------ --SEKNM--- NPLQRAVKTL ADIFIPILPA
+     PTTB_ECOLI  -------QVK K--A------ --ARHNM--- KWHEQLISHF AVIFFPLLPA
+         q9zhj9  ---------- ---------- --AYSQM--- TLIQKISRTF GDVFVPIIPV
+         p94470  -------VHQ E--A------ --VKQKM--- NPLARLAKTL SNIFVPIIPA
+     ptsb_klepn  -------EAA D--L------ --AAKKL--- NPFQRIARLL SNIFVPIIPA
+     ptsb_salty  -------EAA D--I------ --AAKKL--- NPFQRIARLL SNIFVPIIPA
+     sacx_bacsu  -------VHQ K--K------ --ASRKL--- NPAAAFAKTL SDIFVPIIPA
+     ptsb_bacsu  -------NHQ D--A------ --AKEKL--- NPAARFAKTL SNIFVPIIPA
+     PTBA_BACSU  -------G-- ---S------ --SSQKK--- NVLSAVFDVI SGVFTPILPA
+         p77272  AEIAAQNKRQ ---L------ --KAKQT--- SGVQQFLAKF ATIFTPLIPG
+         Q45579  KEAAAKKKAD ---I------ --NRKNA--- TPFKLFLRKI ASIFIPLIPA
+     PTDA_ECOLI  ---------- ---V------ --GKPKLTLR RIGAGILDAL IGTMSPLIPA
+     ptcc_ecoli  ---------- ---------- ---------- ---------- NGFIRL-MPL
+     PTCC_BACST  ---------- ---------- ---------- ---------- DGIILS-MPL
+     PTLB_LACLA  ---------- ---------- ---------- ---------- DGFIAG-MPV
+
+         Q57071  LPAAGLLLAL GNA--FQ--- ---------G DALQS----- -LMPF----I
+         Q53922  LPAAGILLTF GNA--MH--- ---------N EQILH----- -FAPW----M
+     PTGA_BACSU  LPAAGILLAI GNA--MQ--- ---------N KDMIQ----- -VLHF----L
+     YBFS_BACSU  LPAAGLLLRF GDK--DL--- ---------L ---------- ----------
+     PTGB_ECOLI  LPIAGILLGV GSA--NF--- ---------S ---------- ----------
+     PTGB_SALTY  LPIAGILLGV GSA--NF--- ---------S ---------- ----------
+         O32444  LPVAALLLRL GQPDLLG--- ---------- ---------- ----------
+         O34521  LPAVGIILAL GREDVFN--- ---------- ---------- ----------
+     PTAA_ECOLI  LPVAALLLRF GQPDLLN--- ---------- ---------- ----------
+     PTAA_KLEPN  LPVAALLLRF GQPDLLN--- ---------- ---------- ----------
+         O51000  LPAAGILLGI GGA--FT--- ---------N ETMIQ----- -AYGLEEVLG
+         O51590  LPAAGLLLGI GGS--LS--- ---------N PETVR----- -TYSF----L
+         O51143  LPVSCLLIGI GSV--FS--- ---------N SSSI------ ---VY----V
+     PTOA_ECOLI  LSFCGIMLGI GSS--LS--- ---------S HDVIT----- -LIPV----L
+         P96159  LAFSGILLGV GSS--FS--- ---------S SAIKE----- -AIPF----L
+         Q9RL52  LAFCGIMLGI GSS--LS--- ---------S DAVTD----- -NVAF----L
+         O07656  LSVCGMMLGL GSG--LA--- ---------S DDMAK----- -LIPF----L
+     PTGA_MYCGE  LPLAGIFLGI GDA--IS--- ---------S NS-------- ---------S
+     PTGA_MYCPN  LPIAGIFLGV GDA--IA--- ---------G NA-------- ---------G
+     PTIB_BACSU  FAFAGIIVGI STL--FK--- ---------N KTLMG----- --PLA----D
+         Q9S2H4  LPAAGIMVRL GQDDIFG--- ---------K ---------- ----------
+         Q9S2H5  LPAAGILNRL GQPDVFG--- ---------D ---------- ----------
+         q46072  LLGASLIITL LVL--AD--- ---------T FGLQDFRAPM DE--------
+     ptga_brela  LLGASLIITL LVL--AD--- ---------T FGLQDFRAPM DE--------
+         o68468  LLGASLIIAF TAV--ME--- ---------A FGVVDT--RA DD--------
+         q9x565  IICAGLLAAV LSI--AS--- ---------L TGIIS----- -P--------
+         Q9RLU2  LTASGLLQGI LAL--LT--- ---------I TNVID----- -V--------
+     PTBA_ERWCH  MAATGILKGF LAL--GV--- ---------A THVIS----- -E--------
+         q48408  LAASGILKGL LAL--AV--- ---------V CGWLT----- -T--------
+     PTBA_ECOLI  MAATGILKGM LAL--AL--- ---------T FQWTT----- -E--------
+         q46129  LCATGMIKGL NAV--LV--- ---------A AGVLA----- -S--------
+     ptsa_pedpe  LVAGGLLMAL NNV--LT--- ---------A EHLFM----- -AKSV----V
+         Q9S6S6  LVAGGLLMAL NNA--LT--- ---------A EHLFA----- -T--------
+     PTSA_STRMU  LVAGGLLMAL NNF--LT--- ---------S EGLFG----- -T--------
+     ptsb_staxy  IVAGGLLMGI NNI--LT--- ---------A PGIFYD---- -N--------
+     ptsb_vibal  IVAGGLLMGI YNL--LT--- ---------A QGLFID---- -G--------
+     PTTB_BACSU  IVTAGLLMGI NNI--LT--- ---------A EGISFS---- -T--------
+     PTTB_ECOLI  LISGGLILGF RNV--IG--- ---------D LPMSN----- -GQTL----A
+         q9zhj9  LVATGLFMGL RGL--LT--- ---------N LGVQM----- -N--------
+         p94470  IVASGLLMGP LGM--MK--- ---------A FKWVA----- -P--------
+     ptsb_klepn  IVASGLLMGL LGM--VK--- ---------T YGWVD----- -P--------
+     ptsb_salty  IVASGLLMGL LGM--VK--- ---------T YGWVD----- -P--------
+     sacx_bacsu  ITASGLLMGL IGM--IK--- ---------V FHWFA----- -A--------
+     ptsb_bacsu  IVASGLLMGL LGM--IN--- ---------A FHWMS----- -K--------
+     PTBA_BACSU  IAGAGMIKGL VAL--AV--- ---------T FGWMA----- -E--------
+         p77272  FIAAGLLLGI ATL--IA--- ---------T VMHVP----- -A--------
+         Q45579  LVASGLITGI TKA--II--- ---------Q AGWLS----- -A--------
+     PTDA_ECOLI  IIGGSMVKLL AMI--LE--- ---------M SGVLT----- -K--------
+     ptcc_ecoli  TLAGAMFVLI NNV--FLSFG EGSFFYSLGI ---------- ----R----L
+     PTCC_BACST  LIIGSLFLIV G--------- FLPIPGYNEW ---------- ----M----A
+     PTLB_LACLA  ILFSSIFILI AYV--PN--- ---------A ---------- ----W----G
+
+         Q57071  K-AEGF---- -----Q---- -NVAKMMEGA GG----IIFD ---NLAIIFA
+         Q53922  Q-HHYI---- -----Q---- -LISQIMEAS GQ----VIFD ---NLPLLFA
+     PTGA_BACSU  S-NDNV---- -----Q---- -LVAGVMESA GQ----IVFD ---NLPLLFA
+     YBFS_BACSU  ---------- ---------- --NIPIIKDA GG----VVFD ---NLPLIFA
+     PTGB_ECOLI  ---WLP---- -----A---- -VVSHVMAEA GG----SVFA ---NMPLIFA
+     PTGB_SALTY  ---WLP---- -----A---- -VVSHVMAEA GG----SVFA ---NMPLIFA
+         O32444  ---------- ---------- ---IPFMAAA GD----AIFS ---QLPLLFG
+         O34521  ---------- ---------- ---IPFVYQA GT----AVFD ---HLPLIFA
+     PTAA_ECOLI  ---------- ---------- ---VAFIAQA GG----AIFD ---NLALIFA
+     PTAA_KLEPN  ---------- ---------- ---VPFIAQA GG----AIFD ---NLALIFA
+         O51000  K-GTVA---- -----N---- -SILYLMKYT GE----VIFA ---NLPLMFA
+         O51590  N-IFFL---- -----Q---- -SVFKIMSAS GS----IIFS ---NLAPIFS
+         O51143  D-KIFI---- -----Q---- -NVLGLMKAI GN----AILL ---NMPLIFS
+     PTOA_ECOLI  G-NPVL---- -----Q---- -AIFTWMSKI GS----FAFS ---FLPVMFC
+         P96159  D-NAPF---- -----E---- -YLFMWMTKI GL----VAFI ---YLPVMFA
+         Q9RL52  K-GEGF---- -----H---- -LVFTWMANT GL----VAFT ---FLPVLFA
+         O07656  A-IPII---- -----K---- -TILDFIVSL GL----FAFV ---NLPVLFA
+     PTGA_MYCGE  G-IVGV---- -----K---- -FFGEFIKQG GN----VVFA ---NLPILFA
+     PTGA_MYCPN  D-LTGL---- -----R---- -YFGLFIKNG GD----VVFA ---NLPILFA
+     PTIB_BACSU  P-DGFW---- -----Y---- -QCWYIIEQG GW----TVFN ---QMPLLFA
+         Q9S2H4  D-GLGW---- -----D---- -KVAAVFNNA GG----ALTG ---SLPILFC
+         Q9S2H5  D-GLGW---- -----T---- -NVSKVMTGA GG----ALLD GSLGLPLLFC
+         q46072  -----Q---- -----P---- -DTYVFLHSM WR----SVFY ---FLPIMVG
+     ptga_brela  -----Q---- -----P---- -DTYVFLHSM WR----SVFY ---FLPIMVG
+         o68468  -----K---- -----A---- -AIWFFIDAM WR----SVFY ---FLPVMVA
+         q9x565  -----D---- -----S---- -STYHIFDAL RS----AVFY ---FLPILMA
+         Q9RLU2  -----N---- -----D---- -GGYIVLHAM GQ----AVFY ---FLPVVLG
+     PTBA_ERWCH  -----S---- -----S---- -GTYKLLFAA SD----ALFY ---FFPIVLG
+         q48408  -----Q---- -----Q---- -ATYKIWFAA SD----ALFF ---FFPLFLG
+     PTBA_ECOLI  -----Q---- -----S---- -GTYLILFSA SD----ALFW ---FFPIILG
+         q46129  -----T---- -----D---- -STYIILNAI GD----CLFN ---FFPIFLG
+     ptsa_pedpe  EVYPGL---- -----K---- -GIAEMINAM AS----APFT ---FLPILLG
+         Q9S6S6  -----KSLVE MFPMWK---- -GFADIVNTM SA----APFT ---FMPILIG
+     PTSA_STRMU  -----KSLVQ QFPIIK---- -GSSDMIQLM SA----APFW ---FLPILVG
+     ptsb_staxy  -----QSLIE VQNQFS---- -GLAEMINIF AN----APFT ---LLPILIG
+     ptsb_vibal  -----KSLIE ANPGLT---- -DLANMINTF AN----APFV ---YLPILLA
+     PTTB_BACSU  -----KSIVQ VYPQWA---- -DLANMINLI AG----TAFT ---FLPALIG
+     PTTB_ECOLI  QMYPSL---- -----Q---- -TIYDFLWLI GE----AIFF ---YLPVGIC
+         q9zhj9  ---------- -----E---- -NFVLFTQVL TD----TAFA ---FLPALVA
+         p94470  -----D---- -----S---- -PLYVLLDMF SS----AAFI ---ILPILIG
+     ptsb_klepn  -----S---- -----N---- -ALYIMLDMC SS----AAFI ---ILPILIG
+     ptsb_salty  -----G---- -----N---- -AIYIMLDMC SS----AAFI ---ILPILIG
+     sacx_bacsu  -----G---- -----S---- -PWIKMLDLV SS----TAFI ---LLPILVG
+     ptsb_bacsu  -----D---- -----S---- -ALLQLLDMF SS----AAFI ---FLPILIG
+     PTBA_BACSU  -----K---- -----S---- -QVHVILTAV GD----GAFY ---FLPLLLA
+         p77272  -----D---- -----AQGTL PDALNFMKVF SK----GLFT ---FLVILVG
+         Q45579  -----D---- -----S---- -QIAIILTVI GS----GLFT ---YLGILVG
+     PTDA_ECOLI  -----G---- -----S---- -PTLTILNVI GD----GAFF ---FLPLMVA
+     ptcc_ecoli  D-ASTI---- -----E---- -TLNGL-KGI GGNVYNGTLG ---IMSLMAP
+     PTCC_BACST  K-WFGE---- -----H---- -WLDKL-LYP VG----ATFD ---IMALVVS
+     PTLB_LACLA  F-HWSK---- -----D---- -IETFL-MTP YS----YSMG ---ILAFFVG
+
+         Q57071  LGVAIGLASG ---------- DGVAAI---- AAFVGFIVLN ----------
+         Q53922  MGTALGLAGG ---------- DGVAGI---- AALVGYLIMS ----------
+     PTGA_BACSU  VGVAIGLANG ---------- DGVAGI---- AAIIGYLVMN ----------
+     YBFS_BACSU  VGVAIGLAGG ---------- EGVAGL---- AAVIGYLILT ----------
+     PTGB_ECOLI  IGVALGFTNN ---------- DGVSAL---- AAVVAYGIMV ----------
+     PTGB_SALTY  IGVALGFTNN ---------- DGVSAL---- AAVVAYGIMV ----------
+         O32444  LGIAIGLSKD -------G-- SGAAGL---- AGAVAYFVLT ----------
+         O34521  IGIAIGISKD -------S-- NGAAGL---- SGAISYLMLD ----------
+     PTAA_ECOLI  IGVASSWSKD -------S-- AGAAAL---- AGAVGYFVLT ----------
+     PTAA_KLEPN  IGVASSWSKD -------N-- AGSAAL---- AGAVGYFVMT ----------
+         O51000  AAIPIGLAKV -------E-- KGTAAL---- AGVVGFLVMH ----------
+         O51590  IGIAVGLAKS -------D-- KGTSGI---- AAFIGYLVMN ----------
+         O51143  IGISIGVARM -------G-- QGTAAL---- GGLIGYLTFN ----------
+     PTOA_ECOLI  IAIPLGLARE -------N-- KGVAAF---- AGFIGYAVMN ----------
+         P96159  VAIPLGLARE -------E-- KGVAGF---- AGFVGYAAFN ----------
+         Q9RL52  MAIPLGLARE -------D-- KGVAAF---- SGFVGFVAMN ----------
+         O07656  IAIPLGLLKD -------KED KAYGAF---- SGLIGFMAMH ----------
+     PTGA_MYCGE  VAIAITFSQD ---------- AGVAGF---- SAFVFWATMN ----------
+     PTGA_MYCPN  IAIAITFSQD ---------- AGVAGF---- SAFVFWAAMN ----------
+     PTIB_BACSU  IGIPVALAKK -------A-- QARACL---- EALTVYLTFN ----------
+         Q9S2H4  IGVAIGFAKK -------A-- DGSTAL---- AAVVGFLVYS ----------
+         Q9S2H5  VGVAIGMAKK -------A-- DGSTAL---- AAVAGFLVYY ----------
+         q46072  ATAARKLG-- ---------- -ANEWI---- GAAIPAALLT ----------
+     ptga_brela  ATAARKLG-- ---------- -ANEWI---- GAAIPAALLT ----------
+         o68468  YNAGNKLR-- ---------- -IDPWV---- PAAVMLALFT ----------
+         q9x565  MSCAKRLG-- ---------- -ASPYL---- AVALAATILS ----------
+         Q9RLU2  YTSAKAFN-- ---------- -LNPYV---- GMMLGATLVI ----------
+     PTBA_ERWCH  YTAGKKFG-- ---------- -GNPFT---- TLVIGATLVH ----------
+         q48408  YTAGKKFG-- ---------- -GNPYI---- TMVIGGALTH ----------
+     PTBA_ECOLI  YTAGKRFG-- ---------- -GNPFT---- AMVIGGALVH ----------
+         q46129  FTAAKKFK-- ---------- -LNQFT---- GMAVGAAMVY ----------
+     ptsa_pedpe  FSATKRFG-- ---------- -GNPYL---- GATMGMIMVL ----------
+         Q9S6S6  YSATKRFG-- ---------- -GNPYL---- GAVVGMIMVM ----------
+     PTSA_STRMU  ISAAKRFG-- ---------- -ANQFL---- GASIGMIMVA ----------
+     ptsb_staxy  FSAAKRFG-- ---------- -GNAYL---- GAALGMILVH ----------
+     ptsb_vibal  FSASKKFG-- ---------- -GNPYL---- GAALGMLMVH ----------
+     PTTB_BACSU  WSAVKRFG-- ---------- -GNPLL---- GIVLGVMLVH ----------
+     PTTB_ECOLI  WSAVKKMG-- ---------- -GTPIL---- GIVLGVTLVS ----------
+         q9zhj9  WSTMKKFG-- ---------- -GTPVI---- GIVIGLMLVS ----------
+         p94470  FSAAKEFG-- ---------- -GTPFL---- GAVIGGIMTH ----------
+     ptsb_klepn  FTAAREFG-- ---------- -GNPYL---- GATLGGILTH ----------
+     ptsb_salty  FTAAREFG-- ---------- -GNPYL---- GATLGGILTH ----------
+     sacx_bacsu  FSAARQFG-- ---------- -SNPYL---- GAVIAGLLTH ----------
+     ptsb_bacsu  VSASKEFG-- ---------- -SNPYL---- GAVIGGIMIH ----------
+     PTBA_BACSU  MSAARKFG-- ---------- -SNPYV---- AAAIAAAILH ----------
+         p77272  YNAAQAFG-- ---------- -GTGVN---- GAIIAALFLL ---------G
+         Q45579  INASKEFG-- ---------- -GTPAL---- GALAGILIIN ----------
+     PTDA_ECOLI  HLPRIKFK-- ---------- -TNMSL---- AIAIAGVLVH ----------
+     ptcc_ecoli  FFIGMALAEE ---------- RKVDALAAGL LSVAAFMTVT ----------
+     PTCC_BACST  FGVAYRLAEK ---------- YKVDALSAGA ISLAAFLLAT PYQVPFTPEG
+     PTLB_LACLA  GTTAKALTDS KNRDLPAT-- NQINFLSTML ASMVGFL--- ---------L
+
+         Q57071  --KTM-GM-- ---------- --F------- -----L---- ----------
+         Q53922  --ATM-GK-- ---------- --I------- -----AGITI DDIFSYADG-
+     PTGA_BACSU  --VSM-SA-- ---------- --V------- -----L--LA -------NG-
+     YBFS_BACSU  --VTL-DN-- ---------- --M------- ---------- ----------
+     PTGB_ECOLI  --KTM-AV-- ---------- --V------- -----A---- ----------
+     PTGB_SALTY  --KTM-AV-- ---------- --V------- -----A---- ----------
+         O32444  --ATA-KT-- ---------- ---------- ---------- ----------
+         O34521  --AAT-KT-- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  --KAM-VT-- ---------- ---------- ---------- ----------
+     PTAA_KLEPN  --KAM-VT-- ---------- ---------- ---------- ----------
+         O51000  --QTI-NG-- ---------- --I------- -----L--YI -------QGI
+         O51590  --ATI-GV-- ---------- --L------- -----I--DV -------SG-
+         O51143  --ITE-NY-- ---------- --F------- -----I--EA ----------
+     PTOA_ECOLI  --LAV-NF-- ---------- --W------- -----L--TN -------KG-
+         P96159  --LAI-NF-- ---------- --F------- -----L--TV -------AG-
+         Q9RL52  --LAV-NF-- ---------- --Y------- -----L--TA -------KG-
+         O07656  --LGT-NF-- ---------- --Y------- -----L--K- ----------
+     PTGA_MYCGE  --AFM-SS-- ---------- --LI------ --IPVD--A- ----------
+     PTGA_MYCPN  --GFM-SS-- ---------- --LILPFDKA GKIITD--T- ----------
+     PTIB_BACSU  --YFV-SA-- ---------- --I------- -----L--T- ----------
+         Q9S2H4  --KVL-EA-- ---------- --F------- -P-------- ----------
+         Q9S2H5  --NVL-RQ-- ---------- --F------- -PEDCP--EG ----------
+         q46072  --PEFLAL-- ---------- --G------- -S-------- ----------
+     ptga_brela  --PEFLAL-- ---------- --G------- -S-------- ----------
+         o68468  --PEFLGLKE NPVANCVVDE ALG------- -T-------- ----------
+         q9x565  --SSINDV-- ---------- --K------- ---------- ----------
+         Q9RLU2  --PELMTN-- ---------- --L------- -V-------- ----------
+     PTBA_ERWCH  --PSMIAA-- ---------- --F------- -N-------- ----------
+         q48408  --PLMIQA-- ---------- --F------- -D-------- ----------
+     PTBA_ECOLI  --PLILTA-- ---------- --F------- -E-------- ----------
+         q46129  --PAITSF-- ---------- --A------- ---------- ----------
+     ptsa_pedpe  --PSLVNG-- ---------- --Y------- -S-------- ----------
+         Q9S6S6  --PGLING-- ---------- --Y------- -N-------- ----------
+     PTSA_STRMU  --PGAANI-- ---------- --I------- -G-------- ----------
+     ptsb_staxy  --PELMSA-- ---------- --Y------- -D-------- ----------
+     ptsb_vibal  --PDLLNG-- ---------- --W------- -G-------- ----------
+     PTTB_BACSU  --PDLLNA-- ---------- --W------- -G-------- ----------
+     PTTB_ECOLI  --PQLMNA-- ---------- --Y------- -L-------- ----------
+         q9zhj9  --PSLPNA-- ---------- --Y------- -A-------- ----------
+         p94470  --PALLNP-- ---------- --W------- -G-------- ----------
+     ptsb_klepn  --PALTNA-- ---------- --W------- -G-------- ----------
+     ptsb_salty  --PALTNA-- ---------- --W------- -G-------- ----------
+     sacx_bacsu  --PDLLDP-- ---------- --S------- -M-------- ----------
+     ptsb_bacsu  --PNLLNP-- ---------- --W------- -G-------- ----------
+     PTBA_BACSU  --PDLTAL-- ---------- --L------- -G-------- ----------
+         p77272  YNPAATT--- ---------- ---------- ---------- ----------
+         Q45579  --PEIA---- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  --PSFIEL-- ---------- --M------- -A-------- ----------
+     ptcc_ecoli  -PY------- ---------- ---------- ---------- ----------
+     PTCC_BACST  AKE------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  MAA------- ---------- ---------- ---------- ----------
+
+         Q57071  --------GV TP-------- --EKAA---- -----D---- ---A-----A
+         Q53922  ---------- -----AKT-- --LGQS---- -----A---- ---K-----D
+     PTGA_BACSU  ---------- --TIPSDSVE RAKFFT---- -----E---- ---N-----H
+     YBFS_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTGB_ECOLI  ---------- ---------- ----PL---- -----V---- ---L-----H
+     PTGB_SALTY  ---------- ---------- ----PL---- -----V---- ---L-----H
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTAA_KLEPN  ---------- ---------- ---------- ---------- ----------
+         O51000  TPESASLKAL LEL-----GM PETAAT---- -----A---- ---K-----S
+         O51590  ---------- ---------- --RAES---- -----F---- ---S-----S
+         O51143  ---------- -------FSG LVEAET---- -----M---- ---S-----S
+     PTOA_ECOLI  ---------- --I-----LP TTDAAV---- -----L---- ---K-----A
+         P96159  ---------- --V-----LD --SQSE---- -----R---- ---V-----A
+         Q9RL52  ---------- --V------D FEDEKA---- -----I---- ---E-----H
+         O07656  ------QHDL LV-------- --VADQ---- -----M---- ---S-----T
+     PTGA_MYCGE  ---------- --NNTASGYN ILYWKA---- -----V---- ---P-----Q
+     PTGA_MYCPN  --STPIAGFK VL-------- --YNKS---- -----V---- ---P-----V
+     PTIB_BACSU  ---------- --VWGGAFGV DMNQEV---- -----G---- ---G-----T
+         Q9S2H4  ---------- ---------- ----VT---- -----E---- ---A-----V
+         Q9S2H5  ---------- -------SKV VPQIGC---- -----Q---- ---V-----T
+         q46072  ---------- ---------- ----AG---- ---------- ----------
+     ptga_brela  ---------- ---------- ----AG---- ---------- ----------
+         o68468  ---------- ---------- ----ET---- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ----TDKALY TLFDGT---- ---MF---ST
+     PTBA_ERWCH  ---------- ---------- ----AM---- -----Q---- ---AP----D
+         q48408  ---------- ---------- ----AS---- -----M---- ---AP----G
+     PTBA_ECOLI  ---------- ---------- ----NG---- -----Q---- ---KA----D
+         q46129  ---------- ---------- -----G---- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ----VA---- -----T---- ---TMAA-GK
+         Q9S6S6  ---------- ---------- ----VA---- -----E---- ---AISN-HT
+     PTSA_STRMU  ---------- ---------- ----LA---- -----ANAPI SKAAT-IGAY
+     ptsb_staxy  ---------- ---------- ----YP---- -----K---- ---ALEAGKE
+     ptsb_vibal  ---------- ---------- ----FG---- -----G---- ---ASVS-GN
+     PTTB_BACSU  ---------- ---------- ----YG---- -----A---- ---AEQS-GE
+     PTTB_ECOLI  ---------- ---------- ----LG---- -----Q---- ---QL-----
+         q9zhj9  ---------- ---------- ----VA---- -----A---- ---GT---AT
+         p94470  ---------- ---------- ----LA---- -----E---- ---AK-----
+     ptsb_klepn  ---------- ---------- ----VA---- -----A---- ---G------
+     ptsb_salty  ---------- ---------- ----VA---- -----A---- ---G------
+     sacx_bacsu  ---------- ---------- ----LG---- -----S---- ---KT-----
+     ptsb_bacsu  ---------- ---------- ----LA---- -----E---- ---E------
+     PTBA_BACSU  ---------- ---------- ----AG---- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ---GY----Y
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ----KA---- -----A---- ---------Q
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  TGFANVLG-- ------IPTL ---Q--TGVF GGIIIGALAA ----WC---Y
+         Q53922  PAHALVLG-- ------IPTL ---Q--TGVF GGIIIGALAA ----WC---Y
+     PTGA_BACSU  PAYVNMLG-- ------IPTL ---A--TGVF GGIIVGVLAA ----LL---F
+     YBFS_BACSU  ---GKLLGLQ PPYEGAEHLI ---D--MGVF GGIIIGLLAA ----YL---Y
+     PTGB_ECOLI  LPAEEIAS-- ------KHLA ---D--TGVL GGIISGAIAA ----YM---F
+     PTGB_SALTY  LPAEEIAA-- ------KHLA ---D--TGVL GGIISGAIAA ----YM---F
+         O32444  -------I-- ------DASI ---N--MSFF GGIFAGIIAG ----HS---Y
+         O34521  -------I-- ------DKTN ---N--MAVF GGIIAGLIAG ----YT---Y
+     PTAA_ECOLI  -------I-- ------NPEI ---N--MGVL AGIITGLVGG ----AA---Y
+     PTAA_KLEPN  -------I-- ------NPEI ---N--MGVL AGIITGLVAG ----AV---Y
+         O51000  QEYTSVLG-- ------IFSL ---Q--MSVM GGLIAGFVAV ----FL---H
+         O51590  GAVGFVLG-- ------IKTL ---E--TGVF GGVVVGILTY ----YL---H
+         O51143  VGRINFFG-- ------VQTL ---N--TGIA GSLAVGLLVG ----YL---H
+     PTOA_ECOLI  NNIQSILG-- ------IQSI ---D--TGIL GAVIAGIIVW ----ML---H
+         P96159  YGVKNIIG-- ------IESI ---D--TGIL GAVVVGVIVA ----KL---H
+         Q9RL52  YGIADVLG-- ------VQSI ---D--TGLL GAVAVGIVVS ----LL---H
+         O07656  HGQTIILG-- ------IQSY ---N--TSVL GGIVAGLLVA ----SM---Y
+     PTGA_MYCGE  SAIASTLG-- ------LNSL ---S--TSVF GGIIVGALTA ----YL---Y
+     PTGA_MYCPN  HAIATTLG-- ------LRTL ---S--TSVF GGIIVGALTS ----VL---Y
+     PTIB_BACSU  SGLTMIAG-- ------IKTL ---D--TNII GAIFISSIVV ----FL---H
+         Q9S2H4  VQDGADVA-- ------ATYN ---D--PGVL GGIIMGLLAA ----VL---W
+         Q9S2H5  DGSGEVTA-- ------FVFQ ---N--PGVF GGIVMGLLTA ----YF---W
+         q46072  -DTVTVFG-- ------LPMV ---L--NDYS GQVFPPLIAA ----IGLYWV
+     ptga_brela  -DTVTVFG-- ------LPMV ---L--NDYS GQVFPPLIAA ----IGLYWV
+         o68468  -CSIDLLG-- ------INVA ---L--PDYG GNVFVPLIMA ----LVAAGI
+         q9x565  --GLELFG-- ------IGLP ---Q--ITYS NSFIPILLAI ----WFMGYV
+         Q9RLU2  PVYNTFFG-- ------IPIL FP-P--NGYQ YTVIPVIFIT ----FLGAKV
+     PTBA_ERWCH  HSTLHFLG-- ------IPIT ---F--INYS SSVIPILFAS ----WVSCKL
+         q48408  AATEYFLG-- ------IPVT ---F--INYS SSVIPIILAS ----WVSCWI
+     PTBA_ECOLI  ALGLDFLG-- ------IPVT ---L--LNYS SSVIPIIFSA ----WLCSIL
+         q46129  -QTVDFFG-- ------IPVV ---MPSSSYQ STVIPIILAI ----YIASKV
+     ptsa_pedpe  MVYWNVFG-- ------LHVA ---Q--AGYQ GQVLPVLGVA ----FILATL
+         Q9S6S6  MTYWDIFG-- ------FKVA ---Q--AGYQ GQVLPVIGVA ----FILAKL
+     PTSA_STRMU  TGFWNIFG-- ------LHVT ---Q--ASYT YQVIPVLVAV ----WLLSIL
+     ptsb_staxy  IPHWNLFG-- ------LEIN ---Q--VGYQ GQVLPMLVAT ----YILATI
+     ptsb_vibal  IPVWNILG-- ------FEIQ ---K--VGYQ GSVLPVLVSA ----FILAKV
+     PTTB_BACSU  IPVWNLFG-- ------LEVQ ---K--VGYQ GQVLPILLAS ----YMLAKI
+     PTTB_ECOLI  PEVWDFGM-- ------FSIA ---K--VGYQ AQVIPALLAG ----LALGVI
+         q9zhj9  PINLTILG-- ------LNIP ---V--VGYQ GSVLPALVLG ----IIAAKT
+         p94470  PNYMHFLG-- ------FDIA ---M--VGYQ GTVVPILLAT ----YVMCKI
+     ptsb_klepn  FHTMNFFG-- ------IEVA ---M--IGYQ GTVFPVLLAV ----WFMSMV
+     ptsb_salty  FHTMNFFG-- ------FEIA ---M--IGYQ GTVFPVLLAV ----WFMSIV
+     sacx_bacsu  PSSLDIWG-- ------LHIP ---M--MGYQ GSMIPILLSV ----FVMSKI
+     ptsb_bacsu  QLITCIFS-- ------DLIS ---L--FSAT GNCYPCPACG ----VCDEQG
+     PTBA_BACSU  -KPISFIG-- ------LPVT ---A--ATYS STVIPILLSI ----WIASYV
+         p77272  AGFHDFFG-- ------LPI- -------DPR GNIIGVLIAA ----WACARI
+         Q45579  --KISLFG-- ------EEL- ------LPGR GGLIGVLFAA ----IFIAYT
+     PTDA_ECOLI  GEHVEFAL-- ------IPVT ---A--VKYT YTVIPALVMT ----WCLSYI
+     ptcc_ecoli  -SVGEAYA-- ------VGAN WLGG--ANII SGIIIGLVVA EMFTFI---V
+     PTCC_BACST  -TIMVSGG-- ------IPVQ WVGS--KGLF VAMILAIVST EIYRKI---I
+     PTLB_LACLA  -EPAKEGG-- ------FLTA FMGT--KGLL TAFIAAFVTV NVYKVC---V
+
+         Q57071  NKFYNISLPS YLGFFAGKRF VPIMMATC-S FI-LAFPMAI IWP--S---I
+         Q53922  NKFYNIQLPQ FLGFFAGKRF VPIITSLV-A IV-TGIVLSF VWP--P---V
+     PTGA_BACSU  NRFYTIELPQ YLGFFAGKRF VPIVTSIS-A LI-LGLIMLV IWP--P---I
+     YBFS_BACSU  KRFSSIELHP VLGFFSGKRF VPIITSVS-S LV-IGVIFSF VWP--L---I
+     PTGB_ECOLI  NRFYRIKLPE YLGFFAGKRF VPIISGLA-A IF-TGVVLSF IWP--P---I
+     PTGB_SALTY  NRFYRIKLPE YLGFFAGKRF VPIISGLA-A IF-TGVVLSF VWP--P---I
+         O32444  NAFHATRLPE WLAFFAGKRL VPIMAGLF-A LV-AGALSGV IWP--S---I
+         O34521  NRFKDTKLPE YLGFFSGRRL VPILTAII-T II-LAGIFGV VWP--P---I
+     PTAA_ECOLI  NRWSDIKLPD FLSFFGGKRF VPIATGFF-C LV-LAAIFGY VWP--P---V
+     PTAA_KLEPN  NRWAGIKLPD FLSFFGGKRF VPIATGFF-C LI-LAAIFGY VWP--P---V
+         O51000  NRFHNIQLPT FLAFFGGTRF VPIVTTMA-M FV-VGIFLTF IWP--F---I
+         O51590  SRFNKVDLPK VLGFFSGSRF VPIIVSFS-S IF-LAVIMFL VWP--F---V
+         O51143  NKFYNMKLPK PFVFFSECHF VPIVIILPFC VF-LAIFFCL IWS--S---F
+     PTOA_ECOLI  ERFHNIRLPD ALAFFGGTRF VPIISSLV-M GL-VGLVIPL VWP--I---F
+         P96159  QRFYTFKMPD ALAFFGGARF VPIISALV-L GV-VGVFIPF VWP--Y---F
+         Q9RL52  RRFRTQRMPD ALAFFGGLRF VPIVSALV-L SV-LGLLIPL VWP--T---F
+         O07656  KKIVNLRIPE SLGSYSGPRL VPIITLIV-M SG-FGLIIPF IWP--P---F
+     PTGA_MYCGE  NKFYAIRLPD VIGFFSGTRF VPIICMTI-A IP-VALLLLM VWP--G---V
+     PTGA_MYCPN  KKFYAIRLPD VIGFFSGTRF VPIICFVV-A IP-VALILLM IWP--A---V
+     PTIB_BACSU  NRYFDKKLPD FLGIFQGSTY IVMISFFI-M IP-IALAVSY IWP--M---V
+         Q9S2H4  QRYHRKKLVD WLGFFNGRRL VPIIMAFV-G IV-VGVFFGL VWE--P---I
+         Q9S2H5  QRFHRTRLVD WLGFFNGRRL VPIIMAFV-A IV-FAALCLW VWP--P---I
+         q46072  EKGLKKIIPE AVQMV----F VPFFSLLI-M IP-AT--AFL LGP--FGIGV
+     ptga_brela  EKALKKIIPE AVQMV----F VPFFSLLI-M IP-AT--AFL LGP--FGIGV
+         o68468  YKGFQKIIPS AVHMV----F VPFLTLLF-T IP-IT--AVL IGP--FGVWL
+         q9x565  TKVVKRVIPN TLQYF----L TPLLVMLI-T LP-AT--LLI FGP--LGFYM
+         Q9RLU2  EKILKKIVPP LLAHN----L NSFLTILI-T FP-LA--ILI IGP--VTNVL
+     PTBA_ERWCH  EKPLNRWLHA NIRNF----F TPLLCIVI-S VP-LT--FLL IGP--SATWL
+         q48408  EKRSNAILPS SMKNF----F TPAICLAV-V VP-LT--FLI IGP--VATWL
+     PTBA_ECOLI  ERRLNAWLPS AIKNF----F TPLLCLMV-I TP-VT--FLL VGP--LSTWI
+         q46129  EKLFKKIIPD MVKTF----L VPFATLLV-V VP-VT--FMA IGP--ISTIA
+     ptsa_pedpe  EKFFHKHIKG AFDFT----F TPMFAIVI-T GF-LT--FTI VGP--VLRTV
+         Q9S6S6  ERFFHKYLND AIDFT----F TPLLSVII-T GF-LT--FTI VGP--ALRFV
+     PTSA_STRMU  EKFFHKRLPS AVDFT----F TPLLSVII-T GF-LT--FIV IGP--VMKEV
+     ptsb_staxy  EKGLRKVIPT VLDNL----L TPLLAILS-T GF-IT--FSF VGP--LTRTL
+     ptsb_vibal  ELGLRKVIPS VLDNL----L TPLLAIFI-A GL-LT--FTV VGP--FTRDI
+     PTTB_BACSU  EVFLTKRTPE GIQLL----V VAPITLLL-T GF-AS--FII IGP--ITFAI
+     PTTB_ECOLI  ETRLKRIVPD YLYLV----V VPVCSLIL-A VF-LA--HAL IGP--FGRMI
+         q9zhj9  QKALKKVVPD VLDLI----V TPFITLLF-S MV-LG--LLI VGP--IMHNA
+         p94470  ERGLRNVVPH TVSLL----V VPFVTVIS-T GF-IT--ILA IGP--LGNLL
+     ptsb_klepn  EKRLRRVIPD ALDLI----L TPFLTVII-S GF-IA--LLL IGP--AGRAL
+     ptsb_salty  EKQLRRAIPD ALDLI----L TPFLTVII-S GF-IA--LLI IGP--AGRAL
+     sacx_bacsu  EKLLKSIVPK SLDVV----I IPFITVMV-T GC-LA--LIV MNP--AASII
+     ptsb_bacsu  REMDEKSGST CGDLL----V TPFVTVIV-T GF-VA--FIA IGP--LGRAL
+     PTBA_BACSU  EKWIDRFTHA SLKLI----V VPTFTLLI-V VP-LT--LIT VGP--LGAIL
+         p77272  EGMVRRFMPD DLDML----L TSLITLLI-T AT-LA--YLI IMP--LGGWL
+         Q45579  EQFIRRFIPQ SLDII----V TPTVSLLI-T GI-VT--YVV FMP--LGGFI
+     PTDA_ECOLI  ERWVDSITPA VTKNF----L KPMLIVLI-A AP-LA--ILL IGP--IGIWI
+     ptcc_ecoli  RRNWVIKLPD SVPASVSRSF SALIPGFI-I LS-VMGI--I AWALNT---W
+     PTCC_BACST  QKNIVIKLPD GVPPAVARSF VALIPGAA-V LV-VVWVARL ILEMTP---F
+     PTLB_LACLA  KNNVTIRMPE DVPPNISQVF KDLIPFTV-S VVLLYGLELL V---------
+
+         Q57071  QG-----GLN AFSEGLL--- A-SN-T-GLA VFLFG----- FIKRLLIPFG
+         Q53922  QD-----GLN NLSNFLL--- G-KN-L-ALT TFIFG----- IIERSLIPFG
+     PTGA_BACSU  QH-----GLN AFSTGLV--- E-AN-P-TLA AFIFG----- VIERSLIPFG
+     YBFS_BACSU  QN-----GIN AASSLI---- A-D--S-TVG LFFYA----- TIYRLLIPFG
+     PTGB_ECOLI  GS-----AIQ TFSQWAA--- Y-QN-P-VVA FGIYG----- FIERCLVPFG
+     PTGB_SALTY  GT-----AIQ AFSQWAA--- Y-QN-P-VVA FGIYG----- FIERCLVPFG
+         O32444  QG-----GLD ALAHAVS--- T--S-G-ALG QFVYG----- TLNRALIPVG
+         O34521  QS-----CIN SFGEWML--- G--L-G-GIG AGIFG----- LFNRLLIPLG
+     PTAA_ECOLI  QH-----AIH AGGEWIV--- S--A-G-ALG SGIFG----- FINRLLIPTG
+     PTAA_KLEPN  QH-----AIH SGGEWIV--- S--A-G-ALG SGIFG----- FINRLLIPTG
+         O51000  QG-----AMT SFGRIVE--- Q--S-G-LFG TFAYG----- AIKRSLIPFG
+         O51590  QS-----GIN KVGGLVD--- S--T-G-YIG TLIYG----- IFLRMLGPFG
+         O51143  DD-----LIA SLGLFVF--- R--F-E-YFG SFLYG----- FLNRLLLPLG
+     PTOA_ECOLI  AM-----GIS GLGHMIN--- S--A-G-DFG PMLFG----- TGERLLLPFG
+         P96159  AA-----GIN GIGHVIE--- S--A-G-DFG PMLFG----- TGERLLLPIG
+         Q9RL52  NG-----WIS AVGRGIG--- H--T-G-VFG PFFFG----- MGEVLLRPIG
+         O07656  FN-----LFM LIGHWIS--- T--S-G-PVG YFFYA----- VAERVTIPFG
+     PTGA_MYCGE  SI-----LLN LIGTGLGILG G-RG-Y-GAN SLIFG----- YIERALIPFG
+     PTGA_MYCPN  SI-----GLN AIGTGLGFLG G-KG-Y-GAN SLIFG----- YIERSLIPFG
+     PTIB_BACSU  QS-----GIG SLQSFLV--- A--S-G-AVG VWIYT----- FLERILIPTG
+         Q9S2H4  GD-----GIS NFGEWMT--- G--L-G-SGG AALFG----- GVNRALIPVG
+         Q9S2H5  GD-----ALE SFSDWLN--- G--I-G-AWG AGVFG----- LANRALLVIG
+         q46072  GN-----GIS NLLEAIN--- N-FS-P-FIL SIVIP----- LLYPFLVPLG
+     ptga_brela  GN-----GIS SLLEAVN--- N-FS-P-FIL SIVIP----- LLYPFLVPLG
+         o68468  GS-----TIG VGLAWMN--- G-NA-P-FVF AILIP----- MLYPFLVPLG
+         q9x565  GE-----GII GFFNLLM--- K-YV-GSWFV MMLYS----- ALQPFIIMLG
+         Q9RLU2  SS-----LIS AGVSGLY--- E-VS-P-VIT SVVVG----- LLYQPLVIFG
+     PTBA_ERWCH  SQ-----MLA GGYQWLY--- G-LN-S-LLA GAVMG----- ALWQVCVIFG
+         q48408  SQ-----LLA NGYQLIY--- Q-VA-P-WLA GAAMG----- ALWQVCVIFG
+     PTBA_ECOLI  SE-----LIA AGYLWLY--- Q-AV-P-AFA GAVMG----- GFWQIFVMFG
+         q46129  AN-----ALG DLTLAIY--- N-FN-P-TIA GLFIG----- GFWQVFVMFG
+     ptsa_pedpe  SD-----ALT NGLVGLY--- N-ST-G-WIG MGIFG----- LLYSAIVITG
+         Q9S6S6  SN-----GLT DGLVGLY--- N-TL-G-ALG MLVFG----- GFYSAIVVTG
+     PTSA_STRMU  SD-----WLT NGIVWLY--- D-TT-G-FLG MGVFG----- ALYSPVVMTG
+     ptsb_staxy  GY-----WLS DGLTWLY--- E-FG-G-AIG GLIFG----- LLYAPIVITG
+     ptsb_vibal  GF-----LLG DGLNWLY--- N-TA-G-FVG GAVFG----- LIYAPFVITG
+     PTTB_BACSU  GN-----VLT SGLISVF--- G-SF-A-ALG GLLYG----- GFYSALVITG
+     PTTB_ECOLI  GD-----GVA FAVRHLM--- TGSF-A-PIG AALFG----- FLYAPLVITG
+         q9zhj9  EQ-----LIF GAIKGFM--- G-LP-F-GLG GLVVG----- GVHQLIVVTG
+         p94470  GD-----GIT TVLNFIY--- H-YG-G-ALA GLIFG----- GLYSMIVITG
+     ptsb_klepn  GD-----GIS FILSTLI--- S-HA-G-WLA GLLFG----- GLYSVIVITG
+     ptsb_salty  GD-----GIS FVLSTLI--- S-HA-G-WLA GLLFG----- GLYSVIVITG
+     sacx_bacsu  GQ-----IMT QSIVYIY--- D-HA-G-IAA GALFG----- GIYSTIVLSG
+     ptsb_bacsu  GS-----GIT VALTYVY--- D-HA-G-FVA GLIFG----- GTYSLIVLTG
+     PTBA_BACSU  GE-----YLS SGVNYLF--- D-HA-G-LVA MILLA----- GTFSLIIMTG
+         p77272  FE-----GMS WLFMHLN--- ---S-N-PFG CAVLA----- GLFLIAVVFG
+         Q45579  SD-----AIA SGLLSIL--- D-IG-G-IAA GFILG----- ATFLPLVVTG
+     PTDA_ECOLI  GS-----AIS ALVYTIH--- G-YL-G-WLS VAIMG----- ALWPLLVMTG
+     ptcc_ecoli  GTNFHQIIMD TISTPLASL- ---------- GSVVG-WAYV IFVPLLWFFG
+     PTCC_BACST  ESFHNIVSVL LNKPLSV-LG ---------- GSVFGAIVAV LLVQLLWSTG
+     PTLB_LACLA  KGTLGVTVAE SIGTLIAPLF S-AADG-YLG ITLIF----- GAYAFFWFVG
+
+         Q57071  LHHIFHA--- ---------P FWFE-F---G SY-------- ----------
+         Q53922  LHHIFYA--- ---------P FWFE-F---G HY-------- ----------
+     PTGA_BACSU  LHHIFYS--- ---------P FWYE-F---F SY-------- ----------
+     YBFS_BACSU  LHHIFYT--- ---------P FYFM-M---G EY-------- ----------
+     PTGB_ECOLI  LHHIWNV--- ---------P FQMQ-I---G EY-------- ----------
+     PTGB_SALTY  LHHIWNV--- ---------P SQMQ-I---G EY-------- ----------
+         O32444  LHHVLNS--- ---------Y FWFG-M---G TC-------- ----------
+         O34521  LHHVLNN--- ---------I FWFQ-F---G EY-------- ----------
+     PTAA_ECOLI  LHQVLNT--- ---------I AWFQ-I---G EF-------- ----------
+     PTAA_KLEPN  LHQVLNT--- ---------I AWFQ-I---G EF-------- ----------
+         O51000  LHHIFYL--- ---------P FWQTAV---G GT-------- ----------
+         O51590  LHHIFYL--- ---------P FWTTGL---G GS-------- ----------
+         O51143  LHSILSF--- ---------P FEFTSL---G GV-------- ----------
+     PTOA_ECOLI  LHHILVA--- ---------L IRFTDA---G GT-------- ----------
+         P96159  LHHILVA--- ---------L IRFTEA---G GT-------- ----------
+         Q9RL52  LHHILVA--- ---------M FRFTDV---G GS-------- ----------
+         O07656  LNHLVTS--- ---------V FRFTPI---G GS-------- ----------
+     PTGA_MYCGE  VHHAFYA--- ---------P LWYT-S--AG GS-------- LQEIANQQVW
+     PTGA_MYCPN  VHHAFYA--- ---------P LWYT-S--AG GSLQEIVNQQ VWIRPDFHLS
+     PTIB_BACSU  LHHFIYT--- ---------P FIYG------ ---------- ----------
+         Q9S2H4  MHQFVNT--- ---------V AWFQ-L---G DF-------- ----------
+         Q9S2H5  LHQFLNV--- ---------P MWFQ-F---G SY-------- ----------
+         q46072  LHWPLNA--- ---------I MIQN-I---N ---------- ----------
+     ptga_brela  LHWPLNA--- ---------I MIQN-L---N ---------- ----------
+         o68468  LHWPLNA--- ---------L MLVN-I---E ---------- ----------
+         q9x565  AGNFIMP--- ---------V VASL-I---A ---------- ----------
+         Q9RLU2  LHWPMSA--- ---------I GINN-L---A ---------- ----------
+     PTBA_ERWCH  LHWGFVP--- ---------L MLNN-F---S ---------- ----------
+         q48408  LHWGLIP--- ---------L MINN-L---A ---------- ----------
+     PTBA_ECOLI  LHWGLVP--- ---------L CINN-F---T ---------- ----------
+         q46129  LHWGLVP--- ---------I AMNN-L---A ---------- ----------
+     ptsa_pedpe  LHQTFPA--- ---------I ETQL-LANVA ---------- ----------
+         Q9S6S6  LHQSFPA--- ---------I ETML-I---T NY-------- ----------
+     PTSA_STRMU  LHQSFPA--- ---------I ETQL-I---S AF-------- ----------
+     ptsb_staxy  MHHSFIA--- ---------I ETQL-I---A DS-------- ----------
+     ptsb_vibal  MHHSFIA--- ---------I ETQL-L---A DI-------- ----------
+     PTTB_BACSU  MHHTFLA--- ---------V DLQL-I---G S--------- ----------
+     PTTB_ECOLI  VHQTTLA--- ---------I DLQM-I---Q ---------- ----------
+         q9zhj9  VHHALNA--- ---------L EVEL-L---S ---------- ----------
+         p94470  VHHSFHA--- ---------I EANL-L---A ---------- ----------
+     ptsb_klepn  IHHSFHA--- ---------I EAGL-L---G N--------- ----------
+     ptsb_salty  IHHSFHA--- ---------V EAGL-L---G N--------- ----------
+     sacx_bacsu  LHHSFYA--- ---------I EATL-L---A N--------- ----------
+     ptsb_bacsu  VHHSFHA--- ---------I EAGL-I---A ---------- ----------
+     PTBA_BACSU  MHYAFVP--- ---------I MINN-I---A ---------- ----------
+         p77272  VHQGFIP--- ---------V YLAL-M---D ---------- ----------
+         Q45579  LHQGLTP--- ---------M HMEL-I---N ---------- ----------
+     PTDA_ECOLI  MHRVFTP--- ---------T IIQT-I---A ---------- ----------
+     ptcc_ecoli  IHGALALTAL DNGIMTPWAL ENI------- ---------- ----------
+     PTCC_BACST  LHGAA----- --IVGGVMGP IWL------- ---------- ----------
+     PTLB_LACLA  IHGPS----- --IVEPAIAA ITY------- ---------- ----------
+
+         Q57071  ---------- ---------- ---------- --KN------ ----------
+         Q53922  ---------- ---------- ---------- --VN------ ----------
+     PTGA_BACSU  ---------- ---------- ---------- --KS------ ----------
+     YBFS_BACSU  ---------- ---------- ---------- --TD------ ----------
+     PTGB_ECOLI  ---------- ---------- ---------- --TN------ ----------
+     PTGB_SALTY  ---------- ---------- ---------- --TN------ ----------
+         O32444  ---------- ---------- ---------- --QEILVSGA QAAGQALPAL
+         O34521  ---------- ---------- ---------- --NG------ ----------
+     PTAA_ECOLI  ---------- ---------- ---------- --TN------ ----------
+     PTAA_KLEPN  ---------- ---------- ---------- --TN------ ----------
+         O51000  ---------- ---------- ---------- --LE------ ----------
+         O51590  ---------- ---------- ---------- --VI------ ----------
+         O51143  ---------- ---------- ---------- --EI------ ----------
+     PTOA_ECOLI  ---------- ---------- ---------- --QE------ ----------
+         P96159  ---------- ---------- ---------- --MD------ ----------
+         Q9RL52  ---------- ---------- ---------- --GT------ ----------
+         O07656  ---------- ---------- ---------- --AV------ ----------
+     PTGA_MYCGE  IRAPGSDYVT RVIGWEDFNT PGKWVIPAAL ANGT------ ----------
+     PTGA_MYCPN  DNYVARVIGW VDPNNSSMYI IPGALNGQNG SSTG------ ----------
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- --TN------ ----------
+         Q9S2H5  ---------- ---------- ---------- --TK------ ----------
+         q46072  ---------- ---------- ---------- ---------- ----------
+     ptga_brela  ---------- ---------- ---------- ---------- ----------
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- --QH------ ----------
+     PTSA_STRMU  ---------- ---------- ---------- --QN------ ----------
+     ptsb_staxy  ---------- ---------- ---------- --S------- ----------
+     ptsb_vibal  ---------- ---------- ---------- --A------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- --P------- ----------
+     ptsb_salty  ---------- ---------- ---------- --P------- ----------
+     sacx_bacsu  ---------- ---------- ---------- --P------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- --ATYQQYGS VEAA------ ----------
+     PTCC_BACST  ---------- ---------- --SLMDENRM VFQQ------ ----------
+     PTLB_LACLA  ---------- ---------- --ANIDVNLH LIQA------ ----------
+
+         Q57071  ---------- ---------- ---------- -------AAG QIIHGDQRIF
+         Q53922  ---------- ---------- ---------- -------ESG NLVRGDQRIW
+     PTGA_BACSU  ---------- ---------- ---------- -------AAG EIIRGDQRIF
+     YBFS_BACSU  ---------- ---------- ---------- ------PSTG NTVTGDLTRF
+     PTGB_ECOLI  ---------- ---------- ---------- -------AAG QVFHGDIPRY
+     PTGB_SALTY  ---------- ---------- ---------- -------AAG QVFHGDIPRY
+         O32444  EKLCVDPALA KTLVVGQEHT FAFKNAVTPE ITAVVKEVTE VVKSGDLHRF
+         O34521  ---------- ---------- ---------- -------V-- ---TGDLARF
+     PTAA_ECOLI  ---------- ---------- ---------- -------AAG TVFHGDINRF
+     PTAA_KLEPN  ---------- ---------- ---------- -------AAG TVFHGDINRF
+         O51000  ---------- ---------- ---------- -------INN ELISGAQNIF
+         O51590  ---------- ---------- ---------- -------IDG KLIEGTQNIF
+         O51143  ---------- ---------- ---------- -------VNG DTVRGLKNIF
+     PTOA_ECOLI  ---------- ---------- ---------- -------VCG QTVSGALTIF
+         P96159  ---------- ---------- ---------- -------VCG QTVSGALNIF
+         Q9RL52  ---------- ---------- ---------- -------VCG DHVSGALNLF
+         O07656  ---------- ---------- ---------- -------IGG EEYYGTLNMF
+     PTGA_MYCGE  ---------- ---------- ---------- ------SGMM NGATTTGQDS
+     PTGA_MYCPN  ---------- ---------- ---------- ------NTMS KDLNGALSAY
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- -------SAG DVVHGDITRF
+         Q9S2H5  ---------- ---------- ---------- -------PDG TVVHGDINMF
+         q46072  ---------- ---------- ---------- ---------- ----------
+     ptga_brela  ---------- ---------- ---------- ---------- ----------
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- -------S-- ----------
+     PTSA_STRMU  ---------- ---------- ---------- -------G-- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ------LAAG KTF-------
+     PTCC_BACST  ---------- ---------- ---------- ------NPNA ELP-------
+     PTLB_LACLA  ---------- ---------- ---------- ------GQHA DKV-------
+
+         Q57071  IE-------- ---------- ---------- ---------- ----------
+         Q53922  MA-------- ---------- ---------- ---------- ----------
+     PTGA_BACSU  MA-------- ---------- ---------- ---------- ----------
+     YBFS_BACSU  FA-------- ---------- ---------- ---------- ----------
+     PTGB_ECOLI  MA-------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  MA-------- ---------- ---------- ---------- ----------
+         O32444  FG-------- ---------- ---------- ---------- ----------
+         O34521  FA-------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  YA-------- ---------- ---------- ---------- ----------
+     PTAA_KLEPN  YA-------- ---------- ---------- ---------- ----------
+         O51000  FK-------- ---------- ---------- ---------- ----------
+         O51590  FA-------- ---------- ---------- ---------- ----------
+         O51143  YA-------- ---------- ---------- ---------- ----------
+     PTOA_ECOLI  QA-------- ---------- ---------- ---------- ----------
+         P96159  YS-------- ---------- ---------- ---------- ----------
+         Q9RL52  YA-------- ---------- ---------- ---------- ----------
+         O07656  MA-------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  TSALSKYMSK ESTNFLSWKE LVDGLTRKGN FDELAKNGLL DGSNKIWIGL
+     PTGA_MYCPN  MSKESTAFLT WKDLVDGLTF KGNFDKMAEN GLLDGSNKIW LGLNGSGILG
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  LA-------- ---------- ---------- ---------- ----------
+         Q9S2H5  LA-------- ---------- ---------- ---------- ----------
+         q46072  ---------- ---------- ---------- ---------- ----------
+     ptga_brela  ---------- ---------- ---------- ---------- ----------
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- ---------- ----------
+     PTSA_STRMU  ---------- ---------- ---------- ---------- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  ---------- ---------- ---------- ---------- ----------
+         Q53922  ---------- ---------- ---------- ---------- ----------
+     PTGA_BACSU  ---------- ---------- ---------- ---------- ----------
+     YBFS_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTAA_KLEPN  ---------- ---------- ---------- ---------- ----------
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  ---------- ---------- ---------- ---------- ----------
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         P96159  ---------- ---------- ---------- ---------- ----------
+         Q9RL52  ---------- ---------- ---------- ---------- ----------
+         O07656  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  NQSGILGKKV LLSDGKDYTI TFKTFANTTP TFWSHGAHAL LPISGTPSAI
+     PTGA_MYCPN  KKLLLSDGNV YTITFKTFAN TTPIAWSKGA QAVLPLNASS TIVNNPTALA
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  ---------- ---------- ---------- ---------- ----------
+     ptga_brela  ---------- ---------- ---------- ---------- ----------
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- ---------- ----------
+     PTSA_STRMU  ---------- ---------- ---------- ---------- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  ---------- ---------Q IRDNVP---L ---------- TAGK-F----
+         Q53922  ---------- ---------Q YQDGVP---F ---------- TAGA-F----
+     PTGA_BACSU  ---------- ---------Q IKDGVQ---L ---------- TAGT-F----
+     YBFS_BACSU  ---------- ---------G -----D---P ---------- TAGR-F----
+     PTGB_ECOLI  ---------- ---------G -----D---P ---------- TAGK-L----
+     PTGB_SALTY  ---------- ---------G -----D---P ---------- TAGM-L----
+         O32444  ---------- ---------G -----D---K ---------- SAGV-F----
+         O34521  ---------- ---------K -----D---P ---------- TAGT-Y----
+     PTAA_ECOLI  ---------- ---------G -----D---G ---------- TAGM-F----
+     PTAA_KLEPN  ---------- ---------G -----D---G ---------- TAGM-F----
+         O51000  ---------- ---------Q -----L---A DPNTVHFEVA KGTR-F----
+         O51590  ---------- ---------E -----L---A -AQGTDRFFI GTSR-F----
+         O51143  ---------- ---------Q LL---D---P ---------- SLGK-FSSGF
+     PTOA_ECOLI  ---------- ---------Q -----L---S C-PTTHGFSE SATR-F----
+         P96159  ---------- ---------E -----L---S -CADTTTFTP EVTA-F----
+         Q9RL52  ---------- ---------Q -----LDCSA ---APGSAVT DATH-F----
+         O07656  ---------- ---------Y -----V---K E---NAVIPL DLAG-K----
+     PTGA_MYCGE  TNGVTVNGTA NSKTYNVSQF TVAVPS---L ---------- NPAQ-Y----
+     PTGA_MYCPN  AATQSNNNTN NIKLYPVNSF RVAVES---L ---------- NPAQ-Y----
+     PTIB_BACSU  --PAVAEGGI VTYWAQHLGE YSQSAK---P ---------- LKEL-F----
+         Q9S2H4  ---------- ---------G -----D---P ---------- SAGI-F----
+         Q9S2H5  ---------- ---------G -----D---P ---------- DAGQ-F----
+         q46072  ---------- ---------- ---------T ---------- LGYD-F----
+     ptga_brela  ---------- ---------- ---------T ---------- LGYD-F----
+         o68468  ---------- ---------- ---------A ---------- LGYD-F----
+         q9x565  ---------- ---------- ---------A ---------- NGYD-P----
+         Q9RLU2  ---------- ---------- ---------Q ---------- YGVD-Y----
+     PTBA_ERWCH  ---------- ---------- ---------V ---------- IGHD-T----
+         q48408  ---------- ---------- ---------V ---------- LGHD-S----
+     PTBA_ECOLI  ---------- ---------- ---------V ---------- LGYD-T----
+         q46129  ---------- ---------- ---------V ---------- IGYD-P----
+     ptsa_pedpe  ---------- ---------- ---------K ---------- TGGS-F----
+         Q9S6S6  ---------- ---------- ---------G ---------- IGGD-F----
+     PTSA_STRMU  ---------- ---------- ---------T ---------- GHGD-F----
+     ptsb_staxy  ---------- ---------- ---------S ---------- TGGS-F----
+     ptsb_vibal  ---------- ---------- ---------T ---------- TGGT-F----
+     PTTB_BACSU  ---------- ---------- ---------K ---------- LGGT-F----
+     PTTB_ECOLI  ---------- ---------- ---------S ---------- MGGT-P----
+         q9zhj9  ---------- ---------- ---------S ---------- TGKD-A----
+         p94470  ---------- ---------- ---------K ---------- LGVN-Y----
+     ptsb_klepn  ---------- ---------- ---------S ---------- IGVN-F----
+     ptsb_salty  ---------- ---------- ---------S ---------- IGVN-F----
+     sacx_bacsu  ---------- ---------- ---------H ---------- VGVN-F----
+     ptsb_bacsu  ---------- ---------- ---------D ---------- IGKN-Y----
+     PTBA_BACSU  ---------- ---------- ---------Q ---------- NGHD-Y----
+         p77272  ---------- ---------- ---------S ---------- QGFN-S----
+         Q45579  ---------- ---------- ---------S ---------- IGND-P----
+     PTDA_ECOLI  ---------- ---------- ---------E ---------- TGKEGM----
+     ptcc_ecoli  ---------- ---------- ---------- ---------- --HI-W----
+     PTCC_BACST  ---------- ---------- ---------- ---------- --NV-I----
+     PTLB_LACLA  ---------- ---------- ---------- ---------- --IT-S----
+
+         Q57071  ---M-QGEF- P----VMM-- -FGLPAAA-- --LAIYQTAK -KE-NKKVVA
+         Q53922  ---T-TGKY- P----FMM-- -FGLPAAA-- --FAIYPQAK -PE-RRKVVG
+     PTGA_BACSU  ---M-TGKY- P----FMM-- -FGLPAAA-- --LAIYHEAK -PQ-NKKLVA
+     YBFS_BACSU  ---M-MGDF- P----YMI-- -FCLPAVA-- --LAIIHTAR -PE-KKKMIS
+     PTGB_ECOLI  -----SGGF- L----FKM-- -YGLPAAA-- --IAIWHSAK -PE-NRAKVG
+     PTGB_SALTY  -----SGGF- L----FKM-- -YGLPAAA-- --IAIWHSAK -PE-NRAKVG
+         O32444  ---M-NGFF- P----VMM-- -FGLPGAA-- --LAMYLAAP -AE-RRHQVG
+         O34521  ---M-TGFF- P----IMM-- -FGLPAAC-- --LAMVVTAK -PS-KRKATA
+     PTAA_ECOLI  ---M-SGFF- P----IMM-- -FGLPGAA-- --LAMYFAAP -KE-RRPMVG
+     PTAA_KLEPN  ---M-SGFF- P----IMM-- -FGLPGAA-- --LAMYLAAP -KA-RRPMVG
+         O51000  ---F-SGEF- V----VMI-- -FGLPGAA-- --LAMYHTSK -PE-NKKNVA
+         O51590  ---M-SGRF- I----TMM-- -FGLPGAA-- --LALYYTAK -RE-ERTKVF
+         O51143  AKIS-SGFY- L----SIM-- -FGLPGAA-- --LGVYKGIV -HE-DKNKVA
+     PTOA_ECOLI  --LS-QGKM- P----AFL-- -GGLPGAA-- --LAMYHCAR -PE-NRHKIK
+         P96159  --LS-QGKM- P----TFL-- -GGLPGAA-- --LAMYHCAR -PE-NRSKIK
+         Q9RL52  --LS-QGKM- A----AYL-- -GGLPGAA-- --LAMYHCAR -RR-MRPEIK
+         O07656  --ME-QGKL- -----MIQ-- -YGLAGAA-- --LAMYRTAH -AQ-NRKAIK
+     PTGA_MYCGE  ---S-QGKF- P----FML-- -IGIPAAG-- --LAMILAAP -KG-RRKEAS
+     PTGA_MYCPN  ---S-QGKF- P----FML-- -FGIPAAG-- --VAMILAAP -KD-RRKEAA
+     PTIB_BACSU  ---P-QGGF- ALHGNSKI-- -FGIPGIA-- --LAFYVTAK -KE-KKKLVA
+         Q9S2H4  ---Q-AGFF- P----IMM-- -FGLPAAA-- --LAMAHTAR -PE-RRKAVL
+         Q9S2H5  ---T-TGFF- P----IMM-- -FALPAAA-- --LAITHCAK -PH-RRKEVG
+         q46072  ---I-QGPM- G----AWNFA CFGLVTGV-- --FLLSIKER -NK-AMR---
+     ptga_brela  ---I-QGPM- G----AWNFA CFGLVTGV-- --FLIALKEK -NR-AMR---
+         o68468  ---I-QGPM- G----AWNFA CFGATAAV-- --LAISMREK -DP-EMR---
+         q9x565  ---AFISSC- T----ISD-- -IAVGGAM-- --LGYFLRTR -NL-KQK---
+         Q9RLU2  ---I-FPMS- F----TAS-- -FAQTAVV-- --LAVYLKTR -SR-NQK---
+     PTBA_ERWCH  ---L-LPLL- V----PAV-- -LGQAGAT-- --LGVLLRTQ -DL-KRK---
+         q48408  ---M-MPML- L----PAV-- -MGQVGAA-- --LGIFLRTR -DA-RQK---
+     PTBA_ECOLI  ---M-IPLL- M----PAI-- -MAQVGAA-- --LGVFLCER -DA-QKK---
+         q46129  ---V-LATS- V----AVC-- -FAQTGVV-- --MAILAKTK -DK-KLK---
+     ptsa_pedpe  ---I-FPVA- S----MAN-- -IGQGAAT-- --LAIFFATK -SQ-KQK---
+         Q9S6S6  ---I-FPVA- A----CAN-- -MAQAGAT-- --FAILFVTK -NI-KTK---
+     PTSA_STRMU  ---I-FVTA- S----MAN-- -VAQGAAT-- --FAIYFLTK -DK-KMK---
+     ptsb_staxy  ---I-FPIA- T----MSN-- -IAQGAAA-- --LAAFFIIK ENK-KLK---
+     ptsb_vibal  ---I-FPIA- A----MSN-- -VSQGAAA-- --LAVGVMSK -DK-KMK---
+     PTTB_BACSU  ---L-WPML- A----LSN-- -IAQGSAA-- --LALMFIVK -DE-KQK---
+     PTTB_ECOLI  ---V-WPLI- A----LSN-- -IAQGSAV-- --IGIIISSR -KH-NER---
+         q9zhj9  ---F-NAMI- T----CGI-- -VAQGAAA-- --LAVAVKTK -DK-KKR---
+         p94470  ---L-LPIW- S----MAN-- -VAQGGAG-- --LAVFVKAK -SL-KTK---
+     ptsb_klepn  ---L-LPIW- A----MAN-- -VAQGGAC-- --FAVWFKTK -DA-KIK---
+     ptsb_salty  ---L-LPIW- A----MAN-- -VAQGGAC-- --LAVWFKTK -DA-KIK---
+     sacx_bacsu  ---L-VPIW- S----MAN-- -VAQGGAG-- --LAVFLKTK -QS-SLK---
+     ptsb_bacsu  ---L-LPIW- S----MAN-- -VAQGGAG-- --LAVFFMAK -KA-KTK---
+     PTBA_BACSU  ---L-LPAM- F----LAN-- -MGQAGAS-- --FAVFLRSR -NK-KFK---
+         p77272  ---L-FPIL- S----MAG-- -AGQVGAA-- --LALYWRAQ -PHSALR---
+         Q45579  ---L-LPIL- A----MGG-- -AGQVGAA-- --FAVFVKTK -KT-TLR---
+     PTDA_ECOLI  ---V-MPSE- I----GAN-- -LSLGGSS-- --LAVAWKTK -NP-ELR---
+     ptcc_ecoli  ---A-KPMLD S----FIF-- -LGGSGATLG LILAIFIASR -RA-DYRQVA
+     PTCC_BACST  ---T-QQFFD L----WIY-- -IGGSGATLA LALTMMFRAR -SR-QLKSLG
+     PTLB_LACLA  ---G-TQMF- I-----AT-- -MGGTGATLI VPFLFMWICK -SD-RNRAIG
+
+         Q57071  GLMLSGALTS FL-TGITEPL EFSFLFVAPL LF-FIHAVLD -GLSFLILYL
+         Q53922  GLMLSAALTS FL-TGITEPL EFSFLFVAPI LY-VAHVILA -GTSFLIMHL
+     PTGA_BACSU  GIMGSAALTS FL-TGITEPL EFSFLFVAPV LF-AIHCLFA -GLSFMVMQL
+     YBFS_BACSU  GVMISAALTS ML-TGITEPV EFSFLFVAPV LY-LINSILA -GVIFVVCDL
+     PTGB_ECOLI  GIMISAALTS FL-TGITEPI EFSFMFVAPI LY-IIHAILA -GLAFPICIL
+     PTGB_SALTY  GIMISAALTS FL-TGITEPI EFSFMFVAPI LY-IIHAILA -GLAFPICIL
+         O32444  GALFSVAFCS FL-TGITEPL EFMFVFLAPA LY-AMHAVFT -GLSLVVANM
+         O34521  GMMIGFALTA FI-TGITEPI EFAFMFLSPL LY-AVHAVLT -GLSLFIVNW
+     PTAA_ECOLI  GMLLSVAVTA FL-TGVTEPL EFLFMFLAPL LY-LLHALLT -GISLFVATL
+     PTAA_KLEPN  GMLLSVAITA FL-TGVTEPL EFLFLFLAPL LY-LLHAVLT -GISLFIATA
+         O51000  SLLLSASFTS ML-TGITEPL EFAFLFAAPA LYYFIYVPLF -GLAYLLTHL
+         O51590  GLLMSSALTS FL-TGITEPL EFSFLFVAPI LY-VVHATFD -GFAFMLAHI
+         O51143  ALLFSGALTA FL-TGITEPL EFLFIFTAPL LY-FVHAAYS -GFALLLANF
+     PTOA_ECOLI  GLLISGLIAC VV-GGTTEPL EFLFLFVAPV LY-VIHALLT -GLGFTVMSV
+         P96159  ALLISGVVAC IV-GGITEPL EFLFLFVAPV LY-VVHAILT -GLGFMVMGL
+         Q9RL52  ALLVSGVVAC VV-GGITEPL EFLFLFVAPW LY-LVHAVLV -GLGFLTAAV
+         O07656  ALLISGVLTV II-GGVSEPI EFLFLFVSPL LF-VFHAFMN -GFANMVLPY
+     PTGA_MYCGE  SIIGSAAFTS FL-TGITEPF EFTFLFLAPW LFYGIHAVLA -AVSFWLMNL
+     PTGA_MYCPN  SIVGSAAFTS FL-TGITEPF EFTFLFLAPW LFYGVHAVLA -AVSFWLMNI
+     PTIB_BACSU  GLLIPVTLTA IV-AGITEPI EFTFLFISPF LF-AVHAVLA -ATMSTVMYM
+         Q9S2H4  GMMISLAATS FV-TGVTEPI EFSFMFIAPV LY-VLHAVLT -AISMAITWG
+         Q9S2H5  GLMLSVGLTS FV-TGITEPL EYSFLFIAPL LY-AAHAVLT -GVSMAVTWA
+         q46072  QVSLGGMLAG -LLGGISEPS LYGVLLRFKK TY-FRLLPGC -LAGGIVMGI
+     ptga_brela  QVSLGGMLAG -LLGGISEPS LYGVLLRFKK TY-FRLLPGC -LVGGIVMGI
+         o68468  QTSGSALAAG -LFGGISEPS LYGIHLRFKR IY-PRMLVGC -FAGGLTIAI
+         q9x565  QLFGTVTLSA -V-LGVTEPA IYGVFVKYRR PF-VAVMIGG -GLGGLFAGL
+         Q9RLU2  ALAIPAMISG -M-FCIIEPA IYGFSLPVKK RF-AFSMIGG -AVGSLIISI
+     PTBA_ERWCH  GIAGSAFSAA -I-FGITEPA VYGVTLPLRR PF-IFGCIGG -ALGAAVMGY
+         q48408  VLAGSAVSAG -I-FGVTEPA IYGLNLPLRR PF-IFGCVYW -PIGGAMVGF
+     PTBA_ECOLI  VVAGSAALTS -L-FGITEPA VYGVNLPRKY PF-VIACISG -ALGATIIGY
+         q46129  SLCIPAIISG -F-FGVTEPA IYGITLPRKK PF-ILSCIAA -GVTGGIIGF
+     ptsa_pedpe  ALTSSAGVSA -L-LGITEPA IFGVNLKMKF PF-VFAAIAS -GIASAFLGL
+         Q9S6S6  ALAAPAGVSA -I-LGITEPA LFGINLKLKY PF-FIALGAS -AIGSLFMGL
+     PTSA_STRMU  GLSSSSGVSA -L-LGITEPA LFGVNLKYRF PF-FCALIGS -ASAAAIAGL
+     ptsb_staxy  GVASAAGVSA -L-LGITEPA MFGVNLKLRY PF-IGAIVGS -GIGSAYIAF
+     ptsb_vibal  GIAIPSGVTG -L-LGITEPA MFGVNLKLRY PF-IAAVCAA -ALSSAFITM
+     PTTB_BACSU  GLSLTSGISA -Y-LGITEPA IFGVNLRYRF PF-IIAMVSS -GLAGMYISS
+     PTTB_ECOLI  EISVPAAISA -W-LGVTEPA MYGINLKYRF PM-LCAMIGS -GLAGLLCGL
+         q9zhj9  SLYISSAIPA -F-LGITEPA IFGVNLRFIK PF-IFGCAGG -AVGGMLSGI
+         p94470  EVALPSALSA -F-LGITEPV IFGVNLKYRK PF-IAAAIGG -ALGGAYVVF
+     ptsb_klepn  AITLPSAFSA -M-LGITEAA IFGINLRFVK PF-IAALVGG -AAGGAWVVS
+     ptsb_salty  AITLPSAFSA -M-LGITEAA IFGINLRFVK PF-IAALIGG -AAGGAWVVS
+     sacx_bacsu  KIALPASLTA -F-LGIVEPI VFGVNLKLIR PF-IGAAIGG -AIGGAYVVA
+     ptsb_bacsu  EIALPAAFSA -F-LGITEPV IFGVNLRYRK PF-IAAMIGG -ALGGAYVVF
+     PTBA_BACSU  SLALTTSITA -L-MGITEPA MYGVNMRLKK PF-AAALIGG -AAGGAFYGM
+         p77272  SQVRGAIIPG -L-LGVGEPL IYGVTLPRMK PF-VTACLGG -AAGGLFIGL
+         Q45579  KAIAGGLPSG -L-LGIGEPL IFGVTLPLGR PV-FNSMFRS -WNRRR----
+     PTDA_ECOLI  QTALAAAASA IM-AGISEPA LYGVAIRLKR PL-IASLISG -FICGAVAGM
+     ptcc_ecoli  ----KLALPS GI-FQINEPI LFGLPIIMNP VM-FIPFVLV QP--ILAAIT
+     PTCC_BACST  ----RLAIAP GI-FNINEPI TFGMPIVMNP LL-IIPFILV -PVVLVVVSY
+     PTLB_LACLA  ----RASVVP TF-FGVNEPI LFGAPIVLNP IF-FVPFIFA -PIVNV-WIF
+
+         Q57071  LD--LH---- ----LG---- --Y---TFSG G--------- ---------F
+         Q53922  LH--VQ---- ----IG---- --M---TFSG G--------- ---------F
+     PTGA_BACSU  LN--VK---- ----IG---- --M---TFSG G--------- ---------L
+     YBFS_BACSU  FH--VR---- ----HG---- --Y---TFSG G--------- ---------G
+     PTGB_ECOLI  LG--MR---- ----DG---- --T---SFSH G--------- ---------L
+     PTGB_SALTY  LG--MR---- ----DG---- --T---SFSH G--------- ---------L
+         O32444  FG--TL---- ----HG---- --F---GFSA G--------- ---------L
+         O34521  LG--IR---- ----SG---- --F---SFSA G--------- ---------A
+     PTAA_ECOLI  LG--IH---- ----AG---- --F---SFSA G--------- ---------A
+     PTAA_KLEPN  LG--IH---- ----AG---- --F---SFSA G--------- ---------A
+         O51000  LN--VG---- ----VG---- --L---TFSG G--------- ---------F
+         O51590  LQ--IT---- ----IG---- --Q---TFSG G--------- ---------F
+         O51143  FN--VT---- ----IG---- --N---SFST G--------- ---------F
+     PTOA_ECOLI  LG--VT---- ----IG---- --N---T-DG N--------- ---------I
+         P96159  LD--VT---- ----IG---- --N---T-DG N--------- ---------L
+         Q9RL52  LG--VF---- ----IG---- --N---T-DG N--------- ---------V
+         O07656  MG--VK---- ----MG---- --F-----TG D--------- ---------L
+     PTGA_MYCGE  LS--AN---- ----VG---- --Q---TFSG S--------- ---------F
+     PTGA_MYCPN  LG--AN---- ----VG---- --Q---TFSG S--------- ---------F
+     PTIB_BACSU  AG--VV---- -----G---- ------NMGG G--------- ---------L
+         Q9S2H4  LG--VH---- ----AG---- --F---NFSA G--------- ---------F
+         Q9S2H5  LG--VK---- ----DG---- --F---SFSA G--------- ---------L
+         q46072  FD--IKAY-- ---AFV---- --F------T S--------- ---------L
+     ptga_brela  FD--IKAY-- ---AFV---- --F------T S--------- ---------L
+         o68468  LG--TASGGV TTNAFV---- --F------T S--------- ---------L
+         q9x565  TS--VKAY-- ---SVA---- ---------W G--------- ---------L
+         Q9RLU2  FS--VKMY-- ---AFA---- --F------G ---------- ---------V
+     PTBA_ERWCH  AH--TTMY-- ---SFG---- --F------P S--------- ---------I
+         q48408  SDSHVSTY-- ---SFG---- --F------G N--------- ---------I
+     PTBA_ECOLI  AQ--TKVY-- ---SFG---- --L------P S--------- ---------I
+         q46129  FE--SKGY-- ---SMG---- --G------L G--------- ---------I
+     ptsa_pedpe  FH--VLSV-- ---AMG---- --P------A S--------- ---------V
+         Q9S6S6  FH--VLAV-- ---SLG---- --S------A G--------- ---------L
+     PTSA_STRMU  LQ--VVAV-- ---SLG---- --S------A G--------- ---------F
+     ptsb_staxy  FK--VKAI-- ---ALG---- --T------A G--------- ---------I
+     ptsb_vibal  FN--VKAQ-- ---ALG---- --A------A G--------- ---------L
+     PTTB_BACSU  QG--VLAS-- ---SVG---- --V------G G--------- ---------V
+     PTTB_ECOLI  NG--VMAN-- ---GIG---- --V------G G--------- ---------L
+         q9zhj9  LH--LAGT-- ---GMG---- --I------T A--------- ---------L
+         p94470  TN--VVAN-- ---AYG---- --L------T G--------- ---------I
+     ptsb_klepn  MH--VYMT-- ---AVG---- --L------T A--------- ---------I
+     ptsb_salty  VH--VYMT-- ---AVG---- --L------T A--------- ---------I
+     sacx_bacsu  VQ--VVAN-- ---SYG---- --L------T G--------- ---------I
+     ptsb_bacsu  TH--VAAN-- ---AYG---- --L------T G--------- ---------I
+     PTBA_BACSU  TG--VASY-- ---IVG---- --G-----NA G--------- ---------L
+         p77272  IA--WWGL-- ---PMGLNSA FGP------S G--------- ---------L
+         Q45579  ---------- ---------- LSS------L F--------- ---------S
+     PTDA_ECOLI  AG--LASH-- ---SMA---- --A------P G--------- ---------L
+     ptcc_ecoli  LA--AY---- ----YM---- --GIIPPVTN IAPWTMPTGL GAFFNTNGSV
+     PTCC_BACST  AA--MA---- ----TG---- --LVAKPSGV AVPWTTPIVI SGYLATGGKI
+     PTLB_LACLA  KF--FV---- ----DT---- --LNMNSFSA NLPWVTPGPL GIVLGTNFQV
+
+         Q57071  IDFFL----- --LGIL-PN- ---K-TQ--- --WW-L-VIP VGLV-YAAIY
+         Q53922  IDYIL----- --YGLL-SWD ---R-SN--- --AL-L-VIP VGIA-YALIY
+     PTGA_BACSU  IDYFL----- --FGIL-PN- ---R-TA--- --WW-L-VIP VGLG-LAVIY
+     YBFS_BACSU  IDYVL----- --NYGL---- ---S-TN--- --GW-V-VIP VGIV-FAFIY
+     PTGB_ECOLI  IDFIV----- --LSG---N- ---S-SK--- --LW-L-FPI VGIG-YAIVY
+     PTGB_SALTY  IDFIV----- --LSG---N- ---S-SK--- --LW-L-FPI VGAG-YAIVY
+         O32444  IDFLL----- --NWGL---- ---A-TK--- --PA-T-LFV IGLA-FFALY
+         O34521  IDYVL----- --SYGI---- ---A-EK--- --PL-L-LLL VGIC-YAAVY
+     PTAA_ECOLI  IDYAL----- --MYNL-PAA ---S-QN--- --VW-M-LLV MGVI-FFAIY
+     PTAA_KLEPN  IDYVL----- --MYSL-PAA ---S-KN--- --VW-M-LLV MGVV-FFFVY
+         O51000  IDMFL----- --FGIL-QGN ---SKTN--- --WI-A-IPI LGIF-YFIGF
+         O51590  VDFIL----- --FGIL-QGN ---SRTN--- --WL-L-VPV IGIV-WFFLY
+         O51143  LDFFM----- --FGIL-QGN ---S-KT--- --NW-ISVLP LGAM-FFALY
+     PTOA_ECOLI  IDFVV----- --FGIL-HGL ---S-TK--- --WY-M-VPV VAAI-WFVVY
+         P96159  IDFLV----- --FGVL-QGT ---A-TK--- --WY-L-VPL VAAI-WFVVY
+         Q9RL52  IDWLV----- --FGVL-QGS ---T-TK--- --WY-L-VPV IAAV-WFAAY
+         O07656  IQFIS----- --FGVL-RGT ---R-TG--- --WP-I-AVC VEVA-YFFIY
+     PTGA_MYCGE  IDFIL----- --YGAL-PDG RGWL-AN--- --SY-L-VPI IGIF-LALIY
+     PTGA_MYCPN  IDFIL----- --YGAL-PDG RRWL-AN--- --SY-L-VPI IGLF-LAAIY
+     PTIB_BACSU  IEAVT----- --LNWI-P-L FGSH-GM--- --TYVY-QIL IGLS-FTAIY
+         Q9S2H4  IDYAL----- --NWHL---- ---A-TK--- --PW-L-IIP IGLV-FAAIY
+         Q9S2H5  IDYVI----- --NWNL---- ---A-TK--- --PW-L-IIP IGLC-FAVVY
+         q46072  LTIPA----- --M------- ------D--- --PW-L-GYT IGIA-VAFFV
+     ptga_brela  LTIPA----- --M------- ------D--- --PW-L-GYT VGIA-AAFFT
+         o68468  LTIPV----- --F------- ------S--- --PM-L-TYT IAVA-VAFAV
+         q9x565  FGLPA----- --YIGE-GD- ---F-MN--- ---F-W-FML AAVV-ISFAG
+         Q9RLU2  LGFVS----- --FINP-AN- ------S--S LGGL-Y-VAI FATI-VTMAV
+     PTBA_ERWCH  FSFTQ----- --VI----P- ------PTGV DSSV-W-AAV IGTL-LAFAF
+         q48408  ITLAQ----- --MI----P- ------PEGI DATV-W-GGA AGMF-ASLII
+     PTBA_ECOLI  FTFMQ----- --TI----P- ------STGI DFTV-W-ASV IGGV-IAIGC
+         q46129  FALPS----- --YINP---- -----EG--- ---I-D-RGF YGMV-IAMVA
+     ptsa_pedpe  IGFIS----- --IA----S- ------K--- --SI-P-AFM LSAV-ISFVV
+         Q9S6S6  IGFIS----- --IK----A- ------G--- --YN-L-QFM ISIF-ISFLI
+     PTSA_STRMU  LGFLS----- --IK----A- ------S--- --SI-P-FYV VCEL-ISFAI
+     ptsb_staxy  PGFIS----- --IS----G- ---Q-NN--- --GW-L-HYG IAMI-IAFIV
+     ptsb_vibal  PGIIS----- --IT----P- ------D--- --KI-G-YYI AGMV-IAFLT
+     PTTB_BACSU  PGIFS----- --IM----S- ------Q--- --YW-G-AFA IGMA-IVLIV
+     PTTB_ECOLI  PGILS----- --IQ----P- ------S--- --YW-Q-VFA LAMA-IAIII
+         q9zhj9  PGMLL----- --YVN----- ---------- --NL-G-SYI LVNV-VAIAV
+         p94470  PMIANRGARR NAKP-HQLF- ------N--- --WI-C-DCG RIGV-YCHVI
+     ptsb_klepn  PGMAI----- --VQ----A- ------S--- --SL-L-NYI IGMA-IAFAV
+     ptsb_salty  PGMAI----- --VQ----A- ------S--- --SL-L-NYI IGMV-IAFGV
+     sacx_bacsu  PMISI----- --VL-PFGA- ------A--- --NF-V-HYM IGFL-IAAVS
+     ptsb_bacsu  PMIAI----- --AA-PFGF- ------S--- --NL-I-HYL IGMA-IAAVS
+     PTBA_BACSU  PSIPV----- --FIGP---- ------T--- ---F-I-YAM IGLV-IAFAA
+         p77272  VALPL----- --MT----S- ------AQGI LPAM-A-VYA GGIL-VAWVC
+         Q45579  SSHHC----- --DW----C- ------LRTA AIFS-S-PAF ANHP-VYRWA
+     PTDA_ECOLI  FTSVQ----- --FF----D- ------PANP MSIV-W-VF- AVMA-LAVVL
+     ptcc_ecoli  AALL------ ---------- ---------- -------VAL FNLGIA--TL
+     PTCC_BACST  SGSI------ ---------- ---------- -------LQI VNFFIAFAIY
+     PTLB_LACLA  LSFI------ ---------- ---------- -------LAG LLVVVDTIIY
+
+         Q57071  YIIFRFLIV- --KF----N- ---------F -----KTPGR EDK-------
+         Q53922  YFLFTFLIK- --KL----N- ---------L -----KTPGR EDK-------
+     PTGA_BACSU  YFGFRFAIR- --KF----N- ---------L -----KTPGR EDA-------
+     YBFS_BACSU  YYLFRFAIL- --KW----N- ---------L -----KTPGR ETD-------
+     PTGB_ECOLI  YTIFRVLIK- --AL----D- ---------L -----KTPGR EDA-------
+     PTGB_SALTY  YTVFRVLIK- --AF----D- ---------L -----KTPGR EDT-------
+         O32444  FFTFTFAIR- --AF----N- ---------L -----KSPGR EDE-------
+         O34521  FIVFYVLIK- --AL----N- ---------L -----KTPGR EDD-------
+     PTAA_ECOLI  FVVFSLVIR- --MF----N- ---------L -----KTPGR EDK-------
+     PTAA_KLEPN  FLLFSAVIR- --MF----N- ---------L -----KTPGR EDK-------
+         O51000  YFIFKFAIM- --KF----N- ---------L -----KTIGR EDE-------
+         O51590  YFTFIFLIN- --KF----D- ---------F -----KTPGR TQD-------
+         O51143  YFTFSWLYR- --YF----D- ---------F -----QIFVT DDP-------
+     PTOA_ECOLI  YVIFRFAIT- --RF----N- ---------L -----KTPGR DSE-------
+         P96159  YSVFKFAIT- --KF----N- ---------L -----KTPGR EVD-------
+         Q9RL52  YFLFRWAIT- --RF----D- ---------L -----KTPGR EDP-------
+         O07656  YFVFRWTIL- --KF----N- ---------L -----MTVGR EES-------
+     PTGA_MYCGE  FPTFYFLTI- --RF----N- ---------L -----ATPGR GGK-------
+     PTGA_MYCPN  FPTFYFLIK- --HF----N- ---------L -----ATPGR GGK-------
+     PTIB_BACSU  FFVFRFLIL- --KF----N- ---------I -----ATPGR EKD-------
+         Q9S2H4  YVTFRFAIV- --KF----N- ---------L -----KTPGR EPE-------
+         Q9S2H5  YVVFRFAIT- --KF----D- ---------L -----KTPGR EPE-------
+         q46072  SMF---LVL- --AL----D- ---------Y -----RSNEE RDEARAKVAA
+     ptga_brela  SML---LVL- --FF----D- ---------Y -----RSDAE RDE-------
+         o68468  AFL---LIY- --FT----D- ---------Y -----RTAEE K---------
+         q9x565  SAV---AAY- --LL----G- ---------V -------PA- ----------
+         Q9RLU2  SFS---LTF- --FT------ ---------F -----KSS-- ----------
+     PTBA_ERWCH  AAL---TSWS FGVP----K- ---------- -------DE- ----------
+         q48408  ACV---L--- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  AFV---GTV- --ML----H- ---------- -------FI- ----------
+         q46129  GIV---VGF- --ILMFVTK- ---------- ---------- ----------
+     ptsa_pedpe  AFI---PTF- --IY----A- ---------K -----RTLGD ----------
+         Q9S6S6  AFV---VTS- --IY----G- -----RRMEA -----KSIT- ----------
+     PTSA_STRMU  AFA---VTY- --GY----GK TKAVDVFAAE -----AAVE- ----------
+     ptsb_staxy  AFG---VTY- --AL----S- ---------- ---------- ----------
+     ptsb_vibal  AFV---LTI- --VL----G- ---------- ---------- ----------
+     PTTB_BACSU  PFA---GTY- --AY------ ---------- ---------- ----------
+     PTTB_ECOLI  PIV---LTS- --F------- ---------- ---------- ----------
+         q9zhj9  AFC---LTL- --FF------ ---------F -----K---- ----------
+         p94470  AWI---SRG- --RI----N- ---------- ---------- ----------
+     ptsb_klepn  AFA---LSL- --TL----K- ---------- ---------- ----------
+     ptsb_salty  AFT---VSL- --VL----K- ---------- ---------- ----------
+     sacx_bacsu  AFI---ATL- --FL----G- ---------- ---------- ----------
+     ptsb_bacsu  AFI---AAF- --VM----K- ---------- ---------- ----------
+     PTBA_BACSU  ETA---AAY- --LL------ ---------- ---------- ----------
+         p77272  GFI---FTT- --L------- ---------- ---------- ----------
+         Q45579  LYF---LRG- --R------- ---------- ---------- ----------
+     PTDA_ECOLI  SFI---LTL- --LL----G- ---------- -------F-- ----------
+     ptcc_ecoli  IYLPF----- ---------- ---------- ---------- ----------
+     PTCC_BACST  YPFFS----- ---------- ---------- ---------- ----------
+     PTLB_LACLA  YPFVK----- --VY----D- ---------E QILEEERSGK T---------
+
+         Q57071  -EV------- ---------K ---------- ---------- ---------S
+         Q53922  -EV------- ---------E ---------- ---------- ---------S
+     PTGA_BACSU  -AE------- ---------E ---------- ---------- -----TAAPG
+     YBFS_BACSU  -ED------- -----GQNEE ---------- ---------- ---------K
+     PTGB_ECOLI  -TE------- ---------D ---------- ---------- ---------A
+     PTGB_SALTY  -TD------- ---------D ---------- ---------- ---------A
+         O32444  -EV------- ---------E ---------- ---------- ---T--ETDS
+         O34521  -DV------- ---------D ---------- ---------- ---E---VLD
+     PTAA_ECOLI  -ED------- ---------E ---------- --------IV TEEA---NSN
+     PTAA_KLEPN  -AA------- ---------D ---------- ---------V VTEEA--NSN
+         O51000  -EM------- ---------E ---------- ---------- ---K-TMMSS
+         O51590  -LN------- ---------S ---------- ---------- ---EDSPSSK
+         O51143  -FF------- ---------- ---------- ---------- ------EGQE
+     PTOA_ECOLI  -VA------- ---------S ---------- ---------- --SIEKAVAG
+         P96159  -TA------- ---------- ---------- ---------- --EVDKELEA
+         Q9RL52  -PA------- ---------D DDHDEHDEHD GAHDAEHAEE QVRAAPEPAR
+         O07656  -S-------- ---------- ---------- ---PVTLNAH EDTAIADIPT
+     PTGA_MYCGE  -L--ITKKEY LAAKAAQKTD ---------- ---------- -----QTTNT
+     PTGA_MYCPN  -LITKKEYLA SKAAAKAEGV ---------- ---------- -----SGVAE
+     PTIB_BACSU  -EQQETKLYS KKEYRERKNK ---------- ---------- -----DETAS
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  DK-------- ---------- ---------- ------QAEE DLKAEANATP
+     ptga_brela  -A-------- ---------- ---------- ------KAQM AAAEQTNNTP
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- ---------- ----------
+     PTSA_STRMU  ---------- ---------- ---------- ---------- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  SNVAASELPF KVLDA-MGGK ANIKHLDACI TRLRVEVNDK AKVD-V-QEL
+         Q53922  KDVSVSELPF EVLEA-MGNK DNIKHLDACI TRLRVEVRDK GLVD-V-EKL
+     PTGA_BACSU  KTGEAGDLPY EILQA-MGDQ ENIKHLDACI TRLRVTVNDQ KKVD-K-DRL
+     YBFS_BACSU  APVAKDQLAF HVLQA-LGGQ QNIANLDACI TRLRVTVHQP SQVC-K-DEL
+     PTGB_ECOLI  KATGTSEMAP ALVAA-FGGK ENITNLDACI TRLRVSVADV SKVD-Q-AGL
+     PTGB_SALTY  KAGATSEMAP ALVAA-FGGK ENITNLDACI TRLRVSVADV AKVD-Q-AGL
+         O32444  ADASKGDLAR QYLKA-LGGH ENLTSIDACI TRLRLTLKDR SVAD-E-AVL
+         O34521  ENTVQDVNEN IMLKG-LGGK ENLQTIDHCA TRLRLTVKDT ALVD-E-ALL
+     PTAA_ECOLI  TEEGLTQLAT NYIAA-VGGT DNLKAIDACI TRLRLTVADS ARVN-D-TMC
+     PTAA_KLEPN  TEEGLTQLAT SYIAA-VGGT DNLKAIDACI TRLRLTVGDS AKVN-D-AAC
+         O51000  EKTSLSETAS KVLEG-LGGK DNITYIDACA SRLRVNLKQI EVIKSD-AYF
+         O51590  SSEFEENYAT KVIIG-LGGA SNIVELDCCA TRLRITVRDV LKVS-E-KIL
+         O51143  GKLESLGIAH LLIQG-LGGF DNITKLDVCS TRLHVDVVNT ELVD-N-NLL
+     PTOA_ECOLI  APGKSGYNVP AILEA-LGGA DNIVSLDNCI TRLRLSVKDM SLVN-V-QAL
+         P96159  AFINESGKGA AVLAA-LGGK ENITSLDNCI TRLRLSVNDM SLVN-D-AKL
+         Q9RL52  ELVAGKYDAA AMLDA-IGGA GNIRSLDNCI TRLRMTVADA EAVD-E-ARL
+         O07656  PDKSELQAAE QMVKA-LGGK ENIKSLDNCV TRLRLTIADM GLLD-E-AAI
+     PTGA_MYCGE  NFNQTQIEAG MLLRA-YGGS ENIAELGACI TKLRVTVKNP ELVN-E-TII
+     PTGA_MYCPN  NFTQTQIEAG ILLQA-YGGK ENIVELGACI TKLRVTVKNP ELVK-E-EPI
+     PTIB_BACSU  AAETADDTAF LYIEA-LGGK DNITEVTNCA TRLRVSVKDE TKVE-PDSVF
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  AAPVAAAGAG AGAGA-GAAA GAAT---AVA AKPKLAAGE- ----------
+     ptga_brela  AAPAAPVAPA AGAAA-AGGA AGAT---AVA TKPRLAAGQ- ----------
+         o68468  -------EAS RERAA-EAGL VPSG---TNP ETEASTTTE- ----------
+         q9x565  ---------- ---QE-EDQE TINH---IIA EKGKDKNLR- ----------
+         Q9RLU2  ---------- ---------- ---E---DVV DEETKPLIK- ----------
+     PTBA_ERWCH  ---------- ---TQPAAAD SPAV---LAE TQANAGAVR- ----------
+         q48408  ---------- ----TLVAGL PRSS---AEQ AAVVVAPAS- ----------
+     PTBA_ECOLI  ---------- ---TAKRQPA QGAP---QEK TPEVITPPE- ----------
+         q46129  ---------- ------LNDE EEVK---TTE SKKEESLVK- ----------
+     ptsa_pedpe  ---------- ----D----R DQVK---SPA PTSTVINVN- ----------
+         Q9S6S6  ---------- ---KEKNKQN ATTQ---YQP EKVIIDPVK- ----------
+     PTSA_STRMU  ---------- ---EAIEEVQ EIPE---EAA SAANKAQVT- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- -------GFE DVPS---DGS QQPAVHEGS- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  --------ND ALKEK-VAAN FNTAKADAVL GKA------- ----------
+
+         Q57071  KDLGASGVLE VG-NNMQAIF GPKSDQIKHD MQQIMDGKIT ----------
+         Q53922  KQLGASGVLE VG-NNMQAIF GPKSDQIKHD MQQIM----- ------DGKI
+     PTGA_BACSU  KQLGASGVLE VG-NNIQAIF GPRSDGLKTQ MQDII----A GRKPRPEPKT
+     YBFS_BACSU  KRLGAVGVLE VN-NNFQAIF GTKSDALKDD IKTIM----A ----------
+     PTGB_ECOLI  KKLGAAGVVV AG-SGVQAIF GTKSDNLKTE MDEY------ ----------
+     PTGB_SALTY  KKLGAAGVVV AG-SGVQAIF GTKSDNLKTE MDEY------ ----------
+         O32444  KKLGAKGVVK LGENNLQVIL GPLAEIVAGE MKAI------ ----------
+         O34521  KKAGAKGVVK SGGQSVQVII GPNVEFAAEE LR-------- ----------
+     PTAA_ECOLI  KRLGASGVVK LNKQTIQVIV GAKAESIGDA MKKVV----- --ARGPVAAA
+     PTAA_KLEPN  KRLGASGVVK LNKQTIQVIV GAKAESIGDE MKKVV----- TRGPVAAAAA
+         O51000  KNLGASGILK K-GNSVQIVF GGLSDNIKME ID-------- ----------
+         O51590  KKTGSKGVII K-GNGVQVVY GPGVSVLKNE IEEL------ ----------
+         O51143  KEAGVLKIGL VN-GKVQLFY GSNVYYIKNA IDT------- ----------
+     PTOA_ECOLI  KDNRAIGVVQ LNQHNLQVVI GPQVQSVKDE MAGL------ ----------
+         P96159  KAHGALGVVK LDQHNLQVVI GTQVHLVKNE MQAI------ ----------
+         Q9RL52  KKLGAVGVVK LDGHNVQVVI GPQVQSVKDA IATM------ ----------
+         O07656  KRAGGIAVVK LDQNTLQVII GTKVIALRRD MDNY------ ----------
+     PTGA_MYCGE  KDLGAAGVMR TTPTFFVAVF GTRAAVYKSA MQDII---QG KVNWTELQKV
+     PTGA_MYCPN  KELGAAGVMR TTPTFFVAVF GTRAAVYKSA MQDII-QGKV NWEALQKVIN
+     PTIB_BACSU  RALGAHGVVR NG-KAFQVII GLSVPQMRER VEK------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  ---------- ---------- ---------- ---------- ----------
+     ptga_brela  ---------- ---------- ---------- ---------- ----------
+         o68468  ---------- ---------- ---------- ---------- ----------
+         q9x565  ---------- ---------- ---------- ---------- ----------
+         Q9RLU2  ---------- ---------- ---------- ---------- ----------
+     PTBA_ERWCH  ---------- ---------- ---------- ---------- ----------
+         q48408  ---------- ---------- ---------- ---------- ----------
+     PTBA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q46129  ---------- ---------- ---------- ---------- ----------
+     ptsa_pedpe  ---------- ---------- ---------- ---------- ----------
+         Q9S6S6  ---------- ---------- ---------- ---------- ----------
+     PTSA_STRMU  ---------- ---------- ---------- ---------- ----------
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---------- ---------- ----------
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- ---------- ---------- ---------- ----------
+
+         Q57071  -SPEETTVTE EGDKETAEIA AAGGGVVYAP IKGEVVDISE VPDKVFSEKM
+         Q53922  TSPAETTVTE DGDVETAEIV AEGGAVIYAP ITGEAVDLSE VPDKVFSAKM
+     PTGA_BACSU  SAQEEVGQQV EEVIAEPLQN EIGEEVFVSP ITGEIHPITD VPDQVFSGKM
+     YBFS_BACSU  -GGVPATAAA LDTVTDKPLK PDSDETFIYP IKGETVSLGD VPDQVFSEKM
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  SAEATPATAA PVAKPQAVPN AVSIAELVSP ITGDVVALDQ VPDEAFASKA
+     PTAA_KLEPN  APAGNVATAA PAAKPQAVAN AKTVESLVSP ITGDVVALEQ VPDEAFASKA
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  ---------- ---------- ---------- ---------- ----------
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         P96159  ---------- ---------- ---------- ---------- ----------
+         Q9RL52  ---------- ---------- ---------- ---------- ----------
+         O07656  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  LDKNDSTVEK PEIKPTPVLK VQDEIVILSP VNGTLKPLTQ VPDDTFKNRL
+     PTGA_MYCPN  TDQLAVEPKE TTPPKEVMPV VQDEIVILSP VNGTLKSLNQ VPDETFKQKL
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  ---------- ---------- ---VVDIVSP LEGKAIPLSE VPDPIFAAGK
+     ptga_brela  ---------- ---------- ---LVEITSP LEGHAVPLSE VPDPIFAAGK
+         o68468  ---------- ---------- ---TADLVSP VDGMAVKLEN IDDKVFASGT
+         q9x565  ---------- ---------- ---TSSLGNV VEGEVISLNE VKDQAFSTGA
+         Q9RLU2  ---------- ---------- ---QQEVLAP IAGTMQPISS SADETFASKT
+     PTBA_ERWCH  ---------- ---------- ---DETLFSP LAGEVLLLEQ VADRTFASGV
+         q48408  ---------- ---------- ---VNDILAP MTGSVLALDQ VPDSTFASGL
+     PTBA_ECOLI  ---------- ---------- ---QGGICSP MTGEIVPLIH VADTTFASGL
+         q46129  ---------- ---------- ---QEEIVSP IQGEVVTLAE VKDEAFSSGA
+     ptsa_pedpe  ---------- ---------- ---DEIISAP VTGASESLKQ VNDQVFSAEI
+         Q9S6S6  ---------- ---------- ---SGELLAP INGFVIPLSD VSDPVFSKEI
+     PTSA_STRMU  ---------- ---------- ---DEVLAAP LAGEAVELTS VNDPVFSSEA
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  ---------- ---------- ---REIIHSP IKGEVKALSE VKDGVFSAGV
+         p77272  ---------- ---------- ---------- ---------- ----------
+         Q45579  ---------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  ---------- -DVAKEDVAA NNNITKETNV LVLCAGGGTS GLLANALNKA
+
+         Q57071  MGDGIAIKPE TGEVVAPFDG VVK--MVFPT KHAIGLESKD GIELLIHFGL
+         Q53922  MGDGIAIKPE TGEVVAPFDG KVK--MIFPT KHAIGLESKD GIELLIHFGL
+     PTGA_BACSU  MGDGFAILPS EGIVVSPVRG KIL--NVFPT KHAIGLQSDG GREILIHFGI
+     YBFS_BACSU  MGEGFAIIPS EGKVVAPADG EIV--SIFPT KHAIGFMSAG GTEILIHVGI
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  VGDGVAVKPT DKIVVSPAAG TIV--KIFNT NHAFCLETEK GAEIVVHMGI
+     PTAA_KLEPN  VGDGIAVKPT DNIVVAPAAG TVV--KIFNT NHAFCLETNN GAEIVVHMGI
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  ---------- ---------- ---------- -----YSPKS LFEASVMVAV
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         P96159  ---------- ---------- ---------- ---------- ----------
+         Q9RL52  ---------- ---------- ---------- ---------- ----------
+         O07656  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  VGDGIAILPS DGHFKAPGDV GVKTELAFPT GHAFIFD-VD GVKVMLHIGI
+     PTGA_MYCPN  VGEGVAIVPS DGHFKAPGEA GVKTELAFPG GHAYIFD-ID GIKVMLHIGI
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- ----------
+         Q9S2H5  ---------- ---------- ---------- ---------- ----------
+         q46072  LGPGIAIQPT GNTVVAPADA TVI--LVQKS GHAVALRLDS GVEILVHVGL
+     ptga_brela  LGPGIAIEPT GNTVVAPADA TVI--LVQKS GHAVALRLES GVELLIHIGL
+         o68468  LGNGIGIVPV NGNIQSPVAG TIA--TVTKT GHAFGIKTDD GVEVLVHIGI
+         q9x565  LGKGIAIKPI DTHLYSPVDG EIT--VVFPT NHAIGIQSQD GIEILIHIGI
+         Q9RLU2  MGEGVVIFPT GSKVVAPAAG VVT--TVFPG GHALGITTEN GTEILIHIGI
+     PTBA_ERWCH  MGKGIAIRPT QGRLYAPVDG TVA--SLFKT HHAIGLASRG GAEVLIHVGI
+         q48408  LGQGVAIIPS VGKVIAPFSG EVA--SIFQT KHAIGLLSDS GIELLIHVGI
+     PTBA_ECOLI  LGKGIAILPS VGEVRSPVAG RIA--SLFAT LHAIGIESDD GVEILIHVGI
+         q46129  LGKGVAINPI EGKVYAPADG TLT--TLFPS LHALGITTEN GAEILIHVGM
+     ptsa_pedpe  MGKGAAIVPS SDQVVAPADG VIT--VTYDS HHAYGIKTTA GAEILIHLGL
+         Q9S6S6  MGKGIAIKPK SGELFSPADG EII--IAYET GHAYGIKTKN GGEVLLHIGI
+     PTSA_STRMU  MGKGIAIKPS GNTVYAPVDG TVQ--IAFDT GHAYGIKSDN GAEILIHIGI
+     ptsb_staxy  ---------- ---------- ---------- ---------- ----------
+     ptsb_vibal  ---------- ---------- ---------- ---------- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ---------- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- ---------- ----------
+     ptsb_klepn  ---------- ---------- ---------- ---------- ----------
+     ptsb_salty  ---------- ---------- ---------- ---------- ----------
+     sacx_bacsu  ---------- ---------- ---------- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ---------- ---------- ----------
+     PTBA_BACSU  MGKGFAIEPE EGEVVSPVRG SVT--TIFKT KHAIGITSDQ GAEILIHIGL
+         p77272  ---------- ---------- ---------- ---------- -------FGC
+         Q45579  ---------- ---------- ---------- ---------- -------FFI
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---------- ---------- ---------- ---------- ----------
+     PTCC_BACST  ---------- ---------- ---------- ---------- ----------
+     PTLB_LACLA  AAEYNVPVKA AAGGYGAHRE MLPEFDLVIL APQVASNFDD MKAETDKLGI
+
+         Q57071  ETVKLEGK-- ------GFDI LVKENDN--- IV-LGQPLMK VDLDYIKEHA
+         Q53922  ETVKLDGE-- ------GFEI LVKENDN--- IV-LGQPLMK VDLNYIKEHA
+     PTGA_BACSU  DTVSLKGE-- ------GFTS FVSEGDR--- VE-PGQKLLE VDLDAVKPNV
+     YBFS_BACSU  DTVKLNGE-- ------GFEA HVTSGQA--- VK-QGELLLT FDLNYIKQHA
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ----------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ----------
+         O32444  ---------- ---------- ---------- ---------- ----------
+         O34521  ---------- ---------- ---------- ---------- ----------
+     PTAA_ECOLI  DTVALEGK-- ------GFKR LVEEGAQ--- VS-AGQPILE MDLDYLNANA
+     PTAA_KLEPN  DTVALEGK-- ------GFKR LVEEGTD--- VK-AGEPILE MDLDFLNANA
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  DNVKK----- ------GFKT YIEMKEDKKL EK-QGKSGKT YK--------
+     PTOA_ECOLI  ---------- ---------- ---------- ---------- ----------
+         P96159  ---------- ---------- ---------- ---------- ----------
+         Q9RL52  ---------- ---------- ---------- ---------- ----------
+         O07656  ---------- ---------- ---------- ---------- ----------
+     PTGA_MYCGE  DTVKINADKK PGEQLEVFDV KTKQGEY--- TKLKSESVVE VDLKKLKRK-
+     PTGA_MYCPN  DTVQINAKKQ PGEPLEVFDI KTKQGEY--- TKEKSESVVE VDLKKLSKK-
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ----------
+         Q9S2H4  ---------- ---------- ---------- ---------- EE--------
+         Q9S2H5  ---------- ---------- ---------- ---------- ED--------
+         q46072  DTVQLGGE-- ------GFTV HVERRQQ--- VK-AGDPLIT FDADFIRSKD
+     ptga_brela  DTVQLGGE-- ------GFKV HVERKQQ--- VK-AGDPLIT FDPEFIRSKN
+         o68468  NTVRMKGE-- ------GFEP KVAKGDV--- VS-IGTPLAE VDLDKIKEAG
+         q9x565  DTVELEGK-- ------YFNL NIKQGDK--- IQ-RGQLLGT VDFDKIQEAG
+         Q9RLU2  DTVELNGE-- ------GFDV QVEVGSK--- VK-QGQTLVN VDFEAIENKG
+     PTBA_ERWCH  DTVRLDGR-- ------YFTP HVRVGDV--- VR-QGDLLLE FDGPAIEAAG
+         q48408  DTVKLDGA-- ------PFTA HVKEGDK--- IK-AGDLLLE FDRQAILDAG
+     PTBA_ECOLI  DTVKLDGK-- ------FFSA HVNVGDK--- VN-TGDRLIS FDIPAIREAG
+         q46129  DTVQLEGK-- ------HFTA KVKQGDK--- IK-KGQLLIE FDKEAIEKAG
+     ptsa_pedpe  DTVNLNGE-- ------HFTT NVQKGDT--- VH-QGDLLGT FDIAALKAAN
+         Q9S6S6  DTVSMNGN-- ------GFIQ NVKVGQK--- VK-AGDLLGS FDKEEIKKSG
+     PTSA_STRMU  DTVSMEGK-- ------GFEQ KVQADQK--- IK-KGDVLGT FDSDKIAEAG
+     ptsb_staxy  ---------- ---------- ------Y--- RK-KY----- ----------
+     ptsb_vibal  ---------- ---------- ---IGDR--- AK-VG----- ----------
+     PTTB_BACSU  ---------- ---------- ---------- ----G----- ----------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----------
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ------K--- ---------- ----------
+     ptsb_klepn  ---------- ---------- ------Y--- ---------- ----------
+     ptsb_salty  ---------- ---------- ------Y--- ---------- ----------
+     sacx_bacsu  ---------- ---------- ------F--- ---------- ----------
+     ptsb_bacsu  ---------- ---------- ------I--- ---------- ----------
+     PTBA_BACSU  DTVKLEGQ-- ------WFTA HIKEGDK--- VA-PGDPLVS FDLEQIKAAG
+         p77272  R--------- ---------- ---------- ---------- ----------
+         Q45579  D--------- ---------- ---------- ---------- ----------
+     PTDA_ECOLI  ---------- ---------- ---------- ---------- ----------
+     ptcc_ecoli  ---VVVAN-- ------KAQN AID------- ---------- ----------
+     PTCC_BACST  ---IWDKQ-- ------KAAE EQA------- ---------- ----------
+     PTLB_LACLA  KLVKTEGA-- ------QYIK LTR------- ---------- ----------
+
+         Q57071  DSTITPIVVT NL--NGR-TM EVLQ-HGEVK QG-D-KV--- ---I------
+         Q53922  DDTITPIIIT NA--GSA-NI EVLH-TGKVE QG-E-KL--- ---L------
+     PTGA_BACSU  PSLMTPIVFT NL--AEGETV SIKA-SGSVN REQE-DIV-- ---K------
+     YBFS_BACSU  ASAITPVIFT NT--SEE-D- ---------- ---L-KH--- ---I------
+     PTGB_ECOLI  ---------- ---------- ---------- ---------- ---I------
+     PTGB_SALTY  ---------- ---------- ---------- ---------- ---I------
+         O32444  ---------- ---------- ---------- SP-KEDLS-- --DV------
+         O34521  ---------- ---------- ---------- ---------- --A-------
+     PTAA_ECOLI  RSMISPVVCS NI--DDFSGL IIKA-QGHIV AG-QTPLY-- --E-------
+     PTAA_KLEPN  RSMISPVVCS NS--DDYSAL VILA-SGKVV AG-QTPLY-- --EI------
+         O51000  ---------- ---------- ---------- ---------- ----------
+         O51590  ---------- ---------- ---------- ---------- ----------
+         O51143  ---------- ---------- ---------- ------LS-- --EL------
+     PTOA_ECOLI  ---------- ---------- ---------- ------M--- --HT------
+         P96159  ---------- ---------- ---------- ---------- ---M------
+         Q9RL52  ---------- ---------- ---------- ------V--- --PA------
+         O07656  ---------- ---------- ---------- ------M--- ----------
+     PTGA_MYCGE  YDPITPFIVM QESLDNFKLV PIRQ-RGEIK VG-Q-PLFKL IYKD------
+     PTGA_MYCPN  YNPITPFVVM KESLENFKLV PIRQ-RGEIK VG-Q-PIFKL VYKK------
+     PTIB_BACSU  ---------- ---------- ---------- ---------- ---I------
+         Q9S2H4  ---------- ---------- ---------- ------VE-- --DL------
+         Q9S2H5  ---------- ---------- ---------- ------VE-- --DV------
+         q46072  LPLITPVVVS NA--AKFGEI EGIP-ADQAN SS-T-TVI-- ---K------
+     ptga_brela  LPLITPVVVS NA--NKFGEI VGIE-AAQAD AT-T-TVI-- ---K------
+         o68468  YDNTVVVTVT NT--KAMGEV ASIA-EGAVK AG-E-AVV-- ---A------
+         q9x565  YDTSTIVVVT NT--DSYLDV IPSN-SEQVI KT-D-NLL-- ---N------
+         Q9RLU2  YKSEVLVVIL NT--DDFLDI ISEE-KTTVK QG-G-KML-- ---T------
+     PTBA_ERWCH  YDLTTPIVIT NS--EDYRGV EPVA-SGKVD AN-A-PLT-- ---Q------
+         q48408  YDLATPIIIS NS--DDFRTL DMVS-ASAVD AG-Q-PLL-- ---S------
+     PTBA_ECOLI  FDLTTPVLIS NS--DDFTDV LPHG-TAQIS AG-E-PLL-- ---S------
+         q46129  YSTITPVLIT NS--DQYLDV IETD-KRKVD VN-S-ELL-- ---T------
+     ptsa_pedpe  YDPTVMLIVT NT--ANYANV ERLK-VTNVQ AG-E-QLV-- ---A------
+         Q9S6S6  LDDTVIIVIT NS--ASYNEI LPLSENVDIK VG-E-KIL-- ----------
+     PTSA_STRMU  LDNTTMFIVT NT--ADYASV ETLASSGTVA VG-D-SLL-- ---E------
+     ptsb_staxy  ---------- ---------- ---------- -------R-- ---N------
+     ptsb_vibal  ---------- ---------- ---------- -------K-- ---K------
+     PTTB_BACSU  ---------- ---------- ---------- -------R-- ---F------
+     PTTB_ECOLI  ---------- ---------- ---------- ---------- ----IYQRKY
+         q9zhj9  ---------- ---------- ---------- ---------- ----------
+         p94470  ---------- ---------- ---------- -------A-- ---P------
+     ptsb_klepn  ---------- ---------- ---------- -------K-- ---T------
+     ptsb_salty  ---------- ---------- ---------- -------K-- ---T------
+     sacx_bacsu  ---------- ---------- ---------- -------K-- ---E------
+     ptsb_bacsu  ---------- ---------- ---------- -------N-- EDEE------
+     PTBA_BACSU  YDVITPVIVT NT--DQYSFS PVKE-IGKVQ PK-E-ALL-- ----------
+         p77272  ---------- ---------- ---------- -------N-- ---V------
+         Q45579  ---------- ---------- ---------- -------L-- ---C------
+     PTDA_ECOLI  --------ED IP--VEEAAA QARK-YQSVQ PT-V-AKE-- ---V------
+     ptcc_ecoli  ---------- ---------- ------KEES EEDI-AN--- ---A------
+     PTCC_BACST  ---------- ---------- ------DPTI SSGA-GA--- ---T------
+     PTLB_LACLA  ---------- ---------- ------DGQG ALAF-VQ--- ---Q------
+
+         Q57071  ---------- ----LVK
+         Q53922  ---------- ---LVNN
+     PTGA_BACSU  ---------- ----IEK
+     YBFS_BACSU  ---------- ----QMK
+     PTGB_ECOLI  ---------- ----RNH
+     PTGB_SALTY  ---------- ----RNH
+         O32444  ---------- ----KLP
+         O34521  ---------- ----AVK
+     PTAA_ECOLI  ---------- ----IKK
+     PTAA_KLEPN  ---------- ----KGK
+         O51000  ---------- ----KLM
+         O51590  ---------- ----LEA
+         O51143  ---------- ----EED
+     PTOA_ECOLI  ---------- ----VQA
+         P96159  ---------- ----SAS
+         Q9RL52  ---------- ----GRP
+         O07656  ---------- ----GIY
+     PTGA_MYCGE  ---------- ----KKS
+     PTGA_MYCPN  ---------- ----SQA
+     PTIB_BACSU  ---------- ----LNQ
+         Q9S2H4  ---------- ----TKA
+         Q9S2H5  ---------- ----TKV
+         q46072  ---V------ --NGKNE
+     ptga_brela  ---V------ ---NGAE
+         o68468  ---------- ----IKR
+         q9x565  ---------- ----VIL
+         Q9RLU2  -LIPFNGKAT NDMEVSY
+     PTBA_ERWCH  ---------- ----LVC
+         q48408  ---------- ----VSR
+     PTBA_ECOLI  ---------- ----IIR
+         q46129  ---------- ----VVI
+     ptsa_pedpe  ---LTAPAAS SVAATTV
+         Q9S6S6  ---------- ----LLN
+     PTSA_STRMU  ---------- ----VKK
+     ptsb_staxy  ---------- ----IEA
+     ptsb_vibal  ---------- ----AAA
+     PTTB_BACSU  ---------- ----KHK
+     PTTB_ECOLI  RLGT------ ---LDIV
+         q9zhj9  ---------- ----PEE
+         p94470  ---------- ----DNR
+     ptsb_klepn  ---------- ----DAE
+     ptsb_salty  ---------- ----DAE
+     sacx_bacsu  ---------- ----ETE
+     ptsb_bacsu  ---------- ----RKK
+     PTBA_BACSU  ---------- ----ALS
+         p77272  ---------- ----NLD
+         Q45579  ---------- ----IRI
+     PTDA_ECOLI  ---------- ----SLN
+     ptcc_ecoli  ---------- ----LKF
+     PTCC_BACST  ---------- ----HSL
+     PTLB_LACLA  ---------- ----QFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

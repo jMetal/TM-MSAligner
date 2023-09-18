@@ -1,0 +1,297 @@
+>BACH_HALHP 1.00 100.0% 100.0%
+MTAAST--------------------T-------------A------T------TMLQATQSDVLQEIQS
+NFLL--NSSIWVNIA---LAGVVILLFVAMGRDIESPRAK---LIWVATMLVPLVSISSYAGLASGLTVG
+FL-QMPPGHAL----A---------G-Q-E---VLSPWGRYLTWTFSTPMILLALGLLADTDIA------
+-----SLFTAITMDIGMCVTGLAAALITSS-----HLLRWVFYGISCAFFVAVLYVLLVQWPADAE--AA
+-GT-SEIFGT--LKILTVVLWL-GYPILWALGSEGV-ALL-SVGVTSWGYSGLDILAKYVFAFLL-LRWV
+A----------------------------------------AN------------------E--------
+---------------GAV----------------SGS------G--M--S-I-G-S-G-GA---------
+-----------------------------APADD
+>BACH_HALHS 1.00 100.0% 98.2%
+MTAVST--------------------T-------------A------T------TVLQATQSDVLQEIQS
+NFLL--NSSIWVNIA---LAGVVILLFVAMGRDLESPRAK---LIWVATMLVPLVSISSYAGLASGLTVG
+FL-QMPPGHAL----A---------G-Q-E---VLSPWGRYLTWTFSTPMILLALGLLADTDIA------
+-----SLFTAITMDIGMCVTGLAAALITSS-----HLLRWVFYGISCAFFVAVLYVLLVQWPADAE--AA
+-GT-SEIFGT--LKILTVVLWL-GYPILWALGSEGV-ALL-SVGVTSWGYSGLDILAKYVFAFLL-LRWV
+A----------------------------------------AN------------------E--------
+---------------GTV----------------SGS------G--M--G-I-G-S-G-GA---------
+-----------------------------APADD
+>BACH_HALVA 1.00 100.0% 92.0%
+MPAAST--------------------A-------------A------T------TLLQASQSEVLGEIQS
+NFLL--NSSLWVNIA---LAGVVILLFVAMGRELESSRAK---LIWVATMLVPLVSISSYAGLASGLTVG
+FL-QMPPGHAL----A---------G-Q-E---VLSPWGRYLTWTFSTPMILLALGLLADTDMA------
+-----SLFTAITMDIGMCITGLAAALVTSS-----HLLRWVFYGISCAFFIAVLYVLLVEWPADAE--AA
+-GT-SEIFGT--LKLLTVVLWL-GYPILWALGSEGV-ALL-SVGVTSWGYSGLDILAKYVFAFLL-LRWV
+A----------------------------------------AN------------------E--------
+---------------DTV----------------TQA------G--M--S-L-G-S-G-GA---------
+-----------------------------APADD
+>BACH_HALSS 1.00 100.0% 65.1%
+MIETAA--------------------A-------------D-ILAGGM------VPLEMTQTQIFEAVQS
+DTLL--ASSLWINIA---LAGLSILLFVYMGRNVEDPRAQ---LIFVATLMVPLVSISSYTGLVSGLTVS
+FL-EMPAGHAL----A---------G-Q-E---VLTPWGRYLTWALSTPMILIAVGLLAGSNTT------
+-----KLFTAVVADIGMCVTGLAAALTTSS-----YLLRWVWYAISCAFFVVVLYILLAEWAEDAE--IA
+-GT-ADIFNT--LKVLTVVLWL-GYPIFWALGAEGL-AVL-DVAITSWAYSGMDIVAKYLFAFLL-LRWV
+V----------------------------------------NN------------------E--------
+---------------RTV----------------ADV------A--SGLG-S-GSR-G-GA---------
+-----------------------------APADD
+>O93742 1.00 100.0% 67.0%
+MMETAA--------------------D-------------A-L-ASGT------VPLEMTQTQIFEAIQG
+DTLL--ASSLWINIA---LAGLSILLFVYMGRNLEDPRAQ---LIFVATLMVPLVSISSYTGLVSGLTVS
+FL-EMPAGHAL----A---------G-Q-E---VLTPWGRYLTWALSTPMILVALGLLAGSNAT------
+-----KLFTAVTADIGMCVTGLAAALTTSS-----YLLRWVWYVISCAFFVVVLYVLLAEWAEDAE--VA
+-GT-AEIFNT--LKLLTVVLWL-GYPIFWALGAEGL-AVL-DVAVTSWAYSGMDIVAKYLFAFLL-LRWV
+V----------------------------------------DN------------------E--------
+---------------RTV----------------AGM------A--AGLG-A-P-L-A-RC---------
+-----------------------------APADD
+>BACH_HALHM 1.00 72.5% 59.3%
+----------------------------------------------------------------------
+-------------IA---LAGLSILLFVYMGRNVEDPRAQ---LIFVATLMVPLVSISSYTGLVSGLTVG
+FL-EMPAGHAL----AGMG---A--G-P-E-GGVFTPWGRYLTWAFSTPMILIALGLLAGSNMS------
+-----KLFTAVVADVGMCITGLAAALTTSS-----YLLRWVWYGISCAFFVVVLYILLAEWAKDAE--VA
+-GT-ADIFNT--LKVLTVVLWL-GYPIFWALGAEGL-AVL-DIAITSWAYSG------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+---------------------------------M
+>BACH_NATPH 1.00 100.0% 58.4%
+MTETLP--------------------P-------------V-TESAVA------LQAEVTQRELFEFVLN
+DPLL--ASSLYINIA---LAGLSILLFVFMTRGLDDPRAK---LIAVSTILVPVVSIASYTGLASGLTIS
+VL-EMPAGHFA----EGSSVMLG--G-E-EVDGVVTMWGRYLTWALSTPMILLALGLLAGSNAT------
+-----KLFTAITFDIAMCVTGLAAALTTSS-----HLMRWFWYAISCACFLVVLYILLVEWAQDAK--AA
+-GT-ADMFNT--LKLLTVVMWL-GYPIVWALGVEGI-AVL-PVGVTSWGYSFLDIVAKYIFAFLL-LNYL
+T----------------------------------------SN------------------E--------
+---------------SVV----------------SGS------I--L--D-V-P-S-A-SG---------
+-----------------------------TPADD
+>BACH_HALSP 1.00 98.9% 61.4%
+MSITSV--------------------P-------------G------V------VDAGVLGAQSAAAVRE
+NALL--SSSLWVNVA---LAGIAILVFVYMGRTIRPGRPR---LIWGATLMIPLVSISSYLGLLSGLTVG
+MI-EMPAGHAL----A---------G-E-M---VRSQWGRYLTWALSTPMILLALGLLADVDLG------
+-----SLFTVIAADIGMCVTGLAAAMTTSA-----LLFRWAFYAISCAFFVVVLSALVTDWAASAS--SA
+-GT-AEIFDT--LRVLTVVLWL-GYPIVWAVGVEGL-ALVQSVGVTSWAYSVLDVFAKYVFAFIL-LRWV
+A----------------------------------------NN------------------E--------
+---------------RTV----------------AVA------G--Q--T-------L-GT---------
+-----------------------------MSSDD
+>O93741 1.00 99.6% 55.4%
+MRSRTYHDQSVCGPYGSQRTDCDRDTD-------------A------G------SDTDVHGAQVATQIRT
+DTLL--HSSLWVNIA---LAGLSILVFLYMARTVRANRAR---LIVGATLMIPLVSLSSYLGLVTGLTAG
+PI-EMPAAHAL----A---------G-E-D---VLSQWGRYLTWTLSTPMILLALGWLAEVDTA------
+-----DLFVVIAADIGMCLTGLAAALTTSS-----YAFRWAFYLVSTAFFVVVLYALLAKWPTNAE--AA
+-GT-GDIFGT--LRWLTVILWL-GYPILWALGVEGF-ALVDSVGLTSWGYSLLDIGAKYLFAALL-LRWV
+A----------------------------------------NN------------------E--------
+---------------RTI----------------AVG---------Q--R-S-G-RGA-IG---------
+-----------------------------DPVED
+>BACT_HALVA 1.00 84.4% 19.0%
+MATI------------------------------------------------------------------
+------TTWFTLGLL---GELLGTAVLAY-GYTLVPEETR---KRYLLLIAIPGIAIVAYALMALGFGSI
+QS-------------------------E-G---HAVYVVRYVDWLLTTPLNVWFLALLAGASRE------
+-----DTVKLVVLQALTIVFGFAGAVTPS-------PVSYALFAVGGALFGGVIYLLYRNIAVAAKSTLS
+-DIEVSLYRT--LRNFVVVLWL-VYPVVWLLGAAGV-GLM-DVETATLVVVYLDVVTKVGFGVIA-LLAM
+I----------------------------------------DL------------------G--------
+---------------S-A-------------------------G--E--T---A-E-E-PT---------
+-----------------------------AVAGD
+>BACT_NATPH 1.00 85.1% 23.6%
+MVGL------------------------------------------------------------------
+------TTLFWLGAI---GMLVGTLAFAWAGRDAGS-GER---RYYVTLVGISGIAAVAYVVMALGVGWV
+PV-------------------------A-E---RTVFAPRYIDWILTTPLIVYFLGLLAGLDSR------
+-----EFGIVITLNTVVMLAGFAGAMVPG-------IERYALFGMGAVAFLGLVYYLVGPMTESASQRSS
+-GI-KSLYVR--LRNLTVILWA-IYPFIWLLGPPGV-ALL-TPTVDVALIVYLDLVTKVGFGFIA-LDAA
+A----------------------------------------TL------------------R--------
+---------------AEH-------------------------G--E--SLAGV-D-T-DA---------
+-----------------------------PAVAD
+>BACT_HALSA 1.00 83.7% 20.6%
+MAL-------------------------------------------------------------------
+------TTWFWVGAV---GMLAGTVLPIRDCI--RHPSHR---RYDLVLAGITGLAAIAYTTMGLGITAT
+TV-------------G-------------D---RTVYLARYIDWLVTTPLIVLYLAMLARPGHR------
+-----TSAWLLAADVFVIAAGIAAALTTG-------VQRWLFFAVGAAGYAALLYGLLGTLPRALGD-DP
+-RV-RSLFVT--LRNITVVLWT-LYPVVWLLSPAGI-GIL-QTEMYTIVVVYLDFISKVAFVAFAVLGAD
+A----------------------------------------VS------------------RLVA-----
+--------------ADA--------------------------A--A--P---A-T-A-EP---------
+-----------------------------TPDGD
+>BACS_HALHA 1.00 85.1% 17.9%
+MDAVA-----------------------------------------------------------------
+-------TAYLGGAV---ALIVGVAFVWLLYRSLDGSPHQ---SALAPLAIIPVFAGLSYVGMAYDIGTV
+IV-N-------------------------G---NQIVGLRYIDWLVTTPILVGYVGYAAGASRR------
+-----SIIGVMVADALMIAVGAGAVVTDG-------TLKWALFGVSSIFHLSLFAYLYVIFPRVVPDV-P
+-EQ-IGLFNL--LKNHIGLLWL-AYPLVWLFGPAGI-GEA-TAAGVALTYVFLDVLAKVPYVYFF-YARR
+R----------------------------------------VF------------------M--------
+---------------HSE----------------S--------PPAP--E---Q-A-T-VE---------
+-----------------------------ATAAD
+>BAC3_HALVA 1.00 84.8% 20.9%
+MDAVA-----------------------------------------------------------------
+-------VVYGITAA---GFAVGVAIVGYLYASLEGSEER---SILAALALIPGFAGISYVAMAFGIGTV
+TI-G-------------------------E---TTLVGFRYLDWVVTTPLLVGFVGYAAGASRR------
+-----AIFGVMVADALMILTGVGAVVADG-------TLKWVLFGVSTVFHVSLFAYLYLVFPRSVPDD-P
+-QR-IGLFSL--LKNHIGLLWI-AYPLVWLAGPEGL-GLA-TYVGVSITYAFLDLLAKVPYVYFF-YARR
+Q----------------------------------------VF------------------A--------
+---------------T-K----------------L--------L--R--D---S-G-E-VT---------
+-----------------------------ATPAD
+>O93743 1.00 85.5% 20.4%
+MTGAVT----------------------------------------------------------------
+-------SAYWLAAV---AFLIGVGITAALYAKLEGSRAR---TRLAALAVIPGFAGLSYVGMALGIGTV
+TV-N-------------------------G---AELVGLRYVDWVVTTPLLVGFIGYNAGASRR------
+-----AIAGVMIADALMIVFGAAAVVSGG-------TLKWALFGVSALFHVSLFAYLYVIFPGGIPDD-P
+-MQ-RGLFSL--LKNHVGLLWL-AYPFVWLMGPAGI-GFT-GAVGAALTYAFLDVLAKVPYVYFF-YARR
+Q----------------------------------------AF------------------I--------
+---------------DVTDSRAAAKGDGPAVGGEA--------P--V--A---T-G-D-DA---------
+-----------------------------PTAAD
+>BACS_HALSS 1.00 85.5% 19.9%
+MTGAVS----------------------------------------------------------------
+-------AAYWIAAV---AFLVGLGITAALYAKLGESEDR---GRLAALAVIPGFAGLAYAGMALGIGTV
+TV-N-------------------------G---AELVGLRYVDWIVTTPLLVGFIGYVAGASRR------
+-----AIAGVMLADALMIAFGAGAVVTGG-------TLKWVLFGVSSIFHVTLFAYLYVVFPRAVPDD-P
+-MQ-RGLFSL--LKNHVGLLWL-AYPFVWLMGPAGI-GFT-TGVGAALTYAFLDVLAKVPYVYFF-YARR
+Q----------------------------------------AF------------------T--------
+---------------DVVSA-------ATADREDA--------T--D--A---V-G-D-GA---------
+-----------------------------PTAAD
+>BACR_HALHA 1.00 92.0% 28.2%
+MLELLP--------------------T-------------A-V--EGV------S-------QAQIT---
+--GRPEWIWLALGTA---LMGLGTLYFLVKGMGVSDPDAK---KFYAITTLVPAIAFTMYLSMLLGYGLT
+MV-PF----------G---------G-E-Q---NPIYWARYADWLFTTPLLLLDLALLVDADQG------
+-----TILALVGADGIMIGTGLVGALTKV------YSYRFVWWAISTAAMLYILYVLFFGFTSKAESMRP
+-EV-ASTFKV--LRNVTVVLWS-AYPVVWLIGSEGA-GIV-PLNIETLLFMVLDVSAKVGFGLIL-LRSR
+A----------------------------------------IF------------------G--------
+---------------EAE----------------A--------P--E--P---S-A-GDGA---------
+-----------------------------AATSD
+>BAC3_HALSD 1.00 92.0% 26.1%
+MDPIAL--------------------Q-------------A------G------Y-------DLLGD---
+--GRPETLWLGIGTL---LMLIGTFYFLVRGWGVTDKDAR---EYYAVTILVPGIASAAYLSMFFGIGLT
+EV-TV----------G---------G-E-M---LDIYYARYADWLFTTPLLLLDLALLAKVDRV------
+-----TIGTLVGVDALMIVTGLIGALSHT------AIARYSWWLFSTICMIVVLYFLATSLRSAAKERGP
+-EV-ASTFNT--LTALVLVLWT-AYPILWIIGTEGA-GVV-GLGIETLLFMVLDVTAKVGFGFIL-LRSR
+A----------------------------------------IL------------------G--------
+---------------DTE----------------A--------P--E--P---S-A-G-AD---------
+-----------------------------VSAAD
+>BAC1_HALS1 1.00 92.0% 27.7%
+MDPIAL--------------------T-------------A-A--V-G------A-------DLLGD---
+--GRPETLWLGIGTL---LMLIGTFYFIVKGWGVTDKEAR---EYYSITILVPGIASAAYLSMFFGIGLT
+EV-QV----------G---------S-E-M---LDIYYARYADWLFTTPLLLLDLALLAKVDRV------
+-----SIGTLVGVDALMIVTGLVGALSHT------PLARYTWWLFSTICMIVVLYFLATSLRAAAKERGP
+-EV-ASTFNT--LTALVLVLWT-AYPILWIIGTEGA-GVV-GLGIETLLFMVLDVTAKVGFGFIL-LRSR
+A----------------------------------------IL------------------G--------
+---------------DTE----------------A--------P--E--P---S-A-G-AE---------
+-----------------------------ASAAD
+>BAC2_HALS2 1.00 92.0% 28.8%
+MDPIAL--------------------Q-------------A------G------F-------DLLND---
+--GRPETLWLGIGTL---LMLIGTFYFIARGWGVTDKEAR---EYYAITILVPGIASAAYLAMFFGIGVT
+EV-EL----------AS--------G-T-V---LDIYYARYADWLFTTPLLLLDLALLAKVDRV------
+-----TIGTLIGVDALMIVTGLIGALSKT------PLARYTWWLFSTIAFLFVLYYLLTSLRSAAAKRSE
+-EV-RSTFNT--LTALVAVLWT-AYPILWIVGTEGA-GVV-GLGIETLAFMVLDVTAKVGFGFVL-LRSR
+A----------------------------------------IL------------------G--------
+---------------ETE----------------A--------P--E--P---S-A-G-AD---------
+-----------------------------ASAAD
+>BACR_HALHM 1.00 72.5% 30.8%
+----------------------------------------------------------------------
+----------GIGTL---LMLIGTFYFIARGWGVTDKKAR---EYYAITILVPGIASAAYLSMFFGIGLT
+TV-EV----------AG-------MA-E-P---LEIYYARYADWLFTTPLLLLDLALLANADRT------
+-----TIGTLIGVDALMIVTGLIGALSHT------PLARYTWWLFSTIAFLFVLYYLLTVLRSAAAELSE
+-DV-QTTFNT--LTALVAVLWT-AYPILWIIGTEGA-GVV-GLGVETLAFMVLDVTA-------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------
+>BACR_HALAR 1.00 87.3% 28.4%
+MPEP------------------------------------------------------------------
+---GSEAIWLWLGTA---GMFLGMLYFIARGWGETDSRRQ---KFYIATILITAIAFVNYLAMALGFGLT
+IV-EF----------A---------G-E-E---HPIYWARYSDWLFTTPLLLYDLGLLAGADRN------
+-----TITSLVSLDVLMIGTGLVATLSPGSGVLSAGAERLVWWGISTAFLLVLLYFLFSSLSGRVADLPS
+-DT-RSTFKT--LRNLVTVVWL-VYPVWWLIGTEGI-GLV-GIGIETAGFMVIDLTAKVGFGIIL-LRSH
+G----------------------------------------VL------------------D--------
+---------------GA--------------------------A--E--T---T-G-T-GA---------
+-----------------------------TPADD
+>BACR_HALHP 1.00 73.9% 30.9%
+----------------------------------------------------------------------
+-------IWLWLGTA---GMFLGMLYFIARGWGETDSRRQ---KFYIATILITAIAFVNYLAMALGFGLT
+IV-EF----------A---------G-E-E---HPIYWARYSDWLFTTPLLLYDLGLLAGADRN------
+-----TITSLVSLDVLMIGTGLVATLSAGSGVLSAGAERLVWWGISTAFLLVLLYFLFSSLSGRVADLPS
+-DT-RSTFKT--LRNLVTVVWL-VYPVWWLIGTEGI-GLV-GIGIETAGFMVIDLTA-------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------
+>BACR_HALVA 1.00 87.3% 27.4%
+MPAP------------------------------------------------------------------
+---EGEAIWLWLGTA---GMFLGMLYFIARGWGETDSRRQ---KFYIATILITAIAFVNYLAMALGFGLT
+IV-EI----------A---------G-E-Q---RPIYWARYSDWLFTTPLLLYDLGLLAGADRN------
+-----TISSLVSLDVLMIGTGLVATLSAGSGVLSAGAERLVWWGISTAFLLVLLYFLFSSLSGRVADLPS
+-DT-RSTFKT--LRNLVTVVWL-VYPVWWLVGTEGI-GLV-GIGIETAGFMVIDLVAKVGFGIIL-LRSH
+G----------------------------------------VL------------------D--------
+---------------GA--------------------------A--E--T---T-G-A-GA---------
+-----------------------------TATAD
+>BACR_HALHS 1.00 73.2% 30.7%
+----------------------------------------------------------------------
+---------LWLGTA---GMFLGMLYFIARGWGETDGRRQ---KFYIATILITAIAFVNYLAMALGFGLT
+FI-EF----------G---------G-E-Q---HPIYWARYTDWLFTTPLLLYDLGLLAGADRN------
+-----TIYSLVSLDVLMIGTGVVATLSAGSGVLSAGAERLVWWGISTAFLLVLLYFLFSSLSGRVANLPS
+-DT-RSTFKT--LRNLVTVVWL-VYPVWWLVGSEGL-GLV-GIGIETAGFMVIDLVA-------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------
+>BACR_HALSR 1.00 89.1% 26.3%
+MLQSGM--------------------S-------------T-----------------------YVP---
+---GGESIFLWVGTA---GMFLGMLYFIARGWSVSDQRRQ---KFYIATIMIAAIAFVNYLSMALGFGVT
+TI-EL----------G---------G-E-E---RAIYWARYTDWLFTTPLLLYDLALLAGADRN------
+-----TIYSLVGLDVLMIGTGALATLSAGSGVLPAGAERLVWWGISTGFLLVLLYFLFSNLTDRASELSG
+-DL-QSKFST--LRNLVLVLWL-VYPVLWLVGTEGL-GLV-GLPIETAAFMVLDLTAKIGFGIIL-LQSH
+A----------------------------------------VL------------------D--------
+---------------E---------------------------G--Q--T---A-S-E--G---------
+-----------------------------AAVAD
+>O93740 1.00 88.8% 24.2%
+MCCAAL--------------------A-------------P---------------------PMAAT---
+--VGPESIWLWIGTI---GMTLGTLYFVGRGRGVRDRKMQ---EFYIITIFITTIAAAMYFAMATGFGVT
+EV-MV----------G---------D-E-A---LTIYWARYADWLFTTPLLLLDLSLLAGANRN------
+-----TIATLIGLDVFMIGTGAIAALSST------PGTRIAWWAISTGALLALLYVLVGTLSENARNRAP
+-EV-ASLFGR--LRNLVIALWF-LYPVVWILGTEGTFGIL-PLYWETAAFMVLDLSAKVGFGVIL-LQSR
+S----------------------------------------VL------------------E--------
+---------------RVA----------------T-------------------------P---------
+-----------------------------TAAPT
+>F123_CORVE 1.00 92.8% 20.5%
+MGNS------------------------------------------------ALDLNPPN-ATFHLS---
+-THG--SDWLWAAFS---VFGVSLLTVVAWTF-TRPRGAR---LFHQIAIVVLTTGSLAYFSMASDLGAT
+PV-PVEFR-----------------G-EGT---RQIWFVRYIQWFITFPLLLLELLLATGLSLS------
+-----DIFTTLFMSIVLVITGLVAALVPST-------YKWGYYTFGVSALFYIWYVLLWHGPHTTFAAGG
+-VL-RRGYIL--AAGYLSFLLL-LYPIAWACA-EGG-NVI-SVTSEMIWYGILDIFAGPIFLFFF-LWEL
+R----------------------------------------G------------------VD--YATFGL
+HSGKYTDKSAYAPNTAQA----------------AGT------V--P--A---T-T-S-TG---------
+-----------------------------AAGNV
+>YRO2_YEAST 1.00 95.3% 13.4%
+MSDYVE--------------------L------------LK------RGGNEAIKINPPTGADFHIT---
+-SRG--SDWLFTVFCVNLLFGV-IL--VPLMF-RKPVKDR---FVYYTAIAPNLFMSIAYFTMASNLGWI
+PV-RAKYNHVQ----TSTQ----KEH-PGY---RQIFYARYVGWFLAFPWPIIQMSLLGGTPLW------
+-----QIAFNVGMTEIFTVCWLIAACVHST-------YKWGYYTIGIGAAIVVCISLMTTTFNLVKARGK
+-DV-SNVFIT--FMSVIMFLWLIAYPTCFGIT-DGG-NVL-QPDSATIFYGIIDLLILSILPVLF-MPLA
+NYLGIERLGLIFDEEPAEHVGPVAEKKMPSPASFKSSDSDSS------------------IK--EKLKLK
+KKHKKDKKKAKKAKKAKK----------------AKK------A--Q--E---E-E-E-DV---------
+-----------------------------ATDSE
+>YD33_YEAST 1.00 95.3% 12.3%
+MSTFET--------------------L------------IK------RGGNEAIKINPPTGADFHIT---
+-SRG--SDWFWTCFCCYLLFGL-IL--TFLMF-RKPVNDR---FFYLTGIAPNFFMCIAYFTMASNLGWI
+PV-KAKYNHVQ----TSTQ----KEH-PGY---RQIFYSRFVGWFLALPWPIIQICMLAGTPFW------
+-----QMAFNVCITEFFTVCWLIAACVHST-------YKWGYYTIGLGAAIVVSISVMTTSYNLVKQRDN
+-DI-RLTFLV--FFSIIMFLWIIAYPTCFGIT-DGG-NVL-QPDSAGIFYGIIDLILMCFIPTLL-VPIA
+NHFGADKLG------------------------YHFGPSDAE------------------AV--MAPKAP
+VASPRPAATPNLSKDKKK----------------KSK------K--S--K---K-S-K-KS---------
+-----------------------------KKSEE
+>HS30_YEAST 1.00 94.6% 15.0%
+MNDTLS--------------------S-------------F------LNRNEALGLNPPHGLDMHIT---
+-KRG--SDWLWAVFA---VFGFILLCYVVMFFIAENKGSRLTRYALAPAFLITFFEFFAFFTYASDLGWT
+GV-QAEFNHVK----VSKS--ITGEV-PGI---RQIFYSKYIAWFLSWPCLLFLIELAASTTGENDDISA
+LDMVHSLLIQIVGTLFWVVSLLVGSLIKST-------YKWGYYTIGAVAMLVTQGVICQRQFFNLKTRG-
+-------FNALMLCTCMVIVWL--YFICWGLS-DGG-NRI-QPDGEAIFYGVLDLCVFAIYPCYL-LIAV
+S----------------------------------------RDGKLPRLSLTGGFSHHHATD--DVEDAA
+PETKEAVPESPRASGETA----------------IHE------P--E--P---E-A-E-QA---------
+-----------------------------VEDTA
+>O74870 1.00 92.4% 16.5%
+MNAKLS--------------------S-------------S------G------MVLKELPEVALQK---
+--I--SSNYYWAVFAV--FLLCAI--VFPLVSIFSLPQKQ---TYHRFFSILSLVSCLAYFTMACNYGLK
+NV-FS----------SA---SFFREV-S-V---RMVYYVRYIQWLINFPLIIVMLHWTVGVSIL------
+-----EIAYVVCYVLFAIVCLLAAALTSS-------PYKWAYYGFSFVGYFIALAHSVVLHKKYASRL-E
+TSA-RLGFLW--SIVYLHVIWF-LYYACWIL-SEGL-NVI-SPIGEAIFYSILDLFEFGFFGAAF-SWML
+D----------------------------------------LV------------------G--------
+-------------IENFK----------------S--------P--Q--S---I-P-L-GACSPADDKFS
+MCPDMEAQNQADDLAVETRIQISNLPSSPTKNNC
+>Q9UW81 1.00 97.1% 24.0%
+MIHPEQ--------------------VADMLRPTTSTTSSHVPGPVPT------VVPTPTEYQTLGE---
+--TG--HRTLWVTFA---LMVLSSGIFALLSWNVPT-SKR---LFHVITTLITVVASLSYFAMATGHATT
+FNCDTAWDHHKHVPDTS--------HQV-C---RQVFWGRYVDWALTTPLLLLELCLLAGVDGA------
+-----HTLMAIVADVIMVLCGLFAALGEGGN----TAQKWGWYTIGCFSYLFVIWHVALHGSRTVTAKGR
+-GV-SRLFTG--LAVFALLLWT-AYPIIWGIA-GGA-RRT-NVDTEILIYTVLDLLAKPVFGFWL-LLSH
+R----------------------------------------AM------------------P--------
+---------------ETNI---------------DLPGYWSHGL--A--T---E-G-R-IR---------
+-----------------------------IGEED

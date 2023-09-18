@@ -1,8 +1,0 @@
-alnRef7/msl_ref7.kalignP.msf	0.994	 0.980
-alnRef7/acr_ref7.kalignP.msf	0.975	 0.660
-alnRef7/dtd_ref7.kalignP.msf	0.969	 0.590
-alnRef7/7tm_ref7.kalignP.msf	0.947	 0.440
-alnRef7/photo_ref7.kalignP.msf	0.939	 0.430
-alnRef7/ptga_ref7.kalignP.msf	0.874	 0.280
-alnRef7/Nat_ref7.kalignP.msf	0.787	 0.250
-alnRef7/ion_ref7.kalignP.msf	0.781	 0.000

@@ -1,8 +1,0 @@
-alnRef7/ref7_test_msl_ref7.fa.clustalw.msf	0.991	 0.930
-alnRef7/ref7_test_7tm_ref7.fa.clustalw.msf	0.978	 0.590
-alnRef7/ref7_test_acr_ref7.fa.clustalw.msf	0.968	 0.740
-alnRef7/ref7_test_photo_ref7.fa.clustalw.msf	0.929	 0.510
-alnRef7/ref7_test_dtd_ref7.fa.clustalw.msf	0.926	 0.400
-alnRef7/ref7_test_Nat_ref7.fa.clustalw.msf	0.649	 0.010
-alnRef7/ref7_test_ptga_ref7.fa.clustalw.msf	0.510	 0.050
-alnRef7/ref7_test_ion_ref7.fa.clustalw.msf	0.385	 0.000

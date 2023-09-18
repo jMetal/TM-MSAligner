@@ -1,8 +1,0 @@
-alnRef7/ref7_test_acr_ref7.fa.muscle.msf	0.990	 0.840
-alnRef7/ref7_test_dtd_ref7.fa.muscle.msf	0.963	 0.500
-alnRef7/ref7_test_7tm_ref7.fa.muscle.msf	0.951	 0.380
-alnRef7/ref7_test_msl_ref7.fa.muscle.msf	0.936	 0.850
-alnRef7/ref7_test_photo_ref7.fa.muscle.msf	0.927	 0.480
-alnRef7/ref7_test_ptga_ref7.fa.muscle.msf	0.826	 0.220
-alnRef7/ref7_test_Nat_ref7.fa.muscle.msf	0.779	 0.180
-alnRef7/ref7_test_ion_ref7.fa.muscle.msf	0.723	 0.000

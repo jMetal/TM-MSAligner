@@ -14,7 +14,9 @@ import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.FrontPlotTM_MSAObserver;
+import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
+import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessPlotObserver;
+import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessWriteFileObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
@@ -41,20 +43,15 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
 
-        int maxEvaluations = 25000 ;
+        String refName = "msl" ;
+        int numberOfTest = 1;
+
+        int maxEvaluations = 50000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
-        int numberOfCores = 1 ;
-        String refName = "ptga" ;
-        String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
-        String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
-        String outputFolder = "data/pruebas/ref7/" + refName + "/" ;
-
-
+        int numberOfCores = 1;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
-
-
         double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
         weightGapOpenTM = 8;
         weightGapExtendTM = 3;
@@ -72,7 +69,13 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         scoreList.add(new AlignedSegment());
 
 
+        String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
+        String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
+
+        String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
+        new File(outputFolder).mkdirs();
+
 
         List<String> preComputedFiles = new ArrayList<String>();
         preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
@@ -96,12 +99,14 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             numberOfCores)
                             .build();
 
-        var chartObserver =
-                new FrontPlotTM_MSAObserver<TM_MSASolution>("TM-M2Align", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+
+        var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
+               /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
+                                              scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
+              /*new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);*/
         tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
-
         List<TM_MSASolution> population = tm_m2align.result();
 
         for (TM_MSASolution solution : population) {
@@ -113,19 +118,18 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         JMetalLogger.logger.info("Total execution time : " + tm_m2align.totalComputingTime() + "ms");
         JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.numberOfEvaluations()) ;
 
-        DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN.tsv");
+        DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN_" + refName + ".tsv");
         funFile.setSeparator("\t");
 
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        printMSAToFile(population, outputFolder);
+        //printMSAToFile(population, outputFolder);
 
 
     }
     public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
 
-        new File(PathOut).mkdirs();
         try {
             for (int i = 0; i < solutionList.size(); i++) {
                 DefaultFileOutputContext context = new DefaultFileOutputContext(PathOut + "MSASol" + i + ".fasta");

@@ -1,4 +1,4 @@
-package org.uma.khaos.tm_msaligner.util;
+package org.uma.khaos.tm_msaligner.util.observer;
 
 import org.knowm.xchart.XYChart;
 import org.uma.jmetal.util.JMetalLogger;

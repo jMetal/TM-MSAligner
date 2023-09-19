@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-09-18T20:28:01.426653Z</date>
-  <millis>1695068881426</millis>
-  <nanos>653000</nanos>
+  <date>2023-09-19T04:03:35.480854Z</date>
+  <millis>1695096215480</millis>
+  <nanos>854000</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,15 +14,39 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-09-18T20:28:01.482802Z</date>
-  <millis>1695068881482</millis>
-  <nanos>802000</nanos>
+  <date>2023-09-19T04:03:35.497169Z</date>
+  <millis>1695096215497</millis>
+  <nanos>169000</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
   <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
   <method>register</method>
   <thread>1</thread>
-  <message>DefaultObservable Evolutionary Algorithm: org.uma.khaos.tm_msaligner.util.FrontPlotTM_MSAObserver@16612a51 registered</message>
+  <message>DefaultObservable Evolutionary Algorithm: FicheroValoresMaximos registered</message>
+</record>
+<record>
+  <date>2023-09-19T04:03:51.320051Z</date>
+  <millis>1695096231320</millis>
+  <nanos>51000</nanos>
+  <sequence>2</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time : 15821ms</message>
+</record>
+<record>
+  <date>2023-09-19T04:03:51.320692Z</date>
+  <millis>1695096231320</millis>
+  <nanos>692000</nanos>
+  <sequence>3</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Number of evaluations: 50000</message>
 </record>
 </log>

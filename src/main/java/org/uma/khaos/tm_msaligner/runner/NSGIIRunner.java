@@ -30,20 +30,20 @@ import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 public class NSGIIRunner {
 
   public static void main(String[] args) throws JMetalException, IOException {
-    /*
-    if (args.length != 8) {
-      throw new JMetalException("Wrong number of arguments");
-    }
+      /*
+      if (args.length != 8) {
+        throw new JMetalException("Wrong number of arguments");
+      }
 
-    Integer maxEvaluations = Integer.parseInt(args[0]);  //2500
-    Integer populationSize = Integer.parseInt(args[1]); //100
-    int offspringPopulationSize = populationSize;
-    Integer numberOfCores = Integer.parseInt(args[2]);   //1
-    String refname = args[3]; // "7tm";
-    String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-    String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-    String PathOut = args[6] + refname + "/Ejec" + args[7] + "/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
-   */
+      Integer maxEvaluations = Integer.parseInt(args[0]);  //2500
+      Integer populationSize = Integer.parseInt(args[1]); //100
+      int offspringPopulationSize = populationSize;
+      Integer numberOfCores = Integer.parseInt(args[2]);   //1
+      String refname = args[3]; // "7tm";
+      String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
+      String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
+      String PathOut = args[6] + refname + "/Ejec" + args[7] + "/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
+     */
     int maxEvaluations = 2500 ;
     int populationSize = 100 ;
     int offspringPopulationSize = populationSize ;

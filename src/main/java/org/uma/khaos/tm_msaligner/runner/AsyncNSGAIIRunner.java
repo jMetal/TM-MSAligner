@@ -6,11 +6,9 @@ import static org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain2.printMSAToFile;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
-import org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder;
-import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.termination.Termination;
 import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
+import org.uma.jmetal.parallel.asynchronous.algorithm.impl.AsynchronousMultiThreadedNSGAII;
 import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
@@ -28,7 +26,7 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
-public class NSGIIRunner {
+public class AsyncNSGAIIRunner {
 
   public static void main(String[] args) throws JMetalException, IOException {
       /*
@@ -48,7 +46,7 @@ public class NSGIIRunner {
     int maxEvaluations = 2500 ;
     int populationSize = 100 ;
     int offspringPopulationSize = populationSize ;
-    int numberOfCores = 1 ;
+    int numberOfCores = 10 ;
     String refName = "dtd" ;
     String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
     String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
@@ -91,23 +89,25 @@ public class NSGIIRunner {
 
     Termination termination = new TerminationByEvaluations(maxEvaluations);
 
-    EvolutionaryAlgorithm<TM_MSASolution> nsgaII = new NSGAIIBuilder<>(
-        problem,
-        populationSize,
-        offspringPopulationSize,
-        crossover,
-        mutation)
-        .setTermination(termination)
-        .setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
-        .build();
+    long initTime = System.currentTimeMillis();
+
+    AsynchronousMultiThreadedNSGAII<TM_MSASolution> nsgaII =
+        new AsynchronousMultiThreadedNSGAII<>(
+            numberOfCores, problem, populationSize, crossover, mutation,
+            termination);
+
 
     var chartObserver =
         new FrontPlotObserver<DoubleSolution>("NSGA-II", "F1", "F2", problem.name(), 500);
-    nsgaII.observable().register(chartObserver);
+    nsgaII.getObservable().register(chartObserver);
 
     nsgaII.run();
 
-    List<TM_MSASolution> population = nsgaII.result();
+    long endTime = System.currentTimeMillis();
+
+    List<TM_MSASolution> population = nsgaII.getResult();
+
+    JMetalLogger.logger.info("Computing time: " + (endTime - initTime));
 
     for (TM_MSASolution solution : population) {
       for (int i = 0; i < problem.numberOfObjectives(); i++) {
@@ -115,8 +115,6 @@ public class NSGIIRunner {
       }
     }
 
-    JMetalLogger.logger.info("Total execution time : " + nsgaII.totalComputingTime() + "ms");
-    JMetalLogger.logger.info("Number of evaluations: " + nsgaII.numberOfEvaluations());
 
     DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN.tsv");
     funFile.setSeparator("\t");

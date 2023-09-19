@@ -1,5 +1,7 @@
 package org.uma.khaos.tm_msaligner.algorithm.multiobjective;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import org.uma.jmetal.component.catalogue.common.evaluation.Evaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
@@ -23,9 +25,6 @@ import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
-
-import java.util.Arrays;
-import java.util.Comparator;
 
 public class TM_M2AlignBuilder{
 

@@ -1,8 +1,7 @@
 package org.uma.khaos.tm_msaligner.util;
 
-import org.uma.jmetal.util.errorchecking.JMetalException;
-
 import java.util.Arrays;
+import org.uma.jmetal.util.errorchecking.JMetalException;
 
 public class AAArray {
   private AA[] array;

@@ -1,13 +1,11 @@
 package org.uma.khaos.tm_msaligner.mutation;
 
+import java.util.List;
 import org.uma.jmetal.operator.mutation.MutationOperator;
 import org.uma.jmetal.util.errorchecking.Check;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-
-
-import java.util.List;
 
 public class ShiftClosedGapsMSAMutation implements MutationOperator<TM_MSASolution> {
   private final double mutationProbability;

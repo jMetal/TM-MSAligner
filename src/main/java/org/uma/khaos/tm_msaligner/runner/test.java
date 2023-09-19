@@ -1,21 +1,13 @@
 package org.uma.khaos.tm_msaligner.runner;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
-import org.biojava.nbio.core.sequence.ProteinSequence;
-import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
-import org.uma.khaos.tm_msaligner.problem.impl.SingleObjTMMSAProblem;
-import org.uma.khaos.tm_msaligner.score.Score;
-import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
-import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.AA;
-import org.uma.khaos.tm_msaligner.util.AAArray;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
-
-import java.io.*;
-import java.util.*;
 
 public class test {
 

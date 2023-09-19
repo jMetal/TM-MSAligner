@@ -1,23 +1,17 @@
 package org.uma.khaos.tm_msaligner.util.observer;
 
-import org.uma.jmetal.solution.Solution;
-import org.uma.jmetal.util.JMetalLogger;
-import org.uma.jmetal.util.errorchecking.JMetalException;
-import org.uma.jmetal.util.fileoutput.FileOutputContext;
-import org.uma.jmetal.util.observable.Observable;
-import org.uma.jmetal.util.observer.Observer;
-import org.uma.jmetal.util.plot.SingleValueScatterPlot;
-import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import org.uma.jmetal.util.JMetalLogger;
+import org.uma.jmetal.util.errorchecking.JMetalException;
+import org.uma.jmetal.util.observable.Observable;
+import org.uma.jmetal.util.observer.Observer;
+import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class TM_MSAFitnessWriteFileObserver<S extends TM_MSASolution> implements Observer<Map<String, Object>> {
 

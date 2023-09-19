@@ -1,5 +1,10 @@
 package org.uma.khaos.tm_msaligner.runner;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
@@ -8,19 +13,8 @@ import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGA;
 import org.uma.khaos.tm_msaligner.algorithm.singleobjective.TM_AlignGABuilder;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
-import org.uma.khaos.tm_msaligner.problem.impl.SingleObjTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.TM_MSAProblemSOPwithSASingleObj;
-import org.uma.khaos.tm_msaligner.score.Score;
-import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TM_AlignGAMain2 extends AbstractAlgorithmRunner {
 

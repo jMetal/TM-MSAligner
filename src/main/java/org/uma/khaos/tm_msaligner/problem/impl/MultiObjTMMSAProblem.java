@@ -1,14 +1,13 @@
 package org.uma.khaos.tm_msaligner.problem.impl;
 
 
+import java.io.IOException;
+import java.util.List;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AA;
-
-import java.io.IOException;
-import java.util.List;
 
 public class MultiObjTMMSAProblem extends StandardTMMSAProblem {
 

@@ -30,6 +30,11 @@
             <artifactId>jmetal-component</artifactId>
             <version>6.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.uma.jmetal</groupId>
+            <artifactId>jmetal-parallel</artifactId>
+            <version>6.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.biojava</groupId>

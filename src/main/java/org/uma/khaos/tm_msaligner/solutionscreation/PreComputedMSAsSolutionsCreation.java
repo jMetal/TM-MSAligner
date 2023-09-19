@@ -1,14 +1,13 @@
 package org.uma.khaos.tm_msaligner.solutionscreation;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AAArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class PreComputedMSAsSolutionsCreation implements SolutionsCreation<TM_MSASolution> {
 

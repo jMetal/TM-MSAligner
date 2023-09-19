@@ -1,17 +1,6 @@
 package org.uma.khaos.tm_msaligner.problem;
 
 
-import org.apache.commons.math3.analysis.function.Min;
-import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
-import org.biojava.nbio.core.sequence.ProteinSequence;
-import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
-import org.biojava.nbio.core.sequence.io.FastaWriterHelper;
-import org.uma.jmetal.util.errorchecking.JMetalException;
-import org.uma.jmetal.util.pseudorandom.JMetalRandom;
-import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
-import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.AAArray;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -20,6 +9,13 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
+import org.biojava.nbio.core.sequence.ProteinSequence;
+import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
+import org.biojava.nbio.core.sequence.io.FastaWriterHelper;
+import org.uma.jmetal.util.errorchecking.JMetalException;
+import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.util.AAArray;
 
 public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASolution> {
 
@@ -115,7 +111,7 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
 
   /** Read data from a FASTA file */
   public List<AAArray> readDataFromFastaFile(String dataFile)
-      throws IOException, CompoundNotFoundException {
+      throws IOException {
 
     List<AAArray> sequenceList = new ArrayList<AAArray>();
 

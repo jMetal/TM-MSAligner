@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
@@ -19,6 +20,7 @@ import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessWriteFileObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
@@ -46,7 +48,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         int maxEvaluations = 50000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
-        int numberOfCores = 1;
+        int numberOfCores = 8;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
         double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
@@ -86,22 +88,21 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
                                     preComputedFiles,refName);
 
-
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
                             maxEvaluations,
                             populationSize,
                             offspringPopulationSize,
                             probabilityCrossover,
                             probabilityMutation,
-                            numberOfCores)
+                            numberOfCores).setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
                             .build();
 
 
-        var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
+        //var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-              /*new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);*/
-        tm_m2align.observable().register(chartObserver);
+        //var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+        //tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
         List<TM_MSASolution> population = tm_m2align.result();
@@ -123,7 +124,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
         //printMSAToFile(population, outputFolder);
 
-
+        new SolutionListOutput(population)
+            .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
+            .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
+            .print();
     }
     public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
 

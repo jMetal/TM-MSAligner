@@ -1,14 +1,12 @@
 package org.uma.khaos.tm_msaligner.runner;
 
 
-import static org.uma.khaos.tm_msaligner.runner.TM_AlignGAMain2.printMSAToFile;
+import static org.uma.jmetal.util.AbstractAlgorithmRunner.printFinalSolutionSet;
+import static org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain.printMSAToFile;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
-import org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder;
-import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.termination.Termination;
 import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
 import org.uma.jmetal.solution.doublesolution.DoubleSolution;
@@ -19,40 +17,29 @@ import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.jmetal.util.observer.impl.FrontPlotObserver;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
+import org.uma.khaos.tm_msaligner.parallel.algorithm.impl.AsynchronousMultiThreadedTM_M2Align;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.MultiObjTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
-public class NSGIIRunner {
+public class AsyncTMM2AlignRunner {
 
   public static void main(String[] args) throws JMetalException, IOException {
-      /*
-      if (args.length != 8) {
-        throw new JMetalException("Wrong number of arguments");
-      }
 
-      Integer maxEvaluations = Integer.parseInt(args[0]);  //2500
-      Integer populationSize = Integer.parseInt(args[1]); //100
-      int offspringPopulationSize = populationSize;
-      Integer numberOfCores = Integer.parseInt(args[2]);   //1
-      String refname = args[3]; // "7tm";
-      String benchmarkPath = args[4] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-      String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
-      String PathOut = args[6] + refname + "/Ejec" + args[7] + "/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";
-     */
-    int maxEvaluations = 2500 ;
-    int populationSize = 100 ;
-    int offspringPopulationSize = populationSize ;
-    int numberOfCores = 1 ;
-    String refName = "dtd" ;
-    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
-    String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
-    String outputFolder = "data/pruebas/ref7/" + refName + "/" ;
+    int maxEvaluations = 2500;
+    int populationSize = 100;
+    int offspringPopulationSize = populationSize;
+    int numberOfCores = 10;
+    String refName = "dtd";
+    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/";
+    String preComputedMSAPath = "data/precomputed_solutions/ref7/" + refName + "/";
+    String outputFolder = "data/pruebas/ref7/" + refName + "/";
 
     double probabilityCrossover = 0.8;
     double probabilityMutation = 0.2;
@@ -91,23 +78,24 @@ public class NSGIIRunner {
 
     Termination termination = new TerminationByEvaluations(maxEvaluations);
 
-    EvolutionaryAlgorithm<TM_MSASolution> nsgaII = new NSGAIIBuilder<>(
-        problem,
-        populationSize,
-        offspringPopulationSize,
-        crossover,
-        mutation)
-        .setTermination(termination)
-        .setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
-        .build();
+    long initTime = System.currentTimeMillis();
 
-    var chartObserver =
-        new FrontPlotObserver<DoubleSolution>("NSGA-II", "F1", "F2", problem.name(), 500);
-    nsgaII.observable().register(chartObserver);
+    AsynchronousMultiThreadedTM_M2Align tm_m2align =
+        new AsynchronousMultiThreadedTM_M2Align(
+            numberOfCores, problem, populationSize, crossover, mutation,
+            termination);
 
-    nsgaII.run();
+    var chartObserver = new FrontPlotTM_MSAObserver<>("", "SumOfPairsWithTopologyPredict",
+        "AlignedSegment", problem.name(), 100);
+    tm_m2align.getObservable().register(chartObserver);
 
-    List<TM_MSASolution> population = nsgaII.result();
+    tm_m2align.run();
+
+    long endTime = System.currentTimeMillis();
+
+    List<TM_MSASolution> population = tm_m2align.getResult();
+
+    JMetalLogger.logger.info("Computing time: " + (endTime - initTime));
 
     for (TM_MSASolution solution : population) {
       for (int i = 0; i < problem.numberOfObjectives(); i++) {
@@ -115,15 +103,15 @@ public class NSGIIRunner {
       }
     }
 
-    JMetalLogger.logger.info("Total execution time : " + nsgaII.totalComputingTime() + "ms");
-    JMetalLogger.logger.info("Number of evaluations: " + nsgaII.numberOfEvaluations());
+    //DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN_" + refName + ".tsv");
+    //funFile.setSeparator("\t");
 
-    DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN.tsv");
-    funFile.setSeparator("\t");
+    //SolutionListOutput slo = new SolutionListOutput(population);
+    //slo.printObjectivesToFile(funFile, population);
 
-    SolutionListOutput slo = new SolutionListOutput(population);
-    slo.printObjectivesToFile(funFile, population);
-
-    printMSAToFile(population, outputFolder);
+    new SolutionListOutput(population)
+        .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
+        .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
+        .print();
   }
 }

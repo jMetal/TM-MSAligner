@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-09-19T11:00:12.535351Z</date>
-  <millis>1695121212535</millis>
-  <nanos>351000</nanos>
+  <date>2023-09-19T15:55:02.186375Z</date>
+  <millis>1695138902186</millis>
+  <nanos>375000</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,15 +14,15 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-09-19T11:00:12.543267Z</date>
-  <millis>1695121212543</millis>
-  <nanos>267000</nanos>
+  <date>2023-09-19T15:55:02.194510Z</date>
+  <millis>1695138902194</millis>
+  <nanos>510000</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
   <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
   <method>register</method>
   <thread>1</thread>
-  <message>DefaultObservable Evolutionary Algorithm: org.uma.jmetal.util.observer.impl.FrontPlotObserver@7d9f158f registered</message>
+  <message>DefaultObservable Observable: org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver@4ee203eb registered</message>
 </record>
 </log>

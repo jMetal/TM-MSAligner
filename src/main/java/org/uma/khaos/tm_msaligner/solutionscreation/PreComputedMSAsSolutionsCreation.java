@@ -11,44 +11,44 @@ import org.uma.khaos.tm_msaligner.util.AAArray;
 
 public class PreComputedMSAsSolutionsCreation implements SolutionsCreation<TM_MSASolution> {
 
-    private final int numberOfSolutionsToCreate;
-    private final StandardTMMSAProblem problem;
+  private final int numberOfSolutionsToCreate;
+  private final StandardTMMSAProblem problem;
 
-    public PreComputedMSAsSolutionsCreation(StandardTMMSAProblem problem, int numberOfSolutionsToCreate) {
-        this.numberOfSolutionsToCreate = numberOfSolutionsToCreate;
-        this.problem = problem;
+  public PreComputedMSAsSolutionsCreation(StandardTMMSAProblem problem,
+      int numberOfSolutionsToCreate) {
+    this.numberOfSolutionsToCreate = numberOfSolutionsToCreate;
+    this.problem = problem;
+  }
+
+  @Override
+  public List<TM_MSASolution> create() {
+    List<TM_MSASolution> population = new ArrayList<>(numberOfSolutionsToCreate);
+    JMetalRandom randomGenerator = JMetalRandom.getInstance();
+
+    for (List<AAArray> sequenceList : problem.listOfPrecomputedStringAlignments) {
+      TM_MSASolution newIndividual = new TM_MSASolution(sequenceList, problem);
+      population.add(newIndividual);
     }
 
-    @Override
-    public List<TM_MSASolution> create() {
-        List<TM_MSASolution> population = new ArrayList<>(numberOfSolutionsToCreate);
-        JMetalRandom randomGenerator = JMetalRandom.getInstance();
+    int parent1, parent2;
+    List<TM_MSASolution> children, parents;
+    SPXMSACrossover crossover = new SPXMSACrossover(1);
 
-        for (List<AAArray> sequenceList : problem.listOfPrecomputedStringAlignments) {
-            TM_MSASolution newIndividual = new TM_MSASolution(sequenceList, problem);
-            population.add(newIndividual);
-        }
+    while (population.size() < numberOfSolutionsToCreate) {
+      parents = new ArrayList<TM_MSASolution>();
 
-        int parent1, parent2;
-        List<TM_MSASolution> children, parents;
-        SPXMSACrossover crossover = new SPXMSACrossover(1);
+      parent1 = randomGenerator.nextInt(0, population.size() - 1);
+      do {
+        parent2 = randomGenerator.nextInt(0, population.size() - 1);
+      } while (parent1 == parent2);
+      parents.add(population.get(parent1));
+      parents.add(population.get(parent2));
 
-        while (population.size() < numberOfSolutionsToCreate) {
-            parents = new ArrayList<TM_MSASolution>();
+      children = crossover.execute(parents);
 
-            parent1 = randomGenerator.nextInt(0, population.size() - 1);
-            do {
-                parent2 = randomGenerator.nextInt(0, population.size() - 1);
-            } while (parent1 == parent2);
-            parents.add(population.get(parent1));
-            parents.add(population.get(parent2));
-
-            children = crossover.execute(parents);
-
-            population.add(children.get(0));
-            population.add(children.get(1));
-        }
-        return population;
-
+      population.add(children.get(0));
+      population.add(children.get(1));
     }
+    return population;
+  }
 }

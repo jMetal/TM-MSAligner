@@ -42,9 +42,6 @@ public class TM_MSAFitnessWriteFileObserver<S extends TM_MSASolution> implements
         } catch (IOException var7) {
             throw new JMetalException("Error printing objectives to file: ", var7);
         }
-
-
-
     }
 
     /**

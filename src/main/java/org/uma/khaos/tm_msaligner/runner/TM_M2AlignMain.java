@@ -89,7 +89,6 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
                                     preComputedFiles,refName);
 
-
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
                             maxEvaluations,
                             populationSize,
@@ -103,7 +102,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-              /*new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);*/
+        //var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
         tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();

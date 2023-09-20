@@ -1,7 +1,6 @@
 package org.uma.khaos.tm_msaligner.mutation;
 
 import java.util.List;
-
 import org.uma.jmetal.operator.mutation.MutationOperator;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;

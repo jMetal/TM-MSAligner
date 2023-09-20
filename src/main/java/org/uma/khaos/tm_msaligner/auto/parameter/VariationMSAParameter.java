@@ -2,15 +2,9 @@ package org.uma.khaos.tm_msaligner.auto.parameter;
 
 import java.util.List;
 import org.uma.jmetal.auto.parameter.CategoricalParameter;
-import org.uma.jmetal.auto.parameter.catalogue.CrossoverParameter;
-import org.uma.jmetal.auto.parameter.catalogue.MutationParameter;
 import org.uma.jmetal.component.catalogue.ea.variation.Variation;
 import org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation;
-import org.uma.jmetal.operator.crossover.CrossoverOperator;
-import org.uma.jmetal.operator.mutation.MutationOperator;
-import org.uma.jmetal.solution.binarysolution.BinarySolution;
 import org.uma.jmetal.util.errorchecking.JMetalException;
-import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class VariationMSAParameter extends CategoricalParameter {
   public VariationMSAParameter(List<String> variationStrategies) {

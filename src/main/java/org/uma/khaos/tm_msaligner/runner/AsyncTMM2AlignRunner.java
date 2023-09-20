@@ -1,21 +1,16 @@
 package org.uma.khaos.tm_msaligner.runner;
 
 
-import static org.uma.jmetal.util.AbstractAlgorithmRunner.printFinalSolutionSet;
-import static org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain.printMSAToFile;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.uma.jmetal.component.catalogue.common.termination.Termination;
 import org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations;
-import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import org.uma.jmetal.util.observer.impl.FrontPlotObserver;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.parallel.algorithm.impl.AsynchronousMultiThreadedTM_M2Align;
@@ -25,7 +20,6 @@ import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 

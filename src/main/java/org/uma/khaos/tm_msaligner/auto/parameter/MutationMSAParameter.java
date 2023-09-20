@@ -1,7 +1,6 @@
 package org.uma.khaos.tm_msaligner.auto.parameter;
 
 import java.util.List;
-
 import org.uma.jmetal.auto.parameter.CategoricalParameter;
 import org.uma.jmetal.operator.mutation.MutationOperator;
 import org.uma.jmetal.util.errorchecking.JMetalException;

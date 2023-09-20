@@ -42,10 +42,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
 
-        String refName = "msl" ;
+        String refName = "ion" ;
         int numberOfTest = 1;
 
-        int maxEvaluations = 50000 ;
+        int maxEvaluations = 10000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
         int numberOfCores = 8;

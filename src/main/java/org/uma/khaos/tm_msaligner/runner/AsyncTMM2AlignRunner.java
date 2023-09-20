@@ -36,9 +36,8 @@ public class AsyncTMM2AlignRunner {
     String refName = "msl" ;
     int numberOfTest = 1;
 
-    int maxEvaluations = 50000 ;
+    int maxEvaluations = 5000 ;
     int populationSize = 100 ;
-    int offspringPopulationSize = populationSize ;
     int numberOfCores = 14;
     double probabilityCrossover=0.8;
     double probabilityMutation=0.2;
@@ -118,5 +117,7 @@ public class AsyncTMM2AlignRunner {
         .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
         .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
         .print();
+
+    System.exit(0) ;
   }
 }

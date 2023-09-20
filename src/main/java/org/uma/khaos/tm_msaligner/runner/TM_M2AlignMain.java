@@ -20,6 +20,7 @@ import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
@@ -108,8 +109,8 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         //var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-        //var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
-        //tm_m2align.observable().register(chartObserver);
+        var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+        tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
         List<TM_MSASolution> population = tm_m2align.result();

@@ -10,7 +10,6 @@ import org.uma.khaos.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
  * @author Antonio J. Nebro (ajnebro@uma.es)
  */
 public class ConfigurableTMMAlignerParameterFileGenerator {
-
   public static void main(String[] args) {
     IraceParameterFileGenerator parameterFileGenerator = new IraceParameterFileGenerator() ;
     parameterFileGenerator.generateConfigurationFile(new ConfigurableTMMAligner()) ;

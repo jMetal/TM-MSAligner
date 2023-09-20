@@ -67,7 +67,6 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                 weightGapExtendNonTM));
         scoreList.add(new AlignedSegment());
 
-
         String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
         String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";

@@ -4,6 +4,7 @@ package org.uma.khaos.tm_msaligner.runner;
 import static org.uma.jmetal.util.AbstractAlgorithmRunner.printFinalSolutionSet;
 import static org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain.printMSAToFile;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,22 +33,20 @@ public class AsyncTMM2AlignRunner {
 
   public static void main(String[] args) throws JMetalException, IOException {
 
-    int maxEvaluations = 2500;
-    int populationSize = 100;
-    int offspringPopulationSize = populationSize;
-    int numberOfCores = 10;
-    String refName = "dtd";
-    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/";
-    String preComputedMSAPath = "data/precomputed_solutions/ref7/" + refName + "/";
-    String outputFolder = "data/pruebas/ref7/" + refName + "/";
+    String refName = "msl" ;
+    int numberOfTest = 1;
 
-    double probabilityCrossover = 0.8;
-    double probabilityMutation = 0.2;
-
-    double weightGapOpenTM = 8;
-    double weightGapExtendTM = 3;
-    double weightGapOpenNonTM = 3;
-    double weightGapExtendNonTM = 1;
+    int maxEvaluations = 50000 ;
+    int populationSize = 100 ;
+    int offspringPopulationSize = populationSize ;
+    int numberOfCores = 14;
+    double probabilityCrossover=0.8;
+    double probabilityMutation=0.2;
+    double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
+    weightGapOpenTM = 8;
+    weightGapExtendTM = 3;
+    weightGapOpenNonTM = 3;
+    weightGapExtendNonTM = 1;
 
     List<Score> scoreList = new ArrayList<>();
     scoreList.add(new SumOfPairsWithTopologyPredict(
@@ -59,19 +58,25 @@ public class AsyncTMM2AlignRunner {
         weightGapExtendNonTM));
     scoreList.add(new AlignedSegment());
 
+    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
+    String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
     String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
+
+    String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
+    new File(outputFolder).mkdirs();
+
 
     List<String> preComputedFiles = new ArrayList<String>();
     preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
-    preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refName + "muscle.fasta");
+    preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta" );
+    preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
+    preComputedFiles.add(preComputedMSAPath + refName + "muscle.fasta");
     preComputedFiles.add(preComputedMSAPath + refName + "t_coffee.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refname + "tmt_coffee2023.fasta");
-    //preComputedFiles.add(preComputedMSAPath + refname + "praline.fasta");
+    preComputedFiles.add(preComputedMSAPath + refName + "tmt_coffee2023.fasta");
+    //preComputedFiles.add(preComputedMSAPath + refName + "praline.fasta");
 
     StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
-        preComputedFiles, refName);
+        preComputedFiles,refName);
 
     var crossover = new SPXMSACrossover(probabilityCrossover);
     var mutation = new ShiftClosedGapsMSAMutation(probabilityMutation);
@@ -85,9 +90,9 @@ public class AsyncTMM2AlignRunner {
             numberOfCores, problem, populationSize, crossover, mutation,
             termination);
 
-    var chartObserver = new FrontPlotTM_MSAObserver<>("", "SumOfPairsWithTopologyPredict",
-        "AlignedSegment", problem.name(), 100);
-    tm_m2align.getObservable().register(chartObserver);
+    //var chartObserver = new FrontPlotTM_MSAObserver<>("", "SumOfPairsWithTopologyPredict",
+    //    "AlignedSegment", problem.name(), 100);
+    //tm_m2align.getObservable().register(chartObserver);
 
     tm_m2align.run();
 

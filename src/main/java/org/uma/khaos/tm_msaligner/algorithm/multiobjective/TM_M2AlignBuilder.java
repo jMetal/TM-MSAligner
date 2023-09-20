@@ -21,12 +21,15 @@ import org.uma.jmetal.util.densityestimator.impl.CrowdingDistanceDensityEstimato
 import org.uma.jmetal.util.ranking.Ranking;
 import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
+import org.uma.khaos.tm_msaligner.mutation.InsertARandomGapMSAMutation;
+import org.uma.khaos.tm_msaligner.mutation.MergeAdjunctedGapsGroupsMSAMutation;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
 
 public class TM_M2AlignBuilder {
+
   Ranking<TM_MSASolution> ranking;
   private Evaluation<TM_MSASolution> evaluation;
   private PreComputedMSAsSolutionsCreation createInitialPopulation;
@@ -43,9 +46,17 @@ public class TM_M2AlignBuilder {
       int populationSize, int offspringPopulationSize,
       double probabilityCrossover, double probabilityMutation,
       int numCores) {
+    this(problem, maxEvaluations, populationSize, offspringPopulationSize, probabilityCrossover,
+        new ShiftClosedGapsMSAMutation(probabilityMutation), numCores);
+  }
+
+  public TM_M2AlignBuilder(StandardTMMSAProblem problem, int maxEvaluations,
+      int populationSize, int offspringPopulationSize,
+      double probabilityCrossover, MutationOperator<TM_MSASolution> mutationOperator,
+      int numCores) {
 
     crossover = new SPXMSACrossover(probabilityCrossover);
-    mutation = new ShiftClosedGapsMSAMutation(probabilityMutation);
+    mutation = mutationOperator;
     variation = new CrossoverAndMutationVariation<>(
         offspringPopulationSize, crossover, mutation);
 

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
+import org.uma.jmetal.operator.mutation.MutationOperator;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
@@ -14,6 +15,11 @@ import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2AlignBuilder;
+import org.uma.khaos.tm_msaligner.mutation.InsertARandomGapMSAMutation;
+import org.uma.khaos.tm_msaligner.mutation.MergeAdjunctedGapsGroupsMSAMutation;
+import org.uma.khaos.tm_msaligner.mutation.MultipleMSAMutation;
+import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
+import org.uma.khaos.tm_msaligner.mutation.SplitANonGapsGroupMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.MultiObjTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
@@ -42,10 +48,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
 
-        String refName = "ion" ;
+        String refName = "msl" ;
         int numberOfTest = 1;
 
-        int maxEvaluations = 10000 ;
+        int maxEvaluations = 50000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
         int numberOfCores = 8;
@@ -74,7 +80,6 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
         new File(outputFolder).mkdirs();
 
-
         List<String> preComputedFiles = new ArrayList<String>();
         preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
         preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta" );
@@ -87,12 +92,24 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
                                     preComputedFiles,refName);
 
+        var mutationOperator = new ShiftClosedGapsMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new MergeAdjunctedGapsGroupsMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new InsertARandomGapMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new SplitANonGapsGroupMSAMutation(probabilityMutation) ;
+        /*
+        var mutationOperator = new MultipleMSAMutation(
+            probabilityMutation,
+            List.of(new ShiftClosedGapsMSAMutation(0.2),
+                new MergeAdjunctedGapsGroupsMSAMutation(0.2),
+                new SplitANonGapsGroupMSAMutation(0.2),
+                new InsertARandomGapMSAMutation(0.2))) ;*/
+
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
                             maxEvaluations,
                             populationSize,
                             offspringPopulationSize,
                             probabilityCrossover,
-                            probabilityMutation,
+                            mutationOperator,
                             numberOfCores).setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
                             .build();
 

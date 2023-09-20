@@ -54,7 +54,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         int maxEvaluations = 25000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
-        int numberOfCores = 8;
+        int numberOfCores = 1;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
         var weightGapOpenTM = 8;
@@ -109,7 +109,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             offspringPopulationSize,
                             probabilityCrossover,
                             mutationOperator,
-                            numberOfCores).setEvaluation(new MultiThreadedEvaluation<>(numberOfCores, problem))
+                            numberOfCores)
                             .build();
 
 

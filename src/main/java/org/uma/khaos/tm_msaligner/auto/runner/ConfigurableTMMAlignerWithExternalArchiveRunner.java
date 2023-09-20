@@ -13,7 +13,7 @@ import org.uma.jmetal.util.observer.impl.RunTimeChartObserver;
 import org.uma.khaos.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
-public class ConfigurableTMMAlignerRunner {
+public class ConfigurableTMMAlignerWithExternalArchiveRunner {
 
   public static void main(String[] args) throws IOException {
 
@@ -22,11 +22,13 @@ public class ConfigurableTMMAlignerRunner {
 
     String[] parameters =
         ("--problemName " + instanceName + " "
-            + "--randomGeneratorSeed 23 "
+            + "--randomGeneratorSeed 234 "
             + "--referenceFrontFileName " + referenceFrontFileName + " "
-            + "--maximumNumberOfEvaluations 25000 "
+            + "--maximumNumberOfEvaluations 20000 "
             + "--populationSize 100 "
-            + "--algorithmResult population  "
+            + "--populationSizeWithArchive 100 "
+            + "--algorithmResult externalArchive  "
+            + "--externalArchive crowdingDistanceArchive "
             + "--offspringPopulationSize 100 "
             + "--variation crossoverAndMutationVariation "
             + "--crossover SPX "
@@ -46,12 +48,12 @@ public class ConfigurableTMMAlignerRunner {
     EvolutionaryAlgorithm<TM_MSASolution> nsgaII = configurableAlgorithm.create();
 
     EvaluationObserver evaluationObserver = new EvaluationObserver(1000);
+    nsgaII.observable().register(evaluationObserver);
+
     RunTimeChartObserver<DoubleSolution> runTimeChartObserver =
         new RunTimeChartObserver<>(
             "NSGA-II", 80, 1000,
             referenceFrontFileName, "F1", "F2");
-
-    nsgaII.observable().register(evaluationObserver);
     nsgaII.observable().register(runTimeChartObserver);
 
     nsgaII.run();

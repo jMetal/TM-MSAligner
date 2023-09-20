@@ -136,7 +136,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
         new CategoricalParameter("algorithmResult", List.of("externalArchive", "population"));
     populationSizeWithArchiveParameter = new IntegerParameter("populationSizeWithArchive",10,
         200);
-    externalArchiveParameter = new ExternalArchiveParameter<>(List.of("crowdingDistanceArchive"));
+    externalArchiveParameter = new ExternalArchiveParameter<>(List.of("crowdingDistanceArchive", "unboundedArchive"));
     algorithmResultParameter.addSpecificParameter(
         "externalArchive", populationSizeWithArchiveParameter);
 
@@ -270,6 +270,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
 
       @Override
       public List<TM_MSASolution> result() {
+        System.out.println("asdfaasfdf -> archive length:" + archive.size()) ;
         return archive.solutions() ;
       }
     }

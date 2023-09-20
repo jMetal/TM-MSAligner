@@ -23,8 +23,6 @@ public class MutationMSAParameter extends CategoricalParameter {
     double mutationProbability = (double) findGlobalParameter(
         "mutationProbabilityFactor").value() / sequenceLength;
 
-    //System.out.println("Mutation probability factor: " + mutationProbability) ;
-
     result = switch (value()) {
       case "insertRandomGap" -> new InsertARandomGapMSAMutation(mutationProbability);
       case "mergeAdjuntedGapsGroups" -> new MergeAdjunctedGapsGroupsMSAMutation(mutationProbability) ;

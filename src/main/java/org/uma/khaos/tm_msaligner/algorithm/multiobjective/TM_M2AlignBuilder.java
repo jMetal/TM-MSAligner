@@ -21,8 +21,6 @@ import org.uma.jmetal.util.densityestimator.impl.CrowdingDistanceDensityEstimato
 import org.uma.jmetal.util.ranking.Ranking;
 import org.uma.jmetal.util.ranking.impl.FastNonDominatedSortRanking;
 import org.uma.khaos.tm_msaligner.crossover.SPXMSACrossover;
-import org.uma.khaos.tm_msaligner.mutation.InsertARandomGapMSAMutation;
-import org.uma.khaos.tm_msaligner.mutation.MergeAdjunctedGapsGroupsMSAMutation;
 import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;

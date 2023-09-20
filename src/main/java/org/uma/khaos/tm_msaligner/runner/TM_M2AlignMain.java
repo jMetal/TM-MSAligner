@@ -51,17 +51,16 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String refName = "msl" ;
         int numberOfTest = 1;
 
-        int maxEvaluations = 50000 ;
+        int maxEvaluations = 25000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
         int numberOfCores = 8;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
-        double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
-        weightGapOpenTM = 8;
-        weightGapExtendTM = 3;
-        weightGapOpenNonTM = 3;
-        weightGapExtendNonTM = 1;
+        var weightGapOpenTM = 8;
+        var weightGapExtendTM = 3;
+        var weightGapOpenNonTM = 3;
+        var weightGapExtendNonTM = 1;
 
         List<Score> scoreList = new ArrayList<>();
         scoreList.add(new SumOfPairsWithTopologyPredict(

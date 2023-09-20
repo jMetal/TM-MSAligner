@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-09-20T08:01:21.794420Z</date>
-  <millis>1695196881794</millis>
-  <nanos>420000</nanos>
+  <date>2023-09-20T10:16:45.255113Z</date>
+  <millis>1695205005255</millis>
+  <nanos>113000</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,27 +14,39 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-09-20T08:01:21.803034Z</date>
-  <millis>1695196881803</millis>
-  <nanos>34000</nanos>
+  <date>2023-09-20T10:16:45.263703Z</date>
+  <millis>1695205005263</millis>
+  <nanos>703000</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
-  <method>main</method>
+  <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
+  <method>register</method>
   <thread>1</thread>
-  <message>Total execution time : 2629ms</message>
+  <message>DefaultObservable Evolutionary Algorithm: org.uma.jmetal.util.observer.impl.EvaluationObserver@19c65cdc registered</message>
 </record>
 <record>
-  <date>2023-09-20T08:01:21.803320Z</date>
-  <millis>1695196881803</millis>
-  <nanos>320000</nanos>
+  <date>2023-09-20T10:16:45.264018Z</date>
+  <millis>1695205005264</millis>
+  <nanos>18000</nanos>
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
-  <class>org.uma.khaos.tm_msaligner.runner.TM_M2AlignMain</class>
-  <method>main</method>
+  <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
+  <method>register</method>
   <thread>1</thread>
-  <message>Number of evaluations: 50000</message>
+  <message>DefaultObservable Evolutionary Algorithm: Runtime chart observer registered</message>
+</record>
+<record>
+  <date>2023-09-20T10:16:46.345741Z</date>
+  <millis>1695205006345</millis>
+  <nanos>741000</nanos>
+  <sequence>3</sequence>
+  <logger>org.uma.jmetal.util.JMetalLogger</logger>
+  <level>INFO</level>
+  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
+  <method>update</method>
+  <thread>1</thread>
+  <message>Evaluations: 1000</message>
 </record>
 </log>

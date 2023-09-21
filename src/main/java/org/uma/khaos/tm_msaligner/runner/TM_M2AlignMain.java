@@ -43,7 +43,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
 
-        String refName = "ptga" ;
+        String refName = "msl" ;
         int numberOfTest = 1;
 
         int maxEvaluations = 25000 ;
@@ -112,8 +112,8 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         //var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-        var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
-        tm_m2align.observable().register(chartObserver);
+        //var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+        //tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
         List<TM_MSASolution> population = tm_m2align.result();
@@ -138,10 +138,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             outputFolder,"FUN_" + refName + ".tsv",
                             pathLibsJS);
 
-        new SolutionListOutput(population)
+       /* new SolutionListOutput(population)
             .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
             .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
-            .print();
+            .print();*/
     }
     public static void printMSAToFile(List<TM_MSASolution> solutionList,
                                       String filenameHtml,

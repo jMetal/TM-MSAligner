@@ -1,6 +1,8 @@
 # TM-MSAligner
 ## A Multi-Objective Multiple Sequence Alignment Tool for Transmembrane Proteins
 
+Impact of the Software
+
 ## Requirements
 To use TM-MSAligner the following software packages are required:
 * [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnes)

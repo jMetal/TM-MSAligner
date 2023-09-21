@@ -357,6 +357,30 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
     AA[][] sequences = decodeToMatrix();
     String alignment = "";
 
+    alignment="var fasta='';\n";
+    for (int i = 0; i < variables().size(); i++) {
+      alignment += "fasta = fasta + '>" + attributes().get("SeqName" + i).toString().trim() + "\\n';\n";
+      alignment += "fasta = fasta + '";
+      int compoundCount = 0;
+      for (int j = 0; j < sequences[i].length; j++) {
+        alignment += sequences[i][j].toString();
+        compoundCount++;
+        if (compoundCount == 60) {
+          alignment += "\\n';\n";
+          if(j < sequences[i].length-1)
+            alignment += "fasta = fasta + '";
+          compoundCount = 0;
+        }
+      }
+
+      if (sequences[i].length % 60 != 0) {
+        alignment += "\\n';\n";
+      }
+    }
+
+    /*AA[][] sequences = decodeToMatrix();
+    String alignment = "";
+
     for (int i = 0; i < variables().size(); i++) {
       alignment += ">" + attributes().get("SeqName" + i).toString() + "\n";
       int compoundCount = 0;
@@ -371,7 +395,7 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
 
       if (sequences[i].length % 60 != 0) {
         alignment += "\n";
-      }
+      }*/
 
      /* compoundCount = 0;
       for (int j = 0; j < sequences[i].length; j++) {
@@ -387,7 +411,6 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
         alignment += "\n";
       }*/
 
-    }
 
     return alignment;
   }

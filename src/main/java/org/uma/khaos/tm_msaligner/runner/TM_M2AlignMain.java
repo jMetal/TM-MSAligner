@@ -23,6 +23,8 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
+import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlMainPage;
+import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlPage;
 
 public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
@@ -68,6 +70,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
         String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
+        String pathLibsJS = "data/libs/";
 
         String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
         new File(outputFolder).mkdirs();
@@ -109,8 +112,8 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         //var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-        var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
-        tm_m2align.observable().register(chartObserver);
+        //var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
+        //tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
         List<TM_MSASolution> population = tm_m2align.result();
@@ -130,26 +133,35 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        //printMSAToFile(population, outputFolder);
+        printMSAToFile(population, "resultsMSA_" + refName + ".html",
+                            "Solutions to BAliBASe Ref7 Instance " + refName,
+                            outputFolder,"FUN_" + refName + ".tsv",
+                            pathLibsJS);
 
-        new SolutionListOutput(population)
+       /* new SolutionListOutput(population)
             .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
             .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
-            .print();
+            .print();*/
     }
-    public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
+    public static void printMSAToFile(List<TM_MSASolution> solutionList,
+                                      String filenameHtml,
+                                      String titulo,
+                                      String PathOut,
+                                      String filenameFUN,
+                                      String pathLibsJS) {
 
-        try {
-            for (int i = 0; i < solutionList.size(); i++) {
-                DefaultFileOutputContext context = new DefaultFileOutputContext(PathOut + "MSASol" + i + ".fasta");
-                context.setSeparator("\n");
-                BufferedWriter bufferedWriter = context.getFileWriter();
-                bufferedWriter.write(solutionList.get(i).toString());
-                bufferedWriter.close();
-            }
-
-        } catch (IOException e) {
-            throw new JMetalException("Error writing data ", e);
+        MSAViewerHtmlMainPage htmlPage =  new MSAViewerHtmlMainPage(titulo, filenameHtml,
+                                          PathOut,  filenameFUN);
+        htmlPage.save();
+        for (int i = 0; i < solutionList.size(); i++) {
+                MSAViewerHtmlPage msaHtml = new MSAViewerHtmlPage(
+                        "MSASol" + i,
+                        solutionList.get(i).toString(),
+                        PathOut,
+                        "MSASol" + i + ".html",
+                        pathLibsJS );
+                msaHtml.save();
         }
+
     }
 }

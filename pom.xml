@@ -63,5 +63,12 @@
             <artifactId>biojava-alignment</artifactId>
             <version><![CDATA[7.0.0]]></version>
         </dependency>
+
+        <dependency>
+            <groupId>org.uma.jmetal</groupId>
+            <artifactId>jmetal-lab</artifactId>
+            <version>6.1</version>
+        </dependency>
+
     </dependencies>
 </project>

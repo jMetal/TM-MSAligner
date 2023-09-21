@@ -1,7 +1,6 @@
 package org.uma.khaos.tm_msaligner.runner;
 
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

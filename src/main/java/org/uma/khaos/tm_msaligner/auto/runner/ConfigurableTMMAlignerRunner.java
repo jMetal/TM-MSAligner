@@ -3,6 +3,10 @@ package org.uma.khaos.tm_msaligner.auto.runner;
 
 
 import java.io.IOException;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.JMetalLogger;
@@ -16,7 +20,6 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 public class ConfigurableTMMAlignerRunner {
 
   public static void main(String[] args) throws IOException {
-
     String instanceName = "msl" ;
     String referenceFrontFileName = "data/referenceFronts/" + instanceName + ".csv";
 
@@ -56,7 +59,7 @@ public class ConfigurableTMMAlignerRunner {
 
     nsgaII.run();
 
-    JMetalLogger.logger.info("Total computing time: " + nsgaII.totalComputingTime()); ;
+    //JMetalLogger.logger.info("Total computing time: " + nsgaII.totalComputingTime()); ;
 
     new SolutionListOutput(nsgaII.result())
         .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))

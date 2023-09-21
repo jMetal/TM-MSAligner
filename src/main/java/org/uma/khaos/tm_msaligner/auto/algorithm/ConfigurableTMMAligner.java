@@ -90,7 +90,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
 
     fixedParameterList.add(populationSizeParameter);
     fixedParameterList.add(problemNameParameter);
-    //fixedParameterList.add(referenceFrontFilename);
+    fixedParameterList.add(referenceFrontFilename);
     fixedParameterList.add(maximumNumberOfEvaluationsParameter);
     fixedParameterList.add(randomGeneratorSeedParameter);
 

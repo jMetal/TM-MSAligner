@@ -71,6 +71,8 @@ public class TM_MSAFitnessWriteFileObserver<S extends TM_MSASolution> implements
                             String.format("%.2f", Collections.max(scores1))  + "\t" +
                             String.format("%.2f", Collections.max(scores2));
 
+                    //System.out.println(textToAppend);
+
                     try(FileWriter fw = new FileWriter(fileNamePath, true);
                         BufferedWriter writer = new BufferedWriter(fw);) {
                             writer.write(textToAppend);

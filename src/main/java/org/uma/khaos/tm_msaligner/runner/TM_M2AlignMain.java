@@ -19,6 +19,8 @@ import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessPlotObserver;
 import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessWriteFileObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
+import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlMainPage;
+import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlPage;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -43,10 +45,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String preComputedMSAPath = args[5] + refname + "/"; //"C:\\TM-MSA\\ref7\\" + refname + "\\";
         String PathOut = args[6] + refname + "/Ejec" + args[7] +"/"; //"C:\\TM-MSA\\pruebas\\NSGAII\\";*/
 
-        String refName = "msl" ;
+        String refName = "ptga" ;
         int numberOfTest = 1;
 
-        int maxEvaluations = 50000 ;
+        int maxEvaluations = 25000 ;
         int populationSize = 100 ;
         int offspringPopulationSize = populationSize ;
         int numberOfCores = 1;
@@ -72,6 +74,7 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
         String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
+        String pathLibsJS = "data/libs/";
 
         String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
         new File(outputFolder).mkdirs();
@@ -124,23 +127,32 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        //printMSAToFile(population, outputFolder);
+        printMSAToFile(population, "resultsMSA_" + refName + ".html",
+                            "Solutions to BAliBASe Ref7 Instance " + refName,
+                            outputFolder,"FUN_" + refName + ".tsv",
+                            pathLibsJS);
 
 
     }
-    public static void printMSAToFile(List<TM_MSASolution> solutionList, String PathOut) {
+    public static void printMSAToFile(List<TM_MSASolution> solutionList,
+                                      String filenameHtml,
+                                      String titulo,
+                                      String PathOut,
+                                      String filenameFUN,
+                                      String pathLibsJS) {
 
-        try {
-            for (int i = 0; i < solutionList.size(); i++) {
-                DefaultFileOutputContext context = new DefaultFileOutputContext(PathOut + "MSASol" + i + ".fasta");
-                context.setSeparator("\n");
-                BufferedWriter bufferedWriter = context.getFileWriter();
-                bufferedWriter.write(solutionList.get(i).toString());
-                bufferedWriter.close();
-            }
-
-        } catch (IOException e) {
-            throw new JMetalException("Error writing data ", e);
+        MSAViewerHtmlMainPage htmlPage =  new MSAViewerHtmlMainPage(titulo, filenameHtml,
+                                          PathOut,  filenameFUN);
+        htmlPage.save();
+        for (int i = 0; i < solutionList.size(); i++) {
+                MSAViewerHtmlPage msaHtml = new MSAViewerHtmlPage(
+                        "MSASol" + i,
+                        solutionList.get(i).toString(),
+                        PathOut,
+                        "MSASol" + i + ".html",
+                        pathLibsJS );
+                msaHtml.save();
         }
+
     }
 }

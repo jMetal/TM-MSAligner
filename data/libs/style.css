@@ -1,0 +1,559 @@
+/* Font family */
+
+@import url('https://fonts.googleapis.com/css?family=Tajawal:500');
+
+/* SCROLLBAR for Chrome -webkit- */
+
+.msa-container ::-webkit-scrollbar {
+    height: 15px;
+}
+
+.msa-container ::-webkit-scrollbar-track {
+    background: #EEE;
+}
+
+.msa-container ::-webkit-scrollbar-thumb {
+    width: 450px !important;
+    background: #1976D2;
+    border-radius: 55px;
+}
+
+.msa-container {
+    resize: horizontal;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 313px;
+    overflow: hidden;
+}
+
+.sequence-length {
+    position: relative;
+    margin: 1.75em 0;
+    height: 1em;
+    background: #ccc;
+}
+
+.annotation {
+    display: flex;
+    position: absolute;
+    top: -0.7em;
+    height: 2em;
+    color: #fff;
+    background: #CCC;
+    font-family: 'Tajawal', sans-serif !important;
+    font-size: 1.2em;
+    justify-content: center;
+    /*text-align */
+    align-items: center;
+    /* vertical-align */
+    cursor: pointer !important;
+}
+
+
+/* Dashes at the end of the annotations */
+
+.annotation::before {
+    position: absolute;
+    top: 40px;
+    content: "";
+    width: 100%;
+    height: 78px;
+    box-sizing: border-box;
+    border-left: 3px solid #a3a3a3;
+    border-right: 3px solid #a3a3a3;
+    border-style: dotted;
+    background: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.annotation>p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 100%;
+}
+
+
+/*  Shadow for particular annotation on protein sequences 
+    && if you change the height or width of aminoacids , do not forget to set that height 
+.annotation::after {
+  position: absolute;
+  top: 135px;
+  content: "";
+  width: 100%;
+  height: 288px; 
+  background: #111;
+  z-index: -1;
+} */
+
+.sequence-length a:nth-child(1) .annotation {
+    background: #4285F4;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.sequence-length a:nth-child(2) .annotation {
+    background: #EA4335;
+    border-radius: 20px;
+}
+
+.sequence-length a:nth-child(3) .annotation {
+    background: #FBBC05;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sequence-length a:nth-child(4) .annotation {
+    background: #34A853;
+    border-radius: 0px;
+}
+
+.sequence-length a:nth-child(5) .annotation {
+    background: #7B0099;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sequence-length a:nth-child(6) .annotation {
+    background: #004883;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.sequence-length a:nth-child(7) .annotation {
+    background: #FF5722;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.sequence-length a:nth-child(8) .annotation {
+    background: #4285F4;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.sequence-length a:nth-child(9) .annotation {
+    background: #EA4335;
+    border-radius: 20px;
+}
+
+.sequence-length a:nth-child(10) .annotation {
+    background: #34A853;
+    border-radius: 0px;
+}
+
+.sequence-length a:nth-child(11) .annotation {
+    background: #FBBC05;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sequence-length a:nth-child(12) .annotation {
+    background: #7B0099;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sequence-length a:nth-child(13) .annotation {
+    background: #004883;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.sequence-length a:nth-child(14) .annotation {
+    background: #FF5722;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.msa-container .annotation>a,
+.msa-container a:link,
+.msa-container a:visited,
+.msa-container a:hover,
+.msa-container a:focus {
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.msa-container .annotation_start_point {
+    position: absolute;
+    left: 5px
+}
+
+.msa-container .annotation_end_point {
+    position: absolute;
+    right: 5px;
+}
+
+.msa-container .sequence-container {
+    position: relative;
+    margin-left: 160px
+}
+
+.msa-container .sequence-container section
+/* or .protein */
+
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.msa-container .sequence-container section div {
+    min-width: 20px;
+    min-height: 20px;
+    background: #fff;
+    /* border: 1px solid #fff;  if you open it; do not forget to set height and width as 20px. Same for specieNames */
+    color: #fff;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif !important;
+    cursor: default;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Domain and Sequence Parts */
+
+.msa-container .annotation-sequence {
+    position: relative;
+    left: 162px;
+}
+
+.msa-container .species-and-gene-names {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    background: #fff;
+    font-style: italic;
+    float: left;
+}
+
+.msa-container .gene-name:first-of-type {
+    margin-top: 1.4em;
+}
+
+.msa-container .species-and-gene-names>div:nth-last-of-type(2) {
+    margin-bottom: 1.35em!important;
+}
+
+.msa-container .gene-name {
+    /*position: absolute;*/
+    /*left: 2px;*/
+    margin: 1em 0;
+    margin-bottom: 1em;
+    /*top: 40px;*/
+    height: 1.75em;
+    width: 158px;
+    background: #1976D2;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 1.8;
+    color: #fff;
+    font-family: 'Tajawal', sans-serif !important;
+    font-style: italic;
+    padding-top: 0em;
+    cursor: default;
+}
+
+.msa-container .species-names {
+    margin-top: 42px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.msa-container .species-name {
+    min-height: 20px;
+    max-height: 20px;
+    /* border: 1px solid #fff; if you open it; do not forget to set height and width as 20px. Same for specieNames */
+    font-family: 'Tajawal', sans-serif !important;
+    line-height: 18px;
+    padding-left: 10px;
+    /* z-index: 1 !important; */
+    min-width: 150px !important;
+    max-width: 150px !important;
+    background: #2a76d2 !important;
+}
+
+.msa-container .species-name a {
+    color: #FFF !important;
+    font-size: 14px;
+}
+
+.msa-container .species-name .hiding-button {
+    padding: 0px 5px;
+    text-align: center;
+    /*border: 2px solid #FFF;*/
+    border-radius: 50%;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.msa-container .species-name .hiding-button:hover {
+    background: #FFF !important;
+    color: #2a76d2 !important;
+}
+
+
+/* Specific Amino acids for alterations */
+
+.specialAa {
+    cursor: pointer !important;
+    border-radius: 40%;
+    border-color: transparent !important;
+    box-shadow: 0 0 7px #000;
+}
+
+.highlighter-container {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-left: 160px;
+}
+
+.highlighter-container>div {
+    position: absolute;
+}
+
+.highlighter-container .modification {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+
+.modification-highlighted:before {
+    margin-top: -30px !important;
+}
+
+.aminoacid-info {
+    color: #333;
+    font-family: 'Tajawal', sans-serif !important;
+    font-size: 12px;
+}
+
+
+/*SCROLL ISLEMI OLMADAN .aminoacid-info div */
+
+.variation-text-box {
+    position: absolute;
+    display: flex;
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 150px;
+    height: auto;
+    background: #fff;
+    opacity: .96;
+    border-radius: 3px;
+    font-size: 18px !important;
+}
+
+.variation-inner-text-box {
+    height: 140px !important;
+    max-height: 140px !important;
+    padding: 10px !important;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.msa-container .variation-inner-text-box a {
+    color: #004883;
+}
+
+.variation-inner-text-box h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: bold
+}
+
+.variation-inner-text-box h3:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.aminoacid-info>div::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: inherit;
+    z-index: -1;
+    transform: rotateZ(45deg);
+}
+
+
+/*  In order to distinguish the sequence of Homo sapiens */
+
+.variation-text-box.rightArrow::after {
+    right: -10px;
+    left: auto!important;
+}
+
+.sequence {
+    position: relative;
+    height: 20px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAAAAACo4kLRAAAAAW9yTlQBz6J3mgAAABpJREFUGNNjiMECGIaY4PT///8fGFxOoqYgACNCkklBjzWtAAAAAElFTkSuQmCC") repeat-x;
+    width: 100%;
+}
+
+.sequence>div {
+    cursor: pointer!important;
+}
+
+.highlight-column {
+    border-left: 2px solid #fff!important;
+    border-right: 2px solid #fff!important;
+    z-index: 1231!important;
+    border-radius: 0!important;
+}
+
+.bottom-panel {
+    padding: 0 5px;
+    width: 100%;
+}
+
+.highlight-column {
+    border-left: 2px solid #fff!important;
+    border-right: 2px solid #fff!important;
+    z-index: 1231!important;
+    border-radius: 0!important;
+}
+
+.position-number {
+    position: absolute;
+    top: -20px!important;
+    color: #000!important;
+}
+
+.go-to-position {
+    display: block;
+    float: left;
+    margin-left: 5px
+}
+
+.msa-button {
+    position: relative;
+    background: #4285F4;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 12px;
+    float: left;
+    display: block;
+}
+
+
+/* Form CSS */
+
+.form_input {
+    margin: 15px 1px;
+    height: 15px;
+    width: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    border: 1px solid #555;
+    outline: none;
+    padding-left: 3px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.form_input::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #555;
+    opacity: 1;
+}
+
+.form_input::-moz-placeholder {
+    font-size: 15px;
+    color: #555;
+    opacity: 1;
+}
+
+.form_input:-ms-input-placeholder {
+    font-size: 15px;
+    color: #555;
+    opacity: 1;
+}
+
+.form_input:-moz-placeholder {
+    font-size: 15px;
+    color: #555;
+    opacity: 1;
+}
+
+
+/* Tooltips */
+
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+    overflow: visible!important;
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 130px;
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 32123132123123 !important;
+    border: 1px solid #ccc;
+    top: -5px;
+    left: 105%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Tooltip arrow */
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.reset-button {
+    display: block;
+    background: #1ab357;
+    color: #FFF;
+    float: right;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.scroll-container {
+    position: relative;
+    overflow: scroll;
+    max-height: 350px;
+    padding-bottom: 0.4em;
+}

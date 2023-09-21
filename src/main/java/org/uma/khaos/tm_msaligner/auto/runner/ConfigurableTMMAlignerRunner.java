@@ -28,7 +28,7 @@ public class ConfigurableTMMAlignerRunner {
             + "--randomGeneratorSeed 23 "
             + "--referenceFrontFileName " + referenceFrontFileName + " "
             + "--maximumNumberOfEvaluations 25000 "
-            + "--populationSize 100 "
+            + "--populationSize 50 "
             + "--algorithmResult population  "
             + "--offspringPopulationSize 100 "
             + "--variation crossoverAndMutationVariation "

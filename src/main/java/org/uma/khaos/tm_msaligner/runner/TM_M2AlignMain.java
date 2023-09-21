@@ -47,9 +47,9 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         int numberOfTest = 1;
 
         int maxEvaluations = 25000 ;
-        int populationSize = 100 ;
+        int populationSize = 50 ;
         int offspringPopulationSize = populationSize ;
-        int numberOfCores = 1;
+        int numberOfCores = 8;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
         var weightGapOpenTM = 8;

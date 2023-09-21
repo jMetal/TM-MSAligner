@@ -1,5 +1,7 @@
 package org.uma.khaos.tm_msaligner.algorithm.multiobjective;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import org.uma.jmetal.component.catalogue.common.evaluation.Evaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
@@ -24,72 +26,72 @@ import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.solutionscreation.PreComputedMSAsSolutionsCreation;
 
-import java.util.Arrays;
-import java.util.Comparator;
+public class TM_M2AlignBuilder {
 
-public class TM_M2AlignBuilder{
-
-    Ranking<TM_MSASolution> ranking;
-
-    private Evaluation<TM_MSASolution> evaluation;
-    private PreComputedMSAsSolutionsCreation createInitialPopulation;
-    private Termination termination;
-    private Selection<TM_MSASolution> selection;
-    private Variation<TM_MSASolution> variation;
-    private Replacement<TM_MSASolution> replacement;
-    private DensityEstimator<TM_MSASolution> densityEstimator;
-    private CrossoverOperator<TM_MSASolution> crossover;
-    private MutationOperator<TM_MSASolution> mutation;
+  Ranking<TM_MSASolution> ranking;
+  private Evaluation<TM_MSASolution> evaluation;
+  private PreComputedMSAsSolutionsCreation createInitialPopulation;
+  private Termination termination;
+  private Selection<TM_MSASolution> selection;
+  private Variation<TM_MSASolution> variation;
+  private Replacement<TM_MSASolution> replacement;
+  private DensityEstimator<TM_MSASolution> densityEstimator;
+  private CrossoverOperator<TM_MSASolution> crossover;
+  private MutationOperator<TM_MSASolution> mutation;
 
 
-    public TM_M2AlignBuilder(StandardTMMSAProblem problem, int maxEvaluations,
-                             int populationSize, int offspringPopulationSize,
-                            double probabilityCrossover, double probabilityMutation,
-                            int numCores) {
+  public TM_M2AlignBuilder(StandardTMMSAProblem problem, int maxEvaluations,
+      int populationSize, int offspringPopulationSize,
+      double probabilityCrossover, double probabilityMutation,
+      int numCores) {
+    this(problem, maxEvaluations, populationSize, offspringPopulationSize, probabilityCrossover,
+        new ShiftClosedGapsMSAMutation(probabilityMutation), numCores);
+  }
 
+  public TM_M2AlignBuilder(StandardTMMSAProblem problem, int maxEvaluations,
+      int populationSize, int offspringPopulationSize,
+      double probabilityCrossover, MutationOperator<TM_MSASolution> mutationOperator,
+      int numCores) {
 
-        crossover = new SPXMSACrossover(probabilityCrossover);
-        mutation = new ShiftClosedGapsMSAMutation(probabilityMutation);
-        variation = new CrossoverAndMutationVariation<>(
-                offspringPopulationSize, crossover, mutation);
+    crossover = new SPXMSACrossover(probabilityCrossover);
+    mutation = mutationOperator;
+    variation = new CrossoverAndMutationVariation<>(
+        offspringPopulationSize, crossover, mutation);
 
-        densityEstimator = new CrowdingDistanceDensityEstimator<>();
-        ranking = new FastNonDominatedSortRanking<>();
-        replacement = new RankingAndDensityEstimatorReplacement<>(
-                        ranking, densityEstimator, Replacement.RemovalPolicy.ONE_SHOT);
+    densityEstimator = new CrowdingDistanceDensityEstimator<>();
+    ranking = new FastNonDominatedSortRanking<>();
+    replacement = new RankingAndDensityEstimatorReplacement<>(
+        ranking, densityEstimator, Replacement.RemovalPolicy.ONE_SHOT);
 
-        int tournamentSize = 2 ;
-        selection= new NaryTournamentSelection<>(
-                tournamentSize, variation.getMatingPoolSize(),
-                new MultiComparator<>(
-                        Arrays.asList(
-                                Comparator.comparing(ranking::getRank),
-                                Comparator.comparing(densityEstimator::value).reversed())));
+    int tournamentSize = 2;
+    selection = new NaryTournamentSelection<>(
+        tournamentSize, variation.getMatingPoolSize(),
+        new MultiComparator<>(
+            Arrays.asList(
+                Comparator.comparing(ranking::getRank),
+                Comparator.comparing(densityEstimator::value).reversed())));
 
+    createInitialPopulation = new PreComputedMSAsSolutionsCreation(problem, populationSize);
 
-        createInitialPopulation = new PreComputedMSAsSolutionsCreation(problem, populationSize);
-
-        if(numCores>1){
-            evaluation = new MultiThreadedEvaluation<>(numCores, problem) ;
-        }else{
-            evaluation= new SequentialEvaluation<>(problem);
-        }
-
-
-        termination = new TerminationByEvaluations(maxEvaluations);
-
+    if (numCores > 1) {
+      evaluation = new MultiThreadedEvaluation<>(numCores, problem);
+    } else {
+      evaluation = new SequentialEvaluation<>(problem);
     }
 
-    public TM_M2AlignBuilder setEvaluation(Evaluation<TM_MSASolution> evaluation) {
-        this.evaluation = evaluation;
+    termination = new TerminationByEvaluations(maxEvaluations);
+  }
 
-        return this;
-    }
+  public TM_M2AlignBuilder setEvaluation(Evaluation<TM_MSASolution> evaluation) {
+    this.evaluation = evaluation;
 
-    public TM_M2Align build() {
-        return new TM_M2Align(createInitialPopulation,
-                            evaluation, termination,
-                            selection, variation, replacement);
-    }
+    return this;
+  }
+
+  public TM_M2Align build() {
+    return new TM_M2Align(createInitialPopulation,
+        evaluation, termination,
+        selection, variation, replacement);
+  }
 
 }

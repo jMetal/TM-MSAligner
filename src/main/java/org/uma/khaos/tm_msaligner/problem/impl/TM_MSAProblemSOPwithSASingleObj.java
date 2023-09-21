@@ -1,17 +1,11 @@
 package org.uma.khaos.tm_msaligner.problem.impl;
 
-import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
-import org.uma.khaos.tm_msaligner.score.Score;
-import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
-import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithAlignedSegment;
-import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
-import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import org.uma.khaos.tm_msaligner.util.AA;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
-import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
-
 import java.io.IOException;
 import java.util.List;
+import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
+import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithAlignedSegment;
+import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
+import org.uma.khaos.tm_msaligner.util.AA;
 
 public class TM_MSAProblemSOPwithSASingleObj extends StandardTMMSAProblem {
 

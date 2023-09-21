@@ -1,14 +1,12 @@
 package org.uma.khaos.tm_msaligner.solution;
 
-import org.uma.jmetal.solution.AbstractSolution;
-import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
-
-import org.uma.khaos.tm_msaligner.util.AA;
-import org.uma.khaos.tm_msaligner.util.AAArray;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import org.uma.jmetal.solution.AbstractSolution;
+import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
+import org.uma.khaos.tm_msaligner.util.AA;
+import org.uma.khaos.tm_msaligner.util.AAArray;
 
 public class TM_MSASolution extends AbstractSolution<List<Integer>> {
 

@@ -7,7 +7,6 @@ import org.uma.jmetal.component.catalogue.common.termination.Termination;
 import org.uma.jmetal.component.catalogue.ea.replacement.Replacement;
 import org.uma.jmetal.component.catalogue.ea.selection.Selection;
 import org.uma.jmetal.component.catalogue.ea.variation.Variation;
-import org.uma.jmetal.util.comparator.ObjectiveComparator;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class TM_AlignGA extends EvolutionaryAlgorithm<TM_MSASolution> {

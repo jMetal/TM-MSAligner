@@ -4,7 +4,6 @@ package org.uma.khaos.tm_msaligner.score.impl;
 import org.uma.khaos.tm_msaligner.score.Score;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AA;
-import org.uma.khaos.tm_msaligner.util.BaseType;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 

@@ -1,14 +1,14 @@
 package org.uma.khaos.tm_msaligner.util.observer;
 
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import org.knowm.xchart.XYChart;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.observable.Observable;
 import org.uma.jmetal.util.observer.Observer;
 import org.uma.jmetal.util.plot.FrontScatterPlot;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class FrontPlotTM_MSAObserver <S extends TM_MSASolution> implements Observer<Map<String, Object>> {
     private final FrontScatterPlot chart;

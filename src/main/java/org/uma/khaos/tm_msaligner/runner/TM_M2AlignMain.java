@@ -1,6 +1,11 @@
 package org.uma.khaos.tm_msaligner.runner;
 
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import org.uma.jmetal.util.AbstractAlgorithmRunner;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
@@ -8,6 +13,7 @@ import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2Align;
 import org.uma.khaos.tm_msaligner.algorithm.multiobjective.TM_M2AlignBuilder;
+import org.uma.khaos.tm_msaligner.mutation.ShiftClosedGapsMSAMutation;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.problem.impl.MultiObjTMMSAProblem;
 import org.uma.khaos.tm_msaligner.score.Score;
@@ -15,18 +21,10 @@ import org.uma.khaos.tm_msaligner.score.impl.AlignedSegment;
 import org.uma.khaos.tm_msaligner.score.impl.SumOfPairsWithTopologyPredict;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
-import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessPlotObserver;
-import org.uma.khaos.tm_msaligner.util.observer.TM_MSAFitnessWriteFileObserver;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.uma.khaos.tm_msaligner.util.substitutionmatrix.impl.Phat;
 import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlMainPage;
 import org.uma.khaos.tm_msaligner.util.visualization.MSAViewerHtmlPage;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
@@ -54,11 +52,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         int numberOfCores = 1;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
-        double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
-        weightGapOpenTM = 8;
-        weightGapExtendTM = 3;
-        weightGapOpenNonTM = 3;
-        weightGapExtendNonTM = 1;
+        var weightGapOpenTM = 8;
+        var weightGapExtendTM = 3;
+        var weightGapOpenNonTM = 3;
+        var weightGapExtendNonTM = 1;
 
         List<Score> scoreList = new ArrayList<>();
         scoreList.add(new SumOfPairsWithTopologyPredict(
@@ -70,7 +67,6 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                 weightGapExtendNonTM));
         scoreList.add(new AlignedSegment());
 
-
         String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
         String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
@@ -78,7 +74,6 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
 
         String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
         new File(outputFolder).mkdirs();
-
 
         List<String> preComputedFiles = new ArrayList<String>();
         preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
@@ -92,21 +87,32 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
                                     preComputedFiles,refName);
 
+        var mutationOperator = new ShiftClosedGapsMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new MergeAdjunctedGapsGroupsMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new InsertARandomGapMSAMutation(probabilityMutation) ;
+        //var mutationOperator = new SplitANonGapsGroupMSAMutation(probabilityMutation) ;
+        /*
+        var mutationOperator = new MultipleMSAMutation(
+            probabilityMutation,
+            List.of(new ShiftClosedGapsMSAMutation(0.2),
+                new MergeAdjunctedGapsGroupsMSAMutation(0.2),
+                new SplitANonGapsGroupMSAMutation(0.2),
+                new InsertARandomGapMSAMutation(0.2))) ;*/
 
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
                             maxEvaluations,
                             populationSize,
                             offspringPopulationSize,
                             probabilityCrossover,
-                            probabilityMutation,
+                            mutationOperator,
                             numberOfCores)
                             .build();
 
 
-        var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
+        //var chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv",100);
                /*new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName  + " BAlibase Instance", "Evaluaciones",
                                               scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);*/
-              /*new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);*/
+        var chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict", "AlignedSegment", problem.name(), 500);
         tm_m2align.observable().register(chartObserver);
 
         tm_m2align.run();
@@ -132,7 +138,10 @@ public class TM_M2AlignMain extends AbstractAlgorithmRunner {
                             outputFolder,"FUN_" + refName + ".tsv",
                             pathLibsJS);
 
-
+        new SolutionListOutput(population)
+            .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
+            .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
+            .print();
     }
     public static void printMSAToFile(List<TM_MSASolution> solutionList,
                                       String filenameHtml,

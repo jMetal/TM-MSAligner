@@ -11,14 +11,15 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class TM_M2Align extends EvolutionaryAlgorithm<TM_MSASolution> {
 
-    public TM_M2Align(SolutionsCreation<TM_MSASolution> initialPopulationCreation,
-                      Evaluation<TM_MSASolution> evaluation,
-                      Termination termination,
-                      Selection<TM_MSASolution> selection,
-                      Variation<TM_MSASolution> variation,
-                      Replacement<TM_MSASolution> replacement) {
-        super("TM-M2Align", initialPopulationCreation, evaluation, termination, selection, variation, replacement);
+  public TM_M2Align(SolutionsCreation<TM_MSASolution> initialPopulationCreation,
+      Evaluation<TM_MSASolution> evaluation,
+      Termination termination,
+      Selection<TM_MSASolution> selection,
+      Variation<TM_MSASolution> variation,
+      Replacement<TM_MSASolution> replacement) {
+    super("TM-M2Align", initialPopulationCreation, evaluation, termination, selection, variation,
+        replacement);
 
-    }
+  }
 
 }

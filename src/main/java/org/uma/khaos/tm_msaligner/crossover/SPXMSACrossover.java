@@ -1,14 +1,12 @@
 package org.uma.khaos.tm_msaligner.crossover;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import org.uma.jmetal.operator.crossover.CrossoverOperator;
 import org.uma.jmetal.util.errorchecking.Check;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
-
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class SPXMSACrossover implements CrossoverOperator<TM_MSASolution> {
   private final JMetalRandom randomGenerator;

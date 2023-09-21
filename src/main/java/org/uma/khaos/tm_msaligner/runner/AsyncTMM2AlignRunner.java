@@ -31,7 +31,7 @@ public class AsyncTMM2AlignRunner {
     int numberOfTest = 1;
 
     int maxEvaluations = 5000 ;
-    int populationSize = 100 ;
+    int populationSize = 50 ;
     int numberOfCores = 14;
     double probabilityCrossover=0.8;
     double probabilityMutation=0.2;

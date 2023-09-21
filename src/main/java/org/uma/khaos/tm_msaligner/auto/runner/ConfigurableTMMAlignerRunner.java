@@ -25,19 +25,19 @@ public class ConfigurableTMMAlignerRunner {
 
     String[] parameters =
         ("--problemName " + instanceName + " "
-            + "--randomGeneratorSeed 23 "
+            + "--randomGeneratorSeed 242 "
             + "--referenceFrontFileName " + referenceFrontFileName + " "
             + "--maximumNumberOfEvaluations 25000 "
             + "--populationSize 50 "
             + "--algorithmResult population  "
-            + "--offspringPopulationSize 100 "
+            + "--offspringPopulationSize 380 "
             + "--variation crossoverAndMutationVariation "
             + "--crossover SPX "
-            + "--crossoverProbability 0.8 "
+            + "--crossoverProbability 0.9 "
             + "--mutation shiftClosedGaps "
-            + "--mutationProbabilityFactor 1.0 "
+            + "--mutationProbabilityFactor 1.5 "
             + "--selection tournament "
-            + "--selectionTournamentSize 2 \n")
+            + "--selectionTournamentSize 4 \n")
             .split("\\s+");
 
     var configurableAlgorithm = new ConfigurableTMMAligner();

@@ -1,7 +1,7 @@
 # TM-MSAligner
 ## A Multi-Objective Multiple Sequence Alignment Tool for Transmembrane Proteins
 
-Impact of the Software TM-MSAligner
+Impact of the Software TM-MSAligner applied to BAlibase 
 
 ## Requirements
 To use TM-MSAligner the following software packages are required:

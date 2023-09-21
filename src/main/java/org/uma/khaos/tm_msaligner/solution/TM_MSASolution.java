@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.uma.jmetal.solution.AbstractSolution;
+import org.uma.jmetal.util.JMetalLogger;
 import org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem;
 import org.uma.khaos.tm_msaligner.util.AA;
 import org.uma.khaos.tm_msaligner.util.AAArray;
@@ -297,7 +298,7 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
     for (int k = 1; k < variables().size(); k++) {
       if (sizeAlignment != getOriginalSequences().get(k).getSize() + getNumberOfGaps(k)) {
 
-        System.out.println(
+        JMetalLogger.logger.warning(
             "Error Solution, "
                 + k
                 + " sequence has a wrong Length (OSeqLenghth: "

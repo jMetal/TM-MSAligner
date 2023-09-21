@@ -13,6 +13,7 @@ import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
 import org.biojava.nbio.core.sequence.io.FastaWriterHelper;
+import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 import org.uma.khaos.tm_msaligner.util.AAArray;
@@ -88,7 +89,7 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
         List<AAArray> seqAligned = readDataFromFastaFile(dataFile);
         TM_MSASolution sol = new TM_MSASolution(seqAligned, this);
         if (!sol.isValid()) {
-          System.out.println("MSA in file " + dataFile + " is not Valid");
+          JMetalLogger.logger.warning("MSA in file " + dataFile + " is not Valid");
         } else {
           listPreAlignments.add(seqAligned);
         }
@@ -106,7 +107,7 @@ public class StandardTMMSAProblem extends AbstractGenericTM_MSAProblem<TM_MSASol
     return listPreAlignments;
   }
 
-  public void printConsoleoriginalSequences() {
+  public void printConsoleOriginalSequences() {
     for (int i = 0; i < originalSequences.size(); i++) {
       System.out.println(listOfSequenceNames.get(i));
       originalSequences.get(i).printConsole();

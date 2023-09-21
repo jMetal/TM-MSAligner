@@ -1,5 +1,5 @@
 # TM-MSAligner
-## A Multi-Objective Multiple Sequence Alignment for Transmembrane Proteins
+## A Multi-Objective Multiple Sequence Alignment Tool for Transmembrane Proteins
 
 ## Requirements
 

@@ -20,7 +20,7 @@ public class TM_MSAProblemSOPwithSASingleObj extends StandardTMMSAProblem {
     super(msaProblemFileName, preComputedFiles);
 
     setNumberOfObjectives(1);
-    setName("TM-MSA Problem SumOfPairs Wiht Segment Aligned Single Objective");
+    setName("TM-MSA Problem SumOfPairs With Segment Aligned Single Objective");
 
     score = new SumOfPairsWithAlignedSegment(MaxMinSegmentAlignScore[1],
         MaxMinSegmentAlignScore[0],

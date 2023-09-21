@@ -90,7 +90,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
 
     fixedParameterList.add(populationSizeParameter);
     fixedParameterList.add(problemNameParameter);
-    //fixedParameterList.add(referenceFrontFilename);
+    fixedParameterList.add(referenceFrontFilename);
     fixedParameterList.add(maximumNumberOfEvaluationsParameter);
     fixedParameterList.add(randomGeneratorSeedParameter);
 
@@ -265,7 +265,6 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
 
       @Override
       public List<TM_MSASolution> result() {
-        System.out.println("asdfaasfdf -> archive length:" + archive.size()) ;
         return archive.solutions() ;
       }
     }

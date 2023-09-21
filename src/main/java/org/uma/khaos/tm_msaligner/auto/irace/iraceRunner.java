@@ -2,9 +2,13 @@ package org.uma.khaos.tm_msaligner.auto.irace;
 
 import static org.uma.jmetal.util.SolutionListUtils.getMatrixWithObjectiveValues;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.qualityindicator.impl.hypervolume.impl.PISAHypervolume;
+import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.NormalizeUtils;
 import org.uma.jmetal.util.VectorUtils;
 import org.uma.khaos.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
@@ -12,6 +16,8 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class iraceRunner {
   public static void main(String[] args) throws IOException {
+    JMetalLogger.logger.setLevel(Level.OFF);
+
     ConfigurableTMMAligner tmmAligner = new ConfigurableTMMAligner();
     tmmAligner.parse(args);
 

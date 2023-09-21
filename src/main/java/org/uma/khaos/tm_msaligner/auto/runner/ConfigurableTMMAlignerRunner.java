@@ -3,6 +3,10 @@ package org.uma.khaos.tm_msaligner.auto.runner;
 
 
 import java.io.IOException;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.JMetalLogger;
@@ -16,25 +20,24 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 public class ConfigurableTMMAlignerRunner {
 
   public static void main(String[] args) throws IOException {
-
     String instanceName = "msl" ;
     String referenceFrontFileName = "data/referenceFronts/" + instanceName + ".csv";
 
     String[] parameters =
         ("--problemName " + instanceName + " "
-            + "--randomGeneratorSeed 23 "
+            + "--randomGeneratorSeed 242 "
             + "--referenceFrontFileName " + referenceFrontFileName + " "
             + "--maximumNumberOfEvaluations 25000 "
-            + "--populationSize 100 "
+            + "--populationSize 50 "
             + "--algorithmResult population  "
-            + "--offspringPopulationSize 100 "
+            + "--offspringPopulationSize 380 "
             + "--variation crossoverAndMutationVariation "
             + "--crossover SPX "
-            + "--crossoverProbability 0.8 "
+            + "--crossoverProbability 0.9 "
             + "--mutation shiftClosedGaps "
-            + "--mutationProbabilityFactor 1.0 "
+            + "--mutationProbabilityFactor 1.5 "
             + "--selection tournament "
-            + "--selectionTournamentSize 2 \n")
+            + "--selectionTournamentSize 4 \n")
             .split("\\s+");
 
     var configurableAlgorithm = new ConfigurableTMMAligner();
@@ -56,7 +59,7 @@ public class ConfigurableTMMAlignerRunner {
 
     nsgaII.run();
 
-    JMetalLogger.logger.info("Total computing time: " + nsgaII.totalComputingTime()); ;
+    //JMetalLogger.logger.info("Total computing time: " + nsgaII.totalComputingTime()); ;
 
     new SolutionListOutput(nsgaII.result())
         .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))

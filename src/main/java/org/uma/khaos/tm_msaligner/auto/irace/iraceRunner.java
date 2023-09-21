@@ -16,8 +16,7 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 
 public class iraceRunner {
   public static void main(String[] args) throws IOException {
-    JMetalLogger.configureLoggers(new File("logging.properties"));
-    //JMetalLogger.logger.setLevel(Level.OFF);
+    JMetalLogger.logger.setLevel(Level.OFF);
 
     ConfigurableTMMAligner tmmAligner = new ConfigurableTMMAligner();
     tmmAligner.parse(args);

@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-09-21T07:19:49.455617Z</date>
-  <millis>1695280789455</millis>
-  <nanos>617000</nanos>
+  <date>2023-09-21T13:08:56.508298Z</date>
+  <millis>1695301736508</millis>
+  <nanos>298000</nanos>
   <sequence>0</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Loggers configured with null</message>
 </record>
 <record>
-  <date>2023-09-21T07:19:49.466352Z</date>
-  <millis>1695280789466</millis>
-  <nanos>352000</nanos>
+  <date>2023-09-21T13:08:56.519512Z</date>
+  <millis>1695301736519</millis>
+  <nanos>512000</nanos>
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
@@ -26,9 +26,9 @@
   <message>Error Solution, 8 sequence has a wrong Length (OSeqLenghth: 145) + NumOfGaps: 64 is not equal to Size: 184</message>
 </record>
 <record>
-  <date>2023-09-21T07:19:49.466735Z</date>
-  <millis>1695280789466</millis>
-  <nanos>735000</nanos>
+  <date>2023-09-21T13:08:56.519979Z</date>
+  <millis>1695301736519</millis>
+  <nanos>979000</nanos>
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
@@ -38,9 +38,9 @@
   <message>MSA in file data/precomputed_solutions/ref7/msl/mslclustalw.fasta is not Valid</message>
 </record>
 <record>
-  <date>2023-09-21T07:19:49.468288Z</date>
-  <millis>1695280789468</millis>
-  <nanos>288000</nanos>
+  <date>2023-09-21T13:08:56.521894Z</date>
+  <millis>1695301736521</millis>
+  <nanos>894000</nanos>
   <sequence>3</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
@@ -50,9 +50,9 @@
   <message>Error Solution, 1 sequence has a wrong Length (OSeqLenghth: 137) + NumOfGaps: 63 is not equal to Size: 182</message>
 </record>
 <record>
-  <date>2023-09-21T07:19:49.468686Z</date>
-  <millis>1695280789468</millis>
-  <nanos>686000</nanos>
+  <date>2023-09-21T13:08:56.522223Z</date>
+  <millis>1695301736522</millis>
+  <nanos>223000</nanos>
   <sequence>4</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
@@ -60,233 +60,5 @@
   <method>readPreComputedAlignments</method>
   <thread>1</thread>
   <message>MSA in file data/precomputed_solutions/ref7/msl/mslmuscle.fasta is not Valid</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:49.729377Z</date>
-  <millis>1695280789729</millis>
-  <nanos>377000</nanos>
-  <sequence>5</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
-  <method>register</method>
-  <thread>1</thread>
-  <message>DefaultObservable Evolutionary Algorithm: org.uma.jmetal.util.observer.impl.EvaluationObserver@1c93f6e1 registered</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:49.729788Z</date>
-  <millis>1695280789729</millis>
-  <nanos>788000</nanos>
-  <sequence>6</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observable.impl.DefaultObservable</class>
-  <method>register</method>
-  <thread>1</thread>
-  <message>DefaultObservable Evolutionary Algorithm: Runtime chart observer registered</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:50.095747Z</date>
-  <millis>1695280790095</millis>
-  <nanos>747000</nanos>
-  <sequence>7</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 1000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:50.391960Z</date>
-  <millis>1695280790391</millis>
-  <nanos>960000</nanos>
-  <sequence>8</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 2000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:50.698251Z</date>
-  <millis>1695280790698</millis>
-  <nanos>251000</nanos>
-  <sequence>9</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 3000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:51.009146Z</date>
-  <millis>1695280791009</millis>
-  <nanos>146000</nanos>
-  <sequence>10</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 4000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:51.306741Z</date>
-  <millis>1695280791306</millis>
-  <nanos>741000</nanos>
-  <sequence>11</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 5000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:51.592116Z</date>
-  <millis>1695280791592</millis>
-  <nanos>116000</nanos>
-  <sequence>12</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 6000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:51.876711Z</date>
-  <millis>1695280791876</millis>
-  <nanos>711000</nanos>
-  <sequence>13</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 7000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:52.156409Z</date>
-  <millis>1695280792156</millis>
-  <nanos>409000</nanos>
-  <sequence>14</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 8000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:52.432928Z</date>
-  <millis>1695280792432</millis>
-  <nanos>928000</nanos>
-  <sequence>15</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 9000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:52.699132Z</date>
-  <millis>1695280792699</millis>
-  <nanos>132000</nanos>
-  <sequence>16</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 10000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:52.969668Z</date>
-  <millis>1695280792969</millis>
-  <nanos>668000</nanos>
-  <sequence>17</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 11000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:53.234149Z</date>
-  <millis>1695280793234</millis>
-  <nanos>149000</nanos>
-  <sequence>18</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 12000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:53.504642Z</date>
-  <millis>1695280793504</millis>
-  <nanos>642000</nanos>
-  <sequence>19</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 13000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:53.774522Z</date>
-  <millis>1695280793774</millis>
-  <nanos>522000</nanos>
-  <sequence>20</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 14000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:54.036582Z</date>
-  <millis>1695280794036</millis>
-  <nanos>582000</nanos>
-  <sequence>21</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 15000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:54.302149Z</date>
-  <millis>1695280794302</millis>
-  <nanos>149000</nanos>
-  <sequence>22</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 16000</message>
-</record>
-<record>
-  <date>2023-09-21T07:19:54.573230Z</date>
-  <millis>1695280794573</millis>
-  <nanos>230000</nanos>
-  <sequence>23</sequence>
-  <logger>org.uma.jmetal.util.JMetalLogger</logger>
-  <level>INFO</level>
-  <class>org.uma.jmetal.util.observer.impl.EvaluationObserver</class>
-  <method>update</method>
-  <thread>1</thread>
-  <message>Evaluations: 17000</message>
 </record>
 </log>

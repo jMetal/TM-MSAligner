@@ -41,33 +41,32 @@
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-core</artifactId>
-            <version>6.1</version>
+            <version>6.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-algorithm</artifactId>
-            <version>6.1</version>
+            <version>6.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-component</artifactId>
-            <version>6.1</version>
+            <version>6.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-auto</artifactId>
-            <version>6.1</version>
+            <version>6.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.biojava</groupId>
             <artifactId>biojava-alignment</artifactId>
             <version><![CDATA[7.0.0]]></version>
         </dependency>
-
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-lab</artifactId>
-            <version>6.1</version>
+            <version>6.2-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

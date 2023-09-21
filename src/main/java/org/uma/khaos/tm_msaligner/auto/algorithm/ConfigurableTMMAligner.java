@@ -265,7 +265,6 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
 
       @Override
       public List<TM_MSASolution> result() {
-        System.out.println("asdfaasfdf -> archive length:" + archive.size()) ;
         return archive.solutions() ;
       }
     }

@@ -24,12 +24,12 @@ public class TM_MSAFitnessWriteFileObserver<S extends TM_MSASolution> implements
     private Integer evaluations ;
     private final int plotUpdateFrequency ;
 
-    private String fileNamePath;
+    private final String fileNamePath;
 
     /**
      * Constructor
      */
-    public TM_MSAFitnessWriteFileObserver(String fileNamePath, int plotUpdateFrequency) throws IOException {
+    public TM_MSAFitnessWriteFileObserver(String fileNamePath, int plotUpdateFrequency)  {
 
         this.plotUpdateFrequency = plotUpdateFrequency ;
         this.fileNamePath = fileNamePath;

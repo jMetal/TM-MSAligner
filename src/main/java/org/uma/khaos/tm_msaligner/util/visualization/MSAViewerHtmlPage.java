@@ -9,11 +9,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class MSAViewerHtmlPage {
-    private String title;
-    private String filenameMSAHtml;
-    private String pathOut;
-    private String strMSA;
-    private String pathLibs;
+    private final String title;
+    private final String filenameMSAHtml;
+    private final String pathOut;
+    private final String strMSA;
+    private final String pathLibs;
 
     public MSAViewerHtmlPage(String title, String strMSA,
                              String PathOut,

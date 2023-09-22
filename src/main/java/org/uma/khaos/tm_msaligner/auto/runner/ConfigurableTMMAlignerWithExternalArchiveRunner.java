@@ -28,7 +28,7 @@ public class ConfigurableTMMAlignerWithExternalArchiveRunner {
             + "--populationSize 50 "
             + "--populationSizeWithArchive 100 "
             + "--algorithmResult externalArchive  "
-            + "--externalArchive crowdingDistanceArchive "
+            + "--externalArchive hypervolumeArchive "
             + "--ranking dominanceRanking "
             + "--densityEstimator crowdingDistance "
             + "--offspringPopulationSize 50 "

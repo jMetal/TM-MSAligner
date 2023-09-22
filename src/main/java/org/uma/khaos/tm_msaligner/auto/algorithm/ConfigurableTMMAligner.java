@@ -144,7 +144,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
         new CategoricalParameter("algorithmResult", List.of("externalArchive", "population"));
     populationSizeWithArchiveParameter = new IntegerParameter("populationSizeWithArchive",10,
         200);
-    externalArchiveParameter = new ExternalArchiveParameter<>(List.of("crowdingDistanceArchive", "unboundedArchive"));
+    externalArchiveParameter = new ExternalArchiveParameter<>(List.of("crowdingDistanceArchive", "hypervolumeArchive", "unboundedArchive"));
     algorithmResultParameter.addSpecificParameter(
         "externalArchive", populationSizeWithArchiveParameter);
 

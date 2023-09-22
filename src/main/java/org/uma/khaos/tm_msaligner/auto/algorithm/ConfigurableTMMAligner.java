@@ -12,8 +12,10 @@ import org.uma.jmetal.auto.parameter.Parameter;
 import org.uma.jmetal.auto.parameter.PositiveIntegerValue;
 import org.uma.jmetal.auto.parameter.RealParameter;
 import org.uma.jmetal.auto.parameter.StringParameter;
+import org.uma.jmetal.auto.parameter.catalogue.DensityEstimatorParameter;
 import org.uma.jmetal.auto.parameter.catalogue.ExternalArchiveParameter;
 import org.uma.jmetal.auto.parameter.catalogue.ProbabilityParameter;
+import org.uma.jmetal.auto.parameter.catalogue.RankingParameter;
 import org.uma.jmetal.auto.parameter.catalogue.SelectionParameter;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.component.catalogue.common.evaluation.Evaluation;
@@ -27,6 +29,7 @@ import org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityE
 import org.uma.jmetal.component.catalogue.ea.selection.Selection;
 import org.uma.jmetal.component.catalogue.ea.variation.Variation;
 import org.uma.jmetal.component.util.RankingAndDensityEstimatorPreference;
+import org.uma.jmetal.solution.integersolution.IntegerSolution;
 import org.uma.jmetal.util.archive.Archive;
 import org.uma.jmetal.util.comparator.MultiComparator;
 import org.uma.jmetal.util.comparator.dominanceComparator.impl.DefaultDominanceComparator;
@@ -65,6 +68,8 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
   private MutationMSAParameter mutationParameter;
   private CrossoverMSAParameter crossoverParameter;
   private MultiObjTMMSAProblem problem ;
+  private DensityEstimatorParameter<TM_MSASolution> densityEstimatorParameter ;
+  private RankingParameter<TM_MSASolution> rankingParameter ;
 
   public ConfigurableTMMAligner() {
     this.configure();
@@ -94,11 +99,19 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
     fixedParameterList.add(maximumNumberOfEvaluationsParameter);
     fixedParameterList.add(randomGeneratorSeedParameter);
 
+    rankingParameter = new RankingParameter<>("ranking", List.of("dominanceRanking", "strengthRanking")) ;
+    densityEstimatorParameter = new DensityEstimatorParameter<>("densityEstimator", List.of("crowdingDistance", "knn")) ;
+
+    IntegerParameter kValueForKNN = new IntegerParameter("kValueForKNN", 1, 3) ;
+    densityEstimatorParameter.addSpecificParameter("knn", kValueForKNN);
+
     algorithmResult();
     selection();
     variation();
 
     configurableParameterList.add(algorithmResultParameter);
+    configurableParameterList.add(rankingParameter) ;
+    configurableParameterList.add(densityEstimatorParameter) ;
     configurableParameterList.add(variationParameter);
     configurableParameterList.add(selectionParameter);
   }
@@ -199,9 +212,9 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
       populationSizeParameter.value(populationSizeWithArchiveParameter.value());
     }
 
-    Ranking<TM_MSASolution> ranking = new FastNonDominatedSortRanking<>(
-        new DefaultDominanceComparator<>());
-    DensityEstimator<TM_MSASolution> densityEstimator = new CrowdingDistanceDensityEstimator<>();
+    var ranking = rankingParameter.getParameter() ;
+    var densityEstimator = densityEstimatorParameter.getParameter() ;
+
     MultiComparator<TM_MSASolution> rankingAndCrowdingComparator =
         new MultiComparator<>(
             Arrays.asList(

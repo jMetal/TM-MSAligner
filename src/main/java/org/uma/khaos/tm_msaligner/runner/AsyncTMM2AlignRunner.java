@@ -30,7 +30,7 @@ public class AsyncTMM2AlignRunner {
     String refName = "msl" ;
     int numberOfTest = 1;
 
-    int maxEvaluations = 5000 ;
+    int maxEvaluations = 50000 ;
     int populationSize = 50 ;
     int numberOfCores = 14;
     double probabilityCrossover=0.8;

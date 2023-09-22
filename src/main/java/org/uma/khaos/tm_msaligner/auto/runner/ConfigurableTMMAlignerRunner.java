@@ -30,14 +30,16 @@ public class ConfigurableTMMAlignerRunner {
             + "--maximumNumberOfEvaluations 25000 "
             + "--populationSize 50 "
             + "--algorithmResult population  "
-            + "--offspringPopulationSize 380 "
+            + "--offspringPopulationSize 50 "
+            + "--ranking dominanceRanking "
+            + "--densityEstimator crowdingDistance "
             + "--variation crossoverAndMutationVariation "
             + "--crossover SPX "
             + "--crossoverProbability 0.9 "
             + "--mutation shiftClosedGaps "
             + "--mutationProbabilityFactor 1.5 "
             + "--selection tournament "
-            + "--selectionTournamentSize 4 \n")
+            + "--selectionTournamentSize 2 \n")
             .split("\\s+");
 
     var configurableAlgorithm = new ConfigurableTMMAligner();

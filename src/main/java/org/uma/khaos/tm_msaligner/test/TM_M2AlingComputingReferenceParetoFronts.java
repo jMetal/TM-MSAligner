@@ -1,4 +1,4 @@
-package org.uma.khaos.tm_msaligner.runner;
+package org.uma.khaos.tm_msaligner.test;
 
 import java.io.IOException;
 import java.util.ArrayList;

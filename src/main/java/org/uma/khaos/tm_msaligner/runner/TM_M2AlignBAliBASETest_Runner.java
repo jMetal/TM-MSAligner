@@ -37,7 +37,7 @@ public class TM_M2AlignBAliBASETest_Runner extends AbstractAlgorithmRunner {
         }
         String refName = args[0]; // "msl" ;
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
-        int typeObserver = Integer.parseInt(args[1]);
+        int observerType = Integer.parseInt(args[1]);
 
         int maxEvaluations = 25000 ;
         int populationSize = 50 ;
@@ -104,11 +104,11 @@ public class TM_M2AlignBAliBASETest_Runner extends AbstractAlgorithmRunner {
                             .build();
 
 
-        if(typeObserver>=1 && typeObserver<=3){
+        if(observerType>=1 && observerType<=3){
             Observer chartObserver;
-            if(typeObserver==1) {
+            if(observerType==1) {
                 chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv", 100);
-            } else if (typeObserver==2) {
+            } else if (observerType==2) {
                 chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName + " BAliBASE Instance", "Evaluations",
                         scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
             }else

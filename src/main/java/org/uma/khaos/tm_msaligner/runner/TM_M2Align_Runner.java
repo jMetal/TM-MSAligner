@@ -45,7 +45,7 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
         Integer populationSize = Integer.parseInt(args[3]); //100
         Integer numberOfCores = Integer.parseInt(args[4]);   //1
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
-        int typeObserver = Integer.parseInt(args[5]);
+        int observerType = Integer.parseInt(args[5]);
 
         //Algorithm  Parameters
         double probabilityCrossover=0.8;
@@ -102,11 +102,11 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
                             .build();
 
 
-        if(typeObserver>=1 && typeObserver<=3){
+        if(observerType>=1 && observerType<=3){
             Observer chartObserver;
-            if(typeObserver==1) {
+            if(observerType==1) {
                 chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores.tsv", 100);
-            } else if (typeObserver==2) {
+            } else if (observerType==2) {
                 chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Aligner solving Instance " + problemName ,
                         "Evaluations", scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
             }else

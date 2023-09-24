@@ -65,7 +65,7 @@ public class TM_M2AlignBAliBASETest_Runner extends AbstractAlgorithmRunner {
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
 
 
-        String outputFolder = "data/pruebas/ref7/" + refName + "/test" + System.currentTimeMillis() +"/" ;
+        String outputFolder = "data/tests/ref7/" + refName + "/test" + System.currentTimeMillis() +"/" ;
         if (!new File(outputFolder).mkdirs()){
             throw new JMetalException("Error creating Output Directory " + outputFolder) ;
         }

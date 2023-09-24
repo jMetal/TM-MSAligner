@@ -39,7 +39,7 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
-        String dataBaseDirectory = args[0]; // "data/custom_test/"
+        String dataDirectory = args[0]; // "data/custom_test/msl/"
         String problemName = args[1]; // "msl"
         Integer maxEvaluations = Integer.parseInt(args[2]);  //25000
         Integer populationSize = Integer.parseInt(args[3]); //100
@@ -55,8 +55,6 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
         var weightGapOpenNonTM = 3;
         var weightGapExtendNonTM = 1;
 
-
-        String dataDirectory = dataBaseDirectory + problemName + "/";
         String dataFile = dataDirectory + problemName +"_predicted_topologies.3line";
         String outputFolder = dataDirectory + "results" + System.currentTimeMillis() + "/";
         if (!new File(outputFolder).mkdirs()){

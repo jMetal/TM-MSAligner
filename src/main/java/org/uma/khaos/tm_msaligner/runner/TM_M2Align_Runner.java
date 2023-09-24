@@ -41,7 +41,7 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
 
         String dataBaseDirectory = args[0]; // "data/custom_test/"
         String problemName = args[1]; // "msl"
-        Integer maxEvaluations = Integer.parseInt(args[2]);  //2500
+        Integer maxEvaluations = Integer.parseInt(args[2]);  //25000
         Integer populationSize = Integer.parseInt(args[3]); //100
         Integer numberOfCores = Integer.parseInt(args[4]);   //1
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
@@ -139,7 +139,7 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
 
         String pathLibsJS = "data/libs/";
         printMSAToFile(population, "resultsMSA.html",
-                            "MSA of Transmembrane Proteins for " + problemName + " instance",
+                            "Pareto Front Solutions of MSA of Transmembrane Proteins for " + problemName + " dataset",
                             outputFolder,"FUN.tsv",
                             pathLibsJS);
 

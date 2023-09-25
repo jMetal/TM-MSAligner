@@ -174,3 +174,18 @@ java -jar /usr/local/bin/retalign.jar -out FASTA_FILE_retalign" FASTA_FILE
 kalign -c input -f fasta -q -i FASTA_FILE -o FASTA_FILE_kalign
 probcons FASTA_FILE > FASTA_FILE_probcons
 fsa --refinement 100 FASTA_FILE > FASTA_FILE_fsa
+
+## Finding algorithm configurations with irace
+We explain in this section the steps needed to use TM-MSAligner in combination with irace, a tool for automatic algorithm configuration. Having experiences with irace is a pre-requisite to understand this section. All the needed stuff is stored in the `irace` folder located in the root of the project.
+
+The contents of the `irace` folder is the following:
+
+* `data`: a copy of the `data` folder of the project.
+* `instances-list.txt`: a text file containing the name of the instances used as training set as well as the name of the file containing their reference fronts. The file currently contains the `msl` instance:
+
+``` 
+msl --referenceFrontFileName msl.csv
+```
+
+
+

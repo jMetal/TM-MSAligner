@@ -2,6 +2,7 @@ package org.uma.khaos.tm_msaligner.util.visualization;
 
 import tech.tablesaw.api.Table;
 import tech.tablesaw.io.csv.CsvReadOptions;
+import tech.tablesaw.plotly.components.Axis;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.components.Layout;
 import tech.tablesaw.plotly.traces.ScatterTrace;
@@ -29,7 +30,7 @@ public class MSAViewerHtmlMainPage {
         this.PATH_DATA = pathDataFolder;
         this.filenameHtml = filenameHtml;
         try {
-            this.figure = createFrontPlot("Frente de Pareto");
+            this.figure = createFrontPlot("");
         } catch (IOException var3) {
             var3.printStackTrace();
         }
@@ -100,6 +101,7 @@ public class MSAViewerHtmlMainPage {
         sb.append("<body>\n");
         sb.append("<center><h1>").append("TM-M2Align").append("</h1>");
         sb.append("<h2>").append(title).append("</h2>\n");
+        sb.append("<span>").append("Select one alignment (point) to visualizate").append("</span>\n");
         sb.append("<div id='").append(divID).append("'></div></center>\n");
 
         sb.append("<div id='div_content' style='width:100%; height:450px;'>\n");
@@ -114,6 +116,26 @@ public class MSAViewerHtmlMainPage {
                     "\tvar sol = '';\n"+
                     "\tfor(var i=0; i < data.points.length; i++){\n" +
                         "\t\tsol = data.points[i].pointNumber ;\n" +
+
+                        "\t\tannotation = {\n" +
+                        "\t\ttext: '('+data.points[i].x +  ' , '+data.points[i].y + ')',\n" +
+                        "\t\tx: data.points[i].x,\n" +
+                        "\t\ty: data.points[i].y,\n" +
+                        "\t\tshowarrow: true,\n" +
+                        "\t\tarrowhead: 10,\n" +
+                        "\t\talign: 'center',\n" +
+                        "\t\tbgcolor: '#ff7f0e',\n" +
+                        "\t\tfont: {\n" +
+                            "\t\t\tfamily: 'Courier New, monospace',\n" +
+                            "\t\t\tsize: 16,\n" +
+                            "\t\t\tcolor: '#ffffff'\n" +
+                        "\t\t},\n" +
+                     "\t\t}\n" +
+
+                    "\t\tannotations = [];\n" +
+                    "\t\tannotations.push(annotation);\n" +
+                    "\t\tPlotly.relayout('" + divID + "',{annotations: annotations})\n" +
+
                     "\t}\n" +
                     "\t document.getElementById('embedMSA').setAttribute('src', 'MSASol' + sol + '.html');\n" +
                 "});\n" +
@@ -133,11 +155,14 @@ public class MSAViewerHtmlMainPage {
         ScatterTrace.ScatterBuilder builder = ScatterTrace.builder(funTable.column(0),
                 funTable.column(1));
         ScatterTrace scatterTrace = builder.build();
-        Layout layout = Layout.builder()
-                            .title(titulo)
-                            .build();
 
-        return new Figure(layout, scatterTrace);
+        Layout layout = Layout.builder()
+                .width(700)
+                .height(500)
+                .build();
+
+        Figure figure= new Figure(layout, scatterTrace);
+        return figure;
     }
 
 

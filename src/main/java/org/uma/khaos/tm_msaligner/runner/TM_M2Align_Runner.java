@@ -39,13 +39,13 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
-        String dataBaseDirectory = args[0]; // "data/custom_test/"
+        String dataDirectory = args[0]; // "data/custom_test/msl/"
         String problemName = args[1]; // "msl"
-        Integer maxEvaluations = Integer.parseInt(args[2]);  //2500
+        Integer maxEvaluations = Integer.parseInt(args[2]);  //25000
         Integer populationSize = Integer.parseInt(args[3]); //100
         Integer numberOfCores = Integer.parseInt(args[4]);   //1
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
-        int typeObserver = Integer.parseInt(args[5]);
+        int observerType = Integer.parseInt(args[5]);
 
         //Algorithm  Parameters
         double probabilityCrossover=0.8;
@@ -55,8 +55,6 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
         var weightGapOpenNonTM = 3;
         var weightGapExtendNonTM = 1;
 
-
-        String dataDirectory = dataBaseDirectory + problemName + "/";
         String dataFile = dataDirectory + problemName +"_predicted_topologies.3line";
         String outputFolder = dataDirectory + "results" + System.currentTimeMillis() + "/";
         if (!new File(outputFolder).mkdirs()){
@@ -104,11 +102,11 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
                             .build();
 
 
-        if(typeObserver>=1 && typeObserver<=3){
+        if(observerType>=1 && observerType<=3){
             Observer chartObserver;
-            if(typeObserver==1) {
+            if(observerType==1) {
                 chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores.tsv", 100);
-            } else if (typeObserver==2) {
+            } else if (observerType==2) {
                 chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Aligner solving Instance " + problemName ,
                         "Evaluations", scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
             }else
@@ -139,7 +137,7 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
 
         String pathLibsJS = "data/libs/";
         printMSAToFile(population, "resultsMSA.html",
-                            "MSA of Transmembrane Proteins for " + problemName + " instance",
+                            "Pareto Front Solutions of MSA of Transmembrane Proteins for " + problemName + " dataset",
                             outputFolder,"FUN.tsv",
                             pathLibsJS);
 

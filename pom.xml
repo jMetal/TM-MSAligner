@@ -52,22 +52,22 @@
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-core</artifactId>
-            <version>6.2-SNAPSHOT</version>
+            <version>6.2</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-algorithm</artifactId>
-            <version>6.2-SNAPSHOT</version>
+            <version>6.2</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-component</artifactId>
-            <version>6.2-SNAPSHOT</version>
+            <version>6.2</version>
         </dependency>
         <dependency>
             <groupId>org.uma.jmetal</groupId>
             <artifactId>jmetal-auto</artifactId>
-            <version>6.2-SNAPSHOT</version>
+            <version>6.2</version>
         </dependency>
         <dependency>
             <groupId>org.biojava</groupId>

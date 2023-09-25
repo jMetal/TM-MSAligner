@@ -1,7 +1,5 @@
 package org.uma.khaos.tm_msaligner.auto.runner;
 
-
-
 import java.io.IOException;
 import java.util.logging.Handler;
 import java.util.logging.Level;
@@ -20,50 +18,19 @@ import org.uma.khaos.tm_msaligner.solution.TM_MSASolution;
 public class ConfigurableTMMAlignerRunner {
 
   public static void main(String[] args) throws IOException {
-    String instanceName = "msl" ;
-    String referenceFrontFileName = "data/referenceFronts/" + instanceName + ".csv";
-
-    String[] parameters =
-        ("--problemName " + instanceName + " "
-            + "--randomGeneratorSeed 242 "
-            + "--referenceFrontFileName " + referenceFrontFileName + " "
-            + "--maximumNumberOfEvaluations 25000 "
-            + "--populationSize 50 "
-            + "--algorithmResult population  "
-            + "--offspringPopulationSize 50 "
-            + "--ranking dominanceRanking "
-            + "--densityEstimator crowdingDistance "
-            + "--variation crossoverAndMutationVariation "
-            + "--crossover SPX "
-            + "--crossoverProbability 0.9 "
-            + "--mutation shiftClosedGaps "
-            + "--mutationProbabilityFactor 1.5 "
-            + "--selection tournament "
-            + "--selectionTournamentSize 2 \n")
-            .split("\\s+");
-
     var configurableAlgorithm = new ConfigurableTMMAligner();
-    configurableAlgorithm.parse(parameters);
+    configurableAlgorithm.parse(args);
 
     ConfigurableTMMAligner.print(configurableAlgorithm.fixedParameterList());
     ConfigurableTMMAligner.print(configurableAlgorithm.configurableParameterList());
 
-    EvolutionaryAlgorithm<TM_MSASolution> nsgaII = configurableAlgorithm.create();
+    EvolutionaryAlgorithm<TM_MSASolution> algorithm = configurableAlgorithm.create();
 
-    EvaluationObserver evaluationObserver = new EvaluationObserver(1000);
-    RunTimeChartObserver<DoubleSolution> runTimeChartObserver =
-        new RunTimeChartObserver<>(
-            "NSGA-II", 80, 1000,
-            referenceFrontFileName, "F1", "F2");
+    algorithm.run();
 
-    nsgaII.observable().register(evaluationObserver);
-    nsgaII.observable().register(runTimeChartObserver);
+    JMetalLogger.logger.info("Total computing time: " + algorithm.totalComputingTime()); ;
 
-    nsgaII.run();
-
-    //JMetalLogger.logger.info("Total computing time: " + nsgaII.totalComputingTime()); ;
-
-    new SolutionListOutput(nsgaII.result())
+    new SolutionListOutput(algorithm.result())
         .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
         .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
         .print();

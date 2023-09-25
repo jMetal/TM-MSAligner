@@ -103,19 +103,19 @@ Finally, the main html page with the plot of the Pareto Front and the Solutions 
 We illustrated some screenshots of the results, with the selection of different alignments (points) in the Pareto Front:
 
 <h3><b>Solutions for BAliBASe Ref7 Instance _ptga_</b></h3>
-Selection of one Non-dominated solution of the Pareto Front
-<img src="images/HtmlPlotViewer2.png" alt="Pareto-Front" width="300" height="200">
+Selection of one Non-dominated solution of the Pareto Front<br>
+<div style="text-align: center;"><img src="images/HtmlPlotViewer2.png" alt="Pareto-Front" width="500" height="350"></div>
 Visualization of the solution selected (MSA)
 <img src="images/HtmlViewer2.png" alt="Alignment" width="100%">
 
-Selection of the second one Non-dominated solution of the Pareto Front
-<img src="images/HtmlPlotViewer1.png" alt="Pareto-Front" width="300" height="200">
-Visualization of the solution selected (MSA)
+Selection of the second one Non-dominated solution of the Pareto Front<br>
+<div style="text-align: center;"><img src="images/HtmlPlotViewer1.png" alt="Pareto-Front" width="500" height="350"></div>
+Visualization of the solution selected (MSA)<br>
 <img src="images/HtmlViewer1.png" alt="Alignment" width="100%">
 
-Selection of the third one Non-dominated solution of the Pareto Front
-<img src="images/HtmlPlotViewer3.png" alt="Pareto-Front" width="300" height="200">
-Visualization of the solution selected (MSA)
+Selection of the third one Non-dominated solution of the Pareto Front<br>
+<div style="text-align: center;"><img src="images/HtmlPlotViewer3.png" alt="Pareto-Front" width="500" height="350"></div>
+Visualization of the solution selected (MSA)<br>
 <img src="images/HtmlViewer2.png" alt="Alignment" width="100%">
 
 ### Pareto Front Observer
@@ -150,11 +150,18 @@ the next figures, illustrates the Pareto-Fronts during different number of evalu
 In this example, solving the `msl` instance of the BAliBASE-ref7 instance, the software generated the file `BestScores_msl.tsv` with the evolution of both fitness scores
 implemented in our algorithm TM-MSAligner, the results are illustrated in the following pictures:
 
-Evolution of the Fitness _Sum-Of_Pair with Topology Prediction Score_
-<img src="images/FitnessEvolution1.png" alt="Evolution of the Fitness Score Sum-Of_Pair with Topology Prediction" width="300" heigth="300">
+<table style="border:0px">
+<tr><td colspan="2"><b>Evolution of the Fitness Scores</b></td></tr>
+<tr>
+<td><b>Sum-Of_Pair with Topology Prediction Score</b><br>
+<img src="images/FitnessEvolution1.png" alt="Evolution of the Fitness Score Sum-Of_Pair with Topology Prediction" width="400" heigth="400">
+</td>
+<td><b>Aligned Segments Score</b><br>
+<img src="images/FitnessEvolution2.png" alt="Evolution of the Fitness Score Aligned Segments" width="400" heigth="400">
+</td>
+</tr>
+</table>
 
-Evolution of the Fitness _Aligned Segments Score_
-<img src="images/FitnessEvolution2.png" alt="Evolution of the Fitness Score Aligned Segments" width="300" heigth="300">
 
 ## Commands to precompute alignments (needed for generating the initial population)
 Assuming that the FASTA file containing the sequences to align is named "FASTA_FILE", the sintax to run the different tools are:

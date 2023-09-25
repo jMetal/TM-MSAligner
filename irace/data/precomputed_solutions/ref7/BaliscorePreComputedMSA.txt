@@ -1,0 +1,70 @@
+7tm
+7tmkalign.msf 0.782 0.260
+7tmkalignP.msf 0.805 0.300
+7tmmafft.msf 0.685 0.180
+7tmprobcons.msf 0.856 0.410
+7tmt_coffee.msf 0.851 0.400
+tm_cofee2023.msf 0.862 0.420
+msl
+mslclustalw.msf 0.858 0.610
+mslkalign.msf 0.845 0.710
+mslkalignP.msf 0.881 0.800
+mslmafft.msf 0.820 0.570
+mslmuscle.msf 0.835 0.580
+mslprobcons.msf 0.837 0.600
+mslt_coffee.msf 0.833 0.600
+msltmt_coffee2023.msf 0.828 0.600
+ion
+ionclustalw.msf 0.311 0.000
+ionkalign.msf 0.469 0.020
+ionkalignP.msf 0.514 0.000
+ionmafft.msf 0.479 0.020
+ionmuscle.msf 0.480 0.000
+ionprobcons.msf 0.549 0.050
+iont_coffee.msf 0.456 0.050
+iontmt_coffee2023.msf 0.506 0.050
+photo
+photoclustalw.msf 0.877 0.490
+photokalign.msf 0.874 0.400
+photokalignP.msf 0.906 0.490
+photomafft.msf 0.797 0.330
+photomuscle.msf 0.897 0.490
+photoprobcons.msf 0.913 0.520
+photot_coffee.msf 0.914 0.580
+phototmt_coffee2023.msf 0.928 0.590
+ptga
+ptgaclustalw.msf 0.397 0.010
+ptgakalign.msf 0.688 0.080
+ptgakalignP.msf 0.705 0.080
+ptgamafft.msf 0.577 0.040
+ptgamuscle.msf 0.651 0.050
+ptgaprobcons.msf 0.689 0.150
+ptgat_coffee.msf 0.677 0.150
+ptgatmt_coffee2023.msf 0.705 0.160
+acr
+acrclustalw.msf 0.890 0.580
+acrkalign.msf 0.880 0.470
+acrkalignP.msf 0.890 0.500
+acrmafft.msf 0.896 0.490
+acrmuscle.msf 0.942 0.670
+acrprobcons.msf 0.928 0.670
+acrt_coffee.msf 0.929 0.670
+acrtmt_coffee2023.msf 0.930 0.660
+nat
+natclustalw.msf 0.607 0.020
+natkalign.msf 0.697 0.160
+natkalignP.msf 0.724 0.210
+natmafft.msf 0.692 0.040
+natmuscle.msf 0.723 0.160
+natprobcons.msf 0.731 0.180
+natt_coffee.msf 0.681 0.120
+nattmt_coffee2023.msf 0.700 0.100
+dtd
+dtdclustalw.msf 0.777 0.250
+dtdkalign.msf 0.846 0.360
+dtdkalignP.msf 0.861 0.370
+dtdmafft.msf 0.815 0.180
+dtdmuscle.msf 0.841 0.310
+dtdprobcons.msf 0.869 0.340
+dtdt_coffee.msf 0.863 0.300
+dtdtmt_coffee2023.msf 0.877 0.370

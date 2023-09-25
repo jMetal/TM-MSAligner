@@ -1,0 +1,21 @@
+maximumNumberOfEvaluations               "--maximumNumberOfEvaluations "           o     (10000)  
+populationSize                           "--populationSize "           o         (50)  
+algorithmResult                          "--algorithmResult "                     c       (externalArchive, population)                      
+populationSizeWithArchive                "--populationSizeWithArchive "           i       (10, 200)                      | algorithmResult %in% c("externalArchive")
+externalArchive                          "--externalArchive "                     c       (crowdingDistanceArchive, hypervolumeArchive, unboundedArchive) | algorithmResult %in% c("externalArchive")
+#
+ranking                                  "--ranking "                             c       (dominanceRanking, strengthRanking)                     
+#
+densityEstimator                         "--densityEstimator "                    c       (crowdingDistance, knn)                            
+kValueForKNN                             "--kValueForKNN "                        i       (1, 3)                         | densityEstimator %in% c("knn")
+#
+variation                                "--variation "                           c       (crossoverAndMutationVariation)                     
+offspringPopulationSize                  "--offspringPopulationSize "             i       (1, 400)                       | variation %in% c("crossoverAndMutationVariation")
+crossover                                "--crossover "                           c       (SPX)                          | variation %in% c("crossoverAndMutationVariation")
+crossoverProbability                     "--crossoverProbability "                r       (0.0, 1.0)                     | crossover %in% c("SPX")
+mutation                                 "--mutation "                            c       (insertRandomGap, mergeAdjuntedGapsGroups, shiftClosedGaps, splitANonGapsGroup) | variation %in% c("crossoverAndMutationVariation")
+mutationProbabilityFactor                "--mutationProbabilityFactor "           r       (0.0, 2.0)                     | mutation %in% c("insertRandomGap","mergeAdjuntedGapsGroups","shiftClosedGaps","splitANonGapsGroup")
+#
+selection                                "--selection "                           c       (tournament, random)                               
+selectionTournamentSize                  "--selectionTournamentSize "             i       (2, 10)                        | selection %in% c("tournament")
+#

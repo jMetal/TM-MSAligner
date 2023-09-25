@@ -15,6 +15,5 @@ public class ConfigurableTMMAlignerParameterFileGenerator {
   public static void main(String[] args) {
     IraceParameterFileGenerator parameterFileGenerator = new IraceParameterFileGenerator() ;
     parameterFileGenerator.generateConfigurationFile(new ConfigurableTMMAligner()) ;
-
   }
 }

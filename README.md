@@ -15,7 +15,7 @@ To use TM-MSAligner the following software packages are required:
 ## Downloading and compiling
 To download TM-MSAligner just clone the Git repository hosted in GitHub:
 ```
-git clone https://github.com/cristianzambrano/TM-MSAligner.git
+git clone https://github.com/jMetal/TM-MSAligner.git
 ```
 Once cloned, you can compile the software and generate a jar file with the following command:
 

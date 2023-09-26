@@ -60,12 +60,12 @@ public class TM_M2AlignBAliBASETest_Runner extends AbstractAlgorithmRunner {
                 weightGapExtendNonTM));
         scoreList.add(new AlignedSegment());
 
-        String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
-        String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
+        String benchmarkPath = "resources/benchmarks/ref7/" + refName + "/" ;
+        String preComputedMSAPath = "resources/precomputed_solutions/ref7/" +  refName + "/";
         String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
 
 
-        String outputFolder = "data/tests/ref7/" + refName + "/test" + System.currentTimeMillis() +"/" ;
+        String outputFolder = "resources/tests/ref7/" + refName + "/test" + System.currentTimeMillis() +"/" ;
         if (!new File(outputFolder).mkdirs()){
             throw new JMetalException("Error creating Output Directory " + outputFolder) ;
         }
@@ -136,7 +136,7 @@ public class TM_M2AlignBAliBASETest_Runner extends AbstractAlgorithmRunner {
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        String pathLibsJS = "data/libs/";
+        String pathLibsJS = "resources/libs/";
         printMSAToFile(population, "resultsMSA_" + refName + ".html",
                             "Solutions for BAliBASe Ref7 Instance " + refName,
                             outputFolder,"FUN_" + refName + ".tsv",

@@ -51,11 +51,11 @@ public class AsyncTMM2AlignRunner {
         weightGapExtendNonTM));
     scoreList.add(new AlignedSegment());
 
-    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
-    String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
+    String benchmarkPath = "resources/benchmarks/ref7/" + refName + "/" ;
+    String preComputedMSAPath = "resources/precomputed_solutions/ref7/" +  refName + "/";
     String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
 
-    String outputFolder = "data/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
+    String outputFolder = "resources/pruebas/ref7/" + refName + "/test" + numberOfTest +"/" ;
     new File(outputFolder).mkdirs();
 
 

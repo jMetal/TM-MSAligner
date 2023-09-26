@@ -20,7 +20,7 @@
   <sequence>1</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
-  <class>org.uma.khaos.tm_msaligner.solution.TM_MSASolution</class>
+  <class>solution.org.tm_msaligner.TM_MSASolution</class>
   <method>isValid</method>
   <thread>1</thread>
   <message>Error Solution, 8 sequence has a wrong Length (OSeqLenghth: 145) + NumOfGaps: 64 is not equal to Size: 184</message>
@@ -32,7 +32,7 @@
   <sequence>2</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
-  <class>org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem</class>
+  <class>problem.org.tm_msaligner.StandardTMMSAProblem</class>
   <method>readPreComputedAlignments</method>
   <thread>1</thread>
   <message>MSA in file data/precomputed_solutions/ref7/msl/mslclustalw.fasta is not Valid</message>
@@ -44,7 +44,7 @@
   <sequence>3</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
-  <class>org.uma.khaos.tm_msaligner.solution.TM_MSASolution</class>
+  <class>solution.org.tm_msaligner.TM_MSASolution</class>
   <method>isValid</method>
   <thread>1</thread>
   <message>Error Solution, 1 sequence has a wrong Length (OSeqLenghth: 137) + NumOfGaps: 63 is not equal to Size: 182</message>
@@ -56,7 +56,7 @@
   <sequence>4</sequence>
   <logger>org.uma.jmetal.util.JMetalLogger</logger>
   <level>WARNING</level>
-  <class>org.uma.khaos.tm_msaligner.problem.StandardTMMSAProblem</class>
+  <class>problem.org.tm_msaligner.StandardTMMSAProblem</class>
   <method>readPreComputedAlignments</method>
   <thread>1</thread>
   <message>MSA in file data/precomputed_solutions/ref7/msl/mslmuscle.fasta is not Valid</message>

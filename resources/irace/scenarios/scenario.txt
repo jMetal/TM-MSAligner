@@ -67,7 +67,7 @@ targetRunnerLauncher = "java"
 ## configuration being evaluated.  The substring \{targetRunner\}, if present,
 ## will be replaced by the value of targetRunner (useful when using
 ## targetRunnerLauncher).
-targetCmdline = "-cp {targetRunner} org.uma.khaos.tm_msaligner.auto.irace.iraceRunner --randomGeneratorSeed {seed} --problemName {instance} {targetRunnerArgs}"
+targetCmdline = "-cp {targetRunner} irace.auto.org.tm_msaligner.iraceRunner --randomGeneratorSeed {seed} --problemName {instance} {targetRunnerArgs}"
 
 ## Number of times to retry a call to targetRunner if the call failed.
 # targetRunnerRetries = 0

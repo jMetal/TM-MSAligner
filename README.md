@@ -198,7 +198,7 @@ implemented in our algorithm TM-MSAligner, the results are illustrated in the fo
 
 
 ## Finding algorithm configurations with irace
-We explain in this section the steps needed to use TM-MSAligner in combination with irace, a tool for automatic algorithm configuration (having experiences with irace is a pre-requisite to understand this section). All the needed stuff is stored in the `irace` folder located in the root of the project.
+We explain in this section the steps needed to use TM-MSAligner in combination with irace, a tool for automatic algorithm configuration (NOTE: experience with irace is a pre-requisite for understanding this section). All the needed stuff is stored in the `resources/irace` folder.
 
 The contents of the `irace` folder is the following:
 

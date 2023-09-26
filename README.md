@@ -86,8 +86,8 @@ java -cp target/tm-msaligner-1.0-SNAPSHOT-jar-with-dependencies.jar org.uma.khao
 ```
 
 * dataDirectory: The path of the data directory. This directory must contain two components. First, the file with the TMPs sequences and the topology prediction information, called `problemName_predicted_topologies.3line` (See how generate this file in above section).
-And second, the Pre-Computed alignments files in FASTA format (`.fasta` extension) performed by state-of-the-art of MSA software, See details how to generate them in the section below.
-These pre-computed alignments are used to generate the Initial population of the algorithm. The algorithm search files with extension `.fasta` and add to the list.
+And second, the Pre-Computed alignments files in FASTA format (`.fasta` extension) performed by state-of-the-art of MSA software. These pre-computed alignments are used to generate the Initial population of the algorithm.
+The algorithm search files with extension `.fasta` and add to the list. See details how to generate them in the above section.
 * problemName: Name of the custom TMP Sequences dataset.
 * NumberOfEvaluations: Number of the maximun evaluations of the algorithm.
 * PopulationSize: Size of the population of the algorithm.

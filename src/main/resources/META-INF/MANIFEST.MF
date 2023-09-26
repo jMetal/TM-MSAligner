@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: org.tm_msaligner.runner.TM_M2AlignBAliBASETest_Runner
+Main-Class: org.tm_msaligner.BAliBASETest
 

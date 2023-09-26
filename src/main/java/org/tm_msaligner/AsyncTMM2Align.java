@@ -1,4 +1,4 @@
-package org.tm_msaligner.runner;
+package org.tm_msaligner;
 
 
 import java.io.File;
@@ -23,7 +23,7 @@ import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 
-public class AsyncTMM2AlignRunner {
+public class AsyncTMM2Align {
 
   public static void main(String[] args) throws JMetalException, IOException {
 

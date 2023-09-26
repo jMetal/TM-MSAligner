@@ -1,6 +1,10 @@
-package org.tm_msaligner.runner;
+package org.tm_msaligner;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import org.tm_msaligner.util.observer.FrontPlotTM_MSAObserver;
 import org.tm_msaligner.util.observer.TM_MSAFitnessPlotObserver;
 import org.tm_msaligner.util.observer.TM_MSAFitnessWriteFileObserver;
@@ -24,46 +28,27 @@ import org.tm_msaligner.solution.TM_MSASolution;
 import org.tm_msaligner.util.substitutionmatrix.impl.Blosum62;
 import org.tm_msaligner.util.substitutionmatrix.impl.Phat;
 
-import java.io.FileFilter;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
+public class BAliBASETest extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
-        //Parameters
-        if (args.length != 6) {
+         if (args.length != 2) {
             throw new JMetalException("Wrong number of arguments") ;
         }
-
-        String dataDirectory = args[0]; // "data/custom_test/msl/"
-        String problemName = args[1]; // "msl"
-        Integer maxEvaluations = Integer.parseInt(args[2]);  //25000
-        Integer populationSize = Integer.parseInt(args[3]); //100
-        Integer numberOfCores = Integer.parseInt(args[4]);   //1
+        String refName = args[0]; // "msl" ;
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
-        int observerType = Integer.parseInt(args[5]);
+        int observerType = Integer.parseInt(args[1]);
 
-        //Algorithm  Parameters
+        int maxEvaluations = 25000 ;
+        int populationSize = 50 ;
+        int offspringPopulationSize = populationSize ;
+        int numberOfCores = 8;
         double probabilityCrossover=0.8;
         double probabilityMutation=0.2;
         var weightGapOpenTM = 8;
         var weightGapExtendTM = 3;
         var weightGapOpenNonTM = 3;
         var weightGapExtendNonTM = 1;
-
-        String dataFile = dataDirectory + problemName +"_predicted_topologies.3line";
-        String outputFolder = dataDirectory + "results" + System.currentTimeMillis() + "/";
-        if (!new File(outputFolder).mkdirs()){
-            throw new JMetalException("Error creating Output Directory " + outputFolder) ;
-        }
-        List<String> preComputedFiles = getFastaFileNameListFromDir(dataDirectory);
-        if(preComputedFiles.size()<2){
-            throw new JMetalException("Wrong number of Pre-computed Alignments, Minimum 2 files are required") ;
-        }
 
         List<Score> scoreList = new ArrayList<>();
         scoreList.add(new SumOfPairsWithTopologyPredict(
@@ -75,9 +60,27 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
                 weightGapExtendNonTM));
         scoreList.add(new AlignedSegment());
 
+        String benchmarkPath = "resources/benchmarks/ref7/" + refName + "/" ;
+        String preComputedMSAPath = "resources/precomputed_solutions/ref7/" +  refName + "/";
+        String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
+
+
+        String outputFolder = "resources/tests/ref7/" + refName + "/test" + System.currentTimeMillis() +"/" ;
+        if (!new File(outputFolder).mkdirs()){
+            throw new JMetalException("Error creating Output Directory " + outputFolder) ;
+        }
+
+        List<String> preComputedFiles = new ArrayList<String>();
+        preComputedFiles.add(preComputedMSAPath + refName + "kalign.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "mafft.fasta" );
+        //preComputedFiles.add(preComputedMSAPath + refName + "clustalw.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refName + "muscle.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "t_coffee.fasta");
+        preComputedFiles.add(preComputedMSAPath + refName + "tmt_coffee2023.fasta");
+        //preComputedFiles.add(preComputedMSAPath + refName + "praline.fasta");
 
         StandardTMMSAProblem problem = new MultiObjTMMSAProblem(dataFile, scoreList,
-                                    preComputedFiles,problemName);
+                                    preComputedFiles,refName);
 
         var mutationOperator = new ShiftClosedGapsMSAMutation(probabilityMutation) ;
         //var mutationOperator = new MergeAdjunctedGapsGroupsMSAMutation(probabilityMutation) ;
@@ -91,7 +94,6 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
                 new SplitANonGapsGroupMSAMutation(0.2),
                 new InsertARandomGapMSAMutation(0.2))) ;*/
 
-        int offspringPopulationSize = populationSize;
         TM_M2Align tm_m2align = new TM_M2AlignBuilder(problem,
                             maxEvaluations,
                             populationSize,
@@ -105,17 +107,16 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
         if(observerType>=1 && observerType<=3){
             Observer chartObserver;
             if(observerType==1) {
-                chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores.tsv", 100);
+                chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv", 100);
             } else if (observerType==2) {
-                chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Aligner solving Instance " + problemName ,
-                        "Evaluations", scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
+                chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName + " BAliBASE Instance", "Evaluations",
+                        scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
             }else
                 chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict",
-                        "AlignedSegment", problemName, 500);
+                        "AlignedSegment", refName, 500);
 
             tm_m2align.observable().register(chartObserver);
         }
-
 
         tm_m2align.run();
         List<TM_MSASolution> population = tm_m2align.result();
@@ -129,45 +130,22 @@ public class TM_M2Align_Runner extends AbstractAlgorithmRunner {
         JMetalLogger.logger.info("Total execution time : " + tm_m2align.totalComputingTime() + "ms");
         JMetalLogger.logger.info("Number of evaluations: " + tm_m2align.numberOfEvaluations()) ;
 
-        DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN.tsv");
+        DefaultFileOutputContext funFile = new DefaultFileOutputContext(outputFolder + "FUN_" + refName + ".tsv");
         funFile.setSeparator("\t");
 
         SolutionListOutput slo = new SolutionListOutput(population);
         slo.printObjectivesToFile(funFile, population);
 
-        String pathLibsJS = "data/libs/";
-        printMSAToFile(population, "resultsMSA.html",
-                            "Pareto Front Solutions of MSA of Transmembrane Proteins for " + problemName + " dataset",
-                            outputFolder,"FUN.tsv",
+        String pathLibsJS = "resources/libs/";
+        printMSAToFile(population, "resultsMSA_" + refName + ".html",
+                            "Solutions for BAliBASe Ref7 Instance " + refName,
+                            outputFolder,"FUN_" + refName + ".tsv",
                             pathLibsJS);
 
        /* new SolutionListOutput(population)
             .setVarFileOutputContext(new DefaultFileOutputContext("VAR.csv", ","))
             .setFunFileOutputContext(new DefaultFileOutputContext("FUN.csv", ","))
             .print();*/
-    }
-
-    public static List<String> getFastaFileNameListFromDir(String dataDirectory){
-        List<String> preComputedFiles = new ArrayList<>();
-
-        File File_Directory = new File(dataDirectory);
-        if (!(File_Directory.exists() && File_Directory.isDirectory())) {
-            System.out.println(String.format(dataDirectory + " does not exist"));
-            return preComputedFiles;
-        }
-        FileFilter Demo_Filefilter = new FileFilter() {
-            public boolean accept(File Demo_File) {
-                if (Demo_File.getName().endsWith(".fasta")) return true;
-                return false;
-            }
-        };
-
-        File[] Text_Files = File_Directory.listFiles(Demo_Filefilter);
-        for (File Demo_File: Text_Files)
-            preComputedFiles.add(dataDirectory + Demo_File.getName());
-
-
-        return preComputedFiles;
     }
     public static void printMSAToFile(List<TM_MSASolution> solutionList,
                                       String filenameHtml,

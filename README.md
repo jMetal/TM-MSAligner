@@ -42,6 +42,40 @@ MSIIKEFREFAMRGNVVDLAVGVIIGAAFGKIVSSLVADIIMPPLGLLIGGIDFKQFAVTLRDAQGDIPAVVMHYGVFIQ
 IIIIIIIIIIIIIIIIIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOOOOOOOOOOOOOOOOOOOOOOOOOOMMMM
 ``` 
 
+## Generate list of pre-computed alignments (needed for generating the initial population)
+To generate the Initial population of our algorithm, TM-MSAligner requires a list of pre-computed alignments. This list can be generated 
+by the state-of-the-art MSA software tools. 
+Assuming that the FASTA file containing the sequences to align is named "FASTA_FILE", the commands to run the different tools are:
+
+ClustalW2
+```
+clustalw2 -infile=FASTA_FILE -outfile=FASTA_FILE_clu" -output=FASTA -ALIGN -QUIET -OUTORDER=input
+```
+Mafft
+```
+mafft --auto --inputorder --quiet FASTA_FILE > FASTA_FILE_mafft
+```
+T_Coffee
+```
+t_coffee FASTA_FILE -output fasta
+```
+Muscle
+```
+muscle -in FASTA_FILE -fastaout FASTA_FILE_muscle" -quiet
+```
+Kalign
+```
+kalign -c input -f fasta -q -i FASTA_FILE -o FASTA_FILE_kalign
+```
+Probcons
+```
+probcons FASTA_FILE > FASTA_FILE_probcons
+```
+Fsa
+```
+fsa --refinement 100 FASTA_FILE > FASTA_FILE_fsa
+```
+
 ## Runing TM-MSAligner
 
 ### Running TM-MSAligner to align a custom TMPs sequences dataset
@@ -162,19 +196,6 @@ implemented in our algorithm TM-MSAligner, the results are illustrated in the fo
 </tr>
 </table>
 
-
-## Commands to precompute alignments (needed for generating the initial population)
-Assuming that the FASTA file containing the sequences to align is named "FASTA_FILE", the sintax to run the different tools are:
-```
-clustalw2 -infile=FASTA_FILE -outfile=FASTA_FILE_clu" -output=FASTA -ALIGN -QUIET -OUTORDER=input
-mafft --auto --inputorder --quiet FASTA_FILE > FASTA_FILE_mafft
-t_coffee FASTA_FILE -output fasta
-muscle -in FASTA_FILE -fastaout FASTA_FILE_muscle" -quiet
-java -jar /usr/local/bin/retalign.jar -out FASTA_FILE_retalign" FASTA_FILE
-kalign -c input -f fasta -q -i FASTA_FILE -o FASTA_FILE_kalign
-probcons FASTA_FILE > FASTA_FILE_probcons
-fsa --refinement 100 FASTA_FILE > FASTA_FILE_fsa
-```
 
 ## Finding algorithm configurations with irace
 We explain in this section the steps needed to use TM-MSAligner in combination with irace, a tool for automatic algorithm configuration (having experiences with irace is a pre-requisite to understand this section). All the needed stuff is stored in the `irace` folder located in the root of the project.

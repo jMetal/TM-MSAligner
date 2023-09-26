@@ -35,11 +35,10 @@ public class AsyncTMM2AlignRunner {
     int numberOfCores = 14;
     double probabilityCrossover=0.8;
     double probabilityMutation=0.2;
-    double weightGapOpenTM, weightGapExtendTM, weightGapOpenNonTM, weightGapExtendNonTM;
-    weightGapOpenTM = 8;
-    weightGapExtendTM = 3;
-    weightGapOpenNonTM = 3;
-    weightGapExtendNonTM = 1;
+    var weightGapOpenTM = 8;
+    var weightGapExtendTM = 3;
+    var weightGapOpenNonTM = 3;
+    var weightGapExtendNonTM = 1;
 
     List<Score> scoreList = new ArrayList<>();
     scoreList.add(new SumOfPairsWithTopologyPredict(

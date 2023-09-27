@@ -34,7 +34,7 @@ public class TM_M2Align extends AbstractAlgorithmRunner {
     public static void main(String[] args) throws JMetalException, IOException {
 
         //Parameters
-        if (args.length != 6) {
+        if (args.length != 7) {
             throw new JMetalException("Wrong number of arguments") ;
         }
 
@@ -45,6 +45,7 @@ public class TM_M2Align extends AbstractAlgorithmRunner {
         Integer numberOfCores = Integer.parseInt(args[4]);   //1
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
         int observerType = Integer.parseInt(args[5]);
+        int frequencyObserver = Integer.parseInt(args[6]);
 
         //Algorithm  Parameters
         double probabilityCrossover=0.8;
@@ -102,15 +103,20 @@ public class TM_M2Align extends AbstractAlgorithmRunner {
 
 
         if(observerType>=1 && observerType<=3){
+
+            if(frequencyObserver> maxEvaluations){
+                throw new JMetalException("The frequency of the Observer can`t be greater than Maximun number of Evaluations") ;
+            }
+
             Observer chartObserver;
             if(observerType==1) {
                 chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores.tsv", 100);
             } else if (observerType==2) {
                 chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Aligner solving Instance " + problemName ,
-                        "Evaluations", scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
+                        "Evaluations", scoreList.get(0).getName(), scoreList.get(0).getName(), frequencyObserver, 0);
             }else
                 chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict",
-                        "AlignedSegment", problemName, 500);
+                        "AlignedSegment", problemName, frequencyObserver);
 
             tm_m2align.observable().register(chartObserver);
         }

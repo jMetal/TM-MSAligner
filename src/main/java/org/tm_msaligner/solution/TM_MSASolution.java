@@ -356,11 +356,14 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
   public String toString() {
     AA[][] sequences = decodeToMatrix();
     String alignment = "";
+    String topologies = "";
 
-    alignment="var fasta='';\n";
+    alignment = "var fasta='';\n";
+    topologies = "var topologies = [";
     for (int i = 0; i < variables().size(); i++) {
       alignment += "fasta = fasta + '>" + attributes().get("SeqName" + i).toString().trim() + "\\n';\n";
       alignment += "fasta = fasta + '";
+      topologies += "[";
       int compoundCount = 0;
       for (int j = 0; j < sequences[i].length; j++) {
         alignment += sequences[i][j].toString();
@@ -371,12 +374,19 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
             alignment += "fasta = fasta + '";
           compoundCount = 0;
         }
+        topologies += "'" + sequences[i][j].getType().getAbrev() + "'";
+        if(j < sequences[i].length - 1) topologies += ",";
       }
+
+      topologies += "]";
+      if(i < variables().size() - 1) topologies += ",";
+      topologies += "\n";
 
       if (sequences[i].length % 60 != 0) {
         alignment += "\\n';\n";
       }
     }
+    topologies += "]";
 
     /*AA[][] sequences = decodeToMatrix();
     String alignment = "";
@@ -412,7 +422,7 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
       }*/
 
 
-    return alignment;
+    return alignment +  "\n" + topologies;
   }
 
   /** Write the MultipleSequenceAlignmentSolution in Fasta format */

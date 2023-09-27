@@ -22,7 +22,7 @@
     resize: horizontal;
     position: relative;
     width: 100%;
-    height: auto;
+    height: 800px;
     min-height: 313px;
     overflow: hidden;
 }

@@ -32,12 +32,13 @@ public class BAliBASETest extends AbstractAlgorithmRunner {
 
     public static void main(String[] args) throws JMetalException, IOException {
 
-         if (args.length != 2) {
+         if (args.length != 3) {
             throw new JMetalException("Wrong number of arguments") ;
         }
         String refName = args[0]; // "msl" ;
         //0: Ninguno 1: FitnessWriteFileObserver, 2: FitnessPlotObserver y 3: FrontPlotTM_MSAObserve
         int observerType = Integer.parseInt(args[1]);
+        int frequencyObserver = Integer.parseInt(args[2]);
 
         int maxEvaluations = 25000 ;
         int populationSize = 50 ;
@@ -106,14 +107,18 @@ public class BAliBASETest extends AbstractAlgorithmRunner {
 
         if(observerType>=1 && observerType<=3){
             Observer chartObserver;
+            if(frequencyObserver> maxEvaluations){
+                throw new JMetalException("The frequency of the Observer can`t be greater than Maximun number of Evaluations") ;
+            }
+
             if(observerType==1) {
-                chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv", 100);
+                chartObserver = new TM_MSAFitnessWriteFileObserver(outputFolder + "BestScores_" + refName + ".tsv", frequencyObserver);
             } else if (observerType==2) {
                 chartObserver = new TM_MSAFitnessPlotObserver("TM-M2Align solving " + refName + " BAliBASE Instance", "Evaluations",
-                        scoreList.get(0).getName(), scoreList.get(0).getName(), 10, 0);
+                        scoreList.get(0).getName(), scoreList.get(0).getName(), frequencyObserver, 0);
             }else
                 chartObserver = new FrontPlotTM_MSAObserver<TM_MSASolution>("", "SumOfPairsWithTopologyPredict",
-                        "AlignedSegment", refName, 500);
+                        "AlignedSegment", refName, frequencyObserver);
 
             tm_m2align.observable().register(chartObserver);
         }

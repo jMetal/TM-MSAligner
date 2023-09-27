@@ -22,7 +22,7 @@
     resize: horizontal;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: auto;
     min-height: 313px;
     overflow: hidden;
 }
@@ -450,6 +450,16 @@
     display: block;
 }
 
+.msa-buttontitle {
+    position: relative;
+    
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 12px;
+    float: left;
+    display: block;
+}
 
 /* Form CSS */
 

@@ -414,7 +414,7 @@
         }, 75);
     }
     MSABrowser.prototype.loadAminoacidSearch = function() {
-        var ids = this.ids;
+        /*var ids = this.ids;
         $mainDiv = this.mainDiv;
         containerTemplate = `<section class="go-to-position">
             Search a position: <input type="number" placeholder="3" name="position" min="1" class="form_input" id="${ids.positionInput}">
@@ -434,7 +434,7 @@
             var position = parseInt($('#' + this.ids.positionInput).val());
             var species = parseInt($('#' + this.ids.speciesSelect).val());
             this.highlightPosition(species, position - 1)
-        });
+        });*/
     }
 
     MSABrowser.prototype.loadDivsInViewport = function() {
@@ -506,7 +506,11 @@
                 if(positionIndex < topology.length){                     
                     if(topology[positionIndex]=="M"){
                        aaColor='#FFCCCC';
-                    }
+                    }else if(topology[positionIndex]=="I"){
+                       aaColor='#d9ead3';
+                    }else if(topology[positionIndex]=="O"){
+                       aaColor='#fff2cc';
+                    } 
                 }
 
                 //var aaColor = ColorSchemas[this.colorSchema][aaLetter]
@@ -656,17 +660,10 @@
         var fileContent = this.msa.fasta;
         var hrefTag = "data:text/plain;charset=UTF-8," + encodeURIComponent(fileContent);
         this.mainDiv.find('.bottom-panel').append('<a class="msa-button export-button" href="' + hrefTag + '" download="' + fileName + '">Download as FASTA</a>');
-        this.mainDiv.find('.bottom-panel').append('<a href="javascript:void(0)" class="msa-button ss-button">Save as PNG</a>');
+        
+		this.mainDiv.find('.bottom-panel').append('<div class="msa-buttontitle">Topology Regions: </div><div class="msa-button" style="background:#d9ead3; color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inside&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="msa-button" style="background:#FFCCCC; color:black">Transmembrane</div><div class="msa-button" style="background:#fff2cc; color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outside&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>');
 
-        this.mainDiv.find('.ss-button').click(() => {
-            this.mainDiv.find('.ss-button').prepend('<img src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/fancybox_loading.gif" style="height:18px"> ')
-
-            html2canvas(this.mainDiv.find('.scroll-container')[0], { height: this.mainDiv.height(), width: this.mainDiv.width() }).then(canvas => {
-                console.log(canvas);
-                saveAs(canvas.toDataURL(), 'msa-browser-image.png');
-                this.mainDiv.find('.ss-button').find('img').remove();
-            });
-        })
+        
     }
 
     MSABrowser.prototype.scrollToPosition = function(species, position) {

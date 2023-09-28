@@ -156,10 +156,10 @@ We illustrated some screenshots of the results, with the selection of the best a
     </tr>
     <tr>
     <td>
-    <div style="text-align: center;"><img src="images/HtmlPlotViewer1.png" alt="Pareto-Front" width="400" height="350"></div>
+    <div style="text-align: center;"><img src="images/HtmlPlotViewer1.png" alt="Pareto-Front" width="370" height="350"></div>
     </td>
     <td>
-    <div style="text-align: center;"><img src="images/HtmlPlotViewer2.png" alt="Pareto-Front" width="400" height="350"></div>
+    <div style="text-align: center;"><img src="images/HtmlPlotViewer2.png" alt="Pareto-Front" width="370" height="350"></div>
     </td>
     </tr>
     </table>
@@ -168,7 +168,7 @@ We illustrated some screenshots of the results, with the selection of the best a
 Visualization of the Alignments with the highest (image above) and lowest (image below) <b>Sum-Of-Pair with Topology Prediction</b> scores<br/>
 <img src="images/HtmlViewer1.png" alt="Alignment" width="100%">
 <img src="images/HtmlViewer2.png" alt="Alignment" width="100%">
-Considering that the SOPwTP penalize the insert of Open Gap, even more inside transmembrane regions, the alignment with highest SOPwTP score has fewer TM regions broken than lowest.
+Considering that SOPwTP score penalizes the insertion of Openning Gaps, even more inside transmembrane regions, the alignment with the highest SOPwTP score has fewer TM regions broken than the lowest one.
 
 
 ### Pareto Front Observer

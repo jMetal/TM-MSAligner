@@ -151,8 +151,8 @@ Finally, the main html page with the plot of the Pareto Front and the Solutions 
 We illustrated some screenshots of the results, with the selection of the best alignments (points) in the Pareto Front:
 <div style="text-align: center;">
     <table style="border:0px">
-    <tr><td><div style="text-align: center;">Solution selected with the highest <b>Sum-Of-Pair with Topology Prediction</b> score</div></td>
-    <td><div style="text-align: center;">Solution selected with the highest <b>Segment Aligned</b> score</div></td>
+    <tr><td><div style="text-align: center;">Solution selected with the highest <b>Segment Aligned</b> score</div></td>
+    <td><div style="text-align: center;">Solution selected with the highest <b>Sum-Of-Pair with Topology Prediction</b> score</div></td>
     </tr>
     <tr>
     <td>

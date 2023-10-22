@@ -23,7 +23,7 @@ import org.uma.jmetal.util.errorchecking.JMetalException;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 
-public class AsyncTMM2Align {
+public class AsyncTM_MSAligner {
 
   public static void main(String[] args) throws JMetalException, IOException {
 

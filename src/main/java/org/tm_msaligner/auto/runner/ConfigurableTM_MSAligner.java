@@ -8,7 +8,7 @@ import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
 import org.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
 import org.tm_msaligner.solution.TM_MSASolution;
 
-public class ConfigurableTMMAlignerRunner {
+public class ConfigurableTM_MSAligner {
 
   public static void main(String[] args) throws IOException {
     var configurableAlgorithm = new ConfigurableTMMAligner();

@@ -4,8 +4,6 @@
 TM-MSAligner is a multiobjective software tool to align multiple transmembrane protein sequences (TMPs)
 based on the [M2Align](https://github.com/KhaosResearch/M2Align) software. The core of TM-MSAligner is a multi-objective evolutionary algorithm based combining features of the reference algorithms NSGA-II and SPEA2. TM-MSAAligner provides an encoding  for representing MSA solutions and its corresponding mutation and crossover operators, and it is able of reducing the computing time by exploiting the computing capabilities of common multi-core CPU computers.
 
-Impact of the Software TM-MSAligner applied to BAlibase Ref7
-
 ## Requirements
 To use TM-MSAligner the following software packages are required:
 * [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnes)

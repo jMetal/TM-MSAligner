@@ -27,7 +27,7 @@ import org.uma.jmetal.auto.parameter.catalogue.RankingParameter;
 import org.uma.jmetal.auto.parameter.catalogue.SelectionParameter;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.component.catalogue.common.evaluation.Evaluation;
-import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation;
+import org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation;
 import org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive;
 import org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation;
 import org.uma.jmetal.component.catalogue.common.termination.Termination;
@@ -44,7 +44,7 @@ import org.tm_msaligner.auto.parameter.CrossoverMSAParameter;
 import org.tm_msaligner.auto.parameter.MutationMSAParameter;
 import org.tm_msaligner.auto.parameter.VariationMSAParameter;
 
-public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
+public class ConfigurableTM_MSAligner implements AutoConfigurableAlgorithm {
 
   public List<Parameter<?>> configurableParameterList = new ArrayList<>();
   public List<Parameter<?>> fixedParameterList = new ArrayList<>();
@@ -65,7 +65,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
   private DensityEstimatorParameter<TM_MSASolution> densityEstimatorParameter ;
   private RankingParameter<TM_MSASolution> rankingParameter ;
 
-  public ConfigurableTMMAligner() {
+  public ConfigurableTM_MSAligner() {
     this.configure();
   }
 
@@ -183,8 +183,8 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
         weightGapExtendNonTM));
     scoreList.add(new AlignedSegment());
 
-    String benchmarkPath = "data/benchmarks/ref7/" + refName + "/" ;
-    String preComputedMSAPath = "data/precomputed_solutions/ref7/" +  refName + "/";
+    String benchmarkPath = "resources/benchmarks/ref7/" + refName + "/" ;
+    String preComputedMSAPath = "resources/precomputed_solutions/ref7/" +  refName + "/";
     String dataFile = benchmarkPath + refName + "_predicted_topologies.3line";
 
     List<String> preComputedFiles = new ArrayList<String>();
@@ -232,7 +232,7 @@ public class ConfigurableTMMAligner implements AutoConfigurableAlgorithm {
     if (algorithmResultParameter.value().equals("externalArchive")) {
       evaluation = new SequentialEvaluationWithArchive<>(problem, archive);
     } else {
-      evaluation = new SequentialEvaluation<>(problem);
+      evaluation = new MultiThreadedEvaluation<>(8, problem);
     }
 
     RankingAndDensityEstimatorPreference<TM_MSASolution> preferenceForReplacement = new RankingAndDensityEstimatorPreference<>(

@@ -1,21 +1,20 @@
-package org.tm_msaligner.auto.runner;
+package org.tm_msaligner;
 
 import java.io.IOException;
 import org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.fileoutput.SolutionListOutput;
 import org.uma.jmetal.util.fileoutput.impl.DefaultFileOutputContext;
-import org.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
 import org.tm_msaligner.solution.TM_MSASolution;
 
 public class ConfigurableTM_MSAligner {
 
   public static void main(String[] args) throws IOException {
-    var configurableAlgorithm = new ConfigurableTMMAligner();
+    var configurableAlgorithm = new org.tm_msaligner.auto.algorithm.ConfigurableTM_MSAligner();
     configurableAlgorithm.parse(args);
 
-    ConfigurableTMMAligner.print(configurableAlgorithm.fixedParameterList());
-    ConfigurableTMMAligner.print(configurableAlgorithm.configurableParameterList());
+    org.tm_msaligner.auto.algorithm.ConfigurableTM_MSAligner.print(configurableAlgorithm.fixedParameterList());
+    org.tm_msaligner.auto.algorithm.ConfigurableTM_MSAligner.print(configurableAlgorithm.configurableParameterList());
 
     EvolutionaryAlgorithm<TM_MSASolution> algorithm = configurableAlgorithm.create();
 

@@ -10,13 +10,13 @@ import org.uma.jmetal.qualityindicator.impl.hypervolume.impl.PISAHypervolume;
 import org.uma.jmetal.util.JMetalLogger;
 import org.uma.jmetal.util.NormalizeUtils;
 import org.uma.jmetal.util.VectorUtils;
-import org.tm_msaligner.auto.algorithm.ConfigurableTMMAligner;
+import org.tm_msaligner.auto.algorithm.ConfigurableTM_MSAligner;
 
 public class iraceRunner {
   public static void main(String[] args) throws IOException {
     JMetalLogger.logger.setLevel(Level.OFF);
 
-    ConfigurableTMMAligner tmmAligner = new ConfigurableTMMAligner();
+    ConfigurableTM_MSAligner tmmAligner = new ConfigurableTM_MSAligner();
     tmmAligner.parse(args);
 
     EvolutionaryAlgorithm<TM_MSASolution> algorithm = tmmAligner.create();

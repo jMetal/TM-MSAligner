@@ -4,8 +4,6 @@
 TM-MSAligner is a multiobjective software tool to align multiple transmembrane protein sequences (TMPs)
 based on the [M2Align](https://github.com/KhaosResearch/M2Align) software. The core of TM-MSAligner is a multi-objective evolutionary algorithm based combining features of the reference algorithms NSGA-II and SPEA2. TM-MSAAligner provides an encoding  for representing MSA solutions and its corresponding mutation and crossover operators, and it is able of reducing the computing time by exploiting the computing capabilities of common multi-core CPU computers.
 
-Impact of the Software TM-MSAligner applied to BAlibase Ref7
-
 ## Requirements
 To use TM-MSAligner the following software packages are required:
 * [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnes)
@@ -271,7 +269,7 @@ The steps to run irace are the following:
 ```
 4. Select one of the configurations, remove the first element (the number is an id for irace that is not needed), and add at the beginning the parameters `ProblemName`, `referenceFrontFileName`, and `randomGeneratorSeed`. With the resulting string, just execute the following command from the project root directory:
 ``` bash
-java -cp target/TM-MSAligner-1.0-jar-with-dependencies.jar org.tm_msaligner.auto.algorithm.ConfigurableTM_MSAligner --problemName msl --referenceFrontFileName resources/referenceFronts/msl.csv --maximumNumberOfEvaluations 10000 --populationSize 50 --algorithmResult externalArchive --populationSizeWithArchive 149 --externalArchive hypervolumeArchive --ranking dominanceRanking --densityEstimator crowdingDistance --variation crossoverAndMutationVariation --offspringPopulationSize 201 --crossover SPX --crossoverProbability 0.8054 --mutation mergeAdjuntedGapsGroups --mutationProbabilityFactor 1.8994 --selection tournament --selectionTournamentSize 9
+java -cp target/TM-MSAligner-1.0-jar-with-dependencies.jar org.tm_msaligner.ConfigurableTM_MSAligner --problemName msl --referenceFrontFileName resources/referenceFronts/msl.csv --maximumNumberOfEvaluations 10000 --populationSize 50 --algorithmResult externalArchive --populationSizeWithArchive 149 --externalArchive hypervolumeArchive --ranking dominanceRanking --densityEstimator crowdingDistance --variation crossoverAndMutationVariation --offspringPopulationSize 201 --crossover SPX --crossoverProbability 0.8054 --mutation mergeAdjuntedGapsGroups --mutationProbabilityFactor 1.8994 --selection tournament --selectionTournamentSize 9
 ```
 
 The output of TM-MSAligner will be stored in the files `VAR.csv` (the aligments) and `FUN.csv` (the values of the scores).

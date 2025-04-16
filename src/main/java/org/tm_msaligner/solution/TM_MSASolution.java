@@ -1,13 +1,22 @@
 package org.tm_msaligner.solution;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.uma.jmetal.solution.AbstractSolution;
+import org.uma.jmetal.solution.Solution;
 import org.uma.jmetal.util.JMetalLogger;
 import org.tm_msaligner.problem.StandardTMMSAProblem;
 import org.tm_msaligner.util.AA;
 import org.tm_msaligner.util.AAArray;
+import org.uma.jmetal.util.errorchecking.JMetalException;
+import org.uma.jmetal.util.fileoutput.FileOutputContext;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class TM_MSASolution extends AbstractSolution<List<Integer>> {
 
@@ -296,7 +305,9 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
   public boolean isValid() {
     int sizeAlignment = getAlignmentLength();
     for (int k = 1; k < variables().size(); k++) {
-      if (sizeAlignment != getOriginalSequences().get(k).getSize() + getNumberOfGaps(k)) {
+      int size1 = getOriginalSequences().get(k).getSize();
+      int size2 = getNumberOfGaps(k);
+      if (sizeAlignment !=  size1 + size2 ) {
 
         JMetalLogger.logger.warning(
             "Error Solution, "
@@ -354,7 +365,7 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
 
   @Override
   public String toString() {
-    AA[][] sequences = decodeToMatrix();
+    /*AA[][] sequences = decodeToMatrix();
     String alignment = "";
     String topologies = "";
 
@@ -388,11 +399,13 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
     }
     topologies += "]";
 
-    /*AA[][] sequences = decodeToMatrix();
+    return alignment +  "\n" + topologies;*/
+
+    AA[][] sequences = decodeToMatrix();
     String alignment = "";
 
     for (int i = 0; i < variables().size(); i++) {
-      alignment += ">" + attributes().get("SeqName" + i).toString() + "\n";
+      alignment += ">" + attributes().get("SeqName" + i).toString().trim() + "\n";
       int compoundCount = 0;
       for (int j = 0; j < sequences[i].length; j++) {
         alignment += sequences[i][j].toString();
@@ -402,10 +415,12 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
           compoundCount = 0;
         }
       }
-
       if (sequences[i].length % 60 != 0) {
         alignment += "\n";
-      }*/
+      }
+    }
+
+    return alignment;
 
      /* compoundCount = 0;
       for (int j = 0; j < sequences[i].length; j++) {
@@ -422,15 +437,20 @@ public class TM_MSASolution extends AbstractSolution<List<Integer>> {
       }*/
 
 
-    return alignment +  "\n" + topologies;
+
   }
 
   /** Write the MultipleSequenceAlignmentSolution in Fasta format */
-  /* public void printSolutionToFasta(String fileName) throws Exception {
+   public void printSolutionToFasta(String filePath)  {
 
-    List<ProteinSequence> proteinSequenceList = convertSolutionToProteinSequenceList();
-    FastaWriterHelper.writeProteinSequence(new File(fileName), proteinSequenceList);
-  }*/
+     try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+       writer.write(this.toString());
+     } catch (IOException e) {
+       JMetalLogger.logger.warning("Error creating FASTA file: " + filePath);
+     }
+
+
+  }
 
   /** Create a Protein sequence list from the sequences stored in the variables */
   /*public List<ProteinSequence> convertSolutionToProteinSequenceList() throws Exception {
